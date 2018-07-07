@@ -4,21 +4,34 @@
     "plugins": [
         "disqus",
         "splitter",
+        "advanced-emoji",
+        "github",
         "expandable-chapters-small",
         "copy-code-button",
         "book-summary-scroll-position-saver",
-        "tbfed-pagefooter",
-        "advanced-emoji",
-        "mathjax-update-cdn"
+        "mathjax-update-cdn",
+        "anchors",
+        "anchor-navigation-ex",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "Alfonsxh",
-            "tbfed-pagefooter": {
-                "copyright":"Copyright &copy Alfons 2018",
-                "modify_label": "该文件修订时间：",
-                "modify_format": "YYYY-MM-DD HH:mm:ss"
-              }
+            "shortName": "Alfonsxh"
+        },
+        "github": {
+            "url": "https://github.com/Alfonsxh"
+        },
+        "anchor-navigation-ex": {
+            "isRewritePageTitle": true,
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy Alfons 2018",
+            "modify_label": "Last modify time:",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
 }
