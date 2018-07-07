@@ -9,8 +9,6 @@
         "book-summary-scroll-position-saver",
         "tbfed-pagefooter",
         "advanced-emoji",
-        "-mathjax",
-        "-katex",
         "mathjax-update-cdn"
     ],
     "pluginsConfig": {
