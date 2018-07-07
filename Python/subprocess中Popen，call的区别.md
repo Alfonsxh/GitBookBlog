@@ -1,20 +1,9 @@
----
-title: subprocess中Popen，call的区别
-date: 2018-06-20 22:41:12
-tags:
-  - Python
-  - subprocess
-  - Popen
-  - call
-categories: Python
-description:
----
+# subprocess中Popen，call的区别
 
 这两天测试的时候，发现使用Popen创建的进程没有把命令执行完毕，导致程序Bug～
 
 观察了一下，subprocess模块，执行系统命令有两种方式，Popen或者call。
 
-<!--more-->
 
 但是使用Popen运行的进程会在后台运行，并不是等待进程结束才进行下一步操作。
 

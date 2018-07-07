@@ -1,18 +1,8 @@
----
-title: Django论坛部署
-date: 2018-05-21 21:11:28
-tags:
-- Django
-- Python
-categories: Django
-description:
----
+# Django论坛部署
 
 这两天在外部压力的作用下，把之前写的Django框架搭建的留言板部署了一下。本来是觉得，既然代码都已经弄得差不多了，本地运行没什么问题的，部不部署就没什么了。
 
 哈哈哈，还是太天真了。
-
-<!--more-->
 
 查看了一下原教程的[部署步骤](https://simpleisbetterthancomplex.com/series/2017/10/16/a-complete-beginners-guide-to-django-part-7.html)，应该问题不大。
 
