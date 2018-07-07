@@ -19,7 +19,7 @@
 - 3.重复这个过程，直到对每个节点都这样做。
 - 4.计算最终的路径。
 
-![Dijkstra算法图解](Dijkstra_Animation.gif)
+![Dijkstra算法图解](https://github.com/Alfonsxh/Blog/tree/master/Image/Algorithms/Shortest/Dijkstra_Animation.gif)
 
 算法实现需要三个而外的空间存放中间结果：开销记录、父节点记录、处理标记。
 ```python
@@ -88,7 +88,7 @@ def Dijkstra():
     - 对于图中的每条边：如果起点 u 的距离 d 加上边的权值 w 小于终点 v 的距离 d，则更新终点 v 的距离值 d；
 - 3.检测图中是否有负权边形成了环，遍历图中的所有边，计算 u 至 v 的距离，如果对于 v 存在更小的距离，则说明存在环。
 
-![BellmanFords算法图例](BellmanFords.png)
+![BellmanFords算法图例](https://github.com/Alfonsxh/Blog/tree/master/Image/Algorithms/Shortest/BellmanFords.png)
 
 开始时候，A到其他各点的距离都为∞，表示不可达。A到A本身的距离为0。
 
@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
 因此， $$D_{i,j,k}=min(D_{i,j,k-1},D_{i,k,k-1}+D_{k,j,k-1})$$。
 
-![Floyd算法图](Floyd-Warshall.jpg)
+![Floyd算法图](https://github.com/Alfonsxh/Blog/tree/master/Image/Algorithms/Shortest/Floyd-Warshall.jpg)
 
 ```python
 # 图
