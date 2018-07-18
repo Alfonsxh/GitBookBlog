@@ -31,7 +31,7 @@ ELF 标准的目的是为软件开发人员提供一组二进制接口定义，�
 
 **ELF** 文件分 **链接视图** 和 **执行视图** 两种，执行视图是指程序或动态库加载在内存中的视图，主要是将节区(Section)汇总成段区(Segment)。
 
-![ELF文件整体结构](../../Image/Linux/Linux从源码到可执行程序/ELF文件/ELF文件整体结构.jpg)
+![ELF文件整体结构](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/ELF文件整体结构.jpg)
 
 - **ELF 头部(ELF Header)** 用来描述整个文件的组织。
 - **节区部分(Section)** 包含链接视图的大量信息:指令、数据、符号表、重定位信息等等。
@@ -108,7 +108,7 @@ ELF Header:
 
 用一张图表示就是这样。
 
-![ELF头部](../../Image/Linux/Linux从源码到可执行程序/ELF文件/ELF-Header.png)
+![ELF头部](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/ELF-Header.png)
 
 ### 程序头部表(Program Header Table)
 
@@ -227,7 +227,7 @@ Section Headers:
 
 可以简单的表示成下图。
 
-![ELF文件段映像图例](../../Image/Linux/Linux从源码到可执行程序/ELF文件/ELF文件段映像图例.jpg)
+![ELF文件段映像图例](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/ELF文件段映像图例.jpg)
 
 > 程序源代码编译后的机器指令放置在代码段中，如图中的 **.text** 段。已初始化的 **全局变量** 和 **局部静态变量** 的数据已放在数据段中，如图中的 **.data** 段。未初始化的  **全局变量** 和 **局部静态变量**  放置在 **.bss** 段中。 **.bss** 段只是预留位置，并不占据空间。
 
@@ -369,7 +369,7 @@ Disassembly of section .text:
 
 早期的一些系统，采用 **静态链接库(Static Shared Library)** 的方式生成可执行文件(注意与 **静态库(Static Library)** 的区别)。 **静态链接库(Static Shared Library)** 的缺点可以简单的用下图表示：
 
-![静态链接库](../../Image/Linux/Linux从源码到可执行程序/ELF文件/StaticSharedLibrary.jpg)
+![静态链接库](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/StaticSharedLibrary.jpg)
 
 > 可以看到 **Program1** 和 **Program2** 分别包含了 **Lib.o** 目标文件，这样会在内存中存在两份 **Lib.o** 的副本，如果关联到 **Lib.o** 的可执行程序很多的话，会造成很严重的空间浪费。并且如果需要更新 **Lib.o** 的话会非常的麻烦。
 
@@ -379,7 +379,7 @@ Disassembly of section .text:
 
 基本过程如下图所示:
 
-![动态链接过程](../../Image/Linux/Linux从源码到可执行程序/ELF文件/DynamicLinking.jpg)
+![动态链接过程](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/DynamicLinking.jpg)
 
 在谈及Linux下程序的动态链接过程之前，先谈一下与之相关的一些话题。
 
@@ -396,7 +396,7 @@ Disassembly of section .text:
 
 从上表我们可以看到，模块外部的指令和数据调用都可以通过GOT表跳转。
 
-![模块间数据访问](../../Image/Linux/Linux从源码到可执行程序/ELF文件/DataBetweenDiffMoudle.jpg)
+![模块间数据访问](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/DataBetweenDiffMoudle.jpg)
 
 ELF将GOT拆分成两个表 **".got"**、 **".got.plt"**。其中 **".got"** 用来保存全局变量的引用的地址， **".got.plt"** 用来保存函数引用的地址。
 
@@ -488,7 +488,7 @@ $ readelf -x .got libdynamic.so
 
 下图展示的是 **延迟绑定** 的执行过程。
 
-![动态重定位执行过程](../../Image/Linux/Linux从源码到可执行程序/ELF文件/动态重定位执行过程.jpg)
+![动态重定位执行过程](../../../Image/Books/ProfessionBooks/程序员的自我修养/ELF文件/动态重定位执行过程.jpg)
 
 ##### 程序执行时的链接过程
 
@@ -508,4 +508,3 @@ $ readelf -x .got libdynamic.so
 - [Elf文件格式(北京大学实验室出的标准版)](https://download.csdn.net/download/jiangwei0910410003/9204051)
 - [聊聊Linux动态链接中的PLT和GOT（4）—— 穿针引线](https://blog.csdn.net/linyt/article/details/51893258)
 - [《程序员的自我修养》](https://www.amazon.cn/dp/B0027VSA7U)
-

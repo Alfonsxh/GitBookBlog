@@ -1,3 +1,2 @@
 # Linux
 
-Linux相关。
