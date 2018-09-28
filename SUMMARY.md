@@ -4,6 +4,8 @@
 
 -----
 * [Python](Python/README.md)
+    * [Python杀不死的子进程](Python/Python杀不死的子进程.md)
+    * [hashcat使用说明](Python/hashcat使用说明.md)
     * [推荐import模块的方式](Python/推荐import模块的方式.md)
     * [subprocess中Popen，call的区别](Python/subprocess中Popen，call的区别.md)
     * [Django论坛部署](Python/Django论坛部署.md)
