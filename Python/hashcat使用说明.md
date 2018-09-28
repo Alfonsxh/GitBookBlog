@@ -158,7 +158,7 @@ hashcat -a 7 -m 2500 xxxx.hccapx ?l?l?d?d?d?d?d dict1 dict2 dict3
 
 已经破解出的密码，hashcat会默认保存在`.hashcat/hashcat.potfile`文件中，可以通过此文件查看已破解的密码。
 
-![cat_potfile](/Image/Python/Python杀不死的子进程/cat_potfile.jpg)
+![cat_potfile](/Image/Python/hashcat使用说明/cat_potfile.jpg)
 
 也可以通过`--show`命令查看特定握手包内破解出的AP的密码。也可以通过`--left`命令查看未破解出的密码。
 
@@ -179,11 +179,11 @@ cba153ab6ee3597e5512dae45ad0ef64:0018e7b25200:9cd91730dc8e:helloworld
 
 在使用规则进行破解(暴力破解、掩码组合破解)时，可以通过`--increment`参数激活破解密码长度选项。可以通过`--increment-min`指定最小长度，通过`--increment-max`指定最大长度。
 
-![increment_not_set](/Image/Python/Python杀不死的子进程/increment_not_set.jpg)
+![increment_not_set](/Image/Python/hashcat使用说明/increment_not_set.jpg)
 
 可以看到在未设置长度的情况下，总共需要进行 $26^{10} = 141167095653376$ 次密码尝试。
 
-![increment_set_8_9](/Image/Python/Python杀不死的子进程/increment_set_8_9.jpg)
+![increment_set_8_9](/Image/Python/hashcat使用说明/increment_set_8_9.jpg)
 
 在设置了长度为8时，密码长度明显减少到了 $26^8 = 208827064576$ 次
 
@@ -193,11 +193,11 @@ cba153ab6ee3597e5512dae45ad0ef64:0018e7b25200:9cd91730dc8e:helloworld
 
 第一种在在交互界面中使用`[p]ause`进行暂停。
 
-![stdin_pause](/Image/Python/Python杀不死的子进程/stdin_pause.jpg)
+![stdin_pause](/Image/Python/hashcat使用说明/stdin_pause.jpg)
 
 如需恢复，则在交互界面中使用`[r]esume`。
 
-![restore_resume](/Image/Python/Python杀不死的子进程/stdin_resume.jpg)
+![restore_resume](/Image/Python/hashcat使用说明/stdin_resume.jpg)
 
 第二种需要事先指定会话。
 
@@ -209,7 +209,7 @@ cba153ab6ee3597e5512dae45ad0ef64:0018e7b25200:9cd91730dc8e:helloworld
 
 正常退出，在交互界面使用`[q]uit`命令，则会保存最后一次的破解状态。如果异常退出或者强制退出`Ctrl + c`，则`.restore`文件将不记录最后一次的状态。
 
-![restore_format](/Image/Python/Python杀不死的子进程/restore_format.jpg)
+![restore_format](/Image/Python/hashcat使用说明/restore_format.jpg)
 
 ```shell
 # 启动会话任务helloworld，restore文件存放目录为./restore/helloword.restore
@@ -218,7 +218,7 @@ hashcat -a 0 -m 2500 --session helloworld --restore-file-path=./restore/hellowor
 
 在界面输入命令参数`q`退出会话任务后，会将破解进度信息自动保存到restore文件中。
 
-![restore_pause](/Image/Python/Python杀不死的子进程/restore_pause.jpg)
+![restore_pause](/Image/Python/hashcat使用说明/restore_pause.jpg)
 
 存储完后，通过下面命令可以恢复绘画任务之前的状态。
 
@@ -227,7 +227,7 @@ hashcat -a 0 -m 2500 --session helloworld --restore-file-path=./restore/hellowor
 hashcat  --session helloworld --restore --restore-file-path=./restore/helloword.restore
 ```
 
-![restore_resume](/Image/Python/Python杀不死的子进程/restore_resume.jpg)
+![restore_resume](/Image/Python/hashcat使用说明/restore_resume.jpg)
 
 可以看见，任务从上一次结束的地方开始进行了！！
 

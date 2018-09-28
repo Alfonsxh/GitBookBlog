@@ -22,11 +22,11 @@ while True:
 
 处理前：
 
-![Popen_shell_process_htop](/Image/Books/Python/Python杀不死的子进程/Popen_shell_process.jpg)
+![Popen_shell_process_htop](/Image/Python/Python杀不死的子进程/Popen_shell_process.jpg)
 
 处理后：
 
-![Popen_shell_kill_process_1](/Image/Books/Python/Python杀不死的子进程/Popen_shell_kill_process_1.jpg)
+![Popen_shell_kill_process_1](/Image/Python/Python杀不死的子进程/Popen_shell_kill_process_1.jpg)
 
 ![Popen_shell_kill_process_2](/Image/Python/Python杀不死的子进程/Popen_shell_kill_process_2.jpg)
 
