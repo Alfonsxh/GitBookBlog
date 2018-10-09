@@ -15,6 +15,8 @@
 * [网络](Network/README.md)
     * [HTTPS](Network/Https.md)
 * [算法&数据结构](Algorithms/README.md)
+    * [算法笔记](Algorithms/AlgorithmsArea/README.md)
+        * [Fibonacci数列](Algorithms/AlgorithmsArea/Fibonacci.md)
     * [查找算法](Algorithms/Search.md)
     * [排序算法](Algorithms/Sort.md)
     * [最短路径](Algorithms/Shortest.md)
