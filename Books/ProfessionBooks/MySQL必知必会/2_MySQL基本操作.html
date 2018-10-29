@@ -1,0 +1,1874 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2-MySQL基本操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Alfons <alfons_xh@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3_MySQL高级操作_聚集和分组.html" />
+    
+    
+    <link rel="prev" href="1_SQL基础.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Alfons's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../Python/">
+            
+                <a href="../../../Python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../Python/Python杀不死的子进程.html">
+            
+                <a href="../../../Python/Python杀不死的子进程.html">
+            
+                    
+                    Python杀不死的子进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../../Python/hashcat使用说明.html">
+            
+                <a href="../../../Python/hashcat使用说明.html">
+            
+                    
+                    hashcat使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../../Python/推荐import模块的方式.html">
+            
+                <a href="../../../Python/推荐import模块的方式.html">
+            
+                    
+                    推荐import模块的方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../../Python/subprocess中Popen，call的区别.html">
+            
+                <a href="../../../Python/subprocess中Popen，call的区别.html">
+            
+                    
+                    subprocess中Popen，call的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../../Python/Django论坛部署.html">
+            
+                <a href="../../../Python/Django论坛部署.html">
+            
+                    
+                    Django论坛部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../../Python/Frida_基础使用手册.html">
+            
+                <a href="../../../Python/Frida_基础使用手册.html">
+            
+                    
+                    Frida_基础使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../../Python/Frida_API_不完整说明.html">
+            
+                <a href="../../../Python/Frida_API_不完整说明.html">
+            
+                    
+                    FridaAPI不完整说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../../Go/">
+            
+                <a href="../../../Go/">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../../Go/Go_Interface理解.html">
+            
+                <a href="../../../Go/Go_Interface理解.html">
+            
+                    
+                    Go Interface理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../../Linux/">
+            
+                <a href="../../../Linux/">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../../Network/">
+            
+                <a href="../../../Network/">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../../Network/Https.html">
+            
+                <a href="../../../Network/Https.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../../Algorithms/">
+            
+                <a href="../../../Algorithms/">
+            
+                    
+                    算法&数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../../Algorithms/AlgorithmsArea/">
+            
+                <a href="../../../Algorithms/AlgorithmsArea/">
+            
+                    
+                    算法笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../../../Algorithms/AlgorithmsArea/Fibonacci.html">
+            
+                <a href="../../../Algorithms/AlgorithmsArea/Fibonacci.html">
+            
+                    
+                    Fibonacci数列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../../Algorithms/Search.html">
+            
+                <a href="../../../Algorithms/Search.html">
+            
+                    
+                    查找算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../../../Algorithms/Sort.html">
+            
+                <a href="../../../Algorithms/Sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../../../Algorithms/Shortest.html">
+            
+                <a href="../../../Algorithms/Shortest.html">
+            
+                    
+                    最短路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../../../Algorithms/DP.html">
+            
+                <a href="../../../Algorithms/DP.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../../Cipher/">
+            
+                <a href="../../../Cipher/">
+            
+                    
+                    密码学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../../LeetCode/">
+            
+                <a href="../../../LeetCode/">
+            
+                    
+                    LeetCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    打怪升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../程序员的自我修养/">
+            
+                <a href="../程序员的自我修养/">
+            
+                    
+                    程序员的自我修养--链接、装载与库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../程序员的自我修养/编译.html">
+            
+                <a href="../程序员的自我修养/编译.html">
+            
+                    
+                    编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../程序员的自我修养/Elf文件.html">
+            
+                <a href="../程序员的自我修养/Elf文件.html">
+            
+                    
+                    Elf文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../流畅的Python/">
+            
+                <a href="../流畅的Python/">
+            
+                    
+                    流畅的Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../流畅的Python/第16章-协程.html">
+            
+                <a href="../流畅的Python/第16章-协程.html">
+            
+                    
+                    第16章-协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../流畅的Python/第17章-使用future处理并发.html">
+            
+                <a href="../流畅的Python/第17章-使用future处理并发.html">
+            
+                    
+                    第17章-使用future处理并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../流畅的Python/第18章-使用asyncio处理并发.html">
+            
+                <a href="../流畅的Python/第18章-使用asyncio处理并发.html">
+            
+                    
+                    第18章-使用asyncio处理并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../流畅的Python/第19章-动态属性和特性.html">
+            
+                <a href="../流畅的Python/第19章-动态属性和特性.html">
+            
+                    
+                    第19章-动态属性和特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../流畅的Python/第20章-属性描述符.html">
+            
+                <a href="../流畅的Python/第20章-属性描述符.html">
+            
+                    
+                    第20章-属性描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../流畅的Python/第21章-类元编程.html">
+            
+                <a href="../流畅的Python/第21章-类元编程.html">
+            
+                    
+                    第21章-类元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../算法图解/">
+            
+                <a href="../算法图解/">
+            
+                    
+                    算法图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../图解密码技术/">
+            
+                <a href="../图解密码技术/">
+            
+                    
+                    图解密码技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../图解密码技术/1-环游密码世界.html">
+            
+                <a href="../图解密码技术/1-环游密码世界.html">
+            
+                    
+                    1-环游密码世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../图解密码技术/2-历史上的密码.html">
+            
+                <a href="../图解密码技术/2-历史上的密码.html">
+            
+                    
+                    2-历史上的密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="../图解密码技术/3-对称密码.html">
+            
+                <a href="../图解密码技术/3-对称密码.html">
+            
+                    
+                    3-对称密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.4" data-path="../图解密码技术/4-分组密码的模式.html">
+            
+                <a href="../图解密码技术/4-分组密码的模式.html">
+            
+                    
+                    4-分组密码的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.5" data-path="../图解密码技术/5-公钥密码.html">
+            
+                <a href="../图解密码技术/5-公钥密码.html">
+            
+                    
+                    5-公钥密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.6" data-path="../图解密码技术/6-混合密码系统.html">
+            
+                <a href="../图解密码技术/6-混合密码系统.html">
+            
+                    
+                    6-混合密码系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.7" data-path="../图解密码技术/7-单向散列函数.html">
+            
+                <a href="../图解密码技术/7-单向散列函数.html">
+            
+                    
+                    7-单向散列函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.8" data-path="../图解密码技术/8-消息认证码.html">
+            
+                <a href="../图解密码技术/8-消息认证码.html">
+            
+                    
+                    8-消息认证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.9" data-path="../图解密码技术/9-数字签名.html">
+            
+                <a href="../图解密码技术/9-数字签名.html">
+            
+                    
+                    9-数字签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.10" data-path="../图解密码技术/10-证书.html">
+            
+                <a href="../图解密码技术/10-证书.html">
+            
+                    
+                    10-证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.11" data-path="../图解密码技术/11-密钥.html">
+            
+                <a href="../图解密码技术/11-密钥.html">
+            
+                    
+                    11-密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.12" data-path="../图解密码技术/12-随机数.html">
+            
+                <a href="../图解密码技术/12-随机数.html">
+            
+                    
+                    12-随机数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.13" data-path="../图解密码技术/13-PGP.html">
+            
+                <a href="../图解密码技术/13-PGP.html">
+            
+                    
+                    13-PGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.14" data-path="../图解密码技术/14-SSL与TLS.html">
+            
+                <a href="../图解密码技术/14-SSL与TLS.html">
+            
+                    
+                    14-SSL与TLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.15" data-path="../图解密码技术/15-密码技术与现实社会.html">
+            
+                <a href="../图解密码技术/15-密码技术与现实社会.html">
+            
+                    
+                    15-密码技术与现实社会
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    MySQL必知必会
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="1_SQL基础.html">
+            
+                <a href="1_SQL基础.html">
+            
+                    
+                    1-SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.5.2" data-path="2_MySQL基本操作.html">
+            
+                <a href="2_MySQL基本操作.html">
+            
+                    
+                    2-MySQL基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.3" data-path="3_MySQL高级操作_聚集和分组.html">
+            
+                <a href="3_MySQL高级操作_聚集和分组.html">
+            
+                    
+                    3-MySQL高级操作_聚集和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.4" data-path="4_MySQL高级操作_联结查询.html">
+            
+                <a href="4_MySQL高级操作_联结查询.html">
+            
+                    
+                    4-MySQL高级操作_联结查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.5" data-path="5_MySQL基础操作_增删改.html">
+            
+                <a href="5_MySQL基础操作_增删改.html">
+            
+                    
+                    5-MySQL基础操作_增删改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.6" data-path="6_MySQL使用视图.html">
+            
+                <a href="6_MySQL使用视图.html">
+            
+                    
+                    6-MySQL使用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.7" data-path="7_MySQL使用存储过程.html">
+            
+                <a href="7_MySQL使用存储过程.html">
+            
+                    
+                    7-MySQL使用存储过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../OtherBooks/">
+            
+                <a href="../../OtherBooks/">
+            
+                    
+                    陶冶情操
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../OtherBooks/见识.html">
+            
+                <a href="../../OtherBooks/见识.html">
+            
+                    
+                    见识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >2-MySQL基本操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#mysql"><b>1. </b>MySQL</a></li><ul><li><span class="title-icon "></span><a href="#mysql&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b>1.1. </b>MySQL&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8FDE;&#x63A5;"><b>1.1.1. </b>&#x8FDE;&#x63A5;</a></li><li><span class="title-icon "></span><a href="#&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;"><b>1.1.2. </b>&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#show"><b>1.1.3. </b>show</a></li><li><span class="title-icon "></span><a href="#select"><b>1.1.4. </b>select</a></li><li><span class="title-icon "></span><a href="#limit"><b>1.1.5. </b>limit</a></li><li><span class="title-icon "></span><a href="#order-by"><b>1.1.6. </b>order by</a></li><li><span class="title-icon "></span><a href="#desc"><b>1.1.7. </b>desc</a></li><li><span class="title-icon "></span><a href="#where"><b>1.1.8. </b>where</a></li></ul></ul></ul></div><a href="#mysql" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mysql"><a name="mysql" class="anchor-navigation-ex-anchor" href="#mysql"><i class="fa fa-link" aria-hidden="true"></i></a>1. MySQL</h1>
+<p>DBMS&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;</p>
+<ul>
+<li>&#x4E00;&#x7C7B;&#x4E3A;&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;DBMS&#xFF0C;&#x5305;&#x62EC; <code>Microsoft Access</code> &#x548C; <code>FileMaker</code>&#x7528;&#x4E8E;&#x684C;&#x9762;&#x7528;&#x9014;&#x3002;</li>
+<li>&#x4E00;&#x7C7B;&#x4E3A;&#x57FA;&#x4E8E;&#x5BA2;&#x6237;&#x673A;-&#x670D;&#x52A1;&#x5668;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x5206;&#x662F;&#x8D1F;&#x8D23;&#x6240;&#x6709;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x548C;&#x5904;&#x7406;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x8FD0;&#x884C;&#x5728;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x3002;&#x5173;&#x4E8E;&#x6570;&#x636E;&#x7684;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x548C;&#x66F4;&#x65B0;&#x7684;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x90FD;&#x662F;&#x7531;&#x670D;&#x52A1;&#x5668;&#x8F6F;&#x4EF6;&#x5B8C;&#x6210;&#x3002;&#x5BA2;&#x6237;&#x673A;&#x662F;&#x4E0E;&#x7528;&#x6237;&#x6253;&#x4EA4;&#x9053;&#x7684;&#x8F6F;&#x4EF6;&#x3002;</li>
+</ul>
+<h2 id="mysql&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="mysql&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#mysql&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. MySQL&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x8FDE;&#x63A5;"><a name="&#x8FDE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x8FDE;&#x63A5;</h3>
+<p>&#x672C;&#x5730;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8F93;&#x5165;<code>mysql -uusername -ppassword</code>&#xFF0C;<code>-u</code>&#x540E;&#x9762;&#x4E3A;&#x7528;&#x6237;&#x5BC6;&#x7801;&#xFF0C;<code>-p</code>&#x540E;&#x9762;&#x4E3A;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E24;&#x6B65;&#x64CD;&#x4F5C;&#x3002;</p>
+<ul>
+<li>&#x5F00;&#x542F;&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;</li>
+</ul>
+<pre><code class="lang-sql">MariaDB [(none)]&gt; grant all on *.* to username@&apos;%&apos; identified by &apos;password&apos;;
+MariaDB [(none)]&gt; flush privileges;
+MariaDB [(none)]&gt; exit
+</code></pre>
+<ul>
+<li>&#x5F00;&#x542F;&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;3306&#x7AEF;&#x53E3;</li>
+</ul>
+<pre><code class="lang-shell">&gt; sudo iptables -I INPUT 4 -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT
+</code></pre>
+<h3 id="&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;"><a name="&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;</h3>
+<p>&#x5728;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F7F;&#x7528;<code>USE</code>&#x5173;&#x952E;&#x5B57;&#x5B8C;&#x6210;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [(none)]&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| mysql              |
+| test               |
++--------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [(none)]&gt; use test;
+Database changed
+</code></pre>
+<p>&#x5C55;&#x793A;&#x6570;&#x636E;&#x5E93;&#x4E0B;&#x7684;&#x8868;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; show tables;
++----------------+
+| Tables_in_test |
++----------------+
+| customers      |
+| orderitems     |
+| orders         |
+| productnotes   |
+| products       |
+| vendors        |
++----------------+
+6 rows in set (0.00 sec)
+</code></pre>
+<h3 id="show"><a name="show" class="anchor-navigation-ex-anchor" href="#show"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. show</h3>
+<p><code>show</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x4E0B;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3001;&#x8868;&#x3001;&#x5217;&#x3001;&#x72B6;&#x6001;&#x7B49;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; show columns from customers;    # &#x67E5;&#x770B;customers&#x8868;&#x4E2D;&#x7684;&#x5217;&#x4FE1;&#x606F;
++--------------+-----------+------+-----+---------+----------------+
+| Field        | Type      | Null | Key | Default | Extra          |
++--------------+-----------+------+-----+---------+----------------+
+| cust_id      | int(11)   | NO   | PRI | NULL    | auto_increment |
+| cust_name    | char(50)  | NO   |     | NULL    |                |
+| cust_address | char(50)  | YES  |     | NULL    |                |
+| cust_city    | char(50)  | YES  |     | NULL    |                |
+| cust_state   | char(5)   | YES  |     | NULL    |                |
+| cust_zip     | char(10)  | YES  |     | NULL    |                |
+| cust_country | char(50)  | YES  |     | NULL    |                |
+| cust_contact | char(50)  | YES  |     | NULL    |                |
+| cust_email   | char(255) | YES  |     | NULL    |                |
++--------------+-----------+------+-----+---------+----------------+
+9 rows in set (0.00 sec)
+
+MariaDB [test]&gt; show create table customers;  # &#x67E5;&#x770B;&#x521B;&#x5EFA;customers&#x8868;&#x65F6;&#x7684;&#x547D;&#x4EE4;
++-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table     | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
++-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| customers | CREATE TABLE `customers` (
+  `cust_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cust_name` char(50) NOT NULL,
+  `cust_address` char(50) DEFAULT NULL,
+  `cust_city` char(50) DEFAULT NULL,
+  `cust_state` char(5) DEFAULT NULL,
+  `cust_zip` char(10) DEFAULT NULL,
+  `cust_country` char(50) DEFAULT NULL,
+  `cust_contact` char(50) DEFAULT NULL,
+  `cust_email` char(255) DEFAULT NULL,
+  PRIMARY KEY (`cust_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10006 DEFAULT CHARSET=latin1 |
++-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+</code></pre>
+<h3 id="select"><a name="select" class="anchor-navigation-ex-anchor" href="#select"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. select</h3>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x7528;select&#x547D;&#x4EE4;&#x68C0;&#x7D22;&#x8868;&#x6570;&#x636E;&#xFF0C;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x7ED9;&#x51FA;&#x4E24;&#x6761;&#x4FE1;&#x606F;&#x2014;&#x2014;&#x2014;&#x2014;&#x60F3;&#x8981;&#x4EC0;&#x4E48;&#xFF0C;&#x4EE5;&#x53CA;&#x4ECE;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#x9009;&#x62E9;&#x3002;</p>
+<h4 id="&#x7B80;&#x5355;&#x7684;select&#x547D;&#x4EE4;"><a name="&#x7B80;&#x5355;&#x7684;select&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x5355;&#x7684;select&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7B80;&#x5355;&#x7684;select&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x7B80;&#x5355;&#x7684;select&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x5355;&#x7684;select&#x547D;&#x4EE4;</h4>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id, prod_name, prod_price from products;  # &#x9009;&#x62E9;&#x591A;&#x4E2A;&#x5217;
++---------+----------------+------------+
+| prod_id | prod_name      | prod_price |
++---------+----------------+------------+
+| ANV01   | .5 ton anvil   |       5.99 |
+| ANV02   | 1 ton anvil    |       9.99 |
+| ANV03   | 2 ton anvil    |      14.99 |
+| DTNTR   | Detonator      |      13.00 |
+| FB      | Bird seed      |      10.00 |
+| FC      | Carrots        |       2.50 |
+| FU1     | Fuses          |       3.42 |
+| JP1000  | JetPack 1000   |      35.00 |
+| JP2000  | JetPack 2000   |      55.00 |
+| OL1     | Oil can        |       8.99 |
+| SAFE    | Safe           |      50.00 |
+| SLING   | Sling          |       4.49 |
+| TNT1    | TNT (1 stick)  |       2.50 |
+| TNT2    | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+14 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select * from products; # &#x9009;&#x62E9;&#x6240;&#x6709;&#x7684;&#x884C;
++---------+---------+----------------+------------+----------------------------------------------------------------+
+| prod_id | vend_id | prod_name      | prod_price | prod_desc                                                      |
++---------+---------+----------------+------------+----------------------------------------------------------------+
+| ANV01   |    1001 | .5 ton anvil   |       5.99 | .5 ton anvil, black, complete with handy hook                  |
+| ANV02   |    1001 | 1 ton anvil    |       9.99 | 1 ton anvil, black, complete with handy hook and carrying case |
+| ANV03   |    1001 | 2 ton anvil    |      14.99 | 2 ton anvil, black, complete with handy hook and carrying case |
+| DTNTR   |    1003 | Detonator      |      13.00 | Detonator (plunger powered), fuses not included                |
+| FB      |    1003 | Bird seed      |      10.00 | Large bag (suitable for road runners)                          |
+| FC      |    1003 | Carrots        |       2.50 | Carrots (rabbit hunting season only)                           |
+| FU1     |    1002 | Fuses          |       3.42 | 1 dozen, extra long                                            |
+| JP1000  |    1005 | JetPack 1000   |      35.00 | JetPack 1000, intended for single use                          |
+| JP2000  |    1005 | JetPack 2000   |      55.00 | JetPack 2000, multi-use                                        |
+| OL1     |    1002 | Oil can        |       8.99 | Oil can, red                                                   |
+| SAFE    |    1003 | Safe           |      50.00 | Safe with combination lock                                     |
+| SLING   |    1003 | Sling          |       4.49 | Sling, one size fits all                                       |
+| TNT1    |    1003 | TNT (1 stick)  |       2.50 | TNT, red, single stick                                         |
+| TNT2    |    1003 | TNT (5 sticks) |      10.00 | TNT, red, pack of 10 sticks                                    |
++---------+---------+----------------+------------+----------------------------------------------------------------+
+14 rows in set (0.00 sec)
+</code></pre>
+<h4 id="&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x884C;"><a name="&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x884C;" class="plugin-anchor" href="#&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x884C;</h4>
+<p><code>distinct</code>&#x5173;&#x952E;&#x5B57;&#x6307;&#x793A;MySQL&#x53EA;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x503C;&#x3002;&#x5B83;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x5217;&#x90FD;&#x9002;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x7ED9;&#x51FA;<code>select distinct vend_id, prod_price from products;</code>&#x8FD9;&#x6837;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x9664;&#x975E;&#x662F;&#x6307;&#x5B9A;&#x7684;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x5426;&#x5219;&#x6240;&#x6709;&#x884C;&#x90FD;&#x5C06;&#x88AB;&#x68C0;&#x7D22;&#x51FA;&#x6765;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select distinct vend_id from products;
++---------+
+| vend_id |
++---------+
+|    1001 |
+|    1002 |
+|    1003 |
+|    1005 |
++---------+
+4 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select distinct vend_id, prod_price from products;
++---------+------------+
+| vend_id | prod_price |
++---------+------------+
+|    1001 |       5.99 |
+|    1001 |       9.99 |
+|    1001 |      14.99 |
+|    1003 |      13.00 |
+|    1003 |      10.00 |
+|    1003 |       2.50 |
+|    1002 |       3.42 |
+|    1005 |      35.00 |
+|    1005 |      55.00 |
+|    1002 |       8.99 |
+|    1003 |      50.00 |
+|    1003 |       4.49 |
++---------+------------+
+12 rows in set (0.00 sec)
+</code></pre>
+<h3 id="limit"><a name="limit" class="anchor-navigation-ex-anchor" href="#limit"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. limit</h3>
+<p><code>limit</code>&#x5173;&#x952E;&#x5B57;&#x80FD;&#x591F;&#x9650;&#x5236;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x6570;&#x91CF;&#xFF0C;&#x4F7F;&#x8FD4;&#x56DE;&#x503C;&#x53EA;&#x8FD4;&#x56DE;&#x89C4;&#x5B9A;&#x7684;&#x884C;&#x3002;</p>
+<pre><code class="lang-Sql">MariaDB [test]&gt; select * from products limit 5;  # &#x9650;&#x5236;&#x663E;&#x793A;5&#x884C;&#x7684;&#x5185;&#x5BB9;
++---------+---------+--------------+------------+----------------------------------------------------------------+
+| prod_id | vend_id | prod_name    | prod_price | prod_desc                                                      |
++---------+---------+--------------+------------+----------------------------------------------------------------+
+| ANV01   |    1001 | .5 ton anvil |       5.99 | .5 ton anvil, black, complete with handy hook                  |
+| ANV02   |    1001 | 1 ton anvil  |       9.99 | 1 ton anvil, black, complete with handy hook and carrying case |
+| ANV03   |    1001 | 2 ton anvil  |      14.99 | 2 ton anvil, black, complete with handy hook and carrying case |
+| DTNTR   |    1003 | Detonator    |      13.00 | Detonator (plunger powered), fuses not included                |
+| FB      |    1003 | Bird seed    |      10.00 | Large bag (suitable for road runners)                          |
++---------+---------+--------------+------------+----------------------------------------------------------------+
+5 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select * from products limit 5,5;  # &#x9650;&#x5236;&#x663E;&#x793A;&#x4ECE;&#x7B2C;5&#x884C;&#x8D77;(&#x5305;&#x62EC;&#x7B2C;5&#x884C;)&#x4E4B;&#x540E;5&#x884C;&#x7684;&#x5185;&#x5BB9;
++---------+---------+--------------+------------+---------------------------------------+
+| prod_id | vend_id | prod_name    | prod_price | prod_desc                             |
++---------+---------+--------------+------------+---------------------------------------+
+| FC      |    1003 | Carrots      |       2.50 | Carrots (rabbit hunting season only)  |
+| FU1     |    1002 | Fuses        |       3.42 | 1 dozen, extra long                   |
+| JP1000  |    1005 | JetPack 1000 |      35.00 | JetPack 1000, intended for single use |
+| JP2000  |    1005 | JetPack 2000 |      55.00 | JetPack 2000, multi-use               |
+| OL1     |    1002 | Oil can      |       8.99 | Oil can, red                          |
++---------+---------+--------------+------------+---------------------------------------+
+5 rows in set (0.00 sec)
+</code></pre>
+<h4 id="&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x8868;&#x540D;"><a name="&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x8868;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x8868;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x8868;&#x540D;" class="plugin-anchor" href="#&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x8868;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x8868;&#x540D;</h4>
+<pre><code class="lang-sql">MariaDB [test]&gt; select products.prod_name from test.products;
++----------------+
+| prod_name      |
++----------------+
+| .5 ton anvil   |
+| 1 ton anvil    |
+| 2 ton anvil    |
+| Detonator      |
+| Bird seed      |
+| Carrots        |
+| Fuses          |
+| JetPack 1000   |
+| JetPack 2000   |
+| Oil can        |
+| Safe           |
+| Sling          |
+| TNT (1 stick)  |
+| TNT (5 sticks) |
++----------------+
+14 rows in set (0.00 sec)
+</code></pre>
+<h3 id="order-by"><a name="order-by" class="anchor-navigation-ex-anchor" href="#order-by"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. order by</h3>
+<p><code>order by</code>&#x5173;&#x952E;&#x5B57;&#x7528;&#x4E8E;&#x5BF9;&#x9009;&#x62E9;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x9ED8;&#x8BA4;&#x6392;&#x5E8F;&#x3001;&#x9009;&#x62E9;&#x975E;&#x9009;&#x62E9;&#x7684;&#x5217;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3001;&#x9009;&#x62E9;&#x591A;&#x4E2A;&#x5217;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_name from products limit 6; # &#x9ED8;&#x8BA4;&#x6392;&#x5E8F;
++--------------+
+| prod_name    |
++--------------+
+| .5 ton anvil |
+| 1 ton anvil  |
+| 2 ton anvil  |
+| Detonator    |
+| Bird seed    |
+| Carrots      |
++--------------+
+6 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_name from products order by prod_name limit 6;  # &#x9009;&#x62E9;&#x9009;&#x62E9;&#x7684;&#x5217;&#x6392;&#x5E8F;
++--------------+
+| prod_name    |
++--------------+
+| .5 ton anvil |
+| 1 ton anvil  |
+| 2 ton anvil  |
+| Bird seed    |
+| Carrots      |
+| Detonator    |
++--------------+
+6 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_name from products order by vend_id limit 6; # &#x9009;&#x62E9;&#x975E;&#x9009;&#x62E9;&#x7684;&#x5217;&#x6392;&#x5E8F;
++---------------+
+| prod_name     |
++---------------+
+| .5 ton anvil  |
+| 1 ton anvil   |
+| 2 ton anvil   |
+| Fuses         |
+| Oil can       |
+| TNT (1 stick) |
++---------------+
+6 rows in set (0.00 sec)
+</code></pre>
+<p>&#x5728;&#x6309;&#x7167;&#x591A;&#x4E2A;&#x5217;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x65F6;&#xFF0C;&#x6392;&#x5E8F;&#x5B8C;&#x5168;&#x6309;&#x7167;&#x6240;&#x89C4;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x3002;&#x4F8B;&#x5982;&#x5728;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x4EC5;&#x5728;&#x5B58;&#x5728;&#x591A;&#x884C;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;<code>prod_price</code>&#x503C;&#x624D;&#x5BF9;<code>prod_name</code>&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x5982;&#x679C;<code>prod_price</code>&#x5217;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x503C;&#x90FD;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x6309;&#x7167;<code>prod_name</code>&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id, prod_price, prod_name from products order by prod_price,prod_name limit 6; # &#x9009;&#x62E9;&#x591A;&#x4E2A;&#x5217;&#x8FDB;&#x884C;&#x6392;&#x5E8F;
++---------+------------+---------------+
+| prod_id | prod_price | prod_name     |
++---------+------------+---------------+
+| FC      |       2.50 | Carrots       |
+| TNT1    |       2.50 | TNT (1 stick) |
+| FU1     |       3.42 | Fuses         |
+| SLING   |       4.49 | Sling         |
+| ANV01   |       5.99 | .5 ton anvil  |
+| OL1     |       8.99 | Oil can       |
++---------+------------+---------------+
+6 rows in set (0.00 sec)
+</code></pre>
+<h3 id="desc"><a name="desc" class="anchor-navigation-ex-anchor" href="#desc"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.7. desc</h3>
+<p>MySQL&#x9ED8;&#x8BA4;&#x7684;&#x6392;&#x5E8F;&#x65B9;&#x5F0F;&#x4E3A;&#x5347;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;<code>desc</code>&#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x7684;&#x65B9;&#x5411;&#x4E3A;&#x9006;&#x5E8F;&#x3002;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;<code>desc</code>&#x53EA;&#x5E94;&#x7528;&#x5230;&#x76F4;&#x63A5;&#x4F4D;&#x4E8E;&#x5176;&#x524D;&#x9762;&#x7684;&#x5217;&#x540D;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id, prod_price, prod_name from products order by prod_price desc, prod_name limit 6;  # &#x6309;&#x7167;prod_price&#x5217;&#x7684;&#x9006;&#x5E8F;&#x6392;&#x5217;
++---------+------------+--------------+
+| prod_id | prod_price | prod_name    |
++---------+------------+--------------+
+| JP2000  |      55.00 | JetPack 2000 |
+| SAFE    |      50.00 | Safe         |
+| JP1000  |      35.00 | JetPack 1000 |
+| ANV03   |      14.99 | 2 ton anvil  |
+| DTNTR   |      13.00 | Detonator    |
+| FB      |      10.00 | Bird seed    |
++---------+------------+--------------+
+6 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_id, prod_price, prod_name from products order by prod_price, prod_name desc limit 6;  # &#x6309;&#x7167;prod_price&#x6B63;&#x5E8F;&#x6392;&#x5217;&#x540E;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;prod_name&#x7684;&#x9006;&#x5E8F;&#x6392;&#x5E8F;
++---------+------------+---------------+
+| prod_id | prod_price | prod_name     |
++---------+------------+---------------+
+| TNT1    |       2.50 | TNT (1 stick) |
+| FC      |       2.50 | Carrots       |
+| FU1     |       3.42 | Fuses         |
+| SLING   |       4.49 | Sling         |
+| ANV01   |       5.99 | .5 ton anvil  |
+| OL1     |       8.99 | Oil can       |
++---------+------------+---------------+
+6 rows in set (0.00 sec)
+</code></pre>
+<h3 id="where"><a name="where" class="anchor-navigation-ex-anchor" href="#where"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.8. where</h3>
+<p><code>where</code>&#x5173;&#x952E;&#x5B57;&#x4E3A;&#x68C0;&#x7D22;&#x7684;&#x6570;&#x636E;&#x8BBE;&#x7F6E;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x3002;<code>where</code>&#x7684;&#x4F4D;&#x7F6E;&#x5E94;&#x5F53;&#x4F4D;&#x4E8E;<code>order by</code>&#x5B50;&#x53E5;&#x7684;&#x540E;&#x9762;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x64CD;&#x4F5C;&#x7B26;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">=</td>
+<td style="text-align:center">&#x7B49;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;&gt;</td>
+<td style="text-align:center">&#x4E0D;&#x7B49;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">!=</td>
+<td style="text-align:center">&#x4E0D;&#x7B49;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">&#x5C0F;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;=</td>
+<td style="text-align:center">&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">&#x5927;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;=</td>
+<td style="text-align:center">&#x5927;&#x4E8E;&#x7B49;&#x4E8E;</td>
+</tr>
+<tr>
+<td style="text-align:center">bwtween</td>
+<td style="text-align:center">&#x5728;&#x6307;&#x5B9A;&#x4E24;&#x503C;&#x4E4B;&#x95F4;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x7B80;&#x5355;&#x8FC7;&#x6EE4;"><a name="&#x7B80;&#x5355;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x5355;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7B80;&#x5355;&#x8FC7;&#x6EE4;" class="plugin-anchor" href="#&#x7B80;&#x5355;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x5355;&#x8FC7;&#x6EE4;</h4>
+<p>&#x5355;&#x5F15;&#x53F7;&#x6216;&#x53CC;&#x5F15;&#x53F7;&#x7528;&#x6765;&#x9650;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F8B;&#x5982;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;&#x6216;&#x53CC;&#x5F15;&#x53F7;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_name,prod_price from products where prod_name = &quot;fuses&quot;;    # &#x5B57;&#x7B26;&#x4E32;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;
++-----------+------------+
+| prod_name | prod_price |
++-----------+------------+
+| Fuses     |       3.42 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_name,prod_price from products where vend_id != 1003;
++--------------+------------+
+| prod_name    | prod_price |
++--------------+------------+
+| .5 ton anvil |       5.99 |
+| 1 ton anvil  |       9.99 |
+| 2 ton anvil  |      14.99 |
+| Fuses        |       3.42 |
+| JetPack 1000 |      35.00 |
+| JetPack 2000 |      55.00 |
+| Oil can      |       8.99 |
++--------------+------------+
+7 rows in set (0.00 sec)
+</code></pre>
+<h4 id="&#x8FDB;&#x9636;&#x8FC7;&#x6EE4;"><a name="&#x8FDB;&#x9636;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x9636;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FDB;&#x9636;&#x8FC7;&#x6EE4;" class="plugin-anchor" href="#&#x8FDB;&#x9636;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x9636;&#x8FC7;&#x6EE4;</h4>
+<p>MySQL&#x5141;&#x8BB8;&#x7ED9;&#x51FA;&#x591A;&#x4E2A;where&#x5B50;&#x53E5;&#xFF0C;&#x4EE5;<code>and</code>&#x5B50;&#x53E5;&#x6216;&#x8005;<code>or</code>&#x5B50;&#x53E5;&#x7684;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x3002;</p>
+<p><code>and&#x64CD;&#x4F5C;&#x7B26;</code>&#x7ED9;where&#x5B50;&#x53E5;&#x9644;&#x52A0;&#x6761;&#x4EF6;&#x3002;</p>
+<p><code>or&#x64CD;&#x4F5C;&#x7B26;</code>&#x6307;&#x793A;MySQL&#x68C0;&#x7D22;&#x5339;&#x914D;&#x4EFB;&#x4E00;&#x6761;&#x4EF6;&#x7684;&#x884C;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select vend_id,prod_name,prod_price from products where vend_id = 1003 and prod_price &lt;= 10;
++---------+----------------+------------+
+| vend_id | prod_name      | prod_price |
++---------+----------------+------------+
+|    1003 | Bird seed      |      10.00 |
+|    1003 | Carrots        |       2.50 |
+|    1003 | Sling          |       4.49 |
+|    1003 | TNT (1 stick)  |       2.50 |
+|    1003 | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+5 rows in set (0.01 sec)
+
+MariaDB [test]&gt; select vend_id, prod_name,prod_price from products where vend_id = 1003 or prod_price &lt;= 10;
++---------+----------------+------------+
+| vend_id | prod_name      | prod_price |
++---------+----------------+------------+
+|    1001 | .5 ton anvil   |       5.99 |
+|    1001 | 1 ton anvil    |       9.99 |
+|    1003 | Detonator      |      13.00 |
+|    1003 | Bird seed      |      10.00 |
+|    1003 | Carrots        |       2.50 |
+|    1002 | Fuses          |       3.42 |
+|    1002 | Oil can        |       8.99 |
+|    1003 | Safe           |      50.00 |
+|    1003 | Sling          |       4.49 |
+|    1003 | TNT (1 stick)  |       2.50 |
+|    1003 | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+11 rows in set (0.00 sec)
+</code></pre>
+<p><code>()&#x64CD;&#x4F5C;&#x7B26;</code>&#x5141;&#x8BB8;&#x4E24;&#x8005;&#x7ED3;&#x5408;&#x4EE5;&#x8FDB;&#x884C;&#x590D;&#x6742;&#x548C;&#x9AD8;&#x7EA7;&#x7684;&#x8FC7;&#x6EE4;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, prod_name,prod_price from products where vend_id = 1003 or vend_id = 1002 and  prod_price &lt;= 10;
++---------+----------------+------------+
+| vend_id | prod_name      | prod_price |
++---------+----------------+------------+
+|    1003 | Detonator      |      13.00 |
+|    1003 | Bird seed      |      10.00 |
+|    1003 | Carrots        |       2.50 |
+|    1002 | Fuses          |       3.42 |
+|    1002 | Oil can        |       8.99 |
+|    1003 | Safe           |      50.00 |
+|    1003 | Sling          |       4.49 |
+|    1003 | TNT (1 stick)  |       2.50 |
+|    1003 | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+9 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select vend_id, prod_name,prod_price from products where (vend_id = 1003 or vend_id = 1002) and  prod_price &lt;= 10;
++---------+----------------+------------+
+| vend_id | prod_name      | prod_price |
++---------+----------------+------------+
+|    1003 | Bird seed      |      10.00 |
+|    1003 | Carrots        |       2.50 |
+|    1002 | Fuses          |       3.42 |
+|    1002 | Oil can        |       8.99 |
+|    1003 | Sling          |       4.49 |
+|    1003 | TNT (1 stick)  |       2.50 |
+|    1003 | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+7 rows in set (0.00 sec)
+</code></pre>
+<p><code>in&#x64CD;&#x4F5C;&#x7B26;</code>&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x8303;&#x56F4;&#xFF0C;&#x8303;&#x56F4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6761;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;<code>or&#x64CD;&#x4F5C;&#x7B26;</code>&#xFF0C;&#x4F46;&#x6BD4;&#x5B83;&#x66F4;&#x6E05;&#x695A;&#x4E14;&#x76F4;&#x89C2;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, prod_name,prod_price from products where vend_id = 1003 or vend_id = 1002;
++---------+----------------+------------+
+| vend_id | prod_name      | prod_price |
++---------+----------------+------------+
+|    1003 | Detonator      |      13.00 |
+|    1003 | Bird seed      |      10.00 |
+|    1003 | Carrots        |       2.50 |
+|    1002 | Fuses          |       3.42 |
+|    1002 | Oil can        |       8.99 |
+|    1003 | Safe           |      50.00 |
+|    1003 | Sling          |       4.49 |
+|    1003 | TNT (1 stick)  |       2.50 |
+|    1003 | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+9 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select vend_id, prod_name,prod_price from products where vend_id in (1002, 1003);
++---------+----------------+------------+
+| vend_id | prod_name      | prod_price |
++---------+----------------+------------+
+|    1003 | Detonator      |      13.00 |
+|    1003 | Bird seed      |      10.00 |
+|    1003 | Carrots        |       2.50 |
+|    1002 | Fuses          |       3.42 |
+|    1002 | Oil can        |       8.99 |
+|    1003 | Safe           |      50.00 |
+|    1003 | Sling          |       4.49 |
+|    1003 | TNT (1 stick)  |       2.50 |
+|    1003 | TNT (5 sticks) |      10.00 |
++---------+----------------+------------+
+9 rows in set (0.00 sec)
+</code></pre>
+<p><code>not&#x64CD;&#x4F5C;&#x7B26;</code>&#x5426;&#x5B9A;&#x5B83;&#x4E4B;&#x540E;&#x6240;&#x8DDF;&#x7684;&#x4EFB;&#x4F55;&#x6761;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, prod_name,prod_price from products where vend_id not in (1002, 1003);
++---------+--------------+------------+
+| vend_id | prod_name    | prod_price |
++---------+--------------+------------+
+|    1001 | .5 ton anvil |       5.99 |
+|    1001 | 1 ton anvil  |       9.99 |
+|    1001 | 2 ton anvil  |      14.99 |
+|    1005 | JetPack 1000 |      35.00 |
+|    1005 | JetPack 2000 |      55.00 |
++---------+--------------+------------+
+5 rows in set (0.00 sec)
+</code></pre>
+<h4 id="&#x901A;&#x914D;&#x7B26;&#x8FC7;&#x6EE4;"><a name="&#x901A;&#x914D;&#x7B26;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x914D;&#x7B26;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x914D;&#x7B26;&#x8FC7;&#x6EE4;" class="plugin-anchor" href="#&#x901A;&#x914D;&#x7B26;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x914D;&#x7B26;&#x8FC7;&#x6EE4;</h4>
+<p><code>like&#x64CD;&#x4F5C;&#x7B26;</code>&#x76EE;&#x7684;&#x662F;&#x5728;&#x641C;&#x7D22;&#x5B50;&#x53E5;&#x4E2D;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;&#x3002;</p>
+<p><code>%&#x901A;&#x914D;&#x7B26;</code>&#x8868;&#x793A;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x51FA;&#x73B0;&#x4EFB;&#x610F;&#x6B21;&#x6570;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id,prod_name from products where prod_name like &quot;tpa%&quot;; # &#x68C0;&#x7D22;&#x4EE5;tpa&#x5F00;&#x5934;&#x7684;&#x5B57;&#x6BB5;
+Empty set (0.00 sec)
+
+MariaDB [test]&gt; select prod_id,prod_name from products where prod_name like &quot;%tpa%&quot;;    # &#x68C0;&#x7D22;&#x4E2D;&#x95F4;&#x542B;&#x6709;tpa&#x7684;&#x5B57;&#x6BB5;
++---------+--------------+
+| prod_id | prod_name    |
++---------+--------------+
+| JP1000  | JetPack 1000 |
+| JP2000  | JetPack 2000 |
++---------+--------------+
+2 rows in set (0.00 sec)
+</code></pre>
+<p><code>_&#x901A;&#x914D;&#x7B26;</code>&#x53EA;&#x5339;&#x914D;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#x800C;&#x4E0D;&#x662F;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id,prod_name from products where prod_name like &quot;_et%&quot;; # &#x5339;&#x914D;&#x4EE5;_et&#x5F00;&#x5934;&#x7684;&#x5B57;&#x7B26;
++---------+--------------+
+| prod_id | prod_name    |
++---------+--------------+
+| DTNTR   | Detonator    |
+| JP1000  | JetPack 1000 |
+| JP2000  | JetPack 2000 |
++---------+--------------+
+3 rows in set (0.00 sec)
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x914D;&#x7B26;&#x641C;&#x7D22;&#x7684;&#x5904;&#x7406;&#x4E00;&#x822C;&#x8981;&#x6BD4;&#x5176;&#x4ED6;&#x641C;&#x7D22;&#x6240;&#x82B1;&#x7684;&#x65F6;&#x95F4;&#x66F4;&#x957F;&#x3002;</li>
+<li>&#x4E0D;&#x8981;&#x8FC7;&#x5EA6;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;&#x3002;&#x5982;&#x679C;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7B26;&#x80FD;&#x8FBE;&#x5230;&#x76F8;&#x540C;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7B26;&#x3002;</li>
+<li>&#x5C3D;&#x53EF;&#x80FD;&#x4E0D;&#x5C06;&#x901A;&#x914D;&#x7B26;&#x653E;&#x7F6E;&#x5728;&#x641C;&#x7D22;&#x6A21;&#x5F0F;&#x7684;&#x5F00;&#x59CB;&#x5904;&#x3002;</li>
+<li>&#x6CE8;&#x610F;&#x901A;&#x914D;&#x7B26;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x653E;&#x7F6E;&#x4E0D;&#x5F53;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#x60F3;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+</ul>
+</blockquote>
+<h4 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;"><a name="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;" class="plugin-anchor" href="#&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;</h4>
+<p><code>regexp&#x64CD;&#x4F5C;&#x7B26;</code>&#x7528;&#x6765;&#x8868;&#x793A;&#x901A;&#x8FC7;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x3002;</p>
+<p><code>regexp</code>&#x548C;<code>like</code>&#x6709;&#x6240;&#x533A;&#x522B;&#xFF0C;<code>like</code>&#x662F;&#x5339;&#x914D;&#x5B8C;&#x6574;&#x7684;&#x6570;&#x636E;&#xFF0C;<code>regexp</code>&#x5339;&#x914D;&#x7684;&#x662F;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;&#x4F8B;&#x5982;&#x5F53;&#x5339;&#x914D; <strong>JetPack 1000</strong> &#x65F6;&#xFF0C; <strong>like jetpack</strong> &#x5339;&#x914D;&#x7ED3;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;<strong>like jetpack%</strong> &#x624D;&#x80FD;&#x5339;&#x914D;&#x5230;&#x3002;&#x800C; <strong>regexp &apos;jetpack&apos;</strong> &#x80FD;&#x591F;&#x5339;&#x914D;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id,prod_name from products where prod_name like &quot;jet&quot;;
+Empty set (0.00 sec)
+
+MariaDB [test]&gt; select prod_id,prod_name from products where prod_name like &quot;jet%&quot;;
++---------+--------------+
+| prod_id | prod_name    |
++---------+--------------+
+| JP1000  | JetPack 1000 |
+| JP2000  | JetPack 2000 |
++---------+--------------+
+2 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_id,prod_name from products where prod_name regexp &quot;jet&quot;;
++---------+--------------+
+| prod_id | prod_name    |
++---------+--------------+
+| JP1000  | JetPack 1000 |
+| JP2000  | JetPack 2000 |
++---------+--------------+
+2 rows in set (0.00 sec)
+</code></pre>
+<p>&#x6B63;&#x5219;&#x4F7F;&#x7528;<code>|&#x7B26;&#x53F7;</code>&#x8FDB;&#x884C;or&#x5339;&#x914D;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id,prod_name from products where prod_name regexp &quot;1000|2000&quot;;
++---------+--------------+
+| prod_id | prod_name    |
++---------+--------------+
+| JP1000  | JetPack 1000 |
+| JP2000  | JetPack 2000 |
++---------+--------------+
+2 rows in set (0.00 sec)
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>[]</code>&#x8FDB;&#x884C;&#x8303;&#x56F4;&#x5339;&#x914D;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_id,prod_name from products where prod_id regexp &quot;anv0[1-9]&quot;;
++---------+--------------+
+| prod_id | prod_name    |
++---------+--------------+
+| ANV01   | .5 ton anvil |
+| ANV02   | 1 ton anvil  |
+| ANV03   | 2 ton anvil  |
++---------+--------------+
+3 rows in set (0.00 sec)
+</code></pre>
+<p>&#x5339;&#x914D;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;<code>\\&#x53CD;&#x659C;&#x6760;</code>&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;&#x8FD9;&#x91CC;&#x4E0D;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;<code>\</code>&#x7684;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#xFF0C;MySQL&#x81EA;&#x5DF1;&#x89E3;&#x91CA;&#x4E00;&#x4E2A;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5E93;&#x89E3;&#x91CA;&#x53E6;&#x4E00;&#x4E2A;&#x3002;</p>
+<pre><code class="lang-sql">MariaDB [test]&gt; select * from vendors where vend_name regexp &quot;\\.&quot;;
++---------+--------------+-----------------+-----------+------------+----------+--------------+
+| vend_id | vend_name    | vend_address    | vend_city | vend_state | vend_zip | vend_country |
++---------+--------------+-----------------+-----------+------------+----------+--------------+
+|    1004 | Furball Inc. | 1000 5th Avenue | New York  | NY         | 11111    | USA          |
++---------+--------------+-----------------+-----------+------------+----------+--------------+
+1 row in set (0.01 sec)
+</code></pre>
+<p>&#x5B57;&#x7B26;&#x7C7B;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x7C7B;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">[:alnum:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;([a-zA-Z0-9])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:alpha:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x5B57;&#x7B26;([a-zA-Z])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:blank:]</td>
+<td style="text-align:left">&#x7A7A;&#x683C;&#x548C;&#x5236;&#x8868;([\\t])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:cntrl:]</td>
+<td style="text-align:left">ASCII&#x63A7;&#x5236;&#x5B57;&#x7B26;(ASCII 0&#x5230;31&#x548C;127)</td>
+</tr>
+<tr>
+<td style="text-align:center">[:digit:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x6570;&#x5B57;([0-9])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:xdigit:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5B57;([a-fA-F0-9])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:print:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x53EF;&#x6253;&#x5370;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:center">[:graph:]</td>
+<td style="text-align:left">&#x4E0E;[:print:]&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:center">[:lower:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;([a-z])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:upper:]</td>
+<td style="text-align:left">&#x4EFB;&#x610F;&#x5927;&#x5199;&#x5B57;&#x6BCD;([A-Z])</td>
+</tr>
+<tr>
+<td style="text-align:center">[:punct:]</td>
+<td style="text-align:left">&#x65E2;&#x4E0D;&#x5728;[:alnum:]&#x53C8;&#x4E0D;&#x5728;[:cntrl:]&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:center">[:space:]</td>
+<td style="text-align:left">&#x5305;&#x62EC;&#x7A7A;&#x683C;&#x5728;&#x5185;&#x7684;&#x4EFB;&#x610F;&#x7A7A;&#x767D;&#x5B57;&#x7B26;([\\f\\n\\r\\t\\v])</td>
+</tr>
+</tbody>
+</table>
+<p>&#x91CD;&#x590D;&#x5143;&#x5B57;&#x7B26;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5143;&#x5B57;&#x7B26;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">*</td>
+<td style="text-align:left">0&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td style="text-align:left">+</td>
+<td style="text-align:left">1&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5339;&#x914D;(&#x7B49;&#x4E8E;{1,})</td>
+</tr>
+<tr>
+<td style="text-align:left">?</td>
+<td style="text-align:left">0&#x4E2A;&#x6216;1&#x4E2A;&#x5339;&#x914D;(&#x7B49;&#x4E8E;{0,1})</td>
+</tr>
+<tr>
+<td style="text-align:left">{n}</td>
+<td style="text-align:left">&#x6307;&#x5B9A;&#x6570;&#x76EE;&#x7684;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td style="text-align:left">{n,}</td>
+<td style="text-align:left">&#x4E0D;&#x5C11;&#x4E8E;&#x6307;&#x5B9A;&#x6570;&#x76EE;&#x7684;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td style="text-align:left">{n,m}</td>
+<td style="text-align:left">&#x5339;&#x914D;&#x6570;&#x76EE;&#x7684;&#x8303;&#x56F4;(m&#x4E0D;&#x8D85;&#x8FC7;255)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_name from products where prod_name regexp &quot;\\([0-9] sticks?\\)&quot;; # &#x5339;&#x914D;stick&#xFF0C;&#x672B;&#x5C3E;&#x7684;s&#x51FA;&#x73B0;0&#x6B21;&#x6216;1&#x6B21;
++----------------+
+| prod_name      |
++----------------+
+| TNT (1 stick)  |
+| TNT (5 sticks) |
++----------------+
+2 rows in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_name from products where prod_name regexp &quot;[[:digit:]]{4}&quot;; # &#x5339;&#x914D;&#x6570;&#x5B57;&#x51FA;&#x73B0;4&#x6B21;
++--------------+
+| prod_name    |
++--------------+
+| JetPack 1000 |
+| JetPack 2000 |
++--------------+
+2 rows in set (0.00 sec)
+</code></pre>
+<p>&#x5B9A;&#x4F4D;&#x5143;&#x5B57;&#x7B26;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5143;&#x5B57;&#x7B26;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">^</td>
+<td style="text-align:left">&#x6587;&#x672C;&#x7684;&#x5F00;&#x59CB;</td>
+</tr>
+<tr>
+<td style="text-align:left">$</td>
+<td style="text-align:left">&#x6587;&#x672C;&#x7684;&#x7ED3;&#x675F;</td>
+</tr>
+<tr>
+<td style="text-align:left">[[:&lt;:]]</td>
+<td style="text-align:left">&#x8BCD;&#x7684;&#x5F00;&#x59CB;</td>
+</tr>
+<tr>
+<td style="text-align:left">[[:&gt;:]]</td>
+<td style="text-align:left">&#x8BCD;&#x7684;&#x7ED3;&#x5C3E;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-sql">MariaDB [test]&gt; select prod_name from products where prod_name regexp &quot;g[[:&gt;:]]&quot;; # &#x5339;&#x914D;&#x4EE5;g&#x7ED3;&#x5C3E;&#x7684;&#x5355;&#x8BCD;
++-----------+
+| prod_name |
++-----------+
+| Sling     |
++-----------+
+1 row in set (0.00 sec)
+
+MariaDB [test]&gt; select prod_name from products where prod_name regexp &quot;[[:&lt;:]]j&quot;;  # &#x5339;&#x914D;&#x4EE5;j&#x5F00;&#x5934;&#x7684;&#x5355;&#x8BCD;
++--------------+
+| prod_name    |
++--------------+
+| JetPack 1000 |
+| JetPack 2000 |
++--------------+
+2 rows in set (0.00 sec)
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
+2018-10-17 15:15:07
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1_SQL基础.html" class="navigation navigation-prev " aria-label="Previous page: 1-SQL基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3_MySQL高级操作_聚集和分组.html" class="navigation navigation-next " aria-label="Next page: 3-MySQL高级操作_聚集和分组">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2-MySQL基本操作","level":"3.1.5.2","depth":3,"next":{"title":"3-MySQL高级操作_聚集和分组","level":"3.1.5.3","depth":3,"path":"Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.md","ref":"Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.md","articles":[]},"previous":{"title":"1-SQL基础","level":"3.1.5.1","depth":3,"path":"Books/ProfessionBooks/MySQL必知必会/1_SQL基础.md","ref":"Books/ProfessionBooks/MySQL必知必会/1_SQL基础.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","anchor-navigation-ex","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.md","mtime":"2018-10-17T07:15:07.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-29T13:21:19.580Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
