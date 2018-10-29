@@ -64,5 +64,5 @@
         * [6-MySQL使用视图](Books/ProfessionBooks/MySQL必知必会/6_MySQL使用视图.md)
         * [7-MySQL使用存储过程](Books/ProfessionBooks/MySQL必知必会/7_MySQL使用存储过程.md)
 * [陶冶情操](Books/OtherBooks/README.md)
-    * [见识](Books/OtherBooks/见识.md)
+    * [《见识》](Books/OtherBooks/见识.md)
 
