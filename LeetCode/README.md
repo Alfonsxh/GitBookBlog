@@ -27,8 +27,8 @@
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|||
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)|Medium|||
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)|Hard|||
-|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|Easy|||
-|27|[Remove Element](https://leetcode.com/problems/remove-element/description/)|Easy|||
+|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/Solution.h#L16)||
+|27|[Remove Element](https://leetcode.com/problems/remove-element/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/Solution.h#L56)||
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/description/)|Easy|||
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)|Medium|||
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/)|Hard|||
@@ -81,7 +81,7 @@
 |77|[Combinations](https://leetcode.com/problems/combinations/description/)|Medium|||
 |78|[Subsets](https://leetcode.com/problems/subsets/description/)|Medium|||
 |79|[Word Search](https://leetcode.com/problems/word-search/description/)|Medium|||
-|80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)|Medium|||
+|80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)|Medium|[c++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/Solution.h#L35)||
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)|Medium|||
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)|Medium|||
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)|Easy|||
@@ -284,7 +284,7 @@
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/description/)|Medium|||
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/description/)|Medium|||
 |282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/)|Hard|||
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)|Easy|||
+|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/Solution.h#L70)||
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/description/)|Medium|||
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/description/)|Medium|||
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/description/)|Medium|||
