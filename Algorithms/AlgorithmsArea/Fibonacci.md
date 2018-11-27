@@ -48,7 +48,7 @@ def FibsList(numZS):
 
 结果只需返回列表的最后一个元素即可。
 
-##  使用中间变量保存值
+## 使用中间变量保存值
 
 ```python
 def FibsWithTempValue(n):

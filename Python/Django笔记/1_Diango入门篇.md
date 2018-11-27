@@ -1,4 +1,4 @@
-# Django入门篇
+# Django入门篇1-模型和admin用户
 
 ## 项目与应用
 
@@ -35,7 +35,7 @@ $ tree ./mysite/
     └── views.py
 ```
 
-## 为单个应用设置urls
+## 设置urls
 
 在Django中，每个应用也可以含有各自的`URLconf`进行url映射。
 
@@ -79,4 +79,82 @@ urlpatterns = [
 ]
 ```
 
-此时，可以通过访问``
+此时，可以通过访问`http://127.0.0.1:8000/polls/`访问(**前提是在polls/views.py中实现了index响应**)。
+
+## 设置模型
+
+### 模型创建
+
+Django中的模型有点类似于创建整个应用的数据库结构，在应用的`models.py`文件中实现。
+
+模型有点类似于`SQLAlchemy`中的ORM，重点有三个方面。
+
+- 编辑 models.py 文件，改变模型。
+- 运行 python manage.py makemigrations 为模型的改变生成迁移文件。
+- 运行 python manage.py migrate 来应用数据库迁移。
+
+在`models.py`文件中设置模型参数。
+
+```python
+class Question(models.Model):
+    question_text = models.CharField(max_length = 200)
+    pub_date = models.DateTimeField("date published")
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete = models.CASCADE)
+    choidce_text = models.CharField(max_length = 200)
+    votes = models.IntegerField(default = 0)
+```
+
+运行`makemigrations`改变生成的迁移文件。
+
+```shell
+$ python manage.py makemigrations polls
+Migrations for 'polls':
+  polls/migrations/0001_initial.py
+    - Create model Choice
+    - Create model Question
+    - Add field question to choice
+```
+
+运行`migrate`迁移数据。
+
+```shell
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, polls, sessions
+Running migrations:
+  Applying polls.0001_initial... OK
+```
+
+非常重要的一点，也是和 **SQLAlchemy ORM** 最大的区别是，Django中的数据迁移不需要重新删除和创建表！
+
+### 为模型添加数据
+
+Django通过为站点管理人员创建统一的内容编辑界面，使得公众页面和内容发布者页面完全分离。
+
+首先，创建一个管理员账户。
+
+```shell
+$ python manage.py createsuperuser
+```
+
+接下来按要求输入用户名、密码等信息。
+
+在`polls/admin.py`文件中，注册要在管理员界面上添加的模块。
+
+```python
+from .models import Question, Choice
+
+admin.site.register(Question)
+admin.site.register(Choice)
+```
+
+如上，添加了表`Question`和表`Choice`。
+
+再次启动服务时，打开管理员登陆页面`http://127.0.0.1:8000/admin/`，登陆后展示如下：
+
+![Django_admin_manage](/Image/Python/Django笔记/1_Django_admin_manage.png)
+
+通过页面可以增加、修改、删除表中的数据。也可以通过SQL命令在数据库中手动添加。

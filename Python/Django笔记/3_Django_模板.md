@@ -69,7 +69,7 @@ def index(request):
 
 如上，是取了所有的问题，并将问题的列表作为参数传入模板文件中。
 
-![template_index_chrome](./imgs/3_templates_index_html.png)
+![template_index_chrome](/Image/Python/Django笔记/3_templates_index_html.png)
 
 ## 抛出404错误
 
