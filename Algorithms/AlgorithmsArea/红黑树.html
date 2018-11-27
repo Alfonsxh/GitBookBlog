@@ -1,0 +1,1667 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>红黑树 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Alfons <alfons_xh@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../查找算法.html" />
+    
+    
+    <link rel="prev" href="元素去重.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Alfons's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../Python/">
+            
+                <a href="../../Python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Python/Django笔记/">
+            
+                <a href="../../Python/Django笔记/">
+            
+                    
+                    Django笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../Python/Django笔记/1_Diango入门篇.html">
+            
+                <a href="../../Python/Django笔记/1_Diango入门篇.html">
+            
+                    
+                    1_Diango入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../Python/Django笔记/2_Django_URLconf.html">
+            
+                <a href="../../Python/Django笔记/2_Django_URLconf.html">
+            
+                    
+                    2_Django_URLconf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../Python/Django笔记/3_Django_模板.html">
+            
+                <a href="../../Python/Django笔记/3_Django_模板.html">
+            
+                    
+                    3Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../Python/Django笔记/4_Django_通用视图.html">
+            
+                <a href="../../Python/Django笔记/4_Django_通用视图.html">
+            
+                    
+                    4Django通用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../Python/Django笔记/5_Django_模型.html">
+            
+                <a href="../../Python/Django笔记/5_Django_模型.html">
+            
+                    
+                    5Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../Python/Python杀不死的子进程.html">
+            
+                <a href="../../Python/Python杀不死的子进程.html">
+            
+                    
+                    Python杀不死的子进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../Python/hashcat使用说明.html">
+            
+                <a href="../../Python/hashcat使用说明.html">
+            
+                    
+                    hashcat使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../Python/推荐import模块的方式.html">
+            
+                <a href="../../Python/推荐import模块的方式.html">
+            
+                    
+                    推荐import模块的方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../Python/subprocess中Popen，call的区别.html">
+            
+                <a href="../../Python/subprocess中Popen，call的区别.html">
+            
+                    
+                    subprocess中Popen，call的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../Python/Django论坛部署.html">
+            
+                <a href="../../Python/Django论坛部署.html">
+            
+                    
+                    Django论坛部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../Python/Frida_基础使用手册.html">
+            
+                <a href="../../Python/Frida_基础使用手册.html">
+            
+                    
+                    Frida_基础使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../Python/Frida_API_不完整说明.html">
+            
+                <a href="../../Python/Frida_API_不完整说明.html">
+            
+                    
+                    FridaAPI不完整说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../Go/">
+            
+                <a href="../../Go/">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../Go/Go_Interface理解.html">
+            
+                <a href="../../Go/Go_Interface理解.html">
+            
+                    
+                    Go Interface理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../Linux/">
+            
+                <a href="../../Linux/">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../C++/">
+            
+                <a href="../../C++/">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../C++/CMake/">
+            
+                <a href="../../C++/CMake/">
+            
+                    
+                    CMake
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.1" data-path="../../C++/CMake/1_CMake使用-格式规范.html">
+            
+                <a href="../../C++/CMake/1_CMake使用-格式规范.html">
+            
+                    
+                    CMake使用(一)-格式规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2" data-path="../../C++/CMake/2_CMake使用-预编译选项添加.html">
+            
+                <a href="../../C++/CMake/2_CMake使用-预编译选项添加.html">
+            
+                    
+                    CMake使用(二)-预编译选项添加
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../Network/">
+            
+                <a href="../../Network/">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../Network/Https.html">
+            
+                <a href="../../Network/Https.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法&数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    算法笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1.1" data-path="Fibonacci.html">
+            
+                <a href="Fibonacci.html">
+            
+                    
+                    Fibonacci数列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.1.2" data-path="元素去重.html">
+            
+                <a href="元素去重.html">
+            
+                    
+                    元素去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6.1.3" data-path="红黑树.html">
+            
+                <a href="红黑树.html">
+            
+                    
+                    红黑树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../查找算法.html">
+            
+                <a href="../查找算法.html">
+            
+                    
+                    查找算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../排序算法.html">
+            
+                <a href="../排序算法.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../最短路径.html">
+            
+                <a href="../最短路径.html">
+            
+                    
+                    最短路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="../动态规划.html">
+            
+                <a href="../动态规划.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../Cipher/">
+            
+                <a href="../../Cipher/">
+            
+                    
+                    密码学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../LeetCode/">
+            
+                <a href="../../LeetCode/">
+            
+                    
+                    LeetCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Books/ProfessionBooks/">
+            
+                <a href="../../Books/ProfessionBooks/">
+            
+                    
+                    打怪升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../Books/ProfessionBooks/程序员的自我修养/">
+            
+                <a href="../../Books/ProfessionBooks/程序员的自我修养/">
+            
+                    
+                    程序员的自我修养--链接、装载与库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../Books/ProfessionBooks/程序员的自我修养/编译.html">
+            
+                <a href="../../Books/ProfessionBooks/程序员的自我修养/编译.html">
+            
+                    
+                    编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../Books/ProfessionBooks/程序员的自我修养/Elf文件.html">
+            
+                <a href="../../Books/ProfessionBooks/程序员的自我修养/Elf文件.html">
+            
+                    
+                    Elf文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../Books/ProfessionBooks/流畅的Python/">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/">
+            
+                    
+                    流畅的Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../Books/ProfessionBooks/流畅的Python/第16章-协程.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第16章-协程.html">
+            
+                    
+                    第16章-协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../Books/ProfessionBooks/流畅的Python/第17章-使用future处理并发.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第17章-使用future处理并发.html">
+            
+                    
+                    第17章-使用future处理并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../Books/ProfessionBooks/流畅的Python/第18章-使用asyncio处理并发.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第18章-使用asyncio处理并发.html">
+            
+                    
+                    第18章-使用asyncio处理并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.html">
+            
+                    
+                    第19章-动态属性和特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../Books/ProfessionBooks/流畅的Python/第20章-属性描述符.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第20章-属性描述符.html">
+            
+                    
+                    第20章-属性描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../../Books/ProfessionBooks/流畅的Python/第21章-类元编程.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第21章-类元编程.html">
+            
+                    
+                    第21章-类元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../Books/ProfessionBooks/算法图解/">
+            
+                <a href="../../Books/ProfessionBooks/算法图解/">
+            
+                    
+                    算法图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../Books/ProfessionBooks/图解密码技术/">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/">
+            
+                    
+                    图解密码技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../Books/ProfessionBooks/图解密码技术/1-环游密码世界.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/1-环游密码世界.html">
+            
+                    
+                    1-环游密码世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../../Books/ProfessionBooks/图解密码技术/2-历史上的密码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/2-历史上的密码.html">
+            
+                    
+                    2-历史上的密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="../../Books/ProfessionBooks/图解密码技术/3-对称密码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/3-对称密码.html">
+            
+                    
+                    3-对称密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.4" data-path="../../Books/ProfessionBooks/图解密码技术/4-分组密码的模式.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/4-分组密码的模式.html">
+            
+                    
+                    4-分组密码的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.5" data-path="../../Books/ProfessionBooks/图解密码技术/5-公钥密码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/5-公钥密码.html">
+            
+                    
+                    5-公钥密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.6" data-path="../../Books/ProfessionBooks/图解密码技术/6-混合密码系统.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/6-混合密码系统.html">
+            
+                    
+                    6-混合密码系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.7" data-path="../../Books/ProfessionBooks/图解密码技术/7-单向散列函数.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/7-单向散列函数.html">
+            
+                    
+                    7-单向散列函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.8" data-path="../../Books/ProfessionBooks/图解密码技术/8-消息认证码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/8-消息认证码.html">
+            
+                    
+                    8-消息认证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.9" data-path="../../Books/ProfessionBooks/图解密码技术/9-数字签名.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/9-数字签名.html">
+            
+                    
+                    9-数字签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.10" data-path="../../Books/ProfessionBooks/图解密码技术/10-证书.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/10-证书.html">
+            
+                    
+                    10-证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.11" data-path="../../Books/ProfessionBooks/图解密码技术/11-密钥.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/11-密钥.html">
+            
+                    
+                    11-密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.12" data-path="../../Books/ProfessionBooks/图解密码技术/12-随机数.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/12-随机数.html">
+            
+                    
+                    12-随机数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.13" data-path="../../Books/ProfessionBooks/图解密码技术/13-PGP.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/13-PGP.html">
+            
+                    
+                    13-PGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.14" data-path="../../Books/ProfessionBooks/图解密码技术/14-SSL与TLS.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/14-SSL与TLS.html">
+            
+                    
+                    14-SSL与TLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.15" data-path="../../Books/ProfessionBooks/图解密码技术/15-密码技术与现实社会.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/15-密码技术与现实社会.html">
+            
+                    
+                    15-密码技术与现实社会
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../Books/ProfessionBooks/MySQL必知必会/">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/">
+            
+                    
+                    MySQL必知必会
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="../../Books/ProfessionBooks/MySQL必知必会/1_SQL基础.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/1_SQL基础.html">
+            
+                    
+                    1-SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2" data-path="../../Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.html">
+            
+                    
+                    2-MySQL基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.3" data-path="../../Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.html">
+            
+                    
+                    3-MySQL高级操作_聚集和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.4" data-path="../../Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.html">
+            
+                    
+                    4-MySQL高级操作_联结查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.5" data-path="../../Books/ProfessionBooks/MySQL必知必会/5_MySQL基础操作_增删改.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/5_MySQL基础操作_增删改.html">
+            
+                    
+                    5-MySQL基础操作_增删改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.6" data-path="../../Books/ProfessionBooks/MySQL必知必会/6_MySQL使用视图.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/6_MySQL使用视图.html">
+            
+                    
+                    6-MySQL使用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.7" data-path="../../Books/ProfessionBooks/MySQL必知必会/7_MySQL使用存储过程.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/7_MySQL使用存储过程.html">
+            
+                    
+                    7-MySQL使用存储过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.8" data-path="../../Books/ProfessionBooks/MySQL必知必会/8_MySQL使用索引.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/8_MySQL使用索引.html">
+            
+                    
+                    8-MySQL使用索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../../Books/ProfessionBooks/图解设计模式/">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/">
+            
+                    
+                    图解设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.6.1" data-path="../../Books/ProfessionBooks/图解设计模式/0-关于UML.html">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/0-关于UML.html">
+            
+                    
+                    0-关于UML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6.2" data-path="../../Books/ProfessionBooks/图解设计模式/1-Iterator模式.html">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/1-Iterator模式.html">
+            
+                    
+                    1-Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6.3" data-path="../../Books/ProfessionBooks/图解设计模式/13-Visitor模式.html">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/13-Visitor模式.html">
+            
+                    
+                    13-Visitor模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Books/OtherBooks/">
+            
+                <a href="../../Books/OtherBooks/">
+            
+                    
+                    陶冶情操
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../Books/OtherBooks/见识.html">
+            
+                <a href="../../Books/OtherBooks/见识.html">
+            
+                    
+                    《见识》
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../Books/OtherBooks/未来简史.html">
+            
+                <a href="../../Books/OtherBooks/未来简史.html">
+            
+                    
+                    《未来简史》
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >红黑树</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x7EA2;&#x9ED1;&#x6811;"><b>1. </b>&#x7EA2;&#x9ED1;&#x6811;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7EA2;&#x9ED1;&#x6811;&#x4FEE;&#x6B63;"><b>1.1. </b>&#x7EA2;&#x9ED1;&#x6811;&#x4FEE;&#x6B63;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53D8;&#x8272;"><b>1.1.1. </b>&#x53D8;&#x8272;</a></li><li><span class="title-icon "></span><a href="#&#x5DE6;&#x65CB;"><b>1.1.2. </b>&#x5DE6;&#x65CB;</a></li><li><span class="title-icon "></span><a href="#&#x53F3;&#x65CB;"><b>1.1.3. </b>&#x53F3;&#x65CB;</a></li></ul><li><span class="title-icon "></span><a href="#&#x63D2;&#x5165;"><b>1.2. </b>&#x63D2;&#x5165;</a></li><ul><li><span class="title-icon "></span><a href="#&#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;"><b>1.2.1. </b>&#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x6B63;"><b>1.2.2. </b>&#x4FEE;&#x6B63;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;"><b>1.3. </b>&#x5220;&#x9664;</a></li></ul></ul></div><a href="#&#x7EA2;&#x9ED1;&#x6811;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7EA2;&#x9ED1;&#x6811;"><a name="&#x7EA2;&#x9ED1;&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x7EA2;&#x9ED1;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x7EA2;&#x9ED1;&#x6811;</h1>
+<p><code>&#x7EA2;&#x9ED1;&#x6811;(Red&#x2013;black tree)</code>&#x662F;&#x4E00;&#x79CD;<a href="https://zh.wikipedia.org/wiki/%E5%B9%B3%E8%A1%A1%E6%A0%91" target="_blank">&#x81EA;&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</a>&#xFF0C;&#x652F;&#x6301;&#x96C6;&#x5408;&#x3001;&#x67E5;&#x627E;&#x3001;&#x4E0A;&#x4E00;&#x5143;&#x7D20;&#x3001;&#x4E0B;&#x4E00;&#x5143;&#x7D20;&#x3001;&#x6700;&#x5927;&#x3001;&#x6700;&#x5C0F;&#x3001;&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x7EA2;&#x9ED1;&#x6811;</strong> &#x6709;&#x7740;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5728; <strong>O(logn)</strong> &#x65F6;&#x95F4;&#x5185;&#x505A;&#x67E5;&#x627E;&#xFF0C;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x7EA2;&#x9ED1;&#x6811;</strong> &#x662F;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x5E26;&#x6709;&#x989C;&#x8272;&#x5C5E;&#x6027;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#xFF0C;&#x989C;&#x8272;&#x4E3A;&#x7EA2;&#x8272;&#x6216;&#x9ED1;&#x8272;&#x3002;&#x5B83;&#x6709;&#x4EE5;&#x4E0B;&#x6027;&#x8D28;&#x548C;&#x8981;&#x6C42;&#xFF1A;</p>
+<ul>
+<li>1&#x3001;&#x6811;&#x5185;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x975E;&#x7EA2;&#x5373;&#x9ED1;&#x3002;</li>
+<li>2&#x3001;&#x6839;&#x8282;&#x70B9;&#x548C;leaf&#x8282;&#x70B9;(NIL&#x8282;&#x70B9;&#xFF0C;&#x975E;&#x53F6;&#x8282;&#x70B9;)&#x5747;&#x4E3A;&#x9ED1;&#x8272;&#x3002;</li>
+<li>3&#x3001;&#x7EA2;&#x8272;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x5747;&#x4E3A;&#x9ED1;&#x8272;&#x3002;</li>
+<li>4&#x3001;&#x4EFB;&#x4E00;&#x8282;&#x70B9;&#x5230;&#x5176;&#x6BCF;&#x4E2A;leaf&#x8282;&#x70B9;&#x7684;&#x7B80;&#x5355;&#x8DEF;&#x5F84;&#x90FD;&#x5305;&#x542B;&#x76F8;&#x540C;&#x6570;&#x91CF;&#x7684;&#x9ED1;&#x8272;&#x8282;&#x70B9;&#x3002;</li>
+</ul>
+<p><img src="../../Image/Algorithms/AlgorithmsArea/Red-Black-Tree/Red-black_tree_example.png" alt="Red-black_tree_example"></p>
+<p><code>&#x7EA2;&#x9ED1;&#x6811;</code>&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x4E0A;&#x8FF0;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;&#x53F6;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x5C42;---- <strong>NIL&#x8282;&#x70B9;</strong>&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A; <strong>&#x5916;&#x90E8;&#x8282;&#x70B9;</strong>&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x79F0;&#x4E4B;&#x4E3A; <strong>&#x5185;&#x90E8;&#x8282;&#x70B9;</strong>&#x3002;</p>
+<p>&#x6B63;&#x56E0;&#x4E3A; <strong>&#x7EA2;&#x9ED1;&#x6811;</strong> &#x62E5;&#x6709;&#x4E0A;&#x8FF0;&#x4E25;&#x683C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x624D;&#x80FD;&#x4F7F;&#x5F97;&#x5176; <strong>&#x63D2;&#x5165;</strong>&#x3001;<strong>&#x5220;&#x9664;</strong>&#x3001;<strong>&#x67E5;&#x627E;</strong>&#x7684;&#x64CD;&#x4F5C;&#x5728;&#x6700;&#x574F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A; <strong>O(logn)</strong>&#x3002;</p>
+<h2 id="&#x7EA2;&#x9ED1;&#x6811;&#x4FEE;&#x6B63;"><a name="&#x7EA2;&#x9ED1;&#x6811;&#x4FEE;&#x6B63;" class="anchor-navigation-ex-anchor" href="#&#x7EA2;&#x9ED1;&#x6811;&#x4FEE;&#x6B63;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7EA2;&#x9ED1;&#x6811;&#x4FEE;&#x6B63;</h2>
+<p>&#x5728;&#x505A; <strong>&#x63D2;&#x5165;</strong> &#x548C; <strong>&#x5220;&#x9664;</strong>&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x8FDD;&#x80CC; <strong>&#x7EA2;&#x9ED1;&#x6811;</strong>&#x7684;&#x4E0A;&#x8FF0;&#x89C4;&#x5219;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5BF9;&#x7EA2;&#x9ED1;&#x6811;&#x8FDB;&#x884C;&#x4FEE;&#x6B63;&#x3002;</p>
+<p><strong>&#x7EA2;&#x9ED1;&#x6811;</strong>&#x7684;&#x4FEE;&#x6B63;&#x65B9;&#x5F0F;&#x6709; <strong>&#x53D8;&#x8272;</strong>&#x3001;<strong>&#x5DE6;&#x65CB;</strong>&#x3001;<strong>&#x53F3;&#x65CB;</strong>&#x3002;</p>
+<h3 id="&#x53D8;&#x8272;"><a name="&#x53D8;&#x8272;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x8272;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x53D8;&#x8272;</h3>
+<p>&#x4F46;&#x8FDB;&#x884C; <strong>&#x63D2;&#x5165;</strong>&#x6216; <strong>&#x5220;&#x9664;</strong>&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8FDD;&#x80CC;&#x7684;&#x89C4;&#x5219;&#x4E09;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5BF9;&#x6811;&#x5185;&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#x989C;&#x8272;&#x7684;&#x64CD;&#x4F5C;&#x3002;<strong>&#x9ED1;&#x8282;&#x70B9; ---&gt; &#x7EA2;&#x8282;&#x70B9;</strong>&#x3002;</p>
+<h3 id="&#x5DE6;&#x65CB;"><a name="&#x5DE6;&#x65CB;" class="anchor-navigation-ex-anchor" href="#&#x5DE6;&#x65CB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x5DE6;&#x65CB;</h3>
+<p>&#x8FDB;&#x884C;&#x5DE6;&#x65CB;&#x65F6;&#xFF0C;&#x5C06;&#x5B50;&#x6811;&#x8FDB;&#x884C;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#xFF0C;&#x4FDD;&#x8BC1;&#x524D;&#x540E;&#x7684; <strong>&#x5148;&#x5E8F;&#x904D;&#x5386;</strong>&#x7ED3;&#x679C;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>1.&#x5C06;x&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x8D4B;&#x503C;&#x7ED9;h&#xFF0C;&#x4F5C;&#x4E3A;h&#x7684;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x540C;&#x65F6;&#x6307;&#x5B9A;x&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x7684;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#x4E3A;h&#x3002;</li>
+<li>2.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;(&#x975E;&#x7A7A;&#x65F6;)&#x8D4B;&#x503C;&#x7ED9;x&#xFF0C;&#x540C;&#x65F6;&#x66F4;&#x65B0;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x4E3A;x&#x3002;</li>
+<li>3.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;x&#xFF0C;x&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;h&#x3002;</li>
+</ul>
+<p><img src="../../Image/Algorithms/AlgorithmsArea/Red-Black-Tree/left-rotation.gif" alt="left-rotation"></p>
+<p>&#x5982;&#x4E0A;&#x6240;&#x793A;&#xFF0C;&#x5DE6;&#x65CB;&#x4E4B;&#x524D;&#x5B50;&#x6811;&#x7684; <strong>&#x5148;&#x5E8F;&#x904D;&#x5386;</strong>&#x7ED3;&#x679C;&#x662F; <strong>h.left --&gt; h --&gt; x.left --&gt; x --&gt; x.right</strong>&#x3002;&#x5728;&#x7ECF;&#x8FC7; <strong>&#x5DE6;&#x65CB;</strong>&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x7ED3;&#x679C;&#x4ECD;&#x662F; <strong>h.left --&gt; h --&gt; x.left --&gt; x --&gt; x.right</strong>&#x3002;</p>
+<p>&#x4F2A;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c">x = h.right;
+
+<span class="hljs-comment">// 1.&#x5C06;x&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x8D4B;&#x503C;&#x7ED9;h&#xFF0C;&#x4F5C;&#x4E3A;h&#x7684;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x540C;&#x65F6;&#x6307;&#x5B9A;x&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x7684;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#x4E3A;h&#x3002;</span>
+h.right = x.left;
+
+<span class="hljs-keyword">if</span>(x.left != NIL)
+    x.left.parent = h;
+
+<span class="hljs-comment">// 2.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;(&#x975E;&#x7A7A;&#x65F6;)&#x8D4B;&#x503C;&#x7ED9;x&#xFF0C;&#x540C;&#x65F6;&#x66F4;&#x65B0;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x4E3A;x&#x3002;</span>
+x.parent = h.parent;
+
+<span class="hljs-keyword">if</span>(h.parent == NIL)
+    root = x;
+elif(h == h.parent.left)    <span class="hljs-comment">// &#x5982;&#x679C;&#x7236;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;NIL&#xFF0C;&#x5219;&#x6839;&#x636E;h&#x4E3A;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x786E;&#x5B9A;x&#x7684;&#x4F4D;&#x7F6E;</span>
+    h.parent.left = x;
+<span class="hljs-keyword">else</span>
+    h.parent.right = x;shan chu
+
+<span class="hljs-comment">// 3.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;x&#xFF0C;x&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;h&#x3002;</span>
+h.parent = x;
+x.left = h;
+</code></pre>
+<h3 id="&#x53F3;&#x65CB;"><a name="&#x53F3;&#x65CB;" class="anchor-navigation-ex-anchor" href="#&#x53F3;&#x65CB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x53F3;&#x65CB;</h3>
+<p>&#x53F3;&#x65CB;&#x7684;&#x8FC7;&#x7A0B;&#x548C;&#x5DE6;&#x65CB;&#x7684;&#x6B63;&#x597D;&#x76F8;&#x53CD;&#x3002;</p>
+<ul>
+<li>1.&#x5C06;x&#x7684;&#x53F3;&#x5B50;&#x6811;&#x8D4B;&#x503C;&#x7ED9;h&#xFF0C;&#x4F5C;&#x4E3A;h&#x7684;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x540C;&#x65F6;&#x6307;&#x5B9A;x&#x7684;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;h&#x3002;</li>
+<li>2.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;(&#x975E;&#x7A7A;&#x65F6;)&#x8D4B;&#x503C;&#x7ED9;x&#xFF0C;&#x540C;&#x65F6;&#x66F4;&#x65B0;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x4E3A;x&#x3002;</li>
+<li>3.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;x&#xFF0C;x&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;h&#x3002;</li>
+</ul>
+<p><img src="../../Image/Algorithms/AlgorithmsArea/Red-Black-Tree/right-rotation.gif" alt="right-rotation"></p>
+<p>&#x4F2A;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c">x = h.right;
+
+<span class="hljs-comment">// 1.&#x5C06;x&#x7684;&#x53F3;&#x5B50;&#x6811;&#x8D4B;&#x503C;&#x7ED9;h&#xFF0C;&#x4F5C;&#x4E3A;h&#x7684;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x540C;&#x65F6;&#x6307;&#x5B9A;x&#x7684;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;h&#x3002;</span>
+h.left = x.right;
+
+<span class="hljs-keyword">if</span>(x.right != NIL)
+    x.right.parent = h;
+
+<span class="hljs-comment">// 2.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;(&#x975E;&#x7A7A;&#x65F6;)&#x8D4B;&#x503C;&#x7ED9;x&#xFF0C;&#x540C;&#x65F6;&#x66F4;&#x65B0;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x4E3A;x&#x3002;</span>
+x.parent = h.parent;
+
+<span class="hljs-keyword">if</span>(h.parent == NIL)
+    root = x;
+elif(h.parent.left == h)
+    h.parent.left = x;
+<span class="hljs-keyword">else</span>
+    h.parent.right = x;
+
+<span class="hljs-comment">// 3.&#x5C06;h&#x7684;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;x&#xFF0C;x&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;h&#x3002;</span>
+h.parent = x
+x.right = h
+</code></pre>
+<h2 id="&#x63D2;&#x5165;"><a name="&#x63D2;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x63D2;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x63D2;&#x5165;</h2>
+<h3 id="&#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;"><a name="&#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;</h3>
+<p>&#x9996;&#x5148;&#x627E;&#x5230;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x9488;&#x5BF9;&#x7EA2;&#x9ED1;&#x6811;&#x7684;&#x89C4;&#x5219;&#x6761;&#x4EF6;&#xFF0C;&#x5BF9;&#x63D2;&#x5165;&#x4F4D;&#x7F6E;&#x8FDB;&#x884C;&#x4FEE;&#x6B63;&#x3002;</p>
+<p>&#x6839;&#x636E;key&#x503C;&#xFF0C;&#x67E5;&#x627E;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-keyword">void</span> RBTree&lt;T&gt;::insert(Node&lt;T&gt; *&amp;root, Node&lt;T&gt; *node) {
+    Node&lt;T&gt; *y = <span class="hljs-literal">nullptr</span>;
+    Node&lt;T&gt; *x = root;
+
+    <span class="hljs-comment">// &#x627E;&#x5230;&#x63D2;&#x5165;&#x7236;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">while</span> (x != <span class="hljs-literal">nullptr</span>) {
+        y = x;
+
+        <span class="hljs-keyword">if</span> (node-&gt;key &gt; y-&gt;key)
+            x = x-&gt;rightChild;
+        <span class="hljs-keyword">else</span>
+            x = x-&gt;leftChild;
+    }
+    node-&gt;parent = y;
+
+    <span class="hljs-comment">// &#x63D2;&#x5165;</span>
+    <span class="hljs-keyword">if</span> (y == <span class="hljs-literal">nullptr</span>)
+        root = node;
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">if</span> (node-&gt;key &lt; y-&gt;key)
+            y-&gt;leftChild = node;
+        <span class="hljs-keyword">else</span>
+            y-&gt;rightChild = node;
+    }
+
+    node-&gt;color = RED;
+
+    <span class="hljs-comment">// &#x4FEE;&#x6B63;</span>
+    <span class="hljs-keyword">this</span>-&gt;insertFixUp(root, node);
+}
+
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-keyword">void</span> RBTree&lt;T&gt;::insert(T key) {
+    Node&lt;T&gt; * z = <span class="hljs-literal">nullptr</span>;
+
+    <span class="hljs-keyword">if</span> ((z = <span class="hljs-keyword">new</span> Node&lt;T&gt;(RED, key, <span class="hljs-literal">nullptr</span>, <span class="hljs-literal">nullptr</span>, <span class="hljs-literal">nullptr</span>)) == <span class="hljs-literal">nullptr</span>)
+        <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">this</span>-&gt;insert(<span class="hljs-keyword">this</span>-&gt;m_root, z);
+}
+</code></pre>
+<h3 id="&#x4FEE;&#x6B63;"><a name="&#x4FEE;&#x6B63;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6B63;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x4FEE;&#x6B63;</h3>
+<p>&#x4FEE;&#x6B63;&#x9700;&#x8981;&#x6839;&#x636E;&#x63D2;&#x5165;&#x70B9;&#x7684;&#x53CA;&#x5176;&#x5468;&#x8FB9;&#x70B9;&#x7684;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x4FEE;&#x6B63;&#x3002;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x63D2;&#x5165;&#x7684;&#x70B9;&#x4E3A;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x8868;&#x793A;&#x7EA2;&#x9ED1;&#x6811;&#x4E3A;&#x7A7A;&#xFF0C;&#x53EA;&#x9700;&#x628A;&#x63D2;&#x5165;&#x70B9;&#x7684;&#x989C;&#x8272;&#x4FEE;&#x6539;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x6839;&#x8282;&#x70B9;&#x6307;&#x5411;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x5373;&#x53EF;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x8003;&#x8651;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;<ul>
+<li>&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x53CA;&#x5176;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x5747;&#x4E3A;&#x7EA2;&#x8272;&#xFF1B;</li>
+<li>&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x4E14;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x4E3A;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B69;&#x5B50;&#xFF1B;</li>
+<li>&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x4E14;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x4E3A;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B69;&#x5B50;&#xFF1B;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x7B2C;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF1A; <strong>&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x53CA;&#x5176;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x5747;&#x4E3A;&#x7EA2;&#x8272;</strong>&#x3002;&#x6211;&#x4EEC;&#x8BA8;&#x8BBA;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x4E3A;&#x5DE6;&#x5B69;&#x5B50;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x53F3;&#x5B69;&#x5B50;&#x7C7B;&#x4F3C;&#x3002;</p>
+<p>&#x9996;&#x5148; <strong>&#x5C06;&#x7236;&#x8282;&#x70B9;&#x53CA;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x6D82;&#x9ED1;&#xFF0C;&#x7956;&#x7236;&#x8282;&#x70B9;&#x6D82;&#x7EA2;</strong>&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x6307;&#x5411;&#x5176;&#x7956;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x4EE5;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x4ECE;&#x65B0;&#x5F00;&#x59CB;&#x5224;&#x65AD;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="../../Image/Algorithms/AlgorithmsArea/Red-Black-Tree/parent_red_uncle_red.png" alt="parent_red_uncle_red"></p>
+<p>&#x5BF9;&#x4E8E;&#x7B2C;&#x4E8C;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;<strong>&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x4E14;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x4E3A;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B69;&#x5B50;</strong>&#x3002;</p>
+<p>&#x5C06;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x6307;&#x5411;&#x5176;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#xFF0C;&#x4EE5;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#x8FDB;&#x884C; <strong>&#x5DE6;&#x65CB;</strong>&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="../../Image/Algorithms/AlgorithmsArea/Red-Black-Tree/parent_red_uncle_black_rightchild.png" alt="parent_red_uncle_black_rightchild"></p>
+<p>&#x5BF9;&#x4E8E;&#x7B2C;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;<strong>&#x63D2;&#x5165;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x4E14;&#x63D2;&#x5165;&#x8282;&#x70B9;&#x4E3A;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B69;&#x5B50;</strong>&#x3002;</p>
+<p>&#x5C06;&#x7236;&#x8282;&#x70B9;&#x6D82;&#x9ED1;&#xFF0C;&#x7956;&#x7236;&#x8282;&#x70B9;&#x6D82;&#x7EA2;&#xFF0C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x6307;&#x5411;&#x5176; <strong>&#x7956;&#x7236;&#x8282;&#x70B9;</strong>&#xFF0C;&#x4EE5; <strong>&#x7956;&#x7236;&#x8282;&#x70B9;</strong> &#x8FDB;&#x884C; <strong>&#x53F3;&#x65CB;</strong>&#xFF0C;&#x5E76;&#x5C06;&#x6839;&#x7ED3;&#x70B9;&#x989C;&#x8272;&#x6D82;&#x9ED1;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="../../Image/Algorithms/AlgorithmsArea/Red-Black-Tree/parent_red_uncle_black_leftchild.png" alt="parent_red_uncle_black_leftchild"></p>
+<p>&#x4FEE;&#x6B63;&#x8FC7;&#x7A0B;&#x59CB;&#x7EC8;&#x4F1A;&#x8D70;&#x5230;&#x60C5;&#x51B5;&#x4E09;&#xFF01;&#x6B65;&#x9AA4;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x8BB0;&#x4E3A;&#xFF1A; <strong>&#x53D8;&#x8272;-&gt;&#x5DE6;&#x65CB;-&gt;&#x53F3;&#x65CB;</strong>&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-keyword">void</span> RBTree&lt;T&gt;::insert(T key) {
+    Node&lt;T&gt; *z = <span class="hljs-literal">nullptr</span>;
+
+    <span class="hljs-keyword">if</span> ((z = <span class="hljs-keyword">new</span> Node&lt;T&gt;(RED, key, <span class="hljs-literal">nullptr</span>, <span class="hljs-literal">nullptr</span>, <span class="hljs-literal">nullptr</span>)) == <span class="hljs-literal">nullptr</span>)
+        <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">this</span>-&gt;insert(z);
+}
+
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-keyword">void</span> RBTree&lt;T&gt;::insert(Node&lt;T&gt; *node) {
+    Node&lt;T&gt; *y = <span class="hljs-literal">nullptr</span>;
+    Node&lt;T&gt; *x = <span class="hljs-keyword">this</span>-&gt;m_root;
+
+    <span class="hljs-comment">// &#x627E;&#x5230;&#x63D2;&#x5165;&#x7236;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">while</span> (x != <span class="hljs-literal">nullptr</span>) {
+        y = x;
+
+        <span class="hljs-keyword">if</span> (node-&gt;key &gt; y-&gt;key)
+            x = x-&gt;rightChild;
+        <span class="hljs-keyword">else</span>
+            x = x-&gt;leftChild;
+    }
+    node-&gt;parent = y;
+
+    <span class="hljs-comment">// &#x63D2;&#x5165;</span>
+    <span class="hljs-keyword">if</span> (y == <span class="hljs-literal">nullptr</span>)
+        <span class="hljs-keyword">this</span>-&gt;m_root = node;
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">if</span> (node-&gt;key &lt; y-&gt;key)
+            y-&gt;leftChild = node;
+        <span class="hljs-keyword">else</span>
+            y-&gt;rightChild = node;
+    }
+
+    node-&gt;color = RED;
+
+    <span class="hljs-comment">// &#x4FEE;&#x6B63;</span>
+    <span class="hljs-keyword">this</span>-&gt;insertFixUp(node);
+}
+
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-keyword">void</span> RBTree&lt;T&gt;::insertFixUp(Node&lt;T&gt; *node) {
+    Node&lt;T&gt; *parent, *grandparent;
+
+    <span class="hljs-keyword">while</span> ((parent = node-&gt;parent) != <span class="hljs-literal">nullptr</span> &amp;&amp; parent-&gt;isred()) {
+        grandparent = node-&gt;grandParent();  <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x4E0D;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7956;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7A7A;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x56E0;&#x4E3A;&#x6839;&#x7ED3;&#x70B9;&#x4E00;&#x5B9A;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x6839;&#x8282;&#x70B9;&#x4F1A;&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;</span>
+
+        <span class="hljs-keyword">if</span> (parent == grandparent-&gt;leftChild) {     <span class="hljs-comment">// &#x7236;&#x8282;&#x70B9;&#x662F;&#x7956;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B69;&#x5B50;&#x7684;&#x60C5;&#x51B5;</span>
+            Node&lt;T&gt; *uncle = grandparent-&gt;rightChild;
+
+            <span class="hljs-comment">// case1: &#x7236;&#x8282;&#x70B9;&#x548C;&#x53D4;&#x7236;&#x8282;&#x70B9;&#x90FD;&#x4E3A;&#x7EA2;&#x8272;</span>
+            <span class="hljs-keyword">if</span> (uncle != <span class="hljs-literal">nullptr</span> &amp;&amp; uncle-&gt;isred()) {   <span class="hljs-comment">// &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5E76;&#x4E14;&#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;</span>
+                parent-&gt;setblack();     <span class="hljs-comment">// &#x5C06;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED1;&#x8272;</span>
+                uncle-&gt;setblack();      <span class="hljs-comment">// &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E5F;&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED1;&#x8272;</span>
+                grandparent-&gt;setred();  <span class="hljs-comment">// &#x7956;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EA2;&#x8272;</span>
+                node = grandparent;     <span class="hljs-comment">// &#x5F53;&#x524D;&#x8282;&#x70B9;&#x6307;&#x5411;&#x7956;&#x7236;&#x8282;&#x70B9;</span>
+                <span class="hljs-keyword">continue</span>;
+            }
+
+            <span class="hljs-comment">// case2: &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x4E3A;&#x53F3;&#x5B69;&#x5B50;</span>
+            <span class="hljs-keyword">if</span> (node == parent-&gt;rightChild) {
+                <span class="hljs-keyword">this</span>-&gt;leftRotate(parent);   <span class="hljs-comment">// &#x4EE5;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x4E2D;&#x5FC3;&#x8FDB;&#x884C;&#x5DE6;&#x65CB;</span>
+                Node&lt;T&gt; *tmp = parent;      <span class="hljs-comment">// &#x4EA4;&#x6362;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x548C;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x4E3A;&#x4E0B;&#x4E00;&#x6B65;&#x505A;&#x51C6;&#x5907;</span>
+                parent = node;
+                node = tmp;
+            }
+
+            <span class="hljs-comment">// case3: &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x4E3A;&#x5DE6;&#x5B69;&#x5B50;</span>
+            parent-&gt;setblack();     <span class="hljs-comment">// &#x5C06;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED1;&#x8272;</span>
+            grandparent-&gt;setred();  <span class="hljs-comment">// &#x7956;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EA2;&#x8272;</span>
+            <span class="hljs-keyword">this</span>-&gt;rightRotate(grandparent);     <span class="hljs-comment">// &#x4EE5;&#x7956;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x4E2D;&#x5FC3;&#x8FDB;&#x884C;&#x53F3;&#x65CB;</span>
+        } <span class="hljs-keyword">else</span> {    <span class="hljs-comment">// &#x7236;&#x8282;&#x70B9;&#x662F;&#x7956;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B69;&#x5B50;&#x7684;&#x60C5;&#x51B5;</span>
+            Node&lt;T&gt; *uncle = grandparent-&gt;leftChild;
+
+            <span class="hljs-comment">// case1: &#x7236;&#x8282;&#x70B9;&#x548C;&#x53D4;&#x7236;&#x8282;&#x70B9;&#x90FD;&#x4E3A;&#x7EA2;&#x8272;</span>
+            <span class="hljs-keyword">if</span> (uncle != <span class="hljs-literal">nullptr</span> &amp;&amp; uncle-&gt;isred()) {   <span class="hljs-comment">// &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5E76;&#x4E14;&#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7EA2;&#x8272;</span>
+                parent-&gt;setblack();     <span class="hljs-comment">// &#x5C06;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED1;&#x8272;</span>
+                uncle-&gt;setblack();      <span class="hljs-comment">// &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E5F;&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED1;&#x8272;</span>
+                grandparent-&gt;setred();  <span class="hljs-comment">// &#x7956;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EA2;&#x8272;</span>
+                node = grandparent;     <span class="hljs-comment">// &#x5F53;&#x524D;&#x8282;&#x70B9;&#x6307;&#x5411;&#x7956;&#x7236;&#x8282;&#x70B9;</span>
+                <span class="hljs-keyword">continue</span>;
+            }
+
+            <span class="hljs-comment">// case2: &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x4E3A;&#x5DE6;&#x5B69;&#x5B50;</span>
+            <span class="hljs-keyword">if</span> (node == parent-&gt;leftChild) {
+                <span class="hljs-keyword">this</span>-&gt;rightRotate(parent);  <span class="hljs-comment">// &#x4EE5;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x4E2D;&#x5FC3;&#x8FDB;&#x884C;&#x53F3;&#x65CB;</span>
+                Node&lt;T&gt; *tmp = parent;      <span class="hljs-comment">// &#x4EA4;&#x6362;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x548C;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x4E3A;&#x4E0B;&#x4E00;&#x6B65;&#x505A;&#x51C6;&#x5907;</span>
+                parent = node;
+                node = tmp;
+            }
+
+            <span class="hljs-comment">// case3: &#x53D4;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x9ED1;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x4E3A;&#x53F3;&#x5B69;&#x5B50;</span>
+            parent-&gt;setblack();     <span class="hljs-comment">// &#x5C06;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x9ED1;&#x8272;</span>
+            grandparent-&gt;setred();  <span class="hljs-comment">// &#x7956;&#x7236;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EA2;&#x8272;</span>
+            <span class="hljs-keyword">this</span>-&gt;leftRotate(grandparent);      <span class="hljs-comment">// &#x4EE5;&#x7956;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x4E2D;&#x5FC3;&#x8FDB;&#x884C;&#x5DE6;&#x65CB;</span>
+        }
+    }
+
+    <span class="hljs-keyword">this</span>-&gt;m_root-&gt;setblack();
+}
+</code></pre>
+<h2 id="&#x5220;&#x9664;"><a name="&#x5220;&#x9664;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5220;&#x9664;</h2>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
+2018-11-27 21:06:22
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="元素去重.html" class="navigation navigation-prev " aria-label="Previous page: 元素去重">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../查找算法.html" class="navigation navigation-next " aria-label="Next page: 查找算法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"红黑树","level":"2.6.1.3","depth":3,"next":{"title":"查找算法","level":"2.6.2","depth":2,"path":"Algorithms/查找算法.md","ref":"Algorithms/查找算法.md","articles":[]},"previous":{"title":"元素去重","level":"2.6.1.2","depth":3,"path":"Algorithms/AlgorithmsArea/元素去重.md","ref":"Algorithms/AlgorithmsArea/元素去重.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","anchor-navigation-ex","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Algorithms/AlgorithmsArea/红黑树.md","mtime":"2018-11-27T13:06:22.016Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-27T13:06:32.681Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
