@@ -259,7 +259,7 @@ print("type(p_tag.next_siblings) -> ", type(p_tag.next_siblings))       # <class
 | **find_all_previous()**      | 向前查找所有符合条件的元素列表        |
 | **find_previous()**          | 向前查找所有符合条件的元素            |
 
-**find()** 和 **find_all()**是其中比较常用了两个，其他的方法使用类似。
+**find()** 和 **find_all()** 是其中比较常用了两个，其他的方法使用类似。
 
 #### find_all()
 
