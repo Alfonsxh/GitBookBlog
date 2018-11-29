@@ -263,7 +263,7 @@ print("type(p_tag.next_siblings) -> ", type(p_tag.next_siblings))       # <class
 
 #### find_all()
 
-**find_all**的作用是搜索当前tag的所有子tag节点，并判断是否符合某些特征，并返回它们的列表。这些特征包括：tag的name、节点的属性、节点的字符串或者这些特征的混合。
+**find_all** 的作用是搜索当前tag的所有子tag节点，并判断是否符合某些特征，并返回它们的列表。这些特征包括：tag的name、节点的属性、节点的字符串或者这些特征的混合。
 
 ```python
 def find_all(self, name=None, attrs={}, recursive=True, text=None, limit=None, **kwargs)
@@ -323,7 +323,7 @@ print('soup.find_all("a", class_="body", limit=1)) -> ', soup.find_all("a", clas
 
 #### find()
 
-**find()**方法的使用和 **find_all()**类似，查找出来的结果为单一的tag对象。如果没有找到， **find**将会返回 **None**， **find_all**将会返回 **空列表**。
+**find()** 方法的使用和 **find_all()** 类似，查找出来的结果为单一的tag对象。如果没有找到， **find**将会返回 **None**， **find_all**将会返回 **空列表**。
 
 其他的搜索方法，用法大多大同小异。
 
