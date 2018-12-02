@@ -3,6 +3,8 @@
 * [Alfons's Blog](README.md)
 
 -----
+* [ARTS](《左耳听风每周练习》/README.md)
+    * [ARTS第一期](《左耳听风每周练习》/ARTS-1.md)
 * [Python](Python/README.md)
     * [Django笔记](Python/Django笔记/README.md)
         * [1_Diango入门](Python/Django笔记/1_Diango入门篇.md)
@@ -41,6 +43,8 @@
     * [动态规划](Algorithms/动态规划.md)
 * [密码学](Cipher/README.md)
 * [LeetCode](LeetCode/README.md)
+* [随笔](随笔/README.md)
+    * [告别面向对象？](随笔/告别面向对象.md)
 
 -----
 * [打怪升级](Books/ProfessionBooks/README.md)
