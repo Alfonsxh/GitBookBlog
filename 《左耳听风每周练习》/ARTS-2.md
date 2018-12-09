@@ -20,19 +20,17 @@ Input:
 Output: 1->1->2->3->4->4->5->6
 ```
 
-笔记链接： [23.Merge k Sorted Lists]()
+笔记链接： [23.Merge k Sorted Lists](https://alfonsxh.github.io/Blog/Algorithms/AlgorithmsArea/k%E8%B7%AF%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.html)
 
 ## Review
 
-原文：[]()
-
-笔记链接：[]()
+(这周没有找到合适的文章)
 
 ## Tip
 
 总结了一下 **Scrapy模块** 的基本使用。
 
-笔记链接：[]()
+笔记链接：[Scrapy模块](https://alfonsxh.github.io/Blog/Python/Spider/Scrapy/1_Scrapy%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D.html)
 
 ## Share
 

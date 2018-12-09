@@ -89,7 +89,7 @@
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)|Hard|||
 |86|[Partition List](https://leetcode.com/problems/partition-list/description/)|Medium|||
 |87|[Scramble String](https://leetcode.com/problems/scramble-string/description/)|Hard|||
-|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)|Easy|C++(https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L82)||
+|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L82)||
 |89|[Gray Code](https://leetcode.com/problems/gray-code/description/)|Medium|||
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii/description/)|Medium|||
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/description/)|Medium|||
