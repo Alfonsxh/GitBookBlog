@@ -6,7 +6,7 @@
 
 **Scrapy** 是一个为了爬取网站数据，提取结构性数据而编写的应用框架。 可以应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。
 
-![scrapy_architecture](./Images/scrapy_architecture.png)
+![scrapy_architecture](/Image/Python/Scrapy/scrapy_architecture.png)
 
 上图为 **Scrapy** 的整体架构图，各部分组件的主要功能如下：
 
@@ -34,7 +34,7 @@
 
 对于简单的应用来说，用户需要只需要在 **spider** 中完成处理引擎发来的 **response** 的功能，以及 **Item Pipeline** 中处理引擎传来的数据即可。
 
-![scrapy_assembly](./Images/scrapy_assembly.png)
+![scrapy_assembly](/Image/Python/Scrapy/scrapy_assembly.png)
 
 ## 组件
 

@@ -22,9 +22,9 @@
 |18|[4Sum](https://leetcode.com/problems/4sum/description/)|Medium|||
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)|Medium|||
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)|Easy|||
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)|Easy|||
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58)||
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)|Medium|||
-|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|||
+|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112)||
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)|Medium|||
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)|Hard|||
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/Solution.h#L16)||
@@ -89,7 +89,7 @@
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)|Hard|||
 |86|[Partition List](https://leetcode.com/problems/partition-list/description/)|Medium|||
 |87|[Scramble String](https://leetcode.com/problems/scramble-string/description/)|Hard|||
-|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)|Easy|||
+|88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)|Easy|C++(https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L82)||
 |89|[Gray Code](https://leetcode.com/problems/gray-code/description/)|Medium|||
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii/description/)|Medium|||
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/description/)|Medium|||
