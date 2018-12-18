@@ -6,6 +6,7 @@
 * [ARTS](《左耳听风每周练习》/README.md)
     * [ARTS第一期](《左耳听风每周练习》/ARTS-1.md)
     * [ARTS第二期](《左耳听风每周练习》/ARTS-2.md)
+    * [ARTS第三期](《左耳听风每周练习》/ARTS-3.md)
 * [Python](Python/README.md)
     * [Django笔记](Python/Django笔记/README.md)
         * [1_Diango入门](Python/Django笔记/1_Diango入门篇.md)
