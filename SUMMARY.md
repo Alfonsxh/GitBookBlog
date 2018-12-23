@@ -15,7 +15,7 @@
         * [4_Django通用视图](Python/Django笔记/4_Django_通用视图.md)
         * [5_Django模型](Python/Django笔记/5_Django_模型.md)
     * [Spider](Python/Spider/README.md)
-        * [Redis使用](Python/Redis/Redis使用.md)
+        * [Redis使用](Python/Spider/Redis/Redis使用.md)
         * [Scrapy](Python/Spider/Scrapy/README.md)
             * [1_Scrapy模块介绍](Python/Spider/Scrapy/1_Scrapy模块介绍.md)
         * [BeautifulSoup使用手册](Python/Spider/BeautifulSoup使用手册.md)

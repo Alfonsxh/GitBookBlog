@@ -71,7 +71,7 @@
 |67|[Add Binary](https://leetcode.com/problems/add-binary/description/)|Easy|||
 |68|[Text Justification](https://leetcode.com/problems/text-justification/description/)|Hard|||
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)|Easy|||
-|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)|Easy|||
+|70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)|Easy||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/70.%20Climbing%20Stairs.py)|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path/description/)|Medium|||
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/description/)|Hard|||
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)|Medium|||
@@ -140,8 +140,8 @@
 |136|[Single Number](https://leetcode.com/problems/single-number/description/)|Easy|||
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii/description/)|Medium|||
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)|Medium|||
-|139|[Word Break](https://leetcode.com/problems/word-break/description/)|Medium|||
-|140|[Word Break II](https://leetcode.com/problems/word-break-ii/description/)|Hard|||
+|139|[Word Break](https://leetcode.com/problems/word-break/description/)|Medium||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/139.%20Word%20Break.py)|
+|140|[Word Break II](https://leetcode.com/problems/word-break-ii/description/)|Hard||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/140.%20Word%20Break%20II.py)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)|Easy|||
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)|Medium|||
 |143|[Reorder List](https://leetcode.com/problems/reorder-list/description/)|Medium|||
@@ -199,7 +199,7 @@
 |195|[Tenth Line](https://leetcode.com/problems/tenth-line/description/)|Easy|||
 |196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/)|Easy|||
 |197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/description/)|Easy|||
-|198|[House Robber](https://leetcode.com/problems/house-robber/description/)|Easy|||
+|198|[House Robber](https://leetcode.com/problems/house-robber/description/)|Easy||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/198.%20House%20Robber.py)|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)|Medium|||
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/description/)|Medium|||
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/)|Medium|||
@@ -712,7 +712,7 @@
 |743|[Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)|Medium|||
 |744|[Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)|Easy|||
 |745|[Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/description/)|Hard|||
-|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)|Easy|||
+|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)|Easy||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/746.%20Min%20Cost%20Climbing%20Stairs.py)|
 |747|[Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/)|Easy|||
 |748|[Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/description/)|Medium|||
 |749|[Contain Virus](https://leetcode.com/problems/contain-virus/description/)|Hard|||
@@ -756,7 +756,7 @@
 |787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)|Medium|||
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits/description/)|Easy|||
 |789|[Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts/description/)|Medium|||
-|790|[Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/description/)|Medium|||
+|790|[Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/description/)|Medium||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/790.%20Domino%20and%20Tromino%20Tiling.py)|
 |791|[Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)|Medium|||
 |792|[Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/description/)|Medium|||
 |793|[Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/description/)|Hard|||
@@ -767,7 +767,7 @@
 |798|[Smallest Rotation with Highest Score](https://leetcode.com/problems/smallest-rotation-with-highest-score/description/)|Hard|||
 |799|[Champagne Tower](https://leetcode.com/problems/champagne-tower/description/)|Medium|||
 |800|[Similar RGB Color](https://leetcode.com/problems/similar-rgb-color/description/)|Easy|||
-|801|[Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/description/)|Medium|||
+|801|[Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/description/)|Medium||[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/801.%20Minimum%20Swaps%20To%20Make%20Sequences%20Increasing.py)|
 |802|[Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)|Medium|||
 |803|[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/description/)|Hard|||
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/)|Easy|||
