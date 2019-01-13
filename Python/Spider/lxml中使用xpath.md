@@ -156,6 +156,56 @@ for p_node in p_node_list:
 
 其他的 **XPath语法** 使用方式一样。
 
+### xpath选择兄弟节点
+
+```html
+<div id="info">
+        <span class="pl">制片国家/地区:</span> 美国<br/>
+        <span class="pl">语言:</span> 英语<br/>
+        <span class="pl">上映日期:</span> <span property="v:initialReleaseDate" content="2014-01-18(圣丹斯电影节)">2014-01-18(圣丹斯电影节)</span> / <span property="v:initialReleaseDate" content="2015-09-18(美国)">2015-09-18(美国)</span><br/>
+        <span class="pl">片长:</span> <span property="v:runti/following::*me" content="88">88分钟</span><br/>
+        <span class="pl">又名:</span> 虱子<br/>
+        <span class="pl">IMDb链接:</span> <a href="http://www.imdb.com/title/tt2490326" target="_blank" rel="nofollow">tt2490326</a><br>
+</div>
+```
+
+例如上面的例子，想要获取制片国家和语言的信息，但这部分信息不在 **span** 标签中，而是处于 **span和br** 之间。
+
+首先，我们找到 **制片国家/地区** 这个节点
+
+```python
+country = root_node.xpath("//div[contains(@id, 'info')]/span[contains(@class, 'pl') and contains(text(), '制片国家/地区:')]")
+```
+
+国家对应的属性为 **text()**，并且是在tag后面的属性。xpath中，对于相邻属性，有 **following**、**following-sibling**、**preceding**、**preceding-sibling** 四种方式获取。对于上面的例子来说，可以使用 **following**、**following-sibling**。
+
+```python
+country_1 = root_node.xpath("//div[contains(@id, 'info')]/span[contains(@class, 'pl') and contains(text(), '制片国家/地区:')]/following::text()")
+print(country_1)
+
+# output:
+
+[' 美国', '\n        ', '语言:', ' 英语', '\n        ', '上映日期:', ' ', '2014-01-18(圣丹斯电影节)', ' / ', '2015-09-18(美国)', '\n        ', '片长:', ' ', '88分钟', '\n        ', '又名:', ' 虱子', '\n        ', 'IMDb链接:', ' ', 'tt2490326', '\n', '\n']
+
+country_2 = root_node.xpath("//div[contains(@id, 'info')]/span[contains(@class, 'pl') and contains(text(), '制片国家/地区:')]/following-sibling::text()")
+print(country_2)
+
+# output:
+
+[' 美国', '\n        ', ' 英语', '\n        ', ' ', ' / ', '\n        ', ' ', '\n        ', ' 虱子', '\n        ', ' ', '\n']
+```
+
+**following** 方式获取的是后继所有 **tag** 中的 **text()**。而 **following-sibling** 获取的是 **同等级的兄弟节点的内容**。
+
+**preceding**、**preceding-sibling** 为前驱节点，用法和上面的一样。
+
+另外，还有几个：
+
+- **parent::** - 取当前节点的 **父节点**。
+- **child::** - 取当前节点的 **子节点**。
+- **ancestor::** - 取当前节点的 **父节点、祖父节点等**。
+- **descendant::** - 取当前节点的 **子节点、子孙节点**。
+
 ## 参考
 
 [lxml etree API](https://lxml.de/api/index.html)

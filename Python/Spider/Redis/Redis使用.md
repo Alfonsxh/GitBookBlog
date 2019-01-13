@@ -110,7 +110,7 @@ OK
 "there are same banans"
 
 // setex key seconds value
-127.0.0.1:6379> setex one_word 10 10        // value关联key时，设置过期时间，单位秒
+127.0.0.1:6379> setex one_word 10 hello        // value关联key时，设置过期时间，单位秒
 OK
 ...
 127.0.0.1:6379> get one_word        // 10s后
