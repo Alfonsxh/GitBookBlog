@@ -18,7 +18,7 @@
         * [Redis使用](Python/Spider/Redis/Redis使用.md)
         * [Scrapy](Python/Spider/Scrapy/README.md)
             * [1_Scrapy模块介绍](Python/Spider/Scrapy/1_Scrapy模块介绍.md)
-            * [2_Scrapy模块使用](Python/Spider/Scrapy/2_Scrapy模块使用.md)
+            * [2_Scrapy模块使用及调试](Python/Spider/Scrapy/2_Scrapy模块使用及调试.md)
         * [BeautifulSoup使用手册](Python/Spider/BeautifulSoup使用手册.md)
         * [lxml中使用xpath](Python/Spider/lxml中使用xpath.md)
     * [Frida](Python/Frida/README.md)
