@@ -246,7 +246,191 @@ def close_spider(self, spider):
 
 ### Downloader Middleware
 
-// todo
+**下载中间件** 位于上图中的 **engine** 和 **downloader** 之间，主要是处理从 **engine** 向 **downloader** 发出的 **request** 请求以及从 **downloader** 返回给 **engine** 的 **response**。
+
+在使用 **下载中间件** 前，需要在 **settings.py** 中配置对应的下载器中间件。
+
+```python
+# settings.py
+
+DOWNLOADER_MIDDLEWARES = {
+    'DoubanMovieSpider.DoubanMiddlewares.DoubanMovieInfoDownloadMiddleware.UserAgentMiddleware': 901,
+    'DoubanMovieSpider.DoubanMiddlewares.DoubanMovieInfoDownloadMiddleware.CookieMiddleware': 902,
+    'DoubanMovieSpider.DoubanMiddlewares.DoubanMovieInfoDownloadMiddleware.ProxyMiddleware': 903,
+    'DoubanMovieSpider.DoubanMiddlewares.DoubanMovieInfoDownloadMiddleware.ConnectionMiddleware': 904,
+}
+```
+
+下载器中间件由 **DOWNLOADER_MIDDLEWARES** 字典配置，key为对应下载器中间件的类所在的路径，value为中间件的优先级。由于在 **default_settings.py** 中已经存在了默认的下载器中间件，所以最好自己按要求配置优先级。**数字越小优先级越高**。
+
+```python
+# default_settings.py
+
+DOWNLOADER_MIDDLEWARES = {}
+
+DOWNLOADER_MIDDLEWARES_BASE = {
+    # Engine side
+    'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware': 100,
+    'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware': 300,
+    'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware': 350,
+    'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware': 400,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': 500,
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 550,
+    'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware': 560,
+    'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware': 580,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 590,
+    'scrapy.downloadermiddlewares.redirect.RedirectMiddleware': 600,
+    'scrapy.downloadermiddlewares.cookies.CookiesMiddleware': 700,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 750,
+    'scrapy.downloadermiddlewares.stats.DownloaderStats': 850,
+    'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 900,
+    # Downloader side
+}
+```
+
+指定完要使用的中间件后，进入编写中间件的步骤。按需求实现下面的一些函数。
+
+```python
+class DoubanmoviespiderDownloaderMiddleware(object):
+    # Not all methods need to be defined. If a method is not defined,
+    # scrapy acts as if the downloader middleware does not modify the
+    # passed objects.
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        # This method is used by Scrapy to create your spiders.
+        s = cls()
+        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
+        return s
+
+    def process_request(self, request, spider):
+        # Called for each request that goes through the downloader
+        # middleware.
+
+        # Must either:
+        # - return None: continue processing this request
+        # - or return a Response object
+        # - or return a Request object
+        # - or raise IgnoreRequest: process_exception() methods of
+        #   installed downloader middleware will be called
+        return None
+
+    def process_response(self, request, response, spider):
+        # Called with the response returned from the downloader.
+
+        # Must either;
+        # - return a Response object
+        # - return a Request object
+        # - or raise IgnoreRequest
+        return response
+
+    def process_exception(self, request, exception, spider):
+        # Called when a download handler or a process_request()
+        # (from other downloader middleware) raises an exception.
+
+        # Must either:
+        # - return None: continue processing this exception
+        # - return a Response object: stops process_exception() chain
+        # - return a Request object: stops process_exception() chain
+        pass
+
+    def spider_opened(self, spider):
+        spider.logger.info('Spider opened: %s' % spider.name)
+```
+
+对于下载器中间件而言，主要的两个函数为 **process_request()**、**process_response()**。
+
+#### process_request()
+
+**process_request()** 用于处理发给 **downloader** 的 **request** 请求，可以在这个函数中对 **request** 请求进行修改，例如添加header、添加cookies、修改代理等。
+
+**process_request()** 有四种返回值:
+
+- 如果返回 **None**，则 **scrapy** 将继续调用其他下载器中间件的 **process_request()方法**。
+- 如果返回 **Request对象**，**scrapy** 会停止调度 **接下来的其他中间件的process_request()方法**，**scrapy** 会将返回的 **Request对象** 重新加入调度任务中，重新开始 **request** 请求。
+- 如果返回 **Response对象**，**scrapy** 会停止调度 **process_request()和process_exception()方法**，并且不將请求放送至下载器，而是作为下载器返回的 **Response对象** 处理。
+- 如果产生 **IgnoreRequest异常**，则对应的所有的下载器中间件中的 **process_exception()** 函数将会被调用。如果没有任何下载器中间件来处理这种异常，则会调用 **errback function**。
+
+#### process_response()
+
+**process_response()** 用于处理下载器返回的 **response**，可以在这里对一些异常进行处理、在返回的 **Response对象** 中添加自定义的一些内容。
+
+**process_response()** 返回值有三种:
+
+- 如果返回 **Request对象**，则退出之后的下载器中间件的 **process_response()** 调度，将目标重新加入请求队列，与 **process_request()** 处理方式一样。
+- 如果返回 **Response对象**，则继续进行剩下的下载器中间件中的 **process_response()** 方法。
+- 如果产生 **IgnoreRequest异常**，处理方式与 **process_request()** 一样。
+
+> 注意: process_request()处理是按照优先级顺序进行，而process_response() 和 process_exception() 是按照逆序进行的。这点可以在源码总，添加下载器中间件时看出。
+
+```python
+class DownloaderMiddlewareManager(MiddlewareManager):
+
+    component_name = 'downloader middleware'
+
+    @classmethod
+    def _get_mwlist_from_settings(cls, settings):
+        return build_component_list(
+            settings.getwithbase('DOWNLOADER_MIDDLEWARES'))
+
+    def _add_middleware(self, mw):
+        # 添加process_request方法，使用的是append
+        if hasattr(mw, 'process_request'):
+            self.methods['process_request'].append(mw.process_request)
+
+        # 添加process_response和process_exception方法，使用的是insert
+        if hasattr(mw, 'process_response'):
+            self.methods['process_response'].insert(0, mw.process_response)
+        if hasattr(mw, 'process_exception'):
+            self.methods['process_exception'].insert(0, mw.process_exception)
+
+    def download(self, download_func, request, spider):
+        @defer.inlineCallbacks
+        def process_request(request):
+            # 使用时的方式是一样的，便利列表，从头开始
+            for method in self.methods['process_request']:
+                response = yield method(request=request, spider=spider)
+                assert response is None or isinstance(response, (Response, Request)), \
+                        'Middleware %s.process_request must return None, Response or Request, got %s' % \
+                        (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+                if response:
+                    defer.returnValue(response)
+            defer.returnValue((yield download_func(request=request,spider=spider)))
+
+        @defer.inlineCallbacks
+        def process_response(response):
+            assert response is not None, 'Received None in process_response'
+            if isinstance(response, Request):
+                defer.returnValue(response)
+
+            for method in self.methods['process_response']:
+                response = yield method(request=request, response=response,
+                                        spider=spider)
+                assert isinstance(response, (Response, Request)), \
+                    'Middleware %s.process_response must return Response or Request, got %s' % \
+                    (six.get_method_self(method).__class__.__name__, type(response))
+                if isinstance(response, Request):
+                    defer.returnValue(response)
+            defer.returnValue(response)
+
+        @defer.inlineCallbacks
+        def process_exception(_failure):
+            exception = _failure.value
+            for method in self.methods['process_exception']:
+                response = yield method(request=request, exception=exception,
+                                        spider=spider)
+                assert response is None or isinstance(response, (Response, Request)), \
+                    'Middleware %s.process_exception must return None, Response or Request, got %s' % \
+                    (six.get_method_self(method).__class__.__name__, type(response))
+                if response:
+                    defer.returnValue(response)
+            defer.returnValue(_failure)
+
+        deferred = mustbe_deferred(process_request, request)
+        deferred.addErrback(process_exception)
+        deferred.addCallback(process_response)
+        return deferred
+```
 
 ### Spider Middleware
 
