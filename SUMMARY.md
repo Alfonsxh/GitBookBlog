@@ -3,10 +3,6 @@
 * [Alfons's Blog](README.md)
 
 -----
-* [ARTS](《左耳听风每周练习》/README.md)
-    * [ARTS第一期](《左耳听风每周练习》/ARTS-1.md)
-    * [ARTS第二期](《左耳听风每周练习》/ARTS-2.md)
-    * [ARTS第三期](《左耳听风每周练习》/ARTS-3.md)
 * [Python](Python/README.md)
     * [STL](Python/STL/README.md)
         * [Text Processing Services](Python/STL/01_Text_Processing/README.md)
@@ -25,6 +21,7 @@
         * [File Formats](Python/STL/09_File_Formats/README.md)
         * [Cryptographic Services](Python/STL/10_Cryptographic_Services/README.md)
         * [Generic Operating System Services](Python/STL/11_Generic_Operating/README.md)
+            * [platform 平台相关信息](Python/STL/11_Generic_Operating/11.1 platform.md)
         * [Concurrent Execution](Python/STL/12_Concurrent_Execution/README.md)
         * [Interprocess Communication and Networking](Python/STL/13_Networking/README.md)
         * [Internet Data Handling](Python/STL/14_Internet_Data_Handling/README.md)
@@ -49,7 +46,7 @@
     * [Frida](Python/Frida/README.md)
         * [Frida_基础使用手册](Python/Frida/Frida_基础使用手册.md)
         * [FridaAPI不完整说明](Python/Frida/Frida_API_不完整说明.md)
-    * [Python slots和all](Python/Python __slots__和__all__.md)
+    * [Python slots和all](Python/Python__slots__和__all__.md)
     * [Python json解析错误处理](Python/Python_json解析错误处理.md)
     * [Python pymysql连接错误](Python/Python_pymysql连接错误.md)
     * [Python杀不死的子进程](Python/Python杀不死的子进程.md)
