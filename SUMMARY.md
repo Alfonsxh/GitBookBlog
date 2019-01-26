@@ -46,6 +46,7 @@
     * [Frida](Python/Frida/README.md)
         * [Frida_基础使用手册](Python/Frida/Frida_基础使用手册.md)
         * [FridaAPI不完整说明](Python/Frida/Frida_API_不完整说明.md)
+    * [Python装饰器](Python/Python装饰器.md)  
     * [Python slots和all](Python/Python__slots__和__all__.md)
     * [Python json解析错误处理](Python/Python_json解析错误处理.md)
     * [Python pymysql连接错误](Python/Python_pymysql连接错误.md)
