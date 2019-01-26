@@ -134,7 +134,7 @@ sex is ->  male
 
 例子可以参考：[Saving 9 GB of RAM with Python’s __slots__](http://tech.oyster.com/save-ram-with-python-slots/)
 
-(不过我做实验却得不到差异，不知道是不是现在的版本已经做了相关的优化。)
+(不过我做实验却得不到差异，不知道是不是现在的版本已经做了相关的优化。至少Pypy是已经优化的了。)
 
 ## \_\_all\_\_
 
