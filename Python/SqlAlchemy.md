@@ -291,6 +291,8 @@ res = engine.execute(sel).fetchall()
 
 **SqlAlchemy ORM** 与 **SqlAlchemy core** 最大的区别是， **ORM** 对数据库的表进行了 **高度的抽象**，让使用者感觉不是在操作数据库，而是在操作 **Python对象**。
 
+#todo
+
 ### 连接
 
 ### 创建表对象
