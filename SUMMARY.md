@@ -48,7 +48,6 @@
         * [Frida_基础使用手册](Python/Frida/Frida_基础使用手册.md)
         * [FridaAPI不完整说明](Python/Frida/Frida_API_不完整说明.md)
     * [GIL全局解释器锁](Python/GIL全局解释器锁.md)
-    <!-- * [同步与异步](Python/同步与异步.md) -->
     * [SqlAlchemy使用](Python/SqlAlchemy.md)
     * [Python装饰器](Python/Python装饰器.md)
     * [Python slots和all](Python/Python__slots__和__all__.md)
