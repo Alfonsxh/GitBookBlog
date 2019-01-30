@@ -37,7 +37,7 @@ while True:
 
 但当有多个CPU核心时，问题就来了：当一个核心上的线程释放了GIL后，另一个核心上的线程来获取时，往往是之前核心上的线程又获取了GIL，后面的线程只能是等待之前的线程执行完毕才能真正的获取到GIL。
 
-![GIL_with_diff_CPU](./images/GIL_with_diff_CPU.jpg)
+![GIL_with_diff_CPU](/Image/Python/GIL全局解释器锁/GIL_with_diff_CPU.jpg)
 
 上面的图，是发生在运行 **CPU密集型任务** 时。第一个表示的是，单个CPU核心上运行两个线程，可以看到程序运行的十分流畅。但当使用两个CPU核心运行两个线程时，大部分时间是，GIL获取失败，浪费了大量的CPU时间。
 
