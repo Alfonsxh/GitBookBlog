@@ -185,8 +185,8 @@ PyObject *pyfunc(PyObject *self, PyObject *args) {
 
 ## 参考
 
-[Python的GIL是什么鬼，多线程性能究竟如何](http://cenalulu.github.io/python/gil-in-python/)
-[Understanding the Python GIL](http://www.dabeaz.com/GIL/)
-[12.9 Python的全局锁问题](https://python3-cookbook.readthedocs.io/zh_CN/latest/c12/p09_dealing_with_gil_stop_worring_about_it.html)
-[15.7 从C扩展中释放全局锁](https://python3-cookbook.readthedocs.io/zh_CN/latest/c15/p07_release_the_gil_in_c_extensions.html)
-[Is there a Python implementation without the GIL?](https://www.quora.com/Is-there-a-Python-implementation-without-the-GIL)
+- [Python的GIL是什么鬼，多线程性能究竟如何](http://cenalulu.github.io/python/gil-in-python/)
+- [Understanding the Python GIL](http://www.dabeaz.com/GIL/)
+- [12.9 Python的全局锁问题](https://python3-cookbook.readthedocs.io/zh_CN/latest/c12/p09_dealing_with_gil_stop_worring_about_it.html)
+- [15.7 从C扩展中释放全局锁](https://python3-cookbook.readthedocs.io/zh_CN/latest/c15/p07_release_the_gil_in_c_extensions.html)
+- [Is there a Python implementation without the GIL?](https://www.quora.com/Is-there-a-Python-implementation-without-the-GIL)
