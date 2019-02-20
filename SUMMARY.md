@@ -59,8 +59,6 @@
     * [推荐import模块的方式](Python/推荐import模块的方式.md)
     * [subprocess中Popen，call的区别](Python/subprocess中Popen，call的区别.md)
     * [Django论坛部署](Python/Django论坛部署.md)
-* [Go](Go/README.md)
-    * [Go Interface理解](Go/Go_Interface理解.md)
 * [Linux](Linux/README.md)
 * [C++](C++/README.md)
     * [CMake](C++/CMake/README.md)
@@ -129,4 +127,5 @@
 * [陶冶情操](Books/OtherBooks/README.md)
     * [《见识》](Books/OtherBooks/见识.md)
     * [《未来简史》](Books/OtherBooks/未来简史.md)
+    * [《今日简史》](Books/OtherBooks/今日简史.md)
 
