@@ -1,3 +1,3 @@
 # STL
 
-![XMIND](/Image/Python/STL/Python STL.jpg)
+![XMIND](/Image/Python/STL/Python_STL.png)
