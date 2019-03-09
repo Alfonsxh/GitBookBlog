@@ -158,5 +158,5 @@ This is sec page
 
 ## 参考
 
-[C++装饰器](https://blog.csdn.net/My_heart_/article/details/62238091)
-[Java装饰器](https://juejin.im/post/5add8e9cf265da0b9d77d377)
+- [C++装饰器](https://blog.csdn.net/My_heart_/article/details/62238091)
+- [Java装饰器](https://juejin.im/post/5add8e9cf265da0b9d77d377)
