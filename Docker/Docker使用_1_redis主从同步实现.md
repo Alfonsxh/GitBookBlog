@@ -67,17 +67,11 @@ ff02::2	ip6-allrouters
 
 首先需要查找容器的 **volume** 位置，**docker inspect** 可以显示目标容器的低等级的配置信息，配合 **--format** 参数可以查看指定的配置项内容。
 
-```shell
-root@ubuntu:~# docker container inspect --format "{{ .Config.Volumes }}" redis-master 
-map[/data:{}]
-```
+![volume_format_1](/Image/Docker/volume_format_1.png)
 
 使用上面的方式可能没法找到对应的 **Volume** 的位置，可以查找 **Source** 变量。
 
-```shell
-root@ubuntu:~# docker container inspect --format "{{ (index .Mounts 0).Source }}" redis-master 
-/var/lib/docker/volumes/504da9723a3b47b4b3d3423a52540e9dad5e55b9bb05beb40fc2591abf42d1a9/_data
-```
+![volume_format_2](Image/Docker/volume_format_2.png)
 
 **--format** 需要有Go模板相关的知识，如果不熟悉的话，可以使用 **grep**。
 
