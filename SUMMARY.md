@@ -65,6 +65,7 @@
     * [Docker使用(一)--redis主从同步实现](Docker/Docker使用_1_redis主从同步实现.md)
     * [Dockerfile创建镜像](Docker/Dockerfile创建镜像.md)
 * [Linux](Linux/README.md)
+    * [Linux命令find](Linux/Linux命令find.md)
     * [去除awk截取参数中的换行符](Linux/去除awk截取参数中的换行符.md)
     * [Linux命令sed](Linux/Linux命令sed.md)
     * [Linux命令awk](Linux/Linux命令awk.md)

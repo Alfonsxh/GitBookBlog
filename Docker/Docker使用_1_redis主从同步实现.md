@@ -71,7 +71,7 @@ ff02::2	ip6-allrouters
 
 使用上面的方式可能没法找到对应的 **Volume** 的位置，可以查找 **Source** 变量。
 
-![volume_format_2](Image/Docker/volume_format_2.png)
+![volume_format_2](/Image/Docker/volume_format_2.png)
 
 **--format** 需要有Go模板相关的知识，如果不熟悉的话，可以使用 **grep**。
 
