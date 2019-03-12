@@ -1010,7 +1010,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="去除awk截取参数中的换行符.html">
+        <li class="chapter " data-level="2.3.1" data-path="Linux命令find.html">
+            
+                <a href="Linux命令find.html">
+            
+                    
+                    Linux命令find
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="去除awk截取参数中的换行符.html">
             
                 <a href="去除awk截取参数中的换行符.html">
             
@@ -1023,7 +1036,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="Linux命令sed.html">
+        <li class="chapter " data-level="2.3.3" data-path="Linux命令sed.html">
             
                 <a href="Linux命令sed.html">
             
@@ -1036,7 +1049,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3.3" data-path="Linux命令awk.html">
+        <li class="chapter active" data-level="2.3.4" data-path="Linux命令awk.html">
             
                 <a href="Linux命令awk.html">
             
@@ -2237,9 +2250,141 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#awk"><b>1. </b>awk</a></li></ul></div><a href="#awk" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="awk"><a name="awk" class="anchor-navigation-ex-anchor" href="#awk"><i class="fa fa-link" aria-hidden="true"></i></a>1. awk</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#awk"><b>1. </b>awk</a></li><ul><li><span class="title-icon "></span><a href="#&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><b>1.1. </b>&#x5DE5;&#x4F5C;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5B50;"><b>1.2. </b>&#x4F8B;&#x5B50;</a></li></ul></ul></div><a href="#awk" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="awk"><a name="awk" class="anchor-navigation-ex-anchor" href="#awk"><i class="fa fa-link" aria-hidden="true"></i></a>1. awk</h1>
+<p><strong>awk&#x547D;&#x4EE4;</strong> &#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x4E3A; <strong>&#x884C;&#x6570;&#x636E;</strong>&#xFF0C;&#x7ECF;&#x8FC7;&#x4E00;&#x4E9B;&#x5224;&#x522B;&#x5904;&#x7406;&#x540E;&#xFF0C;&#x6309;&#x5BF9;&#x5E94;&#x7684;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x7684;&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A; <code>awk [&#x9009;&#x9879;] &apos;&#x7A0B;&#x5E8F;&apos; &#x6587;&#x4EF6;</code>&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x9009;&#x9879;&#xFF1A;</p>
+<ul>
+<li><strong>-F fs</strong>&#xFF1A;fs&#x6307;&#x5B9A;&#x8F93;&#x5165;&#x5206;&#x9694;&#x7B26;&#xFF0C;fs&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5982;-F:&#xFF0C;&#x4EE5;&quot;&#xFF1A;&quot;&#x4F5C;&#x4E3A;&#x5206;&#x5272;&#x7B26;&#x3002;</li>
+<li><strong>-v var=value</strong>&#xFF1A;&#x8D4B;&#x503C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#xFF0C;&#x5C06;&#x5916;&#x90E8;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x7ED9;awk&#x3002;</li>
+<li><strong>-f scripfile</strong>&#xFF1A;&#x4ECE;&#x811A;&#x672C;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;awk&#x547D;&#x4EE4;&#x3002;</li>
+</ul>
+<p>&#x7A0B;&#x5E8F;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x662F;&#x4E0B;&#x9762;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x6216;&#x591A;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x7EC4;&#x5408;&#xFF1A;</p>
+<ul>
+<li>/&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;/&#xFF1A;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;&#x7684;&#x6269;&#x5C55;&#x96C6;&#x3002;</li>
+<li>&#x5173;&#x7CFB;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;&#x4F7F;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6570;&#x5B57;&#x7684;&#x6BD4;&#x8F83;&#x6D4B;&#x8BD5;&#x3002;</li>
+<li>&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;&#x7528;&#x8FD0;&#x7B97;&#x7B26;~&#xFF08;&#x5339;&#x914D;&#xFF09;&#x548C;~!&#xFF08;&#x4E0D;&#x5339;&#x914D;&#xFF09;&#x3002;</li>
+<li>BEGIN&#x8BED;&#x53E5;&#x5757;&#x3001;pattern&#x8BED;&#x53E5;&#x5757;&#x3001;END&#x8BED;&#x53E5;&#x5757;&#x3002;</li>
+</ul>
+<p>&#x5185;&#x5EFA;&#x53D8;&#x91CF;:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5185;&#x5EFA;&#x53D8;&#x91CF;&#x540D;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$0</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#xFF08;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E2D;&#x5B58;&#x653E;&#x7740;&#x6574;&#x4E2A;&#x884C;&#x7684;&#x5185;&#x5BB9;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">$1~$n</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#x7684;&#x7B2C;n&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5B57;&#x6BB5;&#x95F4;&#x7531;FS&#x5206;&#x9694;</td>
+</tr>
+<tr>
+<td style="text-align:left">FS</td>
+<td style="text-align:left">&#x8F93;&#x5165;&#x5B57;&#x6BB5;&#x5206;&#x9694;&#x7B26; &#x9ED8;&#x8BA4;&#x662F;&#x7A7A;&#x683C;&#x6216;Tab</td>
+</tr>
+<tr>
+<td style="text-align:left">NF</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x4E2A;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x6709;&#x591A;&#x5C11;&#x5217;</td>
+</tr>
+<tr>
+<td style="text-align:left">NR</td>
+<td style="text-align:left">&#x5DF2;&#x7ECF;&#x8BFB;&#x51FA;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x884C;&#x53F7;&#xFF0C;&#x4ECE;1&#x5F00;&#x59CB;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x4E5F;&#x662F;&#x4E0D;&#x65AD;&#x7D2F;&#x52A0;&#x4E2D;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">FNR</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#x6570;&#xFF0C;&#x4E0E;NR&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x4F1A;&#x662F;&#x5404;&#x4E2A;&#x6587;&#x4EF6;&#x81EA;&#x5DF1;&#x7684;&#x884C;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">RS</td>
+<td style="text-align:left">&#x8F93;&#x5165;&#x7684;&#x8BB0;&#x5F55;&#x5206;&#x9694;&#x7B26;&#xFF0C; &#x9ED8;&#x8BA4;&#x4E3A;&#x6362;&#x884C;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">OFS</td>
+<td style="text-align:left">&#x8F93;&#x51FA;&#x5B57;&#x6BB5;&#x5206;&#x9694;&#x7B26;&#xFF0C; &#x9ED8;&#x8BA4;&#x4E5F;&#x662F;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">ORS</td>
+<td style="text-align:left">&#x8F93;&#x51FA;&#x7684;&#x8BB0;&#x5F55;&#x5206;&#x9694;&#x7B26;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x6362;&#x884C;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">FILENAME</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x5B57;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><a name="&#x5DE5;&#x4F5C;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x4F5C;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5DE5;&#x4F5C;&#x539F;&#x7406;</h2>
+<p><strong>awk&#x811A;&#x672C;</strong> &#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;:<code>awk &apos;BEGIN{ commands } pattern{ commands } END{ commands }&apos;</code>&#x3002;</p>
+<ul>
+<li><strong>BEGIN&#x8BED;&#x53E5;&#x5757;</strong>: &#x5728;&#x6570;&#x636E;&#x8BFB;&#x5165;&#x524D;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x53D8;&#x91CF;&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6253;&#x5370;&#x8868;&#x5934;&#x7B49;&#x64CD;&#x4F5C;&#x53EF;&#x5728;&#x8FD9;&#x91CC;&#x6267;&#x884C;&#x3002;</li>
+<li><strong>pattern&#x8BED;&#x53E5;&#x5757;</strong>: &#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x4E3A; <strong>awk&#x547D;&#x4EE4;</strong> &#x7684;&#x6838;&#x5FC3;&#xFF0C;awk&#x4F1A;&#x4ECE;&#x6587;&#x4EF6;&#x6216;&#x8005;stdin&#x4E2D;&#x6309;&#x884C;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#xFF0C;&#x7531;pattern&#x8BED;&#x53E5;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</li>
+<li><strong>END&#x8BED;&#x53E5;&#x5757;</strong>: &#x4F1A;&#x5728;&#x5904;&#x7406;&#x5B8C;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x884C;&#x540E;&#x6267;&#x884C;&#xFF0C;&#x6BD4;&#x5982;&#x6253;&#x5370;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x3002;</li>
+</ul>
+<h2 id="&#x4F8B;&#x5B50;"><a name="&#x4F8B;&#x5B50;" class="anchor-navigation-ex-anchor" href="#&#x4F8B;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x4F8B;&#x5B50;</h2>
+<p>&#x5F85;&#x5904;&#x7406;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-txt">&#x6307;&#x6807;    2019&#x5E74;1&#x6708;    2018&#x5E74;12&#x6708;    2018&#x5E74;11&#x6708;    2018&#x5E74;10&#x6708;    2018&#x5E74;9&#x6708;    2018&#x5E74;8&#x6708;    2018&#x5E74;7&#x6708;    2018&#x5E74;6&#x6708;    2018&#x5E74;5&#x6708;    2018&#x5E74;4&#x6708;    2018&#x5E74;3&#x6708;    2018&#x5E74;2&#x6708;
+&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    101.7    101.9    102.2    102.5    102.5    102.3    102.1    101.9    101.8    101.8    102.1    102.9
+&#x98DF;&#x54C1;&#x70DF;&#x9152;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    102.0    102.4    102.5    102.9    103.0    101.9    101.0    100.8    100.7    101.1    102.0    103.6
+&#x8863;&#x7740;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    101.6    101.5    101.4    101.4    101.2    101.3    101.2    101.1    101.1    101.1    101.1    101.1
+&#x5C45;&#x4F4F;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    102.1    102.2    102.4    102.5    102.6    102.5    102.4    102.3    102.2    102.2    102.2    102.2
+&#x751F;&#x6D3B;&#x7528;&#x54C1;&#x53CA;&#x670D;&#x52A1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    101.5    101.4    101.5    101.5    101.6    101.6    101.6    101.5    101.5    101.5    101.6    101.8
+&#x4EA4;&#x901A;&#x548C;&#x901A;&#x4FE1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    98.7    99.3    101.6    103.2    102.8    102.7    103.0    102.4    101.8    101.1    100.3    101.5
+&#x6559;&#x80B2;&#x6587;&#x5316;&#x548C;&#x5A31;&#x4E50;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    102.9    102.3    102.5    102.5    102.2    102.6    102.3    101.8    101.9    102.0    102.2    103.7
+</code></pre>
+<p>&#x6DFB;&#x52A0;&#x524D;&#x540E;&#x6807;&#x8BC6;&#xFF1A;</p>
+<pre><code class="lang-shell">$ awk &apos;BEGIN{print &quot;----------awk begin-----------&quot;} {print} END{print &quot;----------awk end--------------&quot;}&apos; awktest.txt
+----------awk begin-----------
+&#x6307;&#x6807;    2019&#x5E74;1&#x6708;       2018&#x5E74;12&#x6708;      2018&#x5E74;11&#x6708;      2018&#x5E74;10&#x6708;      2018&#x5E74;9&#x6708;       2018&#x5E74;8&#x6708;       2018&#x5E74;7&#x6708;       2018&#x5E74;6&#x6708;       2018&#x5E74;5&#x6708;       2018&#x5E74;4&#x6708;       2018&#x5E74;3&#x6708;     2018&#x5E74;2&#x6708;
+&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)  101.7   101.9   102.2   102.5   102.5   102.3   102.1   101.9   101.8   101.8   102.1   102.9
+&#x98DF;&#x54C1;&#x70DF;&#x9152;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)        102.0   102.4   102.5   102.9   103.0   101.9   101.0   100.8   100.7   101.1   102.0   103.6
+&#x8863;&#x7740;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    101.6   101.5   101.4   101.4   101.2   101.3   101.2   101.1   101.1   101.1   101.1   101.1
+&#x5C45;&#x4F4F;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    102.1   102.2   102.4   102.5   102.6   102.5   102.4   102.3   102.2   102.2   102.2   102.2
+&#x751F;&#x6D3B;&#x7528;&#x54C1;&#x53CA;&#x670D;&#x52A1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)  101.5   101.4   101.5   101.5   101.6   101.6   101.6   101.5   101.5   101.5   101.6   101.8
+&#x4EA4;&#x901A;&#x548C;&#x901A;&#x4FE1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)      98.7    99.3    101.6   103.2   102.8   102.7   103.0   102.4   101.8   101.1   100.3   101.5
+&#x6559;&#x80B2;&#x6587;&#x5316;&#x548C;&#x5A31;&#x4E50;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)  102.9   102.3   102.5   102.5   102.2   102.6   102.3   101.8   101.9   102.0   102.2   103.7
+----------awk end--------------
+</code></pre>
+<p>&#x663E;&#x793A;&#x589E;&#x957F;&#x7684;&#x767E;&#x5206;&#x6BD4;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x5148;&#x6392;&#x9664;&#x7B2C;&#x4E00;&#x884C;(NR==1)&#xFF0C;&#x76F4;&#x63A5;&#x6253;&#x5370;&#x3002;
+# &#x7B2C;&#x4E00;&#x884C;&#x4E4B;&#x5916;&#xFF0C;&#x904D;&#x5386;&#x6BCF;&#x884C;&#x7684;&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E0D;&#x5904;&#x7406;&#xFF0C;&#x5176;&#x4F59;&#x5B57;&#x6BB5;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x3002;
+$ awk &apos;NR==1{print}; NR!=1{for(i=1;i&lt;NF;i++) if(i&gt;1) printf &quot;\t%-0.2f\%&quot;,$i-100;else if(i==1) printf &quot;%-32s&quot;,$i}; { print&quot;\n&quot;;}&apos; ORS=&quot;&quot; awktest.txt 
+&#x6307;&#x6807;    2019&#x5E74;1&#x6708;       2018&#x5E74;12&#x6708;      2018&#x5E74;11&#x6708;      2018&#x5E74;10&#x6708;      2018&#x5E74;9&#x6708;       2018&#x5E74;8&#x6708;       2018&#x5E74;7&#x6708;       2018&#x5E74;6&#x6708;       2018&#x5E74;5&#x6708;       2018&#x5E74;4&#x6708;       2018&#x5E74;3&#x6708;     2018&#x5E74;2&#x6708;
+&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)                  1.70%   1.90%   2.20%   2.50%   2.50%   2.30%   2.10%   1.90%   1.80%   1.80%   2.10%
+&#x98DF;&#x54C1;&#x70DF;&#x9152;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)                2.00%   2.40%   2.50%   2.90%   3.00%   1.90%   1.00%   0.80%   0.70%   1.10%   2.00%
+&#x8863;&#x7740;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)            1.60%   1.50%   1.40%   1.40%   1.20%   1.30%   1.20%   1.10%   1.10%   1.10%   1.10%
+&#x5C45;&#x4F4F;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)            2.10%   2.20%   2.40%   2.50%   2.60%   2.50%   2.40%   2.30%   2.20%   2.20%   2.20%
+&#x751F;&#x6D3B;&#x7528;&#x54C1;&#x53CA;&#x670D;&#x52A1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)          1.50%   1.40%   1.50%   1.50%   1.60%   1.60%   1.60%   1.50%   1.50%   1.50%   1.60%
+&#x4EA4;&#x901A;&#x548C;&#x901A;&#x4FE1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)              -1.30%  -0.70%  1.60%   3.20%   2.80%   2.70%   3.00%   2.40%   1.80%   1.10%   0.30%
+&#x6559;&#x80B2;&#x6587;&#x5316;&#x548C;&#x5A31;&#x4E50;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)          2.90%   2.30%   2.50%   2.50%   2.20%   2.60%   2.30%   1.80%   1.90%   2.00%   2.20%
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x7279;&#x6B8A;&#x7684;&#x5B57;&#x7B26;&#x8FC7;&#x6EE4;&#x7279;&#x5B9A;&#x7684;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x53EA;&#x663E;&#x793A;&#x5C45;&#x4F4F;&#x7C7B;&#x6307;&#x6807;&#x6570;&#x636E;
+# &#xFF5E; &#x4E3A;&#x5339;&#x914D;&#x5305;&#x542B;&#x540E;&#x7EED;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;, !~ &#x4E3A;&#x4E0D;&#x5339;&#x914D;
+# /&#x5C45;&#x4F4F;/ &#x4E3A;&#x6B63;&#x5219;&#x5339;&#x914D;&#x89C4;&#x5219;
+$ awk &apos;NR==1{print}; NR!=1 &amp;&amp; $1 ~ /&#x5C45;&#x4F4F;/&apos; awktest.txt 
+&#x6307;&#x6807;    2019&#x5E74;1&#x6708;       2018&#x5E74;12&#x6708;      2018&#x5E74;11&#x6708;      2018&#x5E74;10&#x6708;      2018&#x5E74;9&#x6708;       2018&#x5E74;8&#x6708;       2018&#x5E74;7&#x6708;       2018&#x5E74;6&#x6708;       2018&#x5E74;5&#x6708;       2018&#x5E74;4&#x6708;       2018&#x5E74;3&#x6708;     2018&#x5E74;2&#x6708;
+&#x5C45;&#x4F4F;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    102.1   102.2   102.4   102.5   102.6   102.5   102.4   102.3   102.2   102.2   102.2   102.2
+
+$ awk &apos;NR==1{print}; NR!=1 &amp;&amp; $1 !~ /&#x5C45;&#x4F4F;/&apos; awktest.txt 
+&#x6307;&#x6807;    2019&#x5E74;1&#x6708;       2018&#x5E74;12&#x6708;      2018&#x5E74;11&#x6708;      2018&#x5E74;10&#x6708;      2018&#x5E74;9&#x6708;       2018&#x5E74;8&#x6708;       2018&#x5E74;7&#x6708;       2018&#x5E74;6&#x6708;       2018&#x5E74;5&#x6708;       2018&#x5E74;4&#x6708;       2018&#x5E74;3&#x6708;     2018&#x5E74;2&#x6708;
+&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)  101.7   101.9   102.2   102.5   102.5   102.3   102.1   101.9   101.8   101.8   102.1   102.9
+&#x98DF;&#x54C1;&#x70DF;&#x9152;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)        102.0   102.4   102.5   102.9   103.0   101.9   101.0   100.8   100.7   101.1   102.0   103.6
+&#x8863;&#x7740;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)    101.6   101.5   101.4   101.4   101.2   101.3   101.2   101.1   101.1   101.1   101.1   101.1
+&#x751F;&#x6D3B;&#x7528;&#x54C1;&#x53CA;&#x670D;&#x52A1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)  101.5   101.4   101.5   101.5   101.6   101.6   101.6   101.5   101.5   101.5   101.6   101.8
+&#x4EA4;&#x901A;&#x548C;&#x901A;&#x4FE1;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)      98.7    99.3    101.6   103.2   102.8   102.7   103.0   102.4   101.8   101.1   100.3   101.5
+&#x6559;&#x80B2;&#x6587;&#x5316;&#x548C;&#x5A31;&#x4E50;&#x7C7B;&#x5C45;&#x6C11;&#x6D88;&#x8D39;&#x4EF7;&#x683C;&#x6307;&#x6570;(&#x4E0A;&#x5E74;&#x540C;&#x6708;=100)  102.9   102.3   102.5   102.5   102.2   102.6   102.3   101.8   101.9   102.0   102.2   103.7
+</code></pre>
+<p>&#x7EDF;&#x8BA1;&#x76EE;&#x5F55;&#x4E0B;&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#x4E4B;&#x548C;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x901A;&#x8FC7;&#x7BA1;&#x9053;&#x5C06;&#x6570;&#x636E;&#x4F20;&#x7ED9;awk&#x7EDF;&#x8BA1;
+$ ls -l |awk &apos;{sum+=$5}; END {printf &quot;%dKB\n&quot;,sum/1024}&apos;
+17KB
+</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2019-03-03 19:16:47
+2019-03-11 21:25:17
 </span></footer>
                                 
                                 </section>
@@ -2283,7 +2428,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux命令awk","level":"2.3.3","depth":2,"next":{"title":"C++","level":"2.4","depth":1,"path":"C++/README.md","ref":"C++/README.md","articles":[{"title":"CMake","level":"2.4.1","depth":2,"path":"C++/CMake/README.md","ref":"C++/CMake/README.md","articles":[{"title":"CMake使用(一)-格式规范","level":"2.4.1.1","depth":3,"path":"C++/CMake/1_CMake使用-格式规范.md","ref":"C++/CMake/1_CMake使用-格式规范.md","articles":[]},{"title":"CMake使用(二)-预编译选项添加","level":"2.4.1.2","depth":3,"path":"C++/CMake/2_CMake使用-预编译选项添加.md","ref":"C++/CMake/2_CMake使用-预编译选项添加.md","articles":[]}]}]},"previous":{"title":"Linux命令sed","level":"2.3.2","depth":2,"path":"Linux/Linux命令sed.md","ref":"Linux/Linux命令sed.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","anchor-navigation-ex","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux命令awk.md","mtime":"2019-03-03T11:16:47.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-09T14:24:12.323Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux命令awk","level":"2.3.4","depth":2,"next":{"title":"C++","level":"2.4","depth":1,"path":"C++/README.md","ref":"C++/README.md","articles":[{"title":"CMake","level":"2.4.1","depth":2,"path":"C++/CMake/README.md","ref":"C++/CMake/README.md","articles":[{"title":"CMake使用(一)-格式规范","level":"2.4.1.1","depth":3,"path":"C++/CMake/1_CMake使用-格式规范.md","ref":"C++/CMake/1_CMake使用-格式规范.md","articles":[]},{"title":"CMake使用(二)-预编译选项添加","level":"2.4.1.2","depth":3,"path":"C++/CMake/2_CMake使用-预编译选项添加.md","ref":"C++/CMake/2_CMake使用-预编译选项添加.md","articles":[]}]}]},"previous":{"title":"Linux命令sed","level":"2.3.3","depth":2,"path":"Linux/Linux命令sed.md","ref":"Linux/Linux命令sed.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","anchor-navigation-ex","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux命令awk.md","mtime":"2019-03-11T13:25:17.671Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-12T15:31:09.565Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
