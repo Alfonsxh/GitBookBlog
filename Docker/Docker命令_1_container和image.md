@@ -193,11 +193,76 @@ Untagged: haproxy@sha256:32ac3731d6ba43006a7e00a064d2687d790d4e2420e18be197f440c
 
 ### 创建镜像
 
-//todo:
+使用 **build** 选项可以根据 **Dockerfile** 描述的方式来创建目标镜像。
+
+```shell
+$ cat Dockerfile
+FROM python:3.7.2-alpine3.9
+
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
+    && apk add --no-cache bash expect gcc musl-dev zeromq-dev \
+    && mkdir -p ~/.pip \
+    && echo '[global]' > ~/.pip/pip.conf \
+    && echo 'index-url = https://pypi.tuna.tsinghua.edu.cn/simple' >> ~/.pip/pip.conf \
+    && pip install jupyter
+
+EXPOSE 8888
+
+# 构造镜像
+$ docker image build -t my_jupyter .
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM python:3.7.2-alpine3.9
+3.7.2-alpine3.9: Pulling from library/python
+6c40cc604d8e: Already exists 
+eb28c72fd5c9: Pull complete 
+...
+Step 4/4 : CMD jupyter-notebook --ip 0.0.0.0 --port 8888 --allow-root --no-browser
+ ---> Running in ba5b3e571487
+Removing intermediate container ba5b3e571487
+ ---> e97e3e81d0e1
+Successfully built e97e3e81d0e1
+Successfully tagged my_jupyter:latest
+
+# 查看镜像
+$ docker image ls 
+REPOSITORY          TAG                  IMAGE ID            CREATED             SIZE
+my_jupyter          latest               e97e3e81d0e1        3 minutes ago       298MB
+```
+
+`-t` 参数是指定镜像的tag，`.` 表示的是Dockerfile的上下文，在构建时，客户端的docker会将该路径下的所有文件发送到docker服务器！**所以，尽量不要把与构建镜像无关的大文件放在上下文中**！
 
 ### 存出和载入镜像
 
-//todo:
+使用 **save** 选项来导出目标镜像，使用 **load** 选项来导入镜像。
+
+```shell
+# 导出到本地归档文件中
+$ docker image save -o my_jupyer.tar my_jupyter:latest 
+$ ll
+总用量 301680
+drwxrwxr-x  2 xiaohui xiaohui      4096 3月  20 17:08 ./
+drwxrwxr-x 15 xiaohui xiaohui      4096 3月   8 10:30 ../
+-rw-rw-r--  1 xiaohui xiaohui       446 2月  22 12:01 Dockerfile
+-rw-------  1 xiaohui xiaohui 308901376 3月  20 17:08 my_jupyer.tar
+
+# 删除目标镜像
+$ docker image rm my_jupyter:latest 
+Untagged: my_jupyter:latest
+Deleted: sha256:e97e3e81d0e122dafae9dce5137ec95a0d21984b502fa09756e64061b33767e2
+Deleted: sha256:3b45659b7dc7e7225e0e00efb689fceb125fa00bf2ef902ff2efd038e1f85074
+Deleted: sha256:77c4c2c997fb44fde0b075b6a16a059b156a883f9cbae817d09018cfaa01c822
+Deleted: sha256:6af3924c282740de20ba84154d9875058bcfd96dbd73bdc1587c13ea0e1d4cdd
+$ docker image ls
+REPOSITORY          TAG                  IMAGE ID            CREATED             SIZE
+
+# 导入目标镜像
+$ docker image load -i ./my_jupyer.tar 
+c3bc0525710f: Loading layer [==================================================>]  218.4MB/218.4MB
+Loaded image: my_jupyter:latest
+$ docker image ls
+REPOSITORY          TAG                  IMAGE ID            CREATED             SIZE
+my_jupyter          latest               e97e3e81d0e1        6 minutes ago       298MB
+```
 
 ## 容器
 
