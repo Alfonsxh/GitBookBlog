@@ -1,0 +1,2571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux命令_find · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Alfons <alfons_xh@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="去除awk截取参数中的换行符.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Alfons's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../Python/">
+            
+                <a href="../../Python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Python/STL/">
+            
+                <a href="../../Python/STL/">
+            
+                    
+                    STL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../Python/STL/01_Text_Processing/">
+            
+                <a href="../../Python/STL/01_Text_Processing/">
+            
+                    
+                    Text Processing Services
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1.1" data-path="../../Python/STL/01_Text_Processing/1.1 string.html">
+            
+                <a href="../../Python/STL/01_Text_Processing/1.1 string.html">
+            
+                    
+                    string 字符串常量和模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.1.2" data-path="../../Python/STL/01_Text_Processing/1.2 re.html">
+            
+                <a href="../../Python/STL/01_Text_Processing/1.2 re.html">
+            
+                    
+                    re 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.1.3" data-path="../../Python/STL/01_Text_Processing/1.3 difflib.html">
+            
+                <a href="../../Python/STL/01_Text_Processing/1.3 difflib.html">
+            
+                    
+                    difflib 字符串差异比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.1.4" data-path="../../Python/STL/01_Text_Processing/1.4 textwrap.html">
+            
+                <a href="../../Python/STL/01_Text_Processing/1.4 textwrap.html">
+            
+                    
+                    textwrap 字符串段格式化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../Python/STL/02_Binary_Data/">
+            
+                <a href="../../Python/STL/02_Binary_Data/">
+            
+                    
+                    Binary Data Services
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.2.1" data-path="../../Python/STL/02_Binary_Data/2.1 struct.html">
+            
+                <a href="../../Python/STL/02_Binary_Data/2.1 struct.html">
+            
+                    
+                    struct 二进制编码与解码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../Python/STL/03_Data_Types/">
+            
+                <a href="../../Python/STL/03_Data_Types/">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../Python/STL/04_Numeric/">
+            
+                <a href="../../Python/STL/04_Numeric/">
+            
+                    
+                    Numeric and Mathematical Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../Python/STL/05_Functional/">
+            
+                <a href="../../Python/STL/05_Functional/">
+            
+                    
+                    Functional Programming Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../Python/STL/06_File_and_Directory/">
+            
+                <a href="../../Python/STL/06_File_and_Directory/">
+            
+                    
+                    File and Directory Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="../../Python/STL/07_Data_Persistence/">
+            
+                <a href="../../Python/STL/07_Data_Persistence/">
+            
+                    
+                    Data Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.8" data-path="../../Python/STL/08_Compression_and_Archiving/">
+            
+                <a href="../../Python/STL/08_Compression_and_Archiving/">
+            
+                    
+                    Data Compression and Archiving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.9" data-path="../../Python/STL/09_File_Formats/">
+            
+                <a href="../../Python/STL/09_File_Formats/">
+            
+                    
+                    File Formats
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.9.1" data-path="../../Python/STL/09_File_Formats/9.1 configparser.html">
+            
+                <a href="../../Python/STL/09_File_Formats/9.1 configparser.html">
+            
+                    
+                    configparser 配置解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10" data-path="../../Python/STL/10_Cryptographic_Services/">
+            
+                <a href="../../Python/STL/10_Cryptographic_Services/">
+            
+                    
+                    Cryptographic Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.11" data-path="../../Python/STL/11_Generic_Operating/">
+            
+                <a href="../../Python/STL/11_Generic_Operating/">
+            
+                    
+                    Generic Operating System Services
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.11.1" data-path="../../Python/STL/11_Generic_Operating/11.1 platform.html">
+            
+                <a href="../../Python/STL/11_Generic_Operating/11.1 platform.html">
+            
+                    
+                    platform 平台相关信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.11.2" data-path="../../Python/STL/11_Generic_Operating/11.2 argparse.html">
+            
+                <a href="../../Python/STL/11_Generic_Operating/11.2 argparse.html">
+            
+                    
+                    argparse 处理命令行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.12" data-path="../../Python/STL/12_Concurrent_Execution/">
+            
+                <a href="../../Python/STL/12_Concurrent_Execution/">
+            
+                    
+                    Concurrent Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.13" data-path="../../Python/STL/13_Networking/">
+            
+                <a href="../../Python/STL/13_Networking/">
+            
+                    
+                    Interprocess Communication and Networking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.14" data-path="../../Python/STL/14_Internet_Data_Handling/">
+            
+                <a href="../../Python/STL/14_Internet_Data_Handling/">
+            
+                    
+                    Internet Data Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.15" data-path="../../Python/STL/15_Structured_Markup_Processing_Tools/">
+            
+                <a href="../../Python/STL/15_Structured_Markup_Processing_Tools/">
+            
+                    
+                    Structured Markup Processing Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.16" data-path="../../Python/STL/16_Internet_Protocols_and_Support/">
+            
+                <a href="../../Python/STL/16_Internet_Protocols_and_Support/">
+            
+                    
+                    Internet Protocols and Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.17" data-path="../../Python/STL/17_Multimedia_Services/">
+            
+                <a href="../../Python/STL/17_Multimedia_Services/">
+            
+                    
+                    Multimedia Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.18" data-path="../../Python/STL/18_Internationalization/">
+            
+                <a href="../../Python/STL/18_Internationalization/">
+            
+                    
+                    Internationalization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.19" data-path="../../Python/STL/19_Program_Frameworks/">
+            
+                <a href="../../Python/STL/19_Program_Frameworks/">
+            
+                    
+                    Program Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../Python/Django笔记/">
+            
+                <a href="../../Python/Django笔记/">
+            
+                    
+                    Django笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../Python/Django笔记/1_Diango入门篇.html">
+            
+                <a href="../../Python/Django笔记/1_Diango入门篇.html">
+            
+                    
+                    1_Diango入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../Python/Django笔记/2_Django_URLconf.html">
+            
+                <a href="../../Python/Django笔记/2_Django_URLconf.html">
+            
+                    
+                    2_Django_URLconf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../Python/Django笔记/3_Django_模板.html">
+            
+                <a href="../../Python/Django笔记/3_Django_模板.html">
+            
+                    
+                    3_Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../Python/Django笔记/4_Django_通用视图.html">
+            
+                <a href="../../Python/Django笔记/4_Django_通用视图.html">
+            
+                    
+                    4_Django通用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../Python/Django笔记/5_Django_模型.html">
+            
+                <a href="../../Python/Django笔记/5_Django_模型.html">
+            
+                    
+                    5_Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../Python/Spider/">
+            
+                <a href="../../Python/Spider/">
+            
+                    
+                    Spider
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../Python/Spider/DoubanMovie爬虫.html">
+            
+                <a href="../../Python/Spider/DoubanMovie爬虫.html">
+            
+                    
+                    DoubanMovie爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../Python/Spider/Redis/Redis使用.html">
+            
+                <a href="../../Python/Spider/Redis/Redis使用.html">
+            
+                    
+                    Redis使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../Python/Spider/Scrapy/">
+            
+                <a href="../../Python/Spider/Scrapy/">
+            
+                    
+                    Scrapy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.3.1" data-path="../../Python/Spider/Scrapy/1_Scrapy模块介绍.html">
+            
+                <a href="../../Python/Spider/Scrapy/1_Scrapy模块介绍.html">
+            
+                    
+                    1_Scrapy模块介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3.2" data-path="../../Python/Spider/Scrapy/2_Scrapy模块使用及调试.html">
+            
+                <a href="../../Python/Spider/Scrapy/2_Scrapy模块使用及调试.html">
+            
+                    
+                    2_Scrapy模块使用及调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../Python/Spider/BeautifulSoup使用手册.html">
+            
+                <a href="../../Python/Spider/BeautifulSoup使用手册.html">
+            
+                    
+                    BeautifulSoup使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../../Python/Spider/lxml中使用xpath.html">
+            
+                <a href="../../Python/Spider/lxml中使用xpath.html">
+            
+                    
+                    lxml中使用xpath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../Python/Frida/">
+            
+                <a href="../../Python/Frida/">
+            
+                    
+                    Frida
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../Python/Frida/Frida_基础使用手册.html">
+            
+                <a href="../../Python/Frida/Frida_基础使用手册.html">
+            
+                    
+                    Frida_基础使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../Python/Frida/Frida_API_不完整说明.html">
+            
+                <a href="../../Python/Frida/Frida_API_不完整说明.html">
+            
+                    
+                    FridaAPI不完整说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../Python/GIL全局解释器锁.html">
+            
+                <a href="../../Python/GIL全局解释器锁.html">
+            
+                    
+                    GIL全局解释器锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../Python/SqlAlchemy.html">
+            
+                <a href="../../Python/SqlAlchemy.html">
+            
+                    
+                    SqlAlchemy使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../Python/Python装饰器.html">
+            
+                <a href="../../Python/Python装饰器.html">
+            
+                    
+                    Python装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../Python/Python__slots__和__all__.html">
+            
+                <a href="../../Python/Python__slots__和__all__.html">
+            
+                    
+                    Python slots和all
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../Python/Python_json解析错误处理.html">
+            
+                <a href="../../Python/Python_json解析错误处理.html">
+            
+                    
+                    Python json解析错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../Python/Python_pymysql连接错误.html">
+            
+                <a href="../../Python/Python_pymysql连接错误.html">
+            
+                    
+                    Python pymysql连接错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../Python/Python杀不死的子进程.html">
+            
+                <a href="../../Python/Python杀不死的子进程.html">
+            
+                    
+                    Python杀不死的子进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../Python/hashcat使用说明.html">
+            
+                <a href="../../Python/hashcat使用说明.html">
+            
+                    
+                    hashcat使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../../Python/推荐import模块的方式.html">
+            
+                <a href="../../Python/推荐import模块的方式.html">
+            
+                    
+                    推荐import模块的方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../../Python/subprocess中Popen，call的区别.html">
+            
+                <a href="../../Python/subprocess中Popen，call的区别.html">
+            
+                    
+                    subprocess中Popen，call的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../../Python/Django论坛部署.html">
+            
+                <a href="../../Python/Django论坛部署.html">
+            
+                    
+                    Django论坛部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../Docker/Docker_1_container和image命令.html">
+            
+                <a href="../../Docker/Docker_1_container和image命令.html">
+            
+                    
+                    Docker_1_container和image命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../Docker/Docker_2_Dockerfile创建镜像.html">
+            
+                <a href="../../Docker/Docker_2_Dockerfile创建镜像.html">
+            
+                    
+                    Docker_2_Dockerfile创建镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../Docker/Docker_3_redis主从同步实现.html">
+            
+                <a href="../../Docker/Docker_3_redis主从同步实现.html">
+            
+                    
+                    Docker_3_redis主从同步实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    LInux命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.3.1.1" data-path="find.html">
+            
+                <a href="find.html">
+            
+                    
+                    Linux命令_find
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.1.2" data-path="去除awk截取参数中的换行符.html">
+            
+                <a href="去除awk截取参数中的换行符.html">
+            
+                    
+                    去除awk截取参数中的换行符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.1.3" data-path="sed.html">
+            
+                <a href="sed.html">
+            
+                    
+                    Linux命令_sed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.1.4" data-path="awk.html">
+            
+                <a href="awk.html">
+            
+                    
+                    Linux命令_awk
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../Linux系统编程/Readme.html">
+            
+                <a href="../Linux系统编程/Readme.html">
+            
+                    
+                    Linux系统编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="../Linux系统编程/1_Linux系统编程_概念.html">
+            
+                <a href="../Linux系统编程/1_Linux系统编程_概念.html">
+            
+                    
+                    1_Linux系统编程:概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="../Linux系统编程/2_Linux系统编程_文件IO.html">
+            
+                <a href="../Linux系统编程/2_Linux系统编程_文件IO.html">
+            
+                    
+                    2_Linux系统编程:文件IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../C++/">
+            
+                <a href="../../C++/">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../C++/CMake/">
+            
+                <a href="../../C++/CMake/">
+            
+                    
+                    CMake
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.1" data-path="../../C++/CMake/1_CMake使用-格式规范.html">
+            
+                <a href="../../C++/CMake/1_CMake使用-格式规范.html">
+            
+                    
+                    CMake使用(一)-格式规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2" data-path="../../C++/CMake/2_CMake使用-预编译选项添加.html">
+            
+                <a href="../../C++/CMake/2_CMake使用-预编译选项添加.html">
+            
+                    
+                    CMake使用(二)-预编译选项添加
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../Algorithms/">
+            
+                <a href="../../Algorithms/">
+            
+                    
+                    算法&数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../Algorithms/AlgorithmsArea/">
+            
+                <a href="../../Algorithms/AlgorithmsArea/">
+            
+                    
+                    算法笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../../Algorithms/AlgorithmsArea/Fibonacci.html">
+            
+                <a href="../../Algorithms/AlgorithmsArea/Fibonacci.html">
+            
+                    
+                    Fibonacci数列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="../../Algorithms/AlgorithmsArea/元素去重.html">
+            
+                <a href="../../Algorithms/AlgorithmsArea/元素去重.html">
+            
+                    
+                    元素去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.3" data-path="../../Algorithms/AlgorithmsArea/红黑树.html">
+            
+                <a href="../../Algorithms/AlgorithmsArea/红黑树.html">
+            
+                    
+                    红黑树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.4" data-path="../../Algorithms/AlgorithmsArea/k路归并排序.html">
+            
+                <a href="../../Algorithms/AlgorithmsArea/k路归并排序.html">
+            
+                    
+                    k路归并排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../Algorithms/查找算法.html">
+            
+                <a href="../../Algorithms/查找算法.html">
+            
+                    
+                    查找算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../../Algorithms/排序算法.html">
+            
+                <a href="../../Algorithms/排序算法.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../../Algorithms/最短路径.html">
+            
+                <a href="../../Algorithms/最短路径.html">
+            
+                    
+                    最短路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../../Algorithms/动态规划.html">
+            
+                <a href="../../Algorithms/动态规划.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../陈皓专栏笔记/">
+            
+                <a href="../../陈皓专栏笔记/">
+            
+                    
+                    陈皓专栏笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../../陈皓专栏笔记/1_泛型编程.html">
+            
+                <a href="../../陈皓专栏笔记/1_泛型编程.html">
+            
+                    
+                    泛型编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../../陈皓专栏笔记/2_编程的本质.html">
+            
+                <a href="../../陈皓专栏笔记/2_编程的本质.html">
+            
+                    
+                    编程的本质
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../LeetCode/">
+            
+                <a href="../../LeetCode/">
+            
+                    
+                    LeetCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../随笔/">
+            
+                <a href="../../随笔/">
+            
+                    
+                    随笔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../../随笔/告别面向对象.html">
+            
+                <a href="../../随笔/告别面向对象.html">
+            
+                    
+                    告别面向对象？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="../../随笔/流浪地球.html">
+            
+                <a href="../../随笔/流浪地球.html">
+            
+                    
+                    流浪地球
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Books/ProfessionBooks/">
+            
+                <a href="../../Books/ProfessionBooks/">
+            
+                    
+                    打怪升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../Books/ProfessionBooks/程序员的自我修养/">
+            
+                <a href="../../Books/ProfessionBooks/程序员的自我修养/">
+            
+                    
+                    程序员的自我修养--链接、装载与库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../Books/ProfessionBooks/程序员的自我修养/编译.html">
+            
+                <a href="../../Books/ProfessionBooks/程序员的自我修养/编译.html">
+            
+                    
+                    编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../Books/ProfessionBooks/程序员的自我修养/Elf文件.html">
+            
+                <a href="../../Books/ProfessionBooks/程序员的自我修养/Elf文件.html">
+            
+                    
+                    Elf文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../Books/ProfessionBooks/流畅的Python/">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/">
+            
+                    
+                    流畅的Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../Books/ProfessionBooks/流畅的Python/第1章-Python数据模型.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第1章-Python数据模型.html">
+            
+                    
+                    第1章-Python数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../Books/ProfessionBooks/流畅的Python/第2章-序列构成的数组.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第2章-序列构成的数组.html">
+            
+                    
+                    第2章-序列构成的数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../Books/ProfessionBooks/流畅的Python/第3章-字典和集合.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第3章-字典和集合.html">
+            
+                    
+                    第3章-字典和集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../Books/ProfessionBooks/流畅的Python/第4章-文本和字节序.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第4章-文本和字节序.html">
+            
+                    
+                    第4章-文本和字节序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../Books/ProfessionBooks/流畅的Python/第5章-一等函数.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第5章-一等函数.html">
+            
+                    
+                    第5章-一等函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../../Books/ProfessionBooks/流畅的Python/第6章-使用一等函数实现设计模式.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第6章-使用一等函数实现设计模式.html">
+            
+                    
+                    第6章-使用一等函数实现设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.7" data-path="../../Books/ProfessionBooks/流畅的Python/第7章-函数装饰器和闭包.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第7章-函数装饰器和闭包.html">
+            
+                    
+                    第7章-函数装饰器和闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.8" data-path="../../Books/ProfessionBooks/流畅的Python/第8章-对象引用、可变性和垃圾回收.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第8章-对象引用、可变性和垃圾回收.html">
+            
+                    
+                    第8章-对象引用、可变性和垃圾回收
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.9" data-path="../../Books/ProfessionBooks/流畅的Python/第9章-符合Python风格的对象.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第9章-符合Python风格的对象.html">
+            
+                    
+                    第9章-符合Python风格的对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.10" data-path="../../Books/ProfessionBooks/流畅的Python/第10章-序列的修改、散列和切片.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第10章-序列的修改、散列和切片.html">
+            
+                    
+                    第10章-序列的修改、散列和切片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.11" data-path="../../Books/ProfessionBooks/流畅的Python/第11章-接口：从协议到抽象基类.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第11章-接口：从协议到抽象基类.html">
+            
+                    
+                    第11章-接口：从协议到抽象基类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.12" data-path="../../Books/ProfessionBooks/流畅的Python/第12章-继承的优缺点.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第12章-继承的优缺点.html">
+            
+                    
+                    第12章-继承的优缺点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.13" data-path="../../Books/ProfessionBooks/流畅的Python/第13章-正确重载运算符.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第13章-正确重载运算符.html">
+            
+                    
+                    第13章-正确重载运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.14" data-path="../../Books/ProfessionBooks/流畅的Python/第14章-可迭代的对象、迭代器和生成器.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第14章-可迭代的对象、迭代器和生成器.html">
+            
+                    
+                    第14章-可迭代的对象、迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.15" data-path="../../Books/ProfessionBooks/流畅的Python/第15章-上下文管理器和else块.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第15章-上下文管理器和else块.html">
+            
+                    
+                    第15章-上下文管理器和else块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.16" data-path="../../Books/ProfessionBooks/流畅的Python/第16章-协程.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第16章-协程.html">
+            
+                    
+                    第16章-协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.17" data-path="../../Books/ProfessionBooks/流畅的Python/第17章-使用future处理并发.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第17章-使用future处理并发.html">
+            
+                    
+                    第17章-使用future处理并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.18" data-path="../../Books/ProfessionBooks/流畅的Python/第18章-使用asyncio处理并发.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第18章-使用asyncio处理并发.html">
+            
+                    
+                    第18章-使用asyncio处理并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.19" data-path="../../Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.html">
+            
+                    
+                    第19章-动态属性和特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.20" data-path="../../Books/ProfessionBooks/流畅的Python/第20章-属性描述符.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第20章-属性描述符.html">
+            
+                    
+                    第20章-属性描述符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.21" data-path="../../Books/ProfessionBooks/流畅的Python/第21章-类元编程.html">
+            
+                <a href="../../Books/ProfessionBooks/流畅的Python/第21章-类元编程.html">
+            
+                    
+                    第21章-类元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../Books/ProfessionBooks/算法图解/">
+            
+                <a href="../../Books/ProfessionBooks/算法图解/">
+            
+                    
+                    算法图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../Books/ProfessionBooks/图解密码技术/">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/">
+            
+                    
+                    图解密码技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../Books/ProfessionBooks/图解密码技术/1-环游密码世界.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/1-环游密码世界.html">
+            
+                    
+                    1-环游密码世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../../Books/ProfessionBooks/图解密码技术/2-历史上的密码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/2-历史上的密码.html">
+            
+                    
+                    2-历史上的密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="../../Books/ProfessionBooks/图解密码技术/3-对称密码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/3-对称密码.html">
+            
+                    
+                    3-对称密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.4" data-path="../../Books/ProfessionBooks/图解密码技术/4-分组密码的模式.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/4-分组密码的模式.html">
+            
+                    
+                    4-分组密码的模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.5" data-path="../../Books/ProfessionBooks/图解密码技术/5-公钥密码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/5-公钥密码.html">
+            
+                    
+                    5-公钥密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.6" data-path="../../Books/ProfessionBooks/图解密码技术/6-混合密码系统.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/6-混合密码系统.html">
+            
+                    
+                    6-混合密码系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.7" data-path="../../Books/ProfessionBooks/图解密码技术/7-单向散列函数.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/7-单向散列函数.html">
+            
+                    
+                    7-单向散列函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.8" data-path="../../Books/ProfessionBooks/图解密码技术/8-消息认证码.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/8-消息认证码.html">
+            
+                    
+                    8-消息认证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.9" data-path="../../Books/ProfessionBooks/图解密码技术/9-数字签名.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/9-数字签名.html">
+            
+                    
+                    9-数字签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.10" data-path="../../Books/ProfessionBooks/图解密码技术/10-证书.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/10-证书.html">
+            
+                    
+                    10-证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.11" data-path="../../Books/ProfessionBooks/图解密码技术/11-密钥.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/11-密钥.html">
+            
+                    
+                    11-密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.12" data-path="../../Books/ProfessionBooks/图解密码技术/12-随机数.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/12-随机数.html">
+            
+                    
+                    12-随机数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.13" data-path="../../Books/ProfessionBooks/图解密码技术/13-PGP.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/13-PGP.html">
+            
+                    
+                    13-PGP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.14" data-path="../../Books/ProfessionBooks/图解密码技术/14-SSL与TLS.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/14-SSL与TLS.html">
+            
+                    
+                    14-SSL与TLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.15" data-path="../../Books/ProfessionBooks/图解密码技术/15-密码技术与现实社会.html">
+            
+                <a href="../../Books/ProfessionBooks/图解密码技术/15-密码技术与现实社会.html">
+            
+                    
+                    15-密码技术与现实社会
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../Books/ProfessionBooks/MySQL必知必会/">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/">
+            
+                    
+                    MySQL必知必会
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="../../Books/ProfessionBooks/MySQL必知必会/1_SQL基础.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/1_SQL基础.html">
+            
+                    
+                    1-SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2" data-path="../../Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.html">
+            
+                    
+                    2-MySQL基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.3" data-path="../../Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.html">
+            
+                    
+                    3-MySQL高级操作_聚集和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.4" data-path="../../Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.html">
+            
+                    
+                    4-MySQL高级操作_联结查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.5" data-path="../../Books/ProfessionBooks/MySQL必知必会/5_MySQL基础操作_增删改.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/5_MySQL基础操作_增删改.html">
+            
+                    
+                    5-MySQL基础操作_增删改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.6" data-path="../../Books/ProfessionBooks/MySQL必知必会/6_MySQL使用视图.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/6_MySQL使用视图.html">
+            
+                    
+                    6-MySQL使用视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.7" data-path="../../Books/ProfessionBooks/MySQL必知必会/7_MySQL使用存储过程.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/7_MySQL使用存储过程.html">
+            
+                    
+                    7-MySQL使用存储过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.8" data-path="../../Books/ProfessionBooks/MySQL必知必会/8_MySQL使用索引.html">
+            
+                <a href="../../Books/ProfessionBooks/MySQL必知必会/8_MySQL使用索引.html">
+            
+                    
+                    8-MySQL使用索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../../Books/ProfessionBooks/图解设计模式/">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/">
+            
+                    
+                    图解设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.6.1" data-path="../../Books/ProfessionBooks/图解设计模式/0-关于UML.html">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/0-关于UML.html">
+            
+                    
+                    0-关于UML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6.2" data-path="../../Books/ProfessionBooks/图解设计模式/1-Iterator模式.html">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/1-Iterator模式.html">
+            
+                    
+                    1-Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6.3" data-path="../../Books/ProfessionBooks/图解设计模式/13-Visitor模式.html">
+            
+                <a href="../../Books/ProfessionBooks/图解设计模式/13-Visitor模式.html">
+            
+                    
+                    13-Visitor模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Books/OtherBooks/">
+            
+                <a href="../../Books/OtherBooks/">
+            
+                    
+                    陶冶情操
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../Books/OtherBooks/见识.html">
+            
+                <a href="../../Books/OtherBooks/见识.html">
+            
+                    
+                    《见识》
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../Books/OtherBooks/未来简史.html">
+            
+                <a href="../../Books/OtherBooks/未来简史.html">
+            
+                    
+                    《未来简史》
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../Books/OtherBooks/今日简史.html">
+            
+                <a href="../../Books/OtherBooks/今日简史.html">
+            
+                    
+                    《今日简史》
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Linux命令_find</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#linux&#x547D;&#x4EE4;find"><b>1. </b>Linux&#x547D;&#x4EE4;find</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F8B;&#x5B50;"><b>1.1. </b>&#x4F8B;&#x5B50;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b>1.1.1. </b>&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x627E;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;"><b>1.1.2. </b>&#x67E5;&#x627E;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x6839;&#x636E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;"><b>1.1.3. </b>&#x6839;&#x636E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;</a></li><li><span class="title-icon "></span><a href="#&#x6839;&#x636E;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;"><b>1.1.4. </b>&#x6839;&#x636E;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;</a></li><li><span class="title-icon "></span><a href="#&#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x64CD;&#x4F5C;"><b>1.1.5. </b>&#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x64CD;&#x4F5C;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.2. </b>&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#linux&#x547D;&#x4EE4;find" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="linux&#x547D;&#x4EE4;find"><a name="linux&#x547D;&#x4EE4;find" class="anchor-navigation-ex-anchor" href="#linux&#x547D;&#x4EE4;find"><i class="fa fa-link" aria-hidden="true"></i></a>1. Linux&#x547D;&#x4EE4;find</h1>
+<p>&#x901A;&#x8FC7; <strong>find&#x547D;&#x4EE4;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x67E5;&#x627E;&#x7B26;&#x5408;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x591A;&#x957F;&#x65F6;&#x95F4;&#x5185;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5927;&#x5C0F;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;&#x7B49;&#xFF0C;&#x914D;&#x5408;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>find&#x547D;&#x4EE4;</strong> &#x57FA;&#x672C;&#x8BED;&#x6CD5;&#xFF1A; <code>find [path] [option] [expression]</code>&#x3002;</p>
+<h2 id="&#x4F8B;&#x5B50;"><a name="&#x4F8B;&#x5B50;" class="anchor-navigation-ex-anchor" href="#&#x4F8B;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4F8B;&#x5B50;</h2>
+<h3 id="&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x57FA;&#x672C;&#x64CD;&#x4F5C;</h3>
+<p>&#x5217;&#x51FA;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x53CA;&#x5176;&#x5B50;&#x76EE;&#x5F55;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x76F4;&#x63A5;&#x4F7F;&#x7528;find&#x5373;&#x53EF;
+$ find
+.
+./&#x53BB;&#x9664;awk&#x622A;&#x53D6;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x6362;&#x884C;&#x7B26;.md
+./Linux&#x547D;&#x4EE4;find.md
+./README.md
+./Linux&#x547D;&#x4EE4;awk.md
+./Linux&#x547D;&#x4EE4;sed.md
+</code></pre>
+<p>&#x627E;&#x51FA;&#x7279;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-shell">$ find ../Image/ -name &quot;*.jpg&quot;
+../Image/Python/&#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;/DiffBetweenThreadAndCoro.jpg
+../Image/Python/GIL&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;/GIL_with_diff_CPU.jpg
+../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/increment_set_8_9.jpg
+../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/increment_not_set.jpg
+...
+
+# &#x5728;&#x76EE;&#x5F55;&#x6DF1;&#x5EA6;&#x7684;&#x6700;&#x5927;&#x8303;&#x56F4;&#x4E3A;2&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x53EA;&#x6709;&#x4E09;&#x4E2A;
+$ find ../Image/ -maxdepth 2 -name &quot;*.jpg&quot; 
+../Image/Docker/get_master_nil.jpg
+../Image/Docker/diff_between_run_create.jpg
+../Image/Docker/get_master_success.jpg
+</code></pre>
+<h3 id="&#x67E5;&#x627E;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;"><a name="&#x67E5;&#x627E;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x627E;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x67E5;&#x627E;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;</h3>
+<p>&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x9009;&#x9879;&#xFF1A;</p>
+<ul>
+<li><strong>atime/&#x5929;&#xFF0C;amin/&#x5206;&#x949F;</strong>: a&#x8868;&#x793A; <strong>accessed</strong>&#xFF0C;&#x6309;&#x7167;&#x7528;&#x6237;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;(&#x5B58;&#x53D6;&#x8FC7;)&#x65F6;&#x95F4;&#x6765;&#x8FC7;&#x6EE4;&#x3002;</li>
+<li><strong>ctime/&#x5929;&#xFF0C;cmin/&#x5206;&#x949F;</strong>: c&#x8868;&#x793A; <strong>change</strong>&#xFF0C;&#x6309;&#x7167;&#x6587;&#x4EF6;&#x6570;&#x636E;&#x5143;(&#x4F8B;&#x5982;&#x6743;&#x9650;&#x7B49;)&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x6765;&#x8FC7;&#x6EE4;&#x3002;</li>
+<li><strong>mtime/&#x5929;&#xFF0C;mmin/&#x5206;&#x949F;</strong>: m&#x8868;&#x793A; <strong>modified</strong>&#xFF0C;&#x6309;&#x7167;&#x7528;&#x6237;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x6765;&#x8FC7;&#x6EE4;&#x3002;</li>
+<li><strong>newer file</strong>: &#x67E5;&#x627E;&#x6BD4; <strong>file</strong> &#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x66F4;&#x957F;&#x7684;&#x6587;&#x4EF6;&#x3002;(newer &#x8868;&#x793A;file&#x66F4;&#x65B0;&#x4E00;&#x70B9;)</li>
+<li><strong>anewer file</strong>: &#x67E5;&#x627E;&#x6BD4; <strong>file</strong> &#x5B58;&#x53D6;&#x65F6;&#x95F4;&#x66F4;&#x957F;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li><strong>cnewer file</strong>: &#x67E5;&#x627E;&#x6BD4; <strong>file</strong> &#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x66F4;&#x957F;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x524D;&#x516D;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x65F6;&#x95F4;&#x8303;&#x56F4;:</p>
+<ul>
+<li><strong>-atime -7</strong> &#x8868;&#x793A;&#x5728;&#x4E03;&#x5929;&#x5185;&#x4FEE;&#x6539;&#x8FC7;&#x3002;</li>
+<li><strong>-atime 7</strong> &#x8868;&#x793A;&#x6B63;&#x597D;&#x5728;&#x4E03;&#x5929;&#x524D;&#x4FEE;&#x6539;&#x8FC7;&#x3002;</li>
+<li><strong>-atime +7</strong> &#x8868;&#x793A;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#x8D85;&#x8FC7;&#x4E03;&#x5929;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x627E;&#x51FA;&#x7279;&#x5B9A;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6587;&#x4EF6;
+$ find ../Image/ -name &quot;*.jpg&quot; -ctime -30 | xargs ls -l
+-rw&#x4E00;&#x70B9;-rw-r-- 1 alfons alfons  79076 3&#x6708;   9 21:57 ../Image/Docker/dif&#x4E00;&#x70B9;f_between_run_create.jpg
+-rw&#x4E00;&#x70B9;-rw-r-- 1 alfons alfons 154655 3&#x6708;   9 21:57 ../Image/Docker/get&#x4E00;&#x70B9;_master_nil.jpg
+-rw-rw-r-- 1 alfons alfons 156051 3&#x6708;   9 21:57 ../Image/Docker/get_master_success.jpg
+-rw-r--r-- 1 alfons alfons 211543 2&#x6708;  20 22:25 ../Image/Python/DoubanMovie&#x722C;&#x866B;/1_new_search_subjects.jpg
+-rw-rw-r-- 1 alfons alfons   5366 1&#x6708;  14 10:49 ../Image/Python/DoubanMovie&#x722C;&#x866B;/5_captcha.jpg
+
+# &#x627E;&#x5230;&#x6BD4;READM.md&#x66F4;&#x8001;&#x7684;&#x6587;&#x4EF6;
+$ ls -l README.md 
+-rw-rw-r-- 1 alfons alfons 9 7&#x6708;  18  2018 README.md
+
+$ find ../Image/ -name &quot;*.jpg&quot; -newer README.md | xargs ls -l
+-rw-rw-r-- 1 alfons alfons  84299 9&#x6708;  28 22:33 ../Image/Books/OtherBooks/&#x89C1;&#x8BC6;.jpg
+-rw-rw-r-- 1 alfons alfons  26541 11&#x6708;  4 21:26 ../Image/Books/OtherBooks/&#x4ECA;&#x65E5;&#x7B80;&#x53F2;.jpg
+....
+</code></pre>
+<h3 id="&#x6839;&#x636E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;"><a name="&#x6839;&#x636E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;" class="anchor-navigation-ex-anchor" href="#&#x6839;&#x636E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x6839;&#x636E;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x67E5;&#x627E;</h3>
+<p>&#x57FA;&#x672C;&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A; <code>find . -type [&#x7C7B;&#x578B;&#x53C2;&#x6570;]</code>&#x3002;</p>
+<p>&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><strong>f</strong>: &#x666E;&#x901A;&#x6587;&#x4EF6;&#x3002;</li>
+<li><strong>l</strong>: &#x94FE;&#x63A5;&#x7B26;&#x53F7;&#x3002;</li>
+<li><strong>d</strong>: &#x76EE;&#x5F55;&#x3002;</li>
+<li><strong>c</strong>: &#x5B57;&#x7B26;&#x8BBE;&#x5907;&#x3002;</li>
+<li><strong>b</strong>: &#x5757;&#x8BBE;&#x5907;</li>
+<li><strong>s</strong>: sock&#x5957;&#x63A5;&#x5B57;&#x3002;</li>
+<li><strong>p</strong>: FIFO&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x67E5;&#x627E;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x4E03;&#x5929;&#x524D;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x666E;&#x901A;&#x6587;&#x4EF6;
+$ find . -type f -ctime +7 | xargs ls -l
+-rw-rw-r-- 1 alfons alfons 9 7&#x6708;  18  2018 ./README.md
+
+# &#x67E5;&#x627E;&#x4FEE;&#x6539;&#x65E5;&#x671F;&#x8D85;&#x8FC7;&#x4E03;&#x5929;&#x7684;&#x6587;&#x4EF6;&#x5939;
+$ find .. -maxdepth 1 -type d -ctime +7 | xargs ls -l -d
+drwxr-xr-x   3 alfons alfons 4096 12&#x6708; 17 21:06 ../Algorithms
+drwxr-xr-x   4 alfons alfons 4096 7&#x6708;  18  2018 ../Books
+drwxrwxr-x   3 alfons alfons 4096 11&#x6708; 10 17:05 ../C++
+drwxr-xr-x   2 alfons alfons 4096 7&#x6708;   7  2018 ../LeetCode
+drwxrwxr-x 149 alfons alfons 4096 7&#x6708;  31  2018 ../node_modules
+drwxr-xr-x   6 alfons alfons 4096 1&#x6708;  30 13:26 ../Python
+drwxrwxr-x   2 alfons alfons 4096 7&#x6708;   7  2018 ../.vscode
+drwxrwxr-x   2 alfons alfons 4096 1&#x6708;  30 13:43 ../&#x9648;&#x7693;&#x4E13;&#x680F;&#x7B14;&#x8BB0;
+drwxrwxr-x   2 alfons alfons 4096 2&#x6708;  17 21:28 ../&#x968F;&#x7B14;
+drwxrwxr-x   2 alfons alfons 4096 12&#x6708; 16 21:52 ../&#x300A;&#x5DE6;&#x8033;&#x542C;&#x98CE;&#x6BCF;&#x5468;&#x7EC3;&#x4E60;&#x300B;
+</code></pre>
+<h3 id="&#x6839;&#x636E;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;"><a name="&#x6839;&#x636E;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;" class="anchor-navigation-ex-anchor" href="#&#x6839;&#x636E;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. &#x6839;&#x636E;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;</h3>
+<p>&#x6309;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x67E5;&#x627E;&#x9700;&#x8981;&#x7528;&#x5230; <code>-size n</code> &#x9009;&#x9879;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x5355;&#x4F4D;&#x9009;&#x9879;&#xFF1A;</p>
+<ul>
+<li><strong>b</strong>: &#x5757;&#xFF08;512&#x5B57;&#x8282;&#xFF09;</li>
+<li><strong>c</strong>: &#x5B57;&#x8282;</li>
+<li><strong>w</strong>: &#x5B57;&#xFF08;2&#x5B57;&#x8282;&#xFF09;</li>
+<li><strong>k</strong>: &#x5343;&#x5B57;&#x8282;</li>
+<li><strong>M</strong>: &#x5146;&#x5B57;&#x8282;</li>
+<li><strong>G</strong>: &#x5409;&#x5B57;&#x8282;</li>
+</ul>
+<p><strong>n</strong> &#x7684;&#x5927;&#x5C0F;&#x548C;&#x4E0A;&#x9762;&#x65F6;&#x95F4;&#x7684;&#x4F7F;&#x7528;&#x4E00;&#x6837;&#xFF0C; <strong>+</strong> &#x8868;&#x793A;&#x8D85;&#x8FC7;n&#x5927;&#x5C0F;&#x7684;&#x6587;&#x4EF6;&#xFF0C; <strong>-</strong> &#x8868;&#x793A;&#x5C0F;&#x4E8E;n&#x5927;&#x5C0F;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x627E;&#x5230;&#x5927;&#x5C0F;&#x5927;&#x4E8E; <strong>10KB</strong> &#x7684;md&#x6587;&#x4EF6;:</p>
+<pre><code class="lang-shell">$ find . -type f -name &quot;*.md&quot; -size +10k | xargs ls -l -h
+-rw-rw-r-- 1 alfons alfons 17K 12&#x6708;  2 20:08 ./Algorithms/AlgorithmsArea/&#x7EA2;&#x9ED1;&#x6811;.md
+-rw-rw-r-- 1 alfons alfons 14K 11&#x6708;  6 23:24 ./Books/OtherBooks/&#x89C1;&#x8BC6;.md
+-rwx------ 1 alfons alfons 28K 10&#x6708; 17 15:15 ./Books/ProfessionBooks/MySQL&#x5FC5;&#x77E5;&#x5FC5;&#x4F1A;/2_MySQL&#x57FA;&#x672C;&#x64CD;&#x4F5C;.md
+-rwx------ 1 alfons alfons 13K 10&#x6708; 18 17:39 ./Books/ProfessionBooks/MySQL&#x5FC5;&#x77E5;&#x5FC5;&#x4F1A;/3_MySQL&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C;_&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;.md
+-rwx------ 1 alfons alfons 14K 10&#x6708; 23 20:13 ./Books/ProfessionBooks/MySQL&#x5FC5;&#x77E5;&#x5FC5;&#x4F1A;/4_MySQL&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C;_&#x8054;&#x7ED3;&#x67E5;&#x8BE2;.md
+...
+</code></pre>
+<h3 id="&#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x64CD;&#x4F5C;"><a name="&#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. &#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x64CD;&#x4F5C;</h3>
+<p>&#x5927;&#x90E8;&#x5206;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x67E5;&#x627E;&#x5230;&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;&#x9700;&#x8981;&#x7528;&#x5230; <code>-exec</code> &#x6216;&#x8005; <code>-ok</code> &#x9009;&#x9879;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x90FD;&#x662F; <strong>shell&#x547D;&#x4EE4;</strong>&#x3002;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;<code>find . -type f -exec rm {} \;</code>&#x3002;</p>
+<p><code>-exec</code> &#x548C; <code>-ok</code> &#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;<code>-exec</code> &#x4F1A;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x540E;&#x7EED;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x800C; <code>-ok</code> &#x9009;&#x9879;&#x9700;&#x8981;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x6267;&#x884C;&#x540E;&#x7EED;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x540E;&#x9762;&#x7684; <strong>{}</strong> &#x8868;&#x793A;&#x7684;&#x662F;&#x5F85;&#x5904;&#x7406;&#x7684;&#x5DF2;&#x7ECF;&#x627E;&#x5230;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x3002;</p>
+<p><code>-exec</code> &#x5FC5;&#x987B;&#x7531;&#x4E00;&#x4E2A; <strong>;</strong> &#x7ED3;&#x675F;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x4F7F;&#x7528; <code>\;</code>&#xFF0C;&#x662F;&#x8F6C;&#x4E49;&#x7684;&#x610F;&#x601D;&#xFF0C;shell&#x811A;&#x672C;&#x901A;&#x5E38;&#x4F1A;&#x5BF9; <strong>;</strong> &#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x627E;&#x5230;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5E76;&#x5220;&#x9664;&#xFF1A;</p>
+<pre><code class="lang-shell"># &#x4F7F;&#x7528; -exec &#x9009;&#x9879;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x786E;&#x8BA4;&#x9009;&#x9879;
+$ find . -type f -size -8c -exec rm {} \;
+
+# &#x800C;&#x4F7F;&#x7528; -ok &#x9009;&#x9879;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x7528;&#x6237;&#x786E;&#x8BA4;
+$ find . -type f -size -8c -ok rm {} \;
+&lt; rm ... ./wait_del.txt &gt; ? y
+</code></pre>
+<p>&#x6BD4;&#x8F83;&#x63A8;&#x8350;&#x7684;&#x662F; <strong>&#x4F7F;&#x7528;&#x7BA1;&#x9053;&#x7684;&#x65B9;&#x5F0F;</strong> &#x6765;&#x5BF9;&#x627E;&#x5230;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<pre><code class="lang-shell"># &#x6709;&#x4E9B;&#x547D;&#x4EE4;&#x4E0D;&#x652F;&#x6301;&#x7BA1;&#x9053;&#x64CD;&#x4F5C;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;xargs&#x547D;&#x4EE4;&#x505A;&#x4E0B;&#x4E2D;&#x8F6C;
+$ find . -type f -size -10c | xargs ls -l
+-rw-rw-r-- 1 alfons alfons 9 7&#x6708;  18  2018 ./README.md
+</code></pre>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="http://man.linuxde.net/find" target="_blank">find&#x547D;&#x4EE4;</a></li>
+<li><a href="https://blog.csdn.net/u011334621/article/details/38063143" target="_blank">Linux&#x547D;&#x4EE4;&#x4E4B;find exec rm</a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
+2019-03-23 11:10:13
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: LInux命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="去除awk截取参数中的换行符.html" class="navigation navigation-next " aria-label="Next page: 去除awk截取参数中的换行符">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux命令_find","level":"2.3.1.1","depth":3,"next":{"title":"去除awk截取参数中的换行符","level":"2.3.1.2","depth":3,"path":"Linux/Linux命令/去除awk截取参数中的换行符.md","ref":"Linux/Linux命令/去除awk截取参数中的换行符.md","articles":[]},"previous":{"title":"LInux命令","level":"2.3.1","depth":2,"path":"Linux/Linux命令/README.md","ref":"Linux/Linux命令/README.md","articles":[{"title":"Linux命令_find","level":"2.3.1.1","depth":3,"path":"Linux/Linux命令/find.md","ref":"Linux/Linux命令/find.md","articles":[]},{"title":"去除awk截取参数中的换行符","level":"2.3.1.2","depth":3,"path":"Linux/Linux命令/去除awk截取参数中的换行符.md","ref":"Linux/Linux命令/去除awk截取参数中的换行符.md","articles":[]},{"title":"Linux命令_sed","level":"2.3.1.3","depth":3,"path":"Linux/Linux命令/sed.md","ref":"Linux/Linux命令/sed.md","articles":[]},{"title":"Linux命令_awk","level":"2.3.1.4","depth":3,"path":"Linux/Linux命令/awk.md","ref":"Linux/Linux命令/awk.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","anchor-navigation-ex","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux命令/find.md","mtime":"2019-03-23T03:10:13.925Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T12:15:50.999Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
