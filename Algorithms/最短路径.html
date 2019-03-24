@@ -37,10 +37,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
@@ -2314,9 +2310,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x6700;&#x77ED;&#x8DEF;&#x5F84;"><b>1. </b>&#x6700;&#x77ED;&#x8DEF;&#x5F84;</a></li><ul><li><span class="title-icon "></span><a href="#dijkstra&#x7B97;&#x6CD5;"><b>1.1. </b>Dijkstra&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#bellmanfords&#x7B97;&#x6CD5;"><b>1.2. </b>BellmanFords&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#floydwarshall&#x7B97;&#x6CD5;"><b>1.3. </b>FloydWarshall&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x5F52;&#x7EB3;"><b>1.4. </b>&#x5F52;&#x7EB3;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.5. </b>&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#&#x6700;&#x77ED;&#x8DEF;&#x5F84;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6700;&#x77ED;&#x8DEF;&#x5F84;"><a name="&#x6700;&#x77ED;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x77ED;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6700;&#x77ED;&#x8DEF;&#x5F84;</h1>
+                                <h1 id="&#x6700;&#x77ED;&#x8DEF;&#x5F84;"><a name="&#x6700;&#x77ED;&#x8DEF;&#x5F84;" class="plugin-anchor" href="#&#x6700;&#x77ED;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x77ED;&#x8DEF;&#x5F84;</h1>
 <p>&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x95EE;&#x9898;&#x662F;&#x56FE;&#x8BBA;&#x7814;&#x7A76;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x7ECF;&#x5178;&#x7B97;&#x6CD5;&#x95EE;&#x9898;&#xFF0C;&#x65E8;&#x5728;&#x5BFB;&#x627E;&#x56FE;&#xFF08;&#x7531;&#x7ED3;&#x70B9;&#x548C;&#x8DEF;&#x5F84;&#x7EC4;&#x6210;&#x7684;&#xFF09;&#x4E2D;&#x4E24;&#x7ED3;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x3002;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x8981;&#x6C42;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7B97;&#x6CD5;&#x53EF;&#x4F9B;&#x9009;&#x62E9;&#x3002;</p>
-<h2 id="dijkstra&#x7B97;&#x6CD5;"><a name="dijkstra&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#dijkstra&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Dijkstra&#x7B97;&#x6CD5;</h2>
+<h2 id="dijkstra&#x7B97;&#x6CD5;"><a name="dijkstra&#x7B97;&#x6CD5;" class="plugin-anchor" href="#dijkstra&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Dijkstra&#x7B97;&#x6CD5;</h2>
 <blockquote>
 <p>&#x539F;&#x59CB;&#x7248;&#x672C;&#x627E;&#x5230;&#x4E24;&#x4E2A;&#x9876;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#xFF0C;&#x4F46;&#x662F;&#x66F4;&#x5E38;&#x89C1;&#x7684;&#x53D8;&#x4F53;&#x56FA;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x4F5C;&#x4E3A;&#x6E90;&#x8282;&#x70B9;&#x7136;&#x540E;&#x627E;&#x5230;&#x8BE5;&#x9876;&#x70B9;&#x5230;&#x56FE;&#x4E2D;&#x6240;&#x6709;&#x5176;&#x5B83;&#x8282;&#x70B9;&#x7684;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#xFF0C;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x6811;&#x3002;</p>
 </blockquote>
@@ -2380,7 +2376,7 @@ processed = list()
         processed.append(node)              <span class="hljs-comment"># &#x5904;&#x7406;&#x5217;&#x8868;&#x65B0;&#x589E;&#x5904;&#x7406;&#x540E;&#x7684;&#x8282;&#x70B9;</span>
         node = FindLowestCostNode(costs)
 </code></pre>
-<h2 id="bellmanfords&#x7B97;&#x6CD5;"><a name="bellmanfords&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#bellmanfords&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. BellmanFords&#x7B97;&#x6CD5;</h2>
+<h2 id="bellmanfords&#x7B97;&#x6CD5;"><a name="bellmanfords&#x7B97;&#x6CD5;" class="plugin-anchor" href="#bellmanfords&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>BellmanFords&#x7B97;&#x6CD5;</h2>
 <p>&#x4E0E;<strong>Dijkstra&#x7B97;&#x6CD5;</strong> &#x7684;&#x4F7F;&#x7528;&#x73AF;&#x5883;&#x4E00;&#x81F4;</p>
 <p><strong>&#x52A8;&#x6001;&#x89C4;&#x5212;</strong> &#x601D;&#x60F3;</p>
 <p>&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x8FB9;&#x7684;&#x6743;&#x503C;&#x4E3A; <strong>&#x8D1F;&#x6570;</strong> &#x5E76;&#x4E14; <strong>&#x5E26;&#x56DE;&#x8DEF;</strong> &#x7684;&#x56FE;&#x3002;</p>
@@ -2499,7 +2495,7 @@ EdgeType = namedtuple(<span class="hljs-string">&quot;edge&quot;</span>, <span c
 <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:
     print(<span class="hljs-string">&quot;It&apos;s have loopback&#xFF1F;\n{answer}&quot;</span>.format(answer=<span class="hljs-string">&quot;Yes!&quot;</span> <span class="hljs-keyword">if</span> BellmanFord() <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;No!&quot;</span>))
 </code></pre>
-<h2 id="floydwarshall&#x7B97;&#x6CD5;"><a name="floydwarshall&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#floydwarshall&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. FloydWarshall&#x7B97;&#x6CD5;</h2>
+<h2 id="floydwarshall&#x7B97;&#x6CD5;"><a name="floydwarshall&#x7B97;&#x6CD5;" class="plugin-anchor" href="#floydwarshall&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>FloydWarshall&#x7B97;&#x6CD5;</h2>
 <p>&#x89E3;&#x51B3;&#x4EFB;&#x610F;&#x4E24;&#x70B9;&#x95F4;&#x7684;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x7684;&#x4E00;&#x79CD;&#x7B97;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6B63;&#x786E;&#x5904;&#x7406;&#x6709;&#x5411;&#x56FE;&#x6216;&#x8D1F;&#x6743;&#xFF08;&#x4F46;&#x4E0D;&#x53EF;&#x5B58;&#x5728;&#x8D1F;&#x6743;&#x56DE;&#x8DEF;&#xFF09;&#x7684;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x95EE;&#x9898;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x88AB;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6709;&#x5411;&#x56FE;&#x7684;&#x4F20;&#x9012;&#x95ED;&#x5305;&#x3002;</p>
 <p><strong>&#x52A8;&#x6001;&#x89C4;&#x5212;</strong>&#x601D;&#x60F3;&#x3002;</p>
 <p>&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x5E26; <strong>&#x8D1F;&#x6743;&#x56DE;&#x8DEF;</strong> &#x7684;&#x56FE;&#xFF01;</p>
@@ -2527,7 +2523,7 @@ graph[<span class="hljs-string">&quot;d&quot;</span>] = dict(a=<span class="hljs
                 <span class="hljs-keyword">if</span> graph[i][j] &gt; graph[i][k] + graph[k][j]:
                     graph[i][j] = graph[i][k] + graph[k][j]
 </code></pre>
-<h2 id="&#x5F52;&#x7EB3;"><a name="&#x5F52;&#x7EB3;" class="anchor-navigation-ex-anchor" href="#&#x5F52;&#x7EB3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5F52;&#x7EB3;</h2>
+<h2 id="&#x5F52;&#x7EB3;"><a name="&#x5F52;&#x7EB3;" class="plugin-anchor" href="#&#x5F52;&#x7EB3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F52;&#x7EB3;</h2>
 <table>
 <thead>
 <tr>
@@ -2558,7 +2554,7 @@ graph[<span class="hljs-string">&quot;d&quot;</span>] = dict(a=<span class="hljs
 </tr>
 </tbody>
 </table>
-<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://yq.aliyun.com/articles/3515?spm=a2c4e.11163080.searchblog.66.d7582ec1L5kp3B" target="_blank">Bellman-Ford&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x7B97;&#x6CD5;</a></li>
 <li><a href="https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/" target="_blank">Dynamic Programming | Set 23 (Bellman&#x2013;Ford Algorithm)</a></li>
@@ -2609,7 +2605,7 @@ graph[<span class="hljs-string">&quot;d&quot;</span>] = dict(a=<span class="hljs
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"最短路径","level":"2.5.4","depth":2,"next":{"title":"动态规划","level":"2.5.5","depth":2,"path":"Algorithms/动态规划.md","ref":"Algorithms/动态规划.md","articles":[]},"previous":{"title":"排序算法","level":"2.5.3","depth":2,"path":"Algorithms/排序算法.md","ref":"Algorithms/排序算法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","anchor-navigation-ex","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":true,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Algorithms/最短路径.md","mtime":"2018-11-07T15:58:01.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T12:15:50.999Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"最短路径","level":"2.5.4","depth":2,"next":{"title":"动态规划","level":"2.5.5","depth":2,"path":"Algorithms/动态规划.md","ref":"Algorithms/动态规划.md","articles":[]},"previous":{"title":"排序算法","level":"2.5.3","depth":2,"path":"Algorithms/排序算法.md","ref":"Algorithms/排序算法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Algorithms/最短路径.md","mtime":"2018-11-07T15:58:01.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-24T14:33:07.395Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
