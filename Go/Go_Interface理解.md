@@ -1,2 +1,0 @@
-# Go Interface理解
-
