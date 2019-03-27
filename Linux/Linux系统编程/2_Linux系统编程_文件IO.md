@@ -89,6 +89,33 @@ ssize_t read(int fd, void *buf, size_t count);
 
 另外在读取终端字符串时，遇到 **换行符(\n)**，**read()** 调用也会停止，也会出现返回的字节数小于 **count参数** 的情况。
 
+```c
+...
+    char buf[BUF_SIZE];
+    ssize_t read_num = read(fd, buf, BUF_SIZE);
+    if (read_num == -1)
+        errExit("read");
+    printf("read(%ld) -> %s\n", read_num, buf);
+...
+```
+
+![04_read_without_stop](/Image/Linux/Chapter04/04_read_without_stop.png)
+
+使用上面的代码读取一个文件时，会出现末尾乱码的情况，这是因为 **read()** 没有遇到终止字符。需要在读取缓冲区中将最后的字符换成 `\0`。
+
+```c
+...
+    char buf[BUF_SIZE];
+    ssize_t read_num = read(fd, buf, BUF_SIZE);
+    if (read_num == -1)
+        errExit("read");
+    buf[read_num] = '\0';
+    printf("read(%ld) -> %s\n", read_num, buf);
+...
+```
+
+![04_read_with_stop](/Image/Linux/Chapter04/04_read_with_stop.png)
+
 ### 数据写入文件: write()
 
 **write()** 调用将数据写入一个以打开的文件中。
@@ -140,9 +167,27 @@ whence参数有五种：
 |SEEK_DATA|从下一个包含数据的偏移开始计算，一般都指向0|
 |SEEK_HOLE|从下一个空洞的偏移开始计算，一般都指向文件末尾|
 
+例如：
 
+```c
+lseek(fd, 0, SEEK_SET);     // 文件开始处
+lseek(fd, 0, SEEK_END);     // 文件结尾处的下一位置
+lseek(fd, -1, SEEK_END);     // 文件结尾处前一个字节的位置
+lseek(fd, 10, SEEK_CUR);     // 当前文件往后是个字节的位置
+lseek(fd, -10, SEEK_CUR);     // 当前文件往前是个字节的位置
+```
 
-### 
+和 **find命令** 中设置时间的参数很像，都使用的是 **+-** 符号来表示前后的概念。
+
+### 文件空洞
+
+空洞文件指的是 **从文件结尾后到新写入数据间的这段空间**，空洞文件不占用任何磁盘空间，知道未来某一时刻，向空洞文件中写入数据，才会给它分配磁盘块。
+
+![04_empty_file](/Image/Linux/Chapter04/04_empty_file.png)
+
+空洞文件和以空字节文件相比，占用了较少的磁盘空间。
+
+迅雷会在下载前，在本地创建空洞文件，用来存放下载的文件。在使用多线程进行下载时，就可以同时在不同的偏移处写入数据。
 
 ## 参考
 
