@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1_Linux系统编程:概念 · GitBook</title>
+        <title>Linux系统编程:概念 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,7 +81,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2_Linux系统编程_文件IO.html" />
+    <link rel="next" href="2_0_Linux系统编程_文件_文件系统.html" />
     
     
     <link rel="prev" href="Readme.html" />
@@ -1109,7 +1109,7 @@
                 <a href="1_Linux系统编程_概念.html">
             
                     
-                    1_Linux系统编程:概念
+                    Linux系统编程:概念
             
                 </a>
             
@@ -1117,12 +1117,25 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2.2" data-path="2_Linux系统编程_文件IO.html">
+        <li class="chapter " data-level="2.3.2.2" data-path="2_0_Linux系统编程_文件_文件系统.html">
             
-                <a href="2_Linux系统编程_文件IO.html">
+                <a href="2_0_Linux系统编程_文件_文件系统.html">
             
                     
-                    2_Linux系统编程:文件IO
+                    Linux系统编程:文件_文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.3" data-path="2_1_Linux系统编程_文件_基础文件IO调用.html">
+            
+                <a href="2_1_Linux系统编程_文件_基础文件IO调用.html">
+            
+                    
+                    Linux系统编程:文件_基础文件IO调用
             
                 </a>
             
@@ -1132,19 +1145,6 @@
     
 
             </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3.3" data-path="../Linux拾遗_node表.html">
-            
-                <a href="../Linux拾遗_node表.html">
-            
-                    
-                    Linux拾遗_inode表
-            
-                </a>
-            
-
             
         </li>
     
@@ -2321,7 +2321,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1_Linux系统编程:概念</a>
+        <a href="../.." >Linux系统编程:概念</a>
     </h1>
 </div>
 
@@ -2336,7 +2336,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="1linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x6982;&#x5FF5;"><a name="1linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x6982;&#x5FF5;" class="plugin-anchor" href="#1linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x6982;&#x5FF5;"><i class="fa fa-link" aria-hidden="true"></i></a>1_Linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;:&#x6982;&#x5FF5;</h1>
+                                <h1 id="linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x6982;&#x5FF5;"><a name="linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x6982;&#x5FF5;" class="plugin-anchor" href="#linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x6982;&#x5FF5;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;:&#x6982;&#x5FF5;</h1>
+<p>&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x4E86;&#x300A;Linux/Unix&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;&#x624B;&#x518C;&#x300B;&#x7B2C;1-3&#x7AE0;&#x7684;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#x3002;</p>
 <h2 id="&#x5185;&#x6838;"><a name="&#x5185;&#x6838;" class="plugin-anchor" href="#&#x5185;&#x6838;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x6838;</h2>
 <p><strong>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</strong> &#x6709;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x542B;&#x4E49;:</p>
 <ul>
@@ -2433,7 +2434,7 @@ reboot() &#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;magic2&#x5FC5;&#x987B;&#x4E3A;&
 <li><a href="https://syscalls.kernelgrok.com/" target="_blank">Linux Systemcall Reference</a> </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2019-03-23 20:24:48
+2019-03-30 23:37:53
 </span></footer>
                                 
                                 </section>
@@ -2466,7 +2467,7 @@ reboot() &#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;magic2&#x5FC5;&#x987B;&#x4E3A;&
                 </a>
                 
                 
-                <a href="2_Linux系统编程_文件IO.html" class="navigation navigation-next " aria-label="Next page: 2_Linux系统编程:文件IO">
+                <a href="2_0_Linux系统编程_文件_文件系统.html" class="navigation navigation-next " aria-label="Next page: Linux系统编程:文件_文件系统">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2477,7 +2478,7 @@ reboot() &#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;magic2&#x5FC5;&#x987B;&#x4E3A;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1_Linux系统编程:概念","level":"2.3.2.1","depth":3,"next":{"title":"2_Linux系统编程:文件IO","level":"2.3.2.2","depth":3,"path":"Linux/Linux系统编程/2_Linux系统编程_文件IO.md","ref":"Linux/Linux系统编程/2_Linux系统编程_文件IO.md","articles":[]},"previous":{"title":"Linux系统编程","level":"2.3.2","depth":2,"path":"Linux/Linux系统编程/Readme.md","ref":"Linux/Linux系统编程/Readme.md","articles":[{"title":"1_Linux系统编程:概念","level":"2.3.2.1","depth":3,"path":"Linux/Linux系统编程/1_Linux系统编程_概念.md","ref":"Linux/Linux系统编程/1_Linux系统编程_概念.md","articles":[]},{"title":"2_Linux系统编程:文件IO","level":"2.3.2.2","depth":3,"path":"Linux/Linux系统编程/2_Linux系统编程_文件IO.md","ref":"Linux/Linux系统编程/2_Linux系统编程_文件IO.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux系统编程/1_Linux系统编程_概念.md","mtime":"2019-03-23T12:24:48.046Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-27T14:40:44.614Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux系统编程:概念","level":"2.3.2.1","depth":3,"next":{"title":"Linux系统编程:文件_文件系统","level":"2.3.2.2","depth":3,"path":"Linux/Linux系统编程/2_0_Linux系统编程_文件_文件系统.md","ref":"Linux/Linux系统编程/2_0_Linux系统编程_文件_文件系统.md","articles":[]},"previous":{"title":"Linux系统编程","level":"2.3.2","depth":2,"path":"Linux/Linux系统编程/Readme.md","ref":"Linux/Linux系统编程/Readme.md","articles":[{"title":"Linux系统编程:概念","level":"2.3.2.1","depth":3,"path":"Linux/Linux系统编程/1_Linux系统编程_概念.md","ref":"Linux/Linux系统编程/1_Linux系统编程_概念.md","articles":[]},{"title":"Linux系统编程:文件_文件系统","level":"2.3.2.2","depth":3,"path":"Linux/Linux系统编程/2_0_Linux系统编程_文件_文件系统.md","ref":"Linux/Linux系统编程/2_0_Linux系统编程_文件_文件系统.md","articles":[]},{"title":"Linux系统编程:文件_基础文件IO调用","level":"2.3.2.3","depth":3,"path":"Linux/Linux系统编程/2_1_Linux系统编程_文件_基础文件IO调用.md","ref":"Linux/Linux系统编程/2_1_Linux系统编程_文件_基础文件IO调用.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux系统编程/1_Linux系统编程_概念.md","mtime":"2019-03-30T15:37:53.571Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-30T15:38:07.364Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
