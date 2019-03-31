@@ -192,6 +192,19 @@ lseek(fd, -10, SEEK_CUR);     // 当前文件往前是个字节的位置
 
 迅雷会在下载前，在本地创建空洞文件，用来存放下载的文件。在使用多线程进行下载时，就可以同时在不同的偏移处写入数据。
 
+## 课后习题
+
+- [4-1 实现类tee命令](https://github.com/Alfonsxh/LinuxProgrammingInterface/blob/master/01_FileSystem/Chapter_04_answer_tee.c)
+- [4-2 实现cp命令，可拷贝包含空洞的文件](https://github.com/Alfonsxh/LinuxProgrammingInterface/blob/master/01_FileSystem/Chapter_04_answer_cp.c)
+
+## 总结
+
+- 每个进程都有一张文件描述符表，里面的描述符标识为非负整数，每个标识对应一个打开文件表的指针。
+- 打开文件表是进程中文件描述符表和inode表的桥梁。
+- 对文件的操作，最终都是通过indoe表中的数据。
+- 操作系统在处理文件时，都是通过数字来代替文件名。
+- Linux系统对文件的操作具有通用性，open()、read()、write()、close()这四个系统调用可以对所有的文件流进行操作。原因是VFS统一了各类文件系统的接口。
+
 ## 参考
 
 - [文件描述符表、文件表、索引结点表](https://blog.csdn.net/luotuo44/article/details/17474099)
