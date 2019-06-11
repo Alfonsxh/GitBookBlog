@@ -72,5 +72,4 @@ Linux下通过lspci命令可以查看PCIE总线上的设备相关的信息。
 ## 参考
 
 - [深入PCI与PCIe之一：硬件篇](https://zhuanlan.zhihu.com/p/26172972)
-
-todo: 添加总线ID设定规则
+- [必看: 原来PCIe技术原理这么简单！](https://blog.csdn.net/BtB5e6Nsu1g511Eg5XEg/article/details/88386645)
