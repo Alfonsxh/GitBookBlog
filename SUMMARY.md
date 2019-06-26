@@ -49,6 +49,8 @@
     * [Frida](Python/Frida/README.md)
         * [Frida_基础使用手册](Python/Frida/Frida_基础使用手册.md)
         * [FridaAPI不完整说明](Python/Frida/Frida_API_不完整说明.md)
+    * [Python中一种单例无效的情况](Python/Python中一种单例无效的情况.md)
+    * [Python中的进程池和线程池](Python/Python中的进程池和线程池.md)
     * [Python json解析双斜杠字符串](Python/Python_json解析双斜杠字符串.md)
     * [GIL全局解释器锁](Python/GIL全局解释器锁.md)
     * [SqlAlchemy使用](Python/SqlAlchemy.md)
