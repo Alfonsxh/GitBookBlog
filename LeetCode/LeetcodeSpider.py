@@ -50,8 +50,11 @@ def leetcode_crawl():
 
 
 def markdown_write(leetcode_dict: dict):
+    total_question = len(leetcode_dict)
+    solve_question = len([1 for q in leetcode_dict.values() if q.get("sol")])
+
     with open("README.md", "w") as f:
-        f.write("|#|Title|Difficulty|Solution|\n|:---:|:---|:---|:---|\n")
+        f.write("|#|Title|Difficulty|Solution({solve}/{total})|\n|:---:|:---|:---|:---|\n".format(solve=solve_question, total=total_question))
         for leetcode_number, leetcode_info in leetcode_dict.items():
             f.write("|{number}|[{title}]({url}){lock}|{diff}|{sol}|\n".format(number=leetcode_number,
                                                                               title=leetcode_info["name"],

@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution|
+|#|Title|Difficulty|Solution(26/1147)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -159,7 +159,7 @@
 |157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/description/):lock:|Easy||
 |158|[Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/description/):lock:|Hard||
 |159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/):lock:|Hard||
-|160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)|Easy||
+|160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/160.intersection-of-two-linked-lists.py)|
 |161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/description/):lock:|Medium||
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/description/)|Medium||
 |163|[Missing Ranges](https://leetcode.com/problems/missing-ranges/description/):lock:|Medium||
@@ -444,7 +444,7 @@
 |442|[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)|Medium||
 |443|[String Compression](https://leetcode.com/problems/string-compression/description/)|Easy||
 |444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/description/):lock:|Medium||
-|445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)|Medium||
+|445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/445.add-two-numbers-ii.py)|
 |446|[Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/)|Hard||
 |447|[Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/description/)|Easy||
 |448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/)|Easy||
@@ -508,7 +508,7 @@
 |506|[Relative Ranks](https://leetcode.com/problems/relative-ranks/description/)|Easy||
 |507|[Perfect Number](https://leetcode.com/problems/perfect-number/description/)|Easy||
 |508|[Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/description/)|Medium||
-|509|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)|Easy||
+|509|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/509.%20Fibonacci%20Number.py)|
 |510|[Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii/description/):lock:|Medium||
 |511|[Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/description/):lock:|Easy||
 |512|[Game Play Analysis II](https://leetcode.com/problems/game-play-analysis-ii/description/):lock:|Easy||

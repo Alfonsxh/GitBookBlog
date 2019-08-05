@@ -1150,7 +1150,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python":"https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/160.intersection-of-two-linked-lists.py"
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/160.intersection-of-two-linked-lists.py"
         }
     },
     "161": {
