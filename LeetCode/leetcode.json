@@ -1149,7 +1149,9 @@
         "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python":"https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/160.intersection-of-two-linked-lists.py"
+        }
     },
     "161": {
         "name": "One Edit Distance",
@@ -3150,7 +3152,9 @@
         "url": "https://leetcode.com/problems/add-two-numbers-ii/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/445.add-two-numbers-ii.py"
+        }
     },
     "446": {
         "name": "Arithmetic Slices II - Subsequence",
@@ -3598,7 +3602,9 @@
         "url": "https://leetcode.com/problems/fibonacci-number/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/509.%20Fibonacci%20Number.py"
+        }
     },
     "510": {
         "name": "Inorder Successor in BST II",
