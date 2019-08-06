@@ -597,7 +597,9 @@
         "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/82.remove-duplicates-from-sorted-list-ii.py"
+        }
     },
     "83": {
         "name": "Remove Duplicates from Sorted List",
