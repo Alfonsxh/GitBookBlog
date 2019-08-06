@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(26/1147)|
+|#|Title|Difficulty|Solution(27/1147)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -327,7 +327,7 @@
 |325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/description/):lock:|Medium||
 |326|[Power of Three](https://leetcode.com/problems/power-of-three/description/)|Easy||
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/description/)|Hard||
-|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/)|Medium||
+|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/328.odd-even-linked-list.py)|
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)|Hard||
 |330|[Patching Array](https://leetcode.com/problems/patching-array/description/)|Hard||
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/)|Medium||

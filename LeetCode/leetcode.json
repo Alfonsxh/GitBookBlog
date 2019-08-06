@@ -2333,7 +2333,9 @@
         "url": "https://leetcode.com/problems/odd-even-linked-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/328.odd-even-linked-list.py"
+        }
     },
     "329": {
         "name": "Longest Increasing Path in a Matrix",
