@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(28/1147)|
+|#|Title|Difficulty|Solution(30/1149)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -23,7 +23,7 @@
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)|Medium||
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112)|
-|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)|Medium||
+|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/24.swap-nodes-in-pairs.py)|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)|Hard||
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L15)|
 |27|[Remove Element](https://leetcode.com/problems/remove-element/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L55)|
@@ -724,7 +724,7 @@
 |722|[Remove Comments](https://leetcode.com/problems/remove-comments/description/)|Medium||
 |723|[Candy Crush](https://leetcode.com/problems/candy-crush/description/):lock:|Medium||
 |724|[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)|Easy||
-|725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)|Medium||
+|725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/725.split-linked-list-in-parts.py)|
 |726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms/description/)|Hard||
 |727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/description/):lock:|Hard||
 |728|[Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)|Easy||
@@ -1147,3 +1147,5 @@
 |1145|[Binary Tree Coloring Game](https://leetcode.com/problems/binary-tree-coloring-game/description/)|Medium||
 |1146|[Snapshot Array](https://leetcode.com/problems/snapshot-array/description/)|Medium||
 |1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/description/)|Hard||
+|1148|[Article Views I](https://leetcode.com/problems/article-views-i/description/):lock:|Easy||
+|1149|[Article Views II](https://leetcode.com/problems/article-views-ii/description/):lock:|Medium||

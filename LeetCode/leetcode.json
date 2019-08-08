@@ -177,7 +177,9 @@
         "url": "https://leetcode.com/problems/swap-nodes-in-pairs/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/24.swap-nodes-in-pairs.py"
+        }
     },
     "25": {
         "name": "Reverse Nodes in k-Group",
@@ -5122,7 +5124,9 @@
         "url": "https://leetcode.com/problems/split-linked-list-in-parts/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/725.split-linked-list-in-parts.py"
+        }
     },
     "726": {
         "name": "Number of Atoms",
@@ -8082,6 +8086,20 @@
         "url": "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/description/",
         "lock": false,
         "diff": "Hard",
+        "sol": {}
+    },
+    "1148": {
+        "name": "Article Views I",
+        "url": "https://leetcode.com/problems/article-views-i/description/",
+        "lock": true,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1149": {
+        "name": "Article Views II",
+        "url": "https://leetcode.com/problems/article-views-ii/description/",
+        "lock": true,
+        "diff": "Medium",
         "sol": {}
     }
 }
