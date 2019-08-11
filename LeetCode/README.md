@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(30/1149)|
+|#|Title|Difficulty|Solution(31/1149)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -60,7 +60,7 @@
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/)|Easy||
 |59|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)|Medium||
 |60|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/)|Medium||
-|61|[Rotate List](https://leetcode.com/problems/rotate-list/description/)|Medium||
+|61|[Rotate List](https://leetcode.com/problems/rotate-list/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/61.rotate-list.py)|
 |62|[Unique Paths](https://leetcode.com/problems/unique-paths/description/)|Medium||
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/)|Medium||
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)|Medium||

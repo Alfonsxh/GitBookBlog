@@ -448,7 +448,9 @@
         "url": "https://leetcode.com/problems/rotate-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/61.rotate-list.py"
+        }
     },
     "62": {
         "name": "Unique Paths",

@@ -128,6 +128,10 @@
 
 -----
 * [打怪升级](Books/ProfessionBooks/README.md)
+    * [深入理解Python特性](Books/ProfessionBooks/深入理解Python特性/README.md)
+        * [1-Python简洁之道](Books/ProfessionBooks/深入理解Python特性/1-Python简洁之道.md)
+        * [2-高效的函数](Books/ProfessionBooks/深入理解Python特性/2-高效的函数.md)
+        * [3-类与面向对象](Books/ProfessionBooks/深入理解Python特性/3-类与面向对象.md)
     * [程序员的自我修养--链接、装载与库](Books/ProfessionBooks/程序员的自我修养/README.md)
         * [编译](Books/ProfessionBooks/程序员的自我修养/编译.md)
         * [Elf文件](Books/ProfessionBooks/程序员的自我修养/Elf文件.md)
