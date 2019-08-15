@@ -138,7 +138,9 @@
         "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/19.remove-nth-node-from-end-of-list.py"
+        }
     },
     "20": {
         "name": "Valid Parentheses",
@@ -186,7 +188,9 @@
         "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/description/",
         "lock": false,
         "diff": "Hard",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/25.reverse-nodes-in-k-group.py"
+        }
     },
     "26": {
         "name": "Remove Duplicates from Sorted Array",
@@ -5778,7 +5782,9 @@
         "url": "https://leetcode.com/problems/linked-list-components/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/817.linked-list-components.py"
+        }
     },
     "818": {
         "name": "Race Car",
@@ -8102,6 +8108,76 @@
         "url": "https://leetcode.com/problems/article-views-ii/description/",
         "lock": true,
         "diff": "Medium",
+        "sol": {}
+    },
+    "1150": {
+        "name": "Check If a Number Is Majority Element in a Sorted Array",
+        "url": "https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/description/",
+        "lock": true,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1151": {
+        "name": "Minimum Swaps to Group All 1's Together",
+        "url": "https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1152": {
+        "name": "Analyze User Website Visit Pattern",
+        "url": "https://leetcode.com/problems/analyze-user-website-visit-pattern/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1153": {
+        "name": "String Transforms Into Another String",
+        "url": "https://leetcode.com/problems/string-transforms-into-another-string/description/",
+        "lock": true,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1154": {
+        "name": "Day of the Year",
+        "url": "https://leetcode.com/problems/day-of-the-year/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1155": {
+        "name": "Number of Dice Rolls With Target Sum",
+        "url": "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1156": {
+        "name": "Swap For Longest Repeated Character Substring",
+        "url": "https://leetcode.com/problems/swap-for-longest-repeated-character-substring/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1157": {
+        "name": "Online Majority Element In Subarray",
+        "url": "https://leetcode.com/problems/online-majority-element-in-subarray/description/",
+        "lock": false,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1158": {
+        "name": "Market Analysis I",
+        "url": "https://leetcode.com/problems/market-analysis-i/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1159": {
+        "name": "Market Analysis II",
+        "url": "https://leetcode.com/problems/market-analysis-ii/description/",
+        "lock": true,
+        "diff": "Hard",
         "sol": {}
     }
 }

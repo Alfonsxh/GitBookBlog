@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(31/1149)|
+|#|Title|Difficulty|Solution(34/1159)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -18,13 +18,13 @@
 |16|[3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)|Medium||
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)|Medium||
 |18|[4Sum](https://leetcode.com/problems/4sum/description/)|Medium||
-|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)|Medium||
+|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/19.remove-nth-node-from-end-of-list.py)|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)|Easy||
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)|Medium||
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112)|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/24.swap-nodes-in-pairs.py)|
-|25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)|Hard||
+|25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)|Hard|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/25.reverse-nodes-in-k-group.py)|
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L15)|
 |27|[Remove Element](https://leetcode.com/problems/remove-element/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L55)|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/description/)|Easy||
@@ -816,7 +816,7 @@
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)|Medium||
 |815|[Bus Routes](https://leetcode.com/problems/bus-routes/description/)|Hard||
 |816|[Ambiguous Coordinates](https://leetcode.com/problems/ambiguous-coordinates/description/)|Medium||
-|817|[Linked List Components](https://leetcode.com/problems/linked-list-components/description/)|Medium||
+|817|[Linked List Components](https://leetcode.com/problems/linked-list-components/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/817.linked-list-components.py)|
 |818|[Race Car](https://leetcode.com/problems/race-car/description/)|Hard||
 |819|[Most Common Word](https://leetcode.com/problems/most-common-word/description/)|Easy||
 |820|[Short Encoding of Words](https://leetcode.com/problems/short-encoding-of-words/description/)|Medium||
@@ -1149,3 +1149,13 @@
 |1147|[Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/description/)|Hard||
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/description/):lock:|Easy||
 |1149|[Article Views II](https://leetcode.com/problems/article-views-ii/description/):lock:|Medium||
+|1150|[Check If a Number Is Majority Element in a Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/description/):lock:|Easy||
+|1151|[Minimum Swaps to Group All 1's Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description/):lock:|Medium||
+|1152|[Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/description/):lock:|Medium||
+|1153|[String Transforms Into Another String](https://leetcode.com/problems/string-transforms-into-another-string/description/):lock:|Hard||
+|1154|[Day of the Year](https://leetcode.com/problems/day-of-the-year/description/)|Easy||
+|1155|[Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/)|Medium||
+|1156|[Swap For Longest Repeated Character Substring](https://leetcode.com/problems/swap-for-longest-repeated-character-substring/description/)|Medium||
+|1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray/description/)|Hard||
+|1158|[Market Analysis I](https://leetcode.com/problems/market-analysis-i/description/):lock:|Medium||
+|1159|[Market Analysis II](https://leetcode.com/problems/market-analysis-ii/description/):lock:|Hard||
