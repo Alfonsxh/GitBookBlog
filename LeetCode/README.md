@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(34/1159)|
+|#|Title|Difficulty|Solution(35/1159)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -706,7 +706,7 @@
 |704|[Binary Search](https://leetcode.com/problems/binary-search/description/)|Easy||
 |705|[Design HashSet](https://leetcode.com/problems/design-hashset/description/)|Easy||
 |706|[Design HashMap](https://leetcode.com/problems/design-hashmap/description/)|Easy||
-|707|[Design Linked List](https://leetcode.com/problems/design-linked-list/description/)|Easy||
+|707|[Design Linked List](https://leetcode.com/problems/design-linked-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/707.design-linked-list.py)|
 |708|[Insert into a Cyclic Sorted List](https://leetcode.com/problems/insert-into-a-cyclic-sorted-list/description/):lock:|Medium||
 |709|[To Lower Case](https://leetcode.com/problems/to-lower-case/description/)|Easy||
 |710|[Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/description/)|Hard||

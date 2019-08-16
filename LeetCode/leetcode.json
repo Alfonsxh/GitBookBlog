@@ -5004,7 +5004,9 @@
         "url": "https://leetcode.com/problems/design-linked-list/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/707.design-linked-list.py"
+        }
     },
     "708": {
         "name": "Insert into a Cyclic Sorted List",
