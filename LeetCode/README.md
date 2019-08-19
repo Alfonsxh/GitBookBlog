@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(35/1159)|
+|#|Title|Difficulty|Solution(35/1163)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -20,9 +20,9 @@
 |18|[4Sum](https://leetcode.com/problems/4sum/description/)|Medium||
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/19.remove-nth-node-from-end-of-list.py)|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)|Easy||
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58)|
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58), [Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/21.merge-two-sorted-lists.py)|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)|Medium||
-|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112)|
+|23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)|Hard|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112), [Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/23.merge-k-sorted-lists.py)|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/24.swap-nodes-in-pairs.py)|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)|Hard|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/25.reverse-nodes-in-k-group.py)|
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L15)|
@@ -1159,3 +1159,7 @@
 |1157|[Online Majority Element In Subarray](https://leetcode.com/problems/online-majority-element-in-subarray/description/)|Hard||
 |1158|[Market Analysis I](https://leetcode.com/problems/market-analysis-i/description/):lock:|Medium||
 |1159|[Market Analysis II](https://leetcode.com/problems/market-analysis-ii/description/):lock:|Hard||
+|1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/description/)|Easy||
+|1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/)|Medium||
+|1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/description/)|Medium||
+|1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/description/)|Hard||
