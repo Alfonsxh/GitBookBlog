@@ -155,7 +155,8 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58"
+            "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58",
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/21.merge-two-sorted-lists.py"
         }
     },
     "22": {
@@ -171,7 +172,8 @@
         "lock": false,
         "diff": "Hard",
         "sol": {
-            "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112"
+            "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112",
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/23.merge-k-sorted-lists.py"
         }
     },
     "24": {
@@ -8179,6 +8181,34 @@
         "name": "Market Analysis II",
         "url": "https://leetcode.com/problems/market-analysis-ii/description/",
         "lock": true,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1160": {
+        "name": "Find Words That Can Be Formed by Characters",
+        "url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1161": {
+        "name": "Maximum Level Sum of a Binary Tree",
+        "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1162": {
+        "name": "As Far from Land as Possible",
+        "url": "https://leetcode.com/problems/as-far-from-land-as-possible/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1163": {
+        "name": "Last Substring in Lexicographical Order",
+        "url": "https://leetcode.com/problems/last-substring-in-lexicographical-order/description/",
+        "lock": false,
         "diff": "Hard",
         "sol": {}
     }
