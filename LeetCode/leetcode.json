@@ -616,7 +616,9 @@
         "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/83.remove-duplicates-from-sorted-list.py"
+        }
     },
     "84": {
         "name": "Largest Rectangle in Histogram",
@@ -1003,7 +1005,9 @@
         "url": "https://leetcode.com/problems/copy-list-with-random-pointer/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/138.copy-list-with-random-pointer.py"
+        }
     },
     "139": {
         "name": "Word Break",
@@ -1028,14 +1032,18 @@
         "url": "https://leetcode.com/problems/linked-list-cycle/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/141.linked-list-cycle.py"
+        }
     },
     "142": {
         "name": "Linked List Cycle II",
         "url": "https://leetcode.com/problems/linked-list-cycle-ii/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/142.linked-list-cycle-ii.py"
+        }
     },
     "143": {
         "name": "Reorder List",
@@ -1466,7 +1474,9 @@
         "url": "https://leetcode.com/problems/remove-linked-list-elements/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/203.remove-linked-list-elements.py"
+        }
     },
     "204": {
         "name": "Count Primes",
@@ -3061,7 +3071,9 @@
         "url": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/430.flatten-a-multilevel-doubly-linked-list.py"
+        }
     },
     "431": {
         "name": "Encode N-ary Tree to Binary Tree",
@@ -8210,6 +8222,13 @@
         "url": "https://leetcode.com/problems/last-substring-in-lexicographical-order/description/",
         "lock": false,
         "diff": "Hard",
+        "sol": {}
+    },
+    "1164": {
+        "name": "Product Price at a Given Date",
+        "url": "https://leetcode.com/problems/product-price-at-a-given-date/description/",
+        "lock": true,
+        "diff": "Medium",
         "sol": {}
     }
 }

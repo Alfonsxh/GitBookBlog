@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(35/1163)|
+|#|Title|Difficulty|Solution(41/1164)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -82,7 +82,7 @@
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)|Medium|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L34)|
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)|Medium||
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/82.remove-duplicates-from-sorted-list-ii.py)|
-|83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)|Easy||
+|83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/83.remove-duplicates-from-sorted-list.py)|
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)|Hard||
 |85|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)|Hard||
 |86|[Partition List](https://leetcode.com/problems/partition-list/description/)|Medium||
@@ -137,11 +137,11 @@
 |135|[Candy](https://leetcode.com/problems/candy/description/)|Hard||
 |136|[Single Number](https://leetcode.com/problems/single-number/description/)|Easy||
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii/description/)|Medium||
-|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)|Medium||
+|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/138.copy-list-with-random-pointer.py)|
 |139|[Word Break](https://leetcode.com/problems/word-break/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/139.%20Word%20Break.py)|
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/description/)|Hard|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/140.%20Word%20Break%20II.py)|
-|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)|Easy||
-|142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)|Medium||
+|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/141.linked-list-cycle.py)|
+|142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/142.linked-list-cycle-ii.py)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list/description/)|Medium||
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)|Medium||
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)|Hard||
@@ -202,7 +202,7 @@
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/description/)|Medium||
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/)|Medium||
 |202|[Happy Number](https://leetcode.com/problems/happy-number/description/)|Easy||
-|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)|Easy||
+|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/203.remove-linked-list-elements.py)|
 |204|[Count Primes](https://leetcode.com/problems/count-primes/description/)|Easy||
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)|Easy||
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)|Easy||
@@ -429,7 +429,7 @@
 |427|[Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/description/)|Medium||
 |428|[Serialize and Deserialize N-ary Tree](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/description/):lock:|Hard||
 |429|[N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)|Easy||
-|430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/)|Medium||
+|430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/430.flatten-a-multilevel-doubly-linked-list.py)|
 |431|[Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/description/):lock:|Hard||
 |432|[All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/)|Hard||
 |433|[Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/description/)|Medium||
@@ -1163,3 +1163,4 @@
 |1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/)|Medium||
 |1162|[As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/description/)|Medium||
 |1163|[Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/description/)|Hard||
+|1164|[Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/description/):lock:|Medium||
