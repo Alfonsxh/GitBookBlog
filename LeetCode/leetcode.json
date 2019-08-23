@@ -1078,14 +1078,18 @@
         "url": "https://leetcode.com/problems/insertion-sort-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/147.insertion-sort-list.py"
+        }
     },
     "148": {
         "name": "Sort List",
         "url": "https://leetcode.com/problems/sort-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/148.sort-list.py"
+        }
     },
     "149": {
         "name": "Max Points on a Line",
