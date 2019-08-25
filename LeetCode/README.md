@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(43/1164)|
+|#|Title|Difficulty|Solution(48/1164)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -142,7 +142,7 @@
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/description/)|Hard|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/DP/140.%20Word%20Break%20II.py)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/141.linked-list-cycle.py)|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/142.linked-list-cycle-ii.py)|
-|143|[Reorder List](https://leetcode.com/problems/reorder-list/description/)|Medium||
+|143|[Reorder List](https://leetcode.com/problems/reorder-list/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/143.reorder-list.py)|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)|Medium||
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)|Hard||
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/description/)|Medium||
@@ -205,7 +205,7 @@
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/203.remove-linked-list-elements.py)|
 |204|[Count Primes](https://leetcode.com/problems/count-primes/description/)|Easy||
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)|Easy||
-|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)|Easy||
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/206.reverse-linked-list.py)|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule/description/)|Medium||
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)|Medium||
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/)|Medium||
@@ -233,10 +233,10 @@
 |231|[Power of Two](https://leetcode.com/problems/power-of-two/description/)|Easy||
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)|Easy||
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/description/)|Hard||
-|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)|Easy||
+|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/234.palindrome-linked-list.py)|
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)|Easy||
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)|Medium||
-|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)|Easy||
+|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/237.delete-node-in-a-linked-list.py)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)|Medium||
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/)|Hard||
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)|Medium||
@@ -875,7 +875,7 @@
 |873|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/)|Medium||
 |874|[Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/)|Easy||
 |875|[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)|Medium||
-|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)|Easy||
+|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/876.middle-of-the-linked-list.py)|
 |877|[Stone Game](https://leetcode.com/problems/stone-game/description/)|Medium||
 |878|[Nth Magical Number](https://leetcode.com/problems/nth-magical-number/description/)|Hard||
 |879|[Profitable Schemes](https://leetcode.com/problems/profitable-schemes/description/)|Hard||

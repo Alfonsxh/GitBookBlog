@@ -1050,7 +1050,9 @@
         "url": "https://leetcode.com/problems/reorder-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/143.reorder-list.py"
+        }
     },
     "144": {
         "name": "Binary Tree Preorder Traversal",
@@ -1501,7 +1503,9 @@
         "url": "https://leetcode.com/problems/reverse-linked-list/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/206.reverse-linked-list.py"
+        }
     },
     "207": {
         "name": "Course Schedule",
@@ -1697,7 +1701,9 @@
         "url": "https://leetcode.com/problems/palindrome-linked-list/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/234.palindrome-linked-list.py"
+        }
     },
     "235": {
         "name": "Lowest Common Ancestor of a Binary Search Tree",
@@ -1718,7 +1724,9 @@
         "url": "https://leetcode.com/problems/delete-node-in-a-linked-list/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/237.delete-node-in-a-linked-list.py"
+        }
     },
     "238": {
         "name": "Product of Array Except Self",
@@ -6217,7 +6225,9 @@
         "url": "https://leetcode.com/problems/middle-of-the-linked-list/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/876.middle-of-the-linked-list.py"
+        }
     },
     "877": {
         "name": "Stone Game",
