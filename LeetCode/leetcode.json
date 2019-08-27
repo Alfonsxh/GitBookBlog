@@ -7186,7 +7186,9 @@
         "url": "https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1013.partition-array-into-three-parts-with-equal-sum.py"
+        }
     },
     "1014": {
         "name": "Best Sightseeing Pair",
@@ -8243,6 +8245,62 @@
         "url": "https://leetcode.com/problems/product-price-at-a-given-date/description/",
         "lock": true,
         "diff": "Medium",
+        "sol": {}
+    },
+    "1165": {
+        "name": "Single-Row Keyboard",
+        "url": "https://leetcode.com/problems/single-row-keyboard/description/",
+        "lock": true,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1166": {
+        "name": "Design File System",
+        "url": "https://leetcode.com/problems/design-file-system/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1167": {
+        "name": "Minimum Cost to Connect Sticks",
+        "url": "https://leetcode.com/problems/minimum-cost-to-connect-sticks/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1168": {
+        "name": "Optimize Water Distribution in a Village",
+        "url": "https://leetcode.com/problems/optimize-water-distribution-in-a-village/description/",
+        "lock": true,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1169": {
+        "name": "Invalid Transactions",
+        "url": "https://leetcode.com/problems/invalid-transactions/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1170": {
+        "name": "Compare Strings by Frequency of the Smallest Character",
+        "url": "https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1171": {
+        "name": "Remove Zero Sum Consecutive Nodes from Linked List",
+        "url": "https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1172": {
+        "name": "Dinner Plate Stacks",
+        "url": "https://leetcode.com/problems/dinner-plate-stacks/description/",
+        "lock": false,
+        "diff": "Hard",
         "sol": {}
     }
 }
