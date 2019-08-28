@@ -795,14 +795,18 @@
         "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/108.convert-sorted-array-to-binary-search-tree.py"
+        }
     },
     "109": {
         "name": "Convert Sorted List to Binary Search Tree",
         "url": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/109.convert-sorted-list-to-binary-search-tree.py"
+        }
     },
     "110": {
         "name": "Balanced Binary Tree",
@@ -3213,7 +3217,9 @@
         "url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/448.find-all-numbers-disappeared-in-an-array.py"
+        }
     },
     "449": {
         "name": "Serialize and Deserialize BST",
