@@ -282,7 +282,7 @@
 |280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort/description/):lock:|Medium||
 |281|[Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/description/):lock:|Medium||
 |282|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/)|Hard||
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L69)|
+|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)|Easy|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L69), [Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/283.move-zeroes.py)|
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/description/)|Medium||
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/description/):lock:|Medium||
 |286|[Walls and Gates](https://leetcode.com/problems/walls-and-gates/description/):lock:|Medium||
