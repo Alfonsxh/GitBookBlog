@@ -301,7 +301,9 @@
         "url": "https://leetcode.com/problems/combination-sum-ii/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/40.combination-sum-ii.py"
+        }
     },
     "41": {
         "name": "First Missing Positive",
@@ -584,7 +586,9 @@
         "url": "https://leetcode.com/problems/word-search/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/79.word-search.py"
+        }
     },
     "80": {
         "name": "Remove Duplicates from Sorted Array II",
@@ -6211,7 +6215,9 @@
         "url": "https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/873.length-of-longest-fibonacci-subsequence.py"
+        }
     },
     "874": {
         "name": "Walking Robot Simulation",
@@ -6752,7 +6758,9 @@
         "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/950.reveal-cards-in-increasing-order.py"
+        }
     },
     "951": {
         "name": "Flip Equivalent Binary Trees",
@@ -8306,6 +8314,48 @@
     "1172": {
         "name": "Dinner Plate Stacks",
         "url": "https://leetcode.com/problems/dinner-plate-stacks/description/",
+        "lock": false,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1173": {
+        "name": "Immediate Food Delivery I",
+        "url": "https://leetcode.com/problems/immediate-food-delivery-i/description/",
+        "lock": true,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1174": {
+        "name": "Immediate Food Delivery II",
+        "url": "https://leetcode.com/problems/immediate-food-delivery-ii/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1175": {
+        "name": "Prime Arrangements",
+        "url": "https://leetcode.com/problems/prime-arrangements/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1176": {
+        "name": "Diet Plan Performance",
+        "url": "https://leetcode.com/problems/diet-plan-performance/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1177": {
+        "name": "Can Make Palindrome from Substring",
+        "url": "https://leetcode.com/problems/can-make-palindrome-from-substring/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1178": {
+        "name": "Number of Valid Words for Each Puzzle",
+        "url": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/description/",
         "lock": false,
         "diff": "Hard",
         "sol": {}
