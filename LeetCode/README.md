@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(52/1172)|
+|#|Title|Difficulty|Solution(56/1178)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -39,7 +39,7 @@
 |37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)|Hard||
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/description/)|Easy||
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/description/)|Medium||
-|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)|Medium||
+|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/40.combination-sum-ii.py)|
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)|Hard||
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)|Hard||
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)|Medium||
@@ -78,7 +78,7 @@
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)|Hard||
 |77|[Combinations](https://leetcode.com/problems/combinations/description/)|Medium||
 |78|[Subsets](https://leetcode.com/problems/subsets/description/)|Medium||
-|79|[Word Search](https://leetcode.com/problems/word-search/description/)|Medium||
+|79|[Word Search](https://leetcode.com/problems/word-search/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/79.word-search.py)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)|Medium|[C++](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L34)|
 |81|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)|Medium||
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/82.remove-duplicates-from-sorted-list-ii.py)|
@@ -872,7 +872,7 @@
 |870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/description/)|Medium||
 |871|[Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/)|Hard||
 |872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)|Easy||
-|873|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/)|Medium||
+|873|[Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/873.length-of-longest-fibonacci-subsequence.py)|
 |874|[Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/)|Easy||
 |875|[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)|Medium||
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/876.middle-of-the-linked-list.py)|
@@ -949,7 +949,7 @@
 |947|[Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/)|Medium||
 |948|[Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/description/)|Medium||
 |949|[Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/description/)|Easy||
-|950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/description/)|Medium||
+|950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/950.reveal-cards-in-increasing-order.py)|
 |951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/description/)|Medium||
 |952|[Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/description/)|Hard||
 |953|[Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/description/)|Easy||
@@ -1172,3 +1172,9 @@
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/description/)|Easy||
 |1171|[Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/)|Medium||
 |1172|[Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/description/)|Hard||
+|1173|[Immediate Food Delivery I](https://leetcode.com/problems/immediate-food-delivery-i/description/):lock:|Easy||
+|1174|[Immediate Food Delivery II](https://leetcode.com/problems/immediate-food-delivery-ii/description/):lock:|Medium||
+|1175|[Prime Arrangements](https://leetcode.com/problems/prime-arrangements/description/)|Easy||
+|1176|[Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/description/)|Easy||
+|1177|[Can Make Palindrome from Substring](https://leetcode.com/problems/can-make-palindrome-from-substring/description/)|Medium||
+|1178|[Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/description/)|Hard||
