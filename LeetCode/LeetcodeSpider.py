@@ -8,6 +8,36 @@
 import os
 import json
 import requests
+from lxml import etree
+from string import digits
+
+
+def github_crawl(question_dict):
+    url = "https://github.com/Alfonsxh/LeetCode-Challenge-python/tree/master/LeetCode/Python"
+    content = requests.get(url=url).content
+
+    # 解析元素
+    root = etree.HTML(content)
+    title_list = root.xpath("//td[@class='content']//a/@title")
+    url_list = root.xpath("//td[@class='content']//a/@href")
+
+    for i in range(len(title_list)):
+        title = title_list[i]
+        if not title.endswith(".py"):
+            continue
+
+        question_id = title.split('.')[0]
+        if not all([i in digits for i in question_id]):
+            continue
+
+        question = question_dict.get(int(question_id))
+        if question is None:
+            continue
+
+        # 添加解决方案
+        question['sol'].update({'Python': 'https://github.com/' + url_list[i]})
+
+    pass
 
 
 def leetcode_crawl():
@@ -42,7 +72,13 @@ def leetcode_crawl():
 
         questions_dict.update({question_id: dict(name=question_name, url=question_url, lock=question_paid, diff=question_diff, sol=dict())})
 
+    # 排序
     questions_dict = {k: v for k, v in sorted(questions_dict.items(), key=lambda a: a[0])}
+
+    # 统计github上的提交
+    github_crawl(questions_dict)
+
+    # 重新编写leetcode.json
     with open(leetcode_json_file, "w") as f:
         f.write(json.dumps(questions_dict, indent=4))
 
