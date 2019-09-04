@@ -5,7 +5,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py"
         }
     },
     "2": {
@@ -14,7 +14,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py"
         }
     },
     "3": {
@@ -23,7 +23,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/3.%20Longest%20Substring%20Without%20Repeating%20Characters.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/3.%20Longest%20Substring%20Without%20Repeating%20Characters.py"
         }
     },
     "4": {
@@ -53,7 +53,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/7.%20Reverse%20Integer.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/7.%20Reverse%20Integer.py"
         }
     },
     "8": {
@@ -139,7 +139,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/19.remove-nth-node-from-end-of-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/19.remove-nth-node-from-end-of-list.py"
         }
     },
     "20": {
@@ -156,7 +156,7 @@
         "diff": "Easy",
         "sol": {
             "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L58",
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/21.merge-two-sorted-lists.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/21.merge-two-sorted-lists.py"
         }
     },
     "22": {
@@ -173,7 +173,7 @@
         "diff": "Hard",
         "sol": {
             "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/MergeSortLists.h#L112",
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/23.merge-k-sorted-lists.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/23.merge-k-sorted-lists.py"
         }
     },
     "24": {
@@ -182,7 +182,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/24.swap-nodes-in-pairs.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/24.swap-nodes-in-pairs.py"
         }
     },
     "25": {
@@ -191,7 +191,7 @@
         "lock": false,
         "diff": "Hard",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/25.reverse-nodes-in-k-group.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/25.reverse-nodes-in-k-group.py"
         }
     },
     "26": {
@@ -302,7 +302,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/40.combination-sum-ii.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/40.combination-sum-ii.py"
         }
     },
     "41": {
@@ -381,7 +381,7 @@
         "lock": false,
         "diff": "Hard",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/51.N-Queens.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/51.N-Queens.py"
         }
     },
     "52": {
@@ -390,7 +390,7 @@
         "lock": false,
         "diff": "Hard",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/52.N-Queens%20II.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/52.N-Queens%20II.py"
         }
     },
     "53": {
@@ -399,7 +399,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/53.MaximumSubarray.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/53.MaximumSubarray.py"
         }
     },
     "54": {
@@ -457,7 +457,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/61.rotate-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/61.rotate-list.py"
         }
     },
     "62": {
@@ -587,7 +587,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/79.word-search.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/79.word-search.py"
         }
     },
     "80": {
@@ -612,7 +612,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/82.remove-duplicates-from-sorted-list-ii.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/82.remove-duplicates-from-sorted-list-ii.py"
         }
     },
     "83": {
@@ -621,7 +621,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/83.remove-duplicates-from-sorted-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/83.remove-duplicates-from-sorted-list.py"
         }
     },
     "84": {
@@ -643,7 +643,9 @@
         "url": "https://leetcode.com/problems/partition-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/86.partition-list.py"
+        }
     },
     "87": {
         "name": "Scramble String",
@@ -800,7 +802,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/108.convert-sorted-array-to-binary-search-tree.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/108.convert-sorted-array-to-binary-search-tree.py"
         }
     },
     "109": {
@@ -809,7 +811,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/109.convert-sorted-list-to-binary-search-tree.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/109.convert-sorted-list-to-binary-search-tree.py"
         }
     },
     "110": {
@@ -1014,7 +1016,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/138.copy-list-with-random-pointer.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/138.copy-list-with-random-pointer.py"
         }
     },
     "139": {
@@ -1041,7 +1043,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/141.linked-list-cycle.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/141.linked-list-cycle.py"
         }
     },
     "142": {
@@ -1050,7 +1052,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/142.linked-list-cycle-ii.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/142.linked-list-cycle-ii.py"
         }
     },
     "143": {
@@ -1059,7 +1061,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/143.reorder-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/143.reorder-list.py"
         }
     },
     "144": {
@@ -1089,7 +1091,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/147.insertion-sort-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/147.insertion-sort-list.py"
         }
     },
     "148": {
@@ -1098,7 +1100,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/148.sort-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/148.sort-list.py"
         }
     },
     "149": {
@@ -1184,7 +1186,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/160.intersection-of-two-linked-lists.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/160.intersection-of-two-linked-lists.py"
         }
     },
     "161": {
@@ -1489,7 +1491,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/203.remove-linked-list-elements.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/203.remove-linked-list-elements.py"
         }
     },
     "204": {
@@ -1512,7 +1514,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/206.reverse-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/206.reverse-linked-list.py"
         }
     },
     "207": {
@@ -1710,7 +1712,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/234.palindrome-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/234.palindrome-linked-list.py"
         }
     },
     "235": {
@@ -1733,7 +1735,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/237.delete-node-in-a-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/237.delete-node-in-a-linked-list.py"
         }
     },
     "238": {
@@ -2058,7 +2060,7 @@
         "diff": "Easy",
         "sol": {
             "C++": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/C%2B%2B/NotRepeatElement.h#L69",
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/283.move-zeroes.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/283.move-zeroes.py"
         }
     },
     "284": {
@@ -2377,7 +2379,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/328.odd-even-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/328.odd-even-linked-list.py"
         }
     },
     "329": {
@@ -3093,7 +3095,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/430.flatten-a-multilevel-doubly-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/430.flatten-a-multilevel-doubly-linked-list.py"
         }
     },
     "431": {
@@ -3200,7 +3202,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/445.add-two-numbers-ii.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/445.add-two-numbers-ii.py"
         }
     },
     "446": {
@@ -3223,7 +3225,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/448.find-all-numbers-disappeared-in-an-array.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/448.find-all-numbers-disappeared-in-an-array.py"
         }
     },
     "449": {
@@ -3553,7 +3555,9 @@
         "url": "https://leetcode.com/problems/teemo-attacking/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/495.teemo-attacking.py"
+        }
     },
     "496": {
         "name": "Next Greater Element I",
@@ -5042,7 +5046,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/707.design-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/707.design-linked-list.py"
         }
     },
     "708": {
@@ -5170,7 +5174,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/725.split-linked-list-in-parts.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/725.split-linked-list-in-parts.py"
         }
     },
     "726": {
@@ -5822,7 +5826,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/817.linked-list-components.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/817.linked-list-components.py"
         }
     },
     "818": {
@@ -6216,7 +6220,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/873.length-of-longest-fibonacci-subsequence.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/873.length-of-longest-fibonacci-subsequence.py"
         }
     },
     "874": {
@@ -6239,7 +6243,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/876.middle-of-the-linked-list.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/876.middle-of-the-linked-list.py"
         }
     },
     "877": {
@@ -6759,7 +6763,7 @@
         "lock": false,
         "diff": "Medium",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/950.reveal-cards-in-increasing-order.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/950.reveal-cards-in-increasing-order.py"
         }
     },
     "951": {
@@ -7202,7 +7206,7 @@
         "lock": false,
         "diff": "Easy",
         "sol": {
-            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1013.partition-array-into-three-parts-with-equal-sum.py"
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1013.partition-array-into-three-parts-with-equal-sum.py"
         }
     },
     "1014": {
@@ -7245,7 +7249,9 @@
         "url": "https://leetcode.com/problems/next-greater-node-in-linked-list/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com//Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1019.next-greater-node-in-linked-list.py"
+        }
     },
     "1020": {
         "name": "Number of Enclaves",
