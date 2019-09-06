@@ -35,7 +35,7 @@ def github_crawl(question_dict):
             continue
 
         # 添加解决方案
-        question['sol'].update({'Python': 'https://github.com/' + url_list[i]})
+        question['sol'].update({'Python': 'https://github.com' + url_list[i]})
 
     pass
 
