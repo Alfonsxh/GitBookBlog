@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(61/1178)|
+|#|Title|Difficulty|Solution(63/1187)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -40,7 +40,7 @@
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/description/)|Easy||
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/description/)|Medium||
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/40.combination-sum-ii.py)|
-|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)|Hard||
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)|Hard|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/41.first-missing-positive.py)|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)|Hard||
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)|Medium||
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/)|Hard||
@@ -824,7 +824,7 @@
 |822|[Card Flipping Game](https://leetcode.com/problems/card-flipping-game/description/)|Medium||
 |823|[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/description/)|Medium||
 |824|[Goat Latin](https://leetcode.com/problems/goat-latin/description/)|Easy||
-|825|[Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages/description/)|Medium||
+|825|[Friends Of Appropriate Ages](https://leetcode.com/problems/friends-of-appropriate-ages/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/825.friends-of-appropriate-ages.py)|
 |826|[Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work/description/)|Medium||
 |827|[Making A Large Island](https://leetcode.com/problems/making-a-large-island/description/)|Hard||
 |828|[Unique Letter String](https://leetcode.com/problems/unique-letter-string/description/)|Hard||
@@ -1178,3 +1178,12 @@
 |1176|[Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/description/)|Easy||
 |1177|[Can Make Palindrome from Substring](https://leetcode.com/problems/can-make-palindrome-from-substring/description/)|Medium||
 |1178|[Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/description/)|Hard||
+|1179|[Reformat Department Table](https://leetcode.com/problems/reformat-department-table/description/)|Easy||
+|1180|[Count Substrings with Only One Distinct Letter](https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/description/):lock:|Easy||
+|1181|[Before and After Puzzle](https://leetcode.com/problems/before-and-after-puzzle/description/):lock:|Medium||
+|1182|[Shortest Distance to Target Color](https://leetcode.com/problems/shortest-distance-to-target-color/description/):lock:|Medium||
+|1183|[Maximum Number of Ones](https://leetcode.com/problems/maximum-number-of-ones/description/):lock:|Hard||
+|1184|[Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops/description/)|Easy||
+|1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/description/)|Easy||
+|1186|[Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/)|Medium||
+|1187|[Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/description/)|Hard||
