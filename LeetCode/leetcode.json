@@ -310,7 +310,9 @@
         "url": "https://leetcode.com/problems/first-missing-positive/description/",
         "lock": false,
         "diff": "Hard",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/41.first-missing-positive.py"
+        }
     },
     "42": {
         "name": "Trapping Rain Water",
@@ -5887,7 +5889,9 @@
         "url": "https://leetcode.com/problems/friends-of-appropriate-ages/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/825.friends-of-appropriate-ages.py"
+        }
     },
     "826": {
         "name": "Most Profit Assigning Work",
@@ -8366,6 +8370,69 @@
     "1178": {
         "name": "Number of Valid Words for Each Puzzle",
         "url": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/description/",
+        "lock": false,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1179": {
+        "name": "Reformat Department Table",
+        "url": "https://leetcode.com/problems/reformat-department-table/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1180": {
+        "name": "Count Substrings with Only One Distinct Letter",
+        "url": "https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/description/",
+        "lock": true,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1181": {
+        "name": "Before and After Puzzle",
+        "url": "https://leetcode.com/problems/before-and-after-puzzle/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1182": {
+        "name": "Shortest Distance to Target Color",
+        "url": "https://leetcode.com/problems/shortest-distance-to-target-color/description/",
+        "lock": true,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1183": {
+        "name": "Maximum Number of Ones",
+        "url": "https://leetcode.com/problems/maximum-number-of-ones/description/",
+        "lock": true,
+        "diff": "Hard",
+        "sol": {}
+    },
+    "1184": {
+        "name": "Distance Between Bus Stops",
+        "url": "https://leetcode.com/problems/distance-between-bus-stops/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1185": {
+        "name": "Day of the Week",
+        "url": "https://leetcode.com/problems/day-of-the-week/description/",
+        "lock": false,
+        "diff": "Easy",
+        "sol": {}
+    },
+    "1186": {
+        "name": "Maximum Subarray Sum with One Deletion",
+        "url": "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/",
+        "lock": false,
+        "diff": "Medium",
+        "sol": {}
+    },
+    "1187": {
+        "name": "Make Array Strictly Increasing",
+        "url": "https://leetcode.com/problems/make-array-strictly-increasing/description/",
         "lock": false,
         "diff": "Hard",
         "sol": {}
