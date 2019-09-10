@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(63/1187)|
+|#|Title|Difficulty|Solution(64/1187)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -669,7 +669,7 @@
 |667|[Beautiful Arrangement II](https://leetcode.com/problems/beautiful-arrangement-ii/description/)|Medium||
 |668|[Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/)|Hard||
 |669|[Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/description/)|Easy||
-|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)|Medium||
+|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/670.maximum-swap.py)|
 |671|[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/)|Easy||
 |672|[Bulb Switcher II](https://leetcode.com/problems/bulb-switcher-ii/description/)|Medium||
 |673|[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/)|Medium||

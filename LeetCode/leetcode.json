@@ -4792,7 +4792,9 @@
         "url": "https://leetcode.com/problems/maximum-swap/description/",
         "lock": false,
         "diff": "Medium",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/670.maximum-swap.py"
+        }
     },
     "671": {
         "name": "Second Minimum Node In a Binary Tree",
