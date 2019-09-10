@@ -2988,7 +2988,9 @@
         "url": "https://leetcode.com/problems/third-maximum-number/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/414.third-maximum-number.py"
+        }
     },
     "415": {
         "name": "Add Strings",

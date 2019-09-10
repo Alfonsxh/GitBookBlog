@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(64/1187)|
+|#|Title|Difficulty|Solution(65/1187)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -413,7 +413,7 @@
 |411|[Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/description/):lock:|Hard||
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/)|Easy||
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)|Medium||
-|414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/description/)|Easy||
+|414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/414.third-maximum-number.py)|
 |415|[Add Strings](https://leetcode.com/problems/add-strings/description/)|Easy||
 |416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)|Medium||
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)|Medium||
