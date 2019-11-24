@@ -1,4 +1,4 @@
-|#|Title|Difficulty|Solution(65/1187)|
+|#|Title|Difficulty|Solution(66/1188)|
 |:---:|:---|:---|:---|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1.TwoSum.py)|
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)|Medium|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/2.%20Add%20Two%20Numbers.py)|
@@ -1009,7 +1009,7 @@
 |1007|[Minimum Domino Rotations For Equal Row](https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/)|Medium||
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/)|Medium||
 |1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/description/)|Easy||
-|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/)|Easy||
+|1010|[Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1010.pairs-of-songs-with-total-durations-divisible-by-60.py)|
 |1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)|Medium||
 |1012|[Numbers With Repeated Digits](https://leetcode.com/problems/numbers-with-repeated-digits/description/)|Hard||
 |1013|[Partition Array Into Three Parts With Equal Sum](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/)|Easy|[Python](https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1013.partition-array-into-three-parts-with-equal-sum.py)|
@@ -1187,3 +1187,4 @@
 |1185|[Day of the Week](https://leetcode.com/problems/day-of-the-week/description/)|Easy||
 |1186|[Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/)|Medium||
 |1187|[Make Array Strictly Increasing](https://leetcode.com/problems/make-array-strictly-increasing/description/)|Hard||
+|1188|[Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/description/)|Medium||
