@@ -7196,7 +7196,9 @@
         "url": "https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/",
         "lock": false,
         "diff": "Easy",
-        "sol": {}
+        "sol": {
+            "Python": "https://github.com/Alfonsxh/LeetCode-Challenge-python/blob/master/LeetCode/Python/1010.pairs-of-songs-with-total-durations-divisible-by-60.py"
+        }
     },
     "1011": {
         "name": "Capacity To Ship Packages Within D Days",
@@ -8439,6 +8441,13 @@
         "url": "https://leetcode.com/problems/make-array-strictly-increasing/description/",
         "lock": false,
         "diff": "Hard",
+        "sol": {}
+    },
+    "1188": {
+        "name": "Design Bounded Blocking Queue",
+        "url": "https://leetcode.com/problems/design-bounded-blocking-queue/description/",
+        "lock": false,
+        "diff": "Medium",
         "sol": {}
     }
 }
