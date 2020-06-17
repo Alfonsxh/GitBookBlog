@@ -197,4 +197,5 @@
     * [《见识》](Books/OtherBooks/见识.md)
     * [《未来简史》](Books/OtherBooks/未来简史.md)
     * [《今日简史》](Books/OtherBooks/今日简史.md)
+    * [《魔鬼经济学01》](Books/OtherBooks/魔鬼经济学01.md)
 
