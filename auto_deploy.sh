@@ -13,3 +13,5 @@ cd ./gh-pages
 git add .
 git commit -m "update blog: $1"
 git push
+
+find . -name "*.md"
