@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>RAID · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,63 +2892,47 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="raid"><a name="raid" class="plugin-anchor" href="#raid"><i class="fa fa-link" aria-hidden="true"></i></a>RAID</h1>
-<p><strong>&#x72EC;&#x7ACB;&#x786C;&#x76D8;&#x5197;&#x4F59;&#x9635;&#x5217;(RAID, Redundant Array of Independent Disks)</strong>&#xFF0C;&#x5229;&#x7528;&#x865A;&#x62DF;&#x5316;&#x6280;&#x672F;&#x5C06;&#x591A;&#x4E2A;&#x78C1;&#x76D8;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x591A;&#x4E2A;&#x786C;&#x76D8;&#x7684;&#x9635;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x5347;&#x6548;&#x7387;&#x6216;&#x8005;&#x8D44;&#x6599;&#x5197;&#x4F59;&#x3002;</p>
-<p>&#x6839;&#x636E;RAID&#x7684;&#x5C42;&#x7EA7;&#x4E0D;&#x540C;&#xFF0C;&#x8D44;&#x6599;&#x4F1A;&#x4EE5;&#x591A;&#x79CD;&#x5F62;&#x5F0F;&#x653E;&#x7F6E;&#x5728;&#x591A;&#x4E2A;&#x78C1;&#x76D8;&#x4E0A;&#x3002;</p>
-<h2 id="raid&#x5C42;&#x7EA7;"><a name="raid&#x5C42;&#x7EA7;" class="plugin-anchor" href="#raid&#x5C42;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>RAID&#x5C42;&#x7EA7;</h2>
-<p>RAID&#x7684;&#x5C42;&#x7EA7;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x5305;&#x62EC;&#xFF1A;RAID0&#x3001;RAID1&#x3001;RAID5&#x3001;RAID10&#x3002;</p>
-<h3 id="raid-0-stripe"><a name="raid-0-stripe" class="plugin-anchor" href="#raid-0-stripe"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 0 (stripe)</h3>
-<p><img src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid0.png" alt="RAID_raid0"></p>
-<p><strong>raid 0</strong> &#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x6309;&#x5757;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x76EE;&#x524D;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;<strong>&#x56E0;&#x4E3A;&#x4E00;&#x65E6;&#x67D0;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x635F;&#x574F;&#xFF0C;&#x5C06;&#x4F1A;&#x4F7F;&#x5F97;&#x8BE5;&#x5757;&#x78C1;&#x76D8;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</strong></p>
-<h3 id="raid-1-mirror"><a name="raid-1-mirror" class="plugin-anchor" href="#raid-1-mirror"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 1 (mirror)</h3>
-<p><img src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid1.png" alt="RAID_raid1"></p>
-<p><strong>raid 1</strong> &#x7684;&#x65B9;&#x5F0F;&#x6BD4; <strong>raid 0</strong> &#x8981;&#x597D;&#x4E00;&#x4E9B;&#xFF0C;<strong>&#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x6210;&#x591A;&#x4EFD;&#xFF0C;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;</strong>&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5F53;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x635F;&#x574F;&#x4E86;&#xFF0C;&#x53E6;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x4ECD;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x3002;</p>
-<p><strong>raid 1</strong> &#x4E5F;&#x6709;&#x7F3A;&#x70B9;&#xFF0C;&#x6570;&#x636E;&#x91CD;&#x590D;&#xFF0C;&#x78C1;&#x76D8;&#x5229;&#x7528;&#x7387;&#x4F4E;&#x3002;</p>
-<h3 id="raid-5-&#x5947;&#x5076;&#x6821;&#x9A8C;"><a name="raid-5-&#x5947;&#x5076;&#x6821;&#x9A8C;" class="plugin-anchor" href="#raid-5-&#x5947;&#x5076;&#x6821;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 5 (&#x5947;&#x5076;&#x6821;&#x9A8C;)</h3>
-<p><img src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid5.png" alt="RAID_raid5"></p>
-<p><strong>raid 5</strong> &#x7684;&#x65B9;&#x5F0F;:</p>
-<ul>
-<li>&#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x5206;&#x6210;&#x591A;&#x4EFD;&#xFF0C;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#x3002;</li>
-<li>&#x5FC5;&#x987B;&#x8981;&#x6709;&#x4E09;&#x5757;&#x6216;&#x4EE5;&#x4E0A;&#x7684;&#x7269;&#x7406;&#x78C1;&#x76D8;&#x3002;</li>
-<li>&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x91CF;&#x4E3A; <strong>(n-1)/n * &#x78C1;&#x76D8;&#x603B;&#x91CF;</strong>&#x3002;</li>
-<li>&#x5047;&#x5982;&#x6709;&#x56DB;&#x5757;&#x76D8;&#xFF0C;&#x524D;&#x4E09;&#x5757;&#x5B58;&#x50A8;&#x4E86;A&#x3001;B&#x3001;C&#x4E09;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x7B2C;&#x56DB;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x5219;&#x4F7F;&#x7528;&#x5947;&#x5076;&#x6821;&#x9A8C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;</li>
-<li>&#x4E0D;&#x505A;&#x70ED;&#x5907;&#x4EFD;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5141;&#x8BB8;&#x635F;&#x574F;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#xFF0C;&#x635F;&#x574F;&#x7684;&#x4E00;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x4E09;&#x5757;&#x76D8;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;</li>
-<li>&#x70ED;&#x5907;&#x76D8;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5F53;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x635F;&#x574F;&#x65F6;&#xFF0C;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x5947;&#x5076;&#x6821;&#x9A8C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x8FD8;&#x539F;&#x5230;&#x70ED;&#x5907;&#x76D8;&#x4E0A;&#xFF0C;&#x7528;&#x70ED;&#x5907;&#x76D8;&#x66FF;&#x6362;&#x635F;&#x574F;&#x7684;&#x78C1;&#x76D8;&#x5DE5;&#x4F5C;&#x3002;</li>
-<li>&#x635F;&#x574F;&#x4E24;&#x5757;&#x78C1;&#x76D8;&#x5C31;&#x4E0D;&#x80FD;&#x6062;&#x590D;&#x6570;&#x636E;&#x4E86;&#x3002;</li>
-<li><strong>&#x6BCF;&#x5757;&#x76D8;&#x90FD;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x5947;&#x5076;&#x6821;&#x9A8C;&#x7684;&#x5185;&#x5BB9;&#x3002;</strong></li>
-</ul>
-<h3 id="raid-10"><a name="raid-10" class="plugin-anchor" href="#raid-10"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 10</h3>
-<p><img src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid10.png" alt="RAID_raid10"></p>
-<p><strong>raid 10</strong> &#x7684;&#x67B6;&#x6784;&#x5982;&#x4E0A;&#x56FE;&#xFF0C;&#x5E95;&#x5C42;&#x901A;&#x8FC7; <strong>raid 1</strong> &#x5C06;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x955C;&#x50CF;&#x5907;&#x4EFD;&#xFF0C;&#x4E0A;&#x4E00;&#x5C42;&#x901A;&#x8FC7; <strong>raid 0</strong> &#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x5206;&#x522B;&#x5206;&#x53D1;&#x7ED9;&#x4E0D;&#x540C;&#x7684;raid&#x3002;</p>
-<p>&#x8FD9;&#x4E48;&#x505A;&#x80FD;&#x591F;&#x6709;&#x6548;&#x7684;&#x9632;&#x6B62;&#x574F;&#x76D8;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x7684;&#x4E22;&#x5931;&#x95EE;&#x9898;&#x3002;</p>
-<p><strong>PS: raid&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x5F0F;&#x7EC4;&#x6210;&#x65B0;&#x7684;&#x78C1;&#x76D8;&#x9635;&#x5217;</strong>&#x3002;</p>
-<h2 id="raid&#x4FE1;&#x606F;&#x67E5;&#x770B;"><a name="raid&#x4FE1;&#x606F;&#x67E5;&#x770B;" class="plugin-anchor" href="#raid&#x4FE1;&#x606F;&#x67E5;&#x770B;"><i class="fa fa-link" aria-hidden="true"></i></a>RAID&#x4FE1;&#x606F;&#x67E5;&#x770B;</h2>
-<p>&#x4E0D;&#x540C;&#x7684;&#x4EA7;&#x5546;&#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x5927;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x6BD4;&#x8F83;&#x591A;&#x7684;&#x662F; <strong>storcli64</strong> &#x5DE5;&#x5177;&#x3002;</p>
-<p>&#x4E0B;&#x9762;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x67E5;&#x770B;raid&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
-<p><code>storcli64 show</code> &#x53EF;&#x4EE5;&#x67E5;&#x770B;raid&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x6210;&#x51E0;&#x4E2A;&#x7B49;&#x7EA7;&#xFF1A;</p>
-<ul>
-<li><strong>/cx</strong> - Controller specific commands</li>
-<li><strong>/ex</strong> - Enclosure specific commands</li>
-<li><strong>/sx</strong> - Slot/PD specific commands</li>
-<li><strong>/vx</strong> - Virtual drive specific commands</li>
-<li><strong>/dx</strong> - Disk group specific commands</li>
-<li><strong>/fx</strong> - Foreign configuration specific commands</li>
-<li><strong>/px</strong> - Phy specific commands</li>
-<li><strong>/bbu</strong> - Battery Backup Unit related commands</li>
-</ul>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>storcli64 show</code> &#x67E5;&#x770B;raid&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x63A7;&#x5236;&#x5668;&#x76F8;&#x5173;&#x3002;</p>
-<pre><code class="lang-bash">System Overview :
+                                <h1 id="raid"><a name="raid" class="plugin-anchor" href="#raid"><i class="fa fa-link" aria-hidden="true"></i></a>RAID</h1><p><strong>&#x72EC;&#x7ACB;&#x786C;&#x76D8;&#x5197;&#x4F59;&#x9635;&#x5217;(RAID, Redundant Array of Independent Disks)</strong>&#xFF0C;&#x5229;&#x7528;&#x865A;&#x62DF;&#x5316;&#x6280;&#x672F;&#x5C06;&#x591A;&#x4E2A;&#x78C1;&#x76D8;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x591A;&#x4E2A;&#x786C;&#x76D8;&#x7684;&#x9635;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x5347;&#x6548;&#x7387;&#x6216;&#x8005;&#x8D44;&#x6599;&#x5197;&#x4F59;&#x3002;</p><p>&#x6839;&#x636E;RAID&#x7684;&#x5C42;&#x7EA7;&#x4E0D;&#x540C;&#xFF0C;&#x8D44;&#x6599;&#x4F1A;&#x4EE5;&#x591A;&#x79CD;&#x5F62;&#x5F0F;&#x653E;&#x7F6E;&#x5728;&#x591A;&#x4E2A;&#x78C1;&#x76D8;&#x4E0A;&#x3002;</p><h2 id="raid&#x5C42;&#x7EA7;"><a name="raid&#x5C42;&#x7EA7;" class="plugin-anchor" href="#raid&#x5C42;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>RAID&#x5C42;&#x7EA7;</h2><p>RAID&#x7684;&#x5C42;&#x7EA7;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x5305;&#x62EC;&#xFF1A;RAID0&#x3001;RAID1&#x3001;RAID5&#x3001;RAID10&#x3002;</p><h3 id="raid-0-stripe"><a name="raid-0-stripe" class="plugin-anchor" href="#raid-0-stripe"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 0 (stripe)</h3><p><img alt="RAID_raid0" src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid0.png"></p><p><strong>raid 0</strong> &#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x6309;&#x5757;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x76EE;&#x524D;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;<strong>&#x56E0;&#x4E3A;&#x4E00;&#x65E6;&#x67D0;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x635F;&#x574F;&#xFF0C;&#x5C06;&#x4F1A;&#x4F7F;&#x5F97;&#x8BE5;&#x5757;&#x78C1;&#x76D8;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</strong></p><h3 id="raid-1-mirror"><a name="raid-1-mirror" class="plugin-anchor" href="#raid-1-mirror"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 1 (mirror)</h3><p><img alt="RAID_raid1" src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid1.png"></p><p><strong>raid 1</strong> &#x7684;&#x65B9;&#x5F0F;&#x6BD4; <strong>raid 0</strong> &#x8981;&#x597D;&#x4E00;&#x4E9B;&#xFF0C;<strong>&#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x6210;&#x591A;&#x4EFD;&#xFF0C;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;</strong>&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5F53;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x635F;&#x574F;&#x4E86;&#xFF0C;&#x53E6;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x4ECD;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x3002;</p><p><strong>raid 1</strong> &#x4E5F;&#x6709;&#x7F3A;&#x70B9;&#xFF0C;&#x6570;&#x636E;&#x91CD;&#x590D;&#xFF0C;&#x78C1;&#x76D8;&#x5229;&#x7528;&#x7387;&#x4F4E;&#x3002;</p><h3 id="raid-5-&#x5947;&#x5076;&#x6821;&#x9A8C;"><a name="raid-5-&#x5947;&#x5076;&#x6821;&#x9A8C;" class="plugin-anchor" href="#raid-5-&#x5947;&#x5076;&#x6821;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 5 (&#x5947;&#x5076;&#x6821;&#x9A8C;)</h3><p><img alt="RAID_raid5" src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid5.png"></p><p><strong>raid 5</strong> &#x7684;&#x65B9;&#x5F0F;:</p><ul><li>&#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x5206;&#x6210;&#x591A;&#x4EFD;&#xFF0C;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#x3002;
+</li>
+<li>&#x5FC5;&#x987B;&#x8981;&#x6709;&#x4E09;&#x5757;&#x6216;&#x4EE5;&#x4E0A;&#x7684;&#x7269;&#x7406;&#x78C1;&#x76D8;&#x3002;
+</li>
+<li>&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x91CF;&#x4E3A; <strong>(n-1)/n * &#x78C1;&#x76D8;&#x603B;&#x91CF;</strong>&#x3002;
+</li>
+<li>&#x5047;&#x5982;&#x6709;&#x56DB;&#x5757;&#x76D8;&#xFF0C;&#x524D;&#x4E09;&#x5757;&#x5B58;&#x50A8;&#x4E86;A&#x3001;B&#x3001;C&#x4E09;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x7B2C;&#x56DB;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x5219;&#x4F7F;&#x7528;&#x5947;&#x5076;&#x6821;&#x9A8C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;
+</li>
+<li>&#x4E0D;&#x505A;&#x70ED;&#x5907;&#x4EFD;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5141;&#x8BB8;&#x635F;&#x574F;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#xFF0C;&#x635F;&#x574F;&#x7684;&#x4E00;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x4E09;&#x5757;&#x76D8;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;
+</li>
+<li>&#x70ED;&#x5907;&#x76D8;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5F53;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x5757;&#x78C1;&#x76D8;&#x635F;&#x574F;&#x65F6;&#xFF0C;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x5947;&#x5076;&#x6821;&#x9A8C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x8FD8;&#x539F;&#x5230;&#x70ED;&#x5907;&#x76D8;&#x4E0A;&#xFF0C;&#x7528;&#x70ED;&#x5907;&#x76D8;&#x66FF;&#x6362;&#x635F;&#x574F;&#x7684;&#x78C1;&#x76D8;&#x5DE5;&#x4F5C;&#x3002;
+</li>
+<li>&#x635F;&#x574F;&#x4E24;&#x5757;&#x78C1;&#x76D8;&#x5C31;&#x4E0D;&#x80FD;&#x6062;&#x590D;&#x6570;&#x636E;&#x4E86;&#x3002;
+</li>
+<li><strong>&#x6BCF;&#x5757;&#x76D8;&#x90FD;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x5947;&#x5076;&#x6821;&#x9A8C;&#x7684;&#x5185;&#x5BB9;&#x3002;</strong>
+</li></ul>
+<h3 id="raid-10"><a name="raid-10" class="plugin-anchor" href="#raid-10"><i class="fa fa-link" aria-hidden="true"></i></a>RAID 10</h3><p><img alt="RAID_raid10" src="../../Image/Linux&#x8FD0;&#x7EF4;/RAID_raid10.png"></p><p><strong>raid 10</strong> &#x7684;&#x67B6;&#x6784;&#x5982;&#x4E0A;&#x56FE;&#xFF0C;&#x5E95;&#x5C42;&#x901A;&#x8FC7; <strong>raid 1</strong> &#x5C06;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x955C;&#x50CF;&#x5907;&#x4EFD;&#xFF0C;&#x4E0A;&#x4E00;&#x5C42;&#x901A;&#x8FC7; <strong>raid 0</strong> &#x5C06;&#x539F;&#x59CB;&#x6570;&#x636E;&#x5206;&#x522B;&#x5206;&#x53D1;&#x7ED9;&#x4E0D;&#x540C;&#x7684;raid&#x3002;</p><p>&#x8FD9;&#x4E48;&#x505A;&#x80FD;&#x591F;&#x6709;&#x6548;&#x7684;&#x9632;&#x6B62;&#x574F;&#x76D8;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x7684;&#x4E22;&#x5931;&#x95EE;&#x9898;&#x3002;</p><p><strong>PS: raid&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x5F0F;&#x7EC4;&#x6210;&#x65B0;&#x7684;&#x78C1;&#x76D8;&#x9635;&#x5217;</strong>&#x3002;</p><h2 id="raid&#x4FE1;&#x606F;&#x67E5;&#x770B;"><a name="raid&#x4FE1;&#x606F;&#x67E5;&#x770B;" class="plugin-anchor" href="#raid&#x4FE1;&#x606F;&#x67E5;&#x770B;"><i class="fa fa-link" aria-hidden="true"></i></a>RAID&#x4FE1;&#x606F;&#x67E5;&#x770B;</h2><p>&#x4E0D;&#x540C;&#x7684;&#x4EA7;&#x5546;&#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x5927;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x6BD4;&#x8F83;&#x591A;&#x7684;&#x662F; <strong>storcli64</strong> &#x5DE5;&#x5177;&#x3002;</p><p>&#x4E0B;&#x9762;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x67E5;&#x770B;raid&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002;</p><p><code>storcli64 show</code> &#x53EF;&#x4EE5;&#x67E5;&#x770B;raid&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x6210;&#x51E0;&#x4E2A;&#x7B49;&#x7EA7;&#xFF1A;</p><ul><li><strong>/cx</strong> - Controller specific commands
+</li>
+<li><strong>/ex</strong> - Enclosure specific commands
+</li>
+<li><strong>/sx</strong> - Slot/PD specific commands
+</li>
+<li><strong>/vx</strong> - Virtual drive specific commands
+</li>
+<li><strong>/dx</strong> - Disk group specific commands
+</li>
+<li><strong>/fx</strong> - Foreign configuration specific commands
+</li>
+<li><strong>/px</strong> - Phy specific commands
+</li>
+<li><strong>/bbu</strong> - Battery Backup Unit related commands
+</li></ul>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>storcli64 show</code> &#x67E5;&#x770B;raid&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x63A7;&#x5236;&#x5668;&#x76F8;&#x5173;&#x3002;</p><pre><code class="lang-bash">System Overview :
 ===============
 
 ---------------------------------------------------------------
 Ctl Model   Ports PDs DGs DNOpt VDs VNOpt BBU sPR DS  EHS ASOs 
 ---------------------------------------------------------------
   0 9271-8i     8  12   2     0   2     0 Opt On  1&amp;2 Y      3 
----------------------------------------------------------------
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BE5;&#x8BBE;&#x5907;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x7269;&#x7406;&#x78C1;&#x76D8;&#x4F5C;&#x4E3A;raid&#x7684;&#x6709;12&#x5757;&#xFF0C;raid&#x7684;&#x6570;&#x91CF;&#x6709;2&#x4E2A;&#x3002;</p>
-<p>&#x901A;&#x8FC7; <code>storcli64 /c0 show</code> &#x67E5;&#x770B;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x5236;&#x5668;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4E24;&#x5757;&#xFF0C;&#x7B2C;&#x4E8C;&#x5757;&#x901A;&#x8FC7; <code>/c1</code> &#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
-<pre><code class="lang-bash">TOPOLOGY :
+---------------------------------------------------------------</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BE5;&#x8BBE;&#x5907;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x7269;&#x7406;&#x78C1;&#x76D8;&#x4F5C;&#x4E3A;raid&#x7684;&#x6709;12&#x5757;&#xFF0C;raid&#x7684;&#x6570;&#x91CF;&#x6709;2&#x4E2A;&#x3002;</p><p>&#x901A;&#x8FC7; <code>storcli64 /c0 show</code> &#x67E5;&#x770B;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x5236;&#x5668;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4E24;&#x5757;&#xFF0C;&#x7B2C;&#x4E8C;&#x5757;&#x901A;&#x8FC7; <code>/c1</code> &#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p><pre><code class="lang-bash">TOPOLOGY :
 ========
 
 --------------------------------------------------------------------------
@@ -2970,11 +2954,8 @@ DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace
  1 0   5   8:9      18  DRIVE Onln  N  744.687 GB enbl N  N   dflt -      
  1 0   6   8:10     20  DRIVE Onln  N  744.687 GB enbl N  N   dflt -      
  1 0   7   8:11     15  DRIVE Onln  N  744.687 GB enbl N  N   dflt -      
---------------------------------------------------------------------------
-</code></pre>
-<p>&#x7ED3;&#x679C;&#x4F1A;&#x663E;&#x793A;&#x51FA;&#x63A7;&#x5236;&#x5668; <code>/c0</code> &#x4E0B;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC; <strong>TOPOLOGY(&#x62D3;&#x6251;&#x7ED3;&#x6784;)</strong>&#x3001;<strong>VD LIST</strong>&#x3001;<strong>PD LIST</strong>&#x3001;<strong>BBU_Info</strong> &#x7B49;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x89C9;&#x5F97;&#x7ED3;&#x679C;&#x5F88;&#x96BE;&#x5904;&#x7406;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x547D;&#x4EE4;&#x7684;&#x672B;&#x5C3E;&#x6DFB;&#x52A0; <strong>j</strong> &#x6765;&#x8F93;&#x51FA;json&#x683C;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x5982; <code>storcli64 /c0 show j</code>&#x3002;</p>
-<pre><code class="lang-bash">{
+--------------------------------------------------------------------------</code></pre>
+<p>&#x7ED3;&#x679C;&#x4F1A;&#x663E;&#x793A;&#x51FA;&#x63A7;&#x5236;&#x5668; <code>/c0</code> &#x4E0B;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC; <strong>TOPOLOGY(&#x62D3;&#x6251;&#x7ED3;&#x6784;)</strong>&#x3001;<strong>VD LIST</strong>&#x3001;<strong>PD LIST</strong>&#x3001;<strong>BBU_Info</strong> &#x7B49;&#x3002;</p><p>&#x5982;&#x679C;&#x89C9;&#x5F97;&#x7ED3;&#x679C;&#x5F88;&#x96BE;&#x5904;&#x7406;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x547D;&#x4EE4;&#x7684;&#x672B;&#x5C3E;&#x6DFB;&#x52A0; <strong>j</strong> &#x6765;&#x8F93;&#x51FA;json&#x683C;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x5982; <code>storcli64 /c0 show j</code>&#x3002;</p><pre><code class="lang-bash">{
 <span class="hljs-string">&quot;Controllers&quot;</span>:[
 {
     <span class="hljs-string">&quot;Command Status&quot;</span> : {
@@ -2986,20 +2967,20 @@ DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace
         ...
     }
 }]
-}
-</code></pre>
-<p>&#x901A;&#x8FC7;&#x7EC4;&#x5408;&#x4E0D;&#x540C;&#x7B49;&#x7EA7;&#x7684;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x67E5;&#x770B;&#x5404;&#x8BBE;&#x5907;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x4F8B;&#x5982; <code>/c0/v0</code> &#x5373;&#x4E3A;&#x67E5;&#x770B; <strong>0&#x53F7;&#x63A7;&#x5236;&#x5668;&#x4E0B;0&#x53F7;raid&#x7684;&#x4FE1;&#x606F;</strong>&#x3002;&#x547D;&#x4EE4;&#x4E3A; <code>storcli64 /c0/v0 show</code>&#x3002;</p>
-<p>&#x5982;&#x679C;&#x9879;&#x67E5;&#x770B;&#x6240;&#x6709;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <strong>all</strong> &#x6765;&#x66FF;&#x6362;&#x7D22;&#x5F15;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x5982; <code>storcli64 /c0/vall show</code> &#x4E3A;&#x67E5;&#x770B; <strong>0&#x53F7;&#x63A7;&#x5236;&#x5668;&#x4E0B;&#x6240;&#x6709;raid&#x7684;&#x4FE1;&#x606F;</strong>&#x3002;</p>
-<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
-<ul>
-<li><a href="https://datapacket.com/blog/advantages-disadvantages-various-raid-levels/" target="_blank">Advantages and disadvantages of various RAID levels</a></li>
-<li><a href="https://www.youtube.com/watch?v=U-OCdTeZLac" target="_blank">What is RAID 0, 1, 5, &amp; 10?</a></li>
-<li><a href="https://wsgzao.github.io/post/raid/" target="_blank">RAID &#x78C1;&#x76D8;&#x9635;&#x5217;&#x914D;&#x7F6E;&#x548C;&#x8C03;&#x4F18;&#x5C0F;&#x7ED3;</a></li>
-<li><a href="https://www.cnblogs.com/luxiaodai/p/9878747.html" target="_blank">storcli &#x7B80;&#x6613;&#x4F7F;&#x7528;&#x4ECB;&#x7ECD;</a></li>
-</ul>
+}</code></pre>
+<p>&#x901A;&#x8FC7;&#x7EC4;&#x5408;&#x4E0D;&#x540C;&#x7B49;&#x7EA7;&#x7684;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x67E5;&#x770B;&#x5404;&#x8BBE;&#x5907;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x4F8B;&#x5982; <code>/c0/v0</code> &#x5373;&#x4E3A;&#x67E5;&#x770B; <strong>0&#x53F7;&#x63A7;&#x5236;&#x5668;&#x4E0B;0&#x53F7;raid&#x7684;&#x4FE1;&#x606F;</strong>&#x3002;&#x547D;&#x4EE4;&#x4E3A; <code>storcli64 /c0/v0 show</code>&#x3002;</p><p>&#x5982;&#x679C;&#x9879;&#x67E5;&#x770B;&#x6240;&#x6709;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <strong>all</strong> &#x6765;&#x66FF;&#x6362;&#x7D22;&#x5F15;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x5982; <code>storcli64 /c0/vall show</code> &#x4E3A;&#x67E5;&#x770B; <strong>0&#x53F7;&#x63A7;&#x5236;&#x5668;&#x4E0B;&#x6240;&#x6709;raid&#x7684;&#x4FE1;&#x606F;</strong>&#x3002;</p><h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2><ul><li><a href="https://datapacket.com/blog/advantages-disadvantages-various-raid-levels/" target="_blank">Advantages and disadvantages of various RAID levels</a>
+</li>
+<li><a href="https://www.youtube.com/watch?v=U-OCdTeZLac" target="_blank">What is RAID 0, 1, 5, &amp; 10?</a>
+</li>
+<li><a href="https://wsgzao.github.io/post/raid/" target="_blank">RAID &#x78C1;&#x76D8;&#x9635;&#x5217;&#x914D;&#x7F6E;&#x548C;&#x8C03;&#x4F18;&#x5C0F;&#x7ED3;</a>
+</li>
+<li><a href="https://www.cnblogs.com/luxiaodai/p/9878747.html" target="_blank">storcli &#x7B80;&#x6613;&#x4F7F;&#x7528;&#x4ECB;&#x7ECD;</a>
+</li></ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2019-06-13 20:57:36
+2020-08-22 03:05:14
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3042,7 +3023,7 @@ DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"RAID","level":"2.3.3.2","depth":3,"next":{"title":"Linux服务器","level":"2.3.4","depth":2,"path":"Linux/Linux服务器/Readme.md","ref":"Linux/Linux服务器/Readme.md","articles":[{"title":"Linux服务器负载均衡","level":"2.3.4.1","depth":3,"path":"Linux/Linux服务器/Linux服务器负载均衡.md","ref":"Linux/Linux服务器/Linux服务器负载均衡.md","articles":[]}]},"previous":{"title":"PCIE","level":"2.3.3.1","depth":3,"path":"Linux/Linux运维/PCIE.md","ref":"Linux/Linux运维/PCIE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux运维/RAID.md","mtime":"2019-06-13T12:57:36.746Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"RAID","level":"2.3.3.2","depth":3,"next":{"title":"Linux服务器","level":"2.3.4","depth":2,"path":"Linux/Linux服务器/Readme.md","ref":"Linux/Linux服务器/Readme.md","articles":[{"title":"Linux服务器负载均衡","level":"2.3.4.1","depth":3,"path":"Linux/Linux服务器/Linux服务器负载均衡.md","ref":"Linux/Linux服务器/Linux服务器负载均衡.md","articles":[]}]},"previous":{"title":"PCIE","level":"2.3.3.1","depth":3,"path":"Linux/Linux运维/PCIE.md","ref":"Linux/Linux运维/PCIE.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Linux/Linux运维/RAID.md","mtime":"2020-08-22T03:05:14.132Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3077,14 +3058,6 @@ DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace
     
         
         <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

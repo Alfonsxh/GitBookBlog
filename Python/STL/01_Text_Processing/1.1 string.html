@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>string 字符串常量和模板 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,11 +2892,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="string-&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;"><a name="string-&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;" class="plugin-anchor" href="#string-&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>string &#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;</h1>
-<p><strong>string</strong> &#x6A21;&#x5757;&#x5927;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x5DF2;&#x88AB; <strong>str&#x5BF9;&#x8C61;</strong> &#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x5B57;&#x7B26;&#x5E38;&#x91CF;&#x4EBA;&#x4FDD;&#x7559;&#x4E86;&#x4E0B;&#x6765;</p>
-<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;" class="plugin-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;</h2>
-<p><strong>string</strong> &#x6A21;&#x5757;&#x4E2D;&#x4FDD;&#x7559;&#x4E86;&#x5E38;&#x89C1;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#xFF0C;&#x5E76;&#x7ED9;&#x7279;&#x5B9A;&#x7684;&#x5E38;&#x91CF;&#x89C4;&#x4E86;&#x7C7B;&#x3002;</p>
-<pre><code class="lang-python"><span class="hljs-comment"># string.py</span>
+                                <h1 id="string-&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;"><a name="string-&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;" class="plugin-anchor" href="#string-&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>string &#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x548C;&#x6A21;&#x677F;</h1><p><strong>string</strong> &#x6A21;&#x5757;&#x5927;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x5DF2;&#x88AB; <strong>str&#x5BF9;&#x8C61;</strong> &#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x5B57;&#x7B26;&#x5E38;&#x91CF;&#x4EBA;&#x4FDD;&#x7559;&#x4E86;&#x4E0B;&#x6765;</p><h2 id="&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;" class="plugin-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;</h2><p><strong>string</strong> &#x6A21;&#x5757;&#x4E2D;&#x4FDD;&#x7559;&#x4E86;&#x5E38;&#x89C1;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#xFF0C;&#x5E76;&#x7ED9;&#x7279;&#x5B9A;&#x7684;&#x5E38;&#x91CF;&#x89C4;&#x4E86;&#x7C7B;&#x3002;</p><pre><code class="lang-python"><span class="hljs-comment"># string.py</span>
 
 <span class="hljs-comment"># Some strings for ctype-style character classification</span>
 whitespace = <span class="hljs-string">&apos; \t\n\r\v\f&apos;</span>
@@ -2907,17 +2903,12 @@ digits = <span class="hljs-string">&apos;0123456789&apos;</span>
 hexdigits = digits + <span class="hljs-string">&apos;abcdef&apos;</span> + <span class="hljs-string">&apos;ABCDEF&apos;</span>
 octdigits = <span class="hljs-string">&apos;01234567&apos;</span>
 punctuation = <span class="hljs-string">r&quot;&quot;&quot;!&quot;#$%&amp;&apos;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~&quot;&quot;&quot;</span>
-printable = digits + ascii_letters + punctuation + whitespace
-</code></pre>
-<p>&#x4F8B;&#x5982;&#xFF0C;&#x662F;&#x5426;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <strong>ascii_lowercase</strong> &#x3001;<strong>ascii_uppercase</strong> &#x4E24;&#x4E2A;&#x5224;&#x65AD;&#x3002;</p>
-<pre><code class="lang-python"><span class="hljs-keyword">import</span> string
+printable = digits + ascii_letters + punctuation + whitespace</code></pre>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x662F;&#x5426;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <strong>ascii_lowercase</strong> &#x3001;<strong>ascii_uppercase</strong> &#x4E24;&#x4E2A;&#x5224;&#x65AD;&#x3002;</p><pre><code class="lang-python"><span class="hljs-keyword">import</span> string
 
 <span class="hljs-keyword">if</span> <span class="hljs-string">&apos;s&apos;</span> <span class="hljs-keyword">in</span> string.ascii_lowercase:
-    print(<span class="hljs-string">&apos;s in ascii_lowercase.&apos;</span>)
-</code></pre>
-<h2 id="formatter&#x548C;template"><a name="formatter&#x548C;template" class="plugin-anchor" href="#formatter&#x548C;template"><i class="fa fa-link" aria-hidden="true"></i></a>Formatter&#x548C;Template</h2>
-<p>&#x5728; <strong>string</strong> &#x6A21;&#x5757;&#x4E2D;&#xFF0C;<strong>format</strong> &#x9700;&#x8981;&#x901A;&#x8FC7; <strong>Formatter&#x7C7B;</strong> &#x5B9E;&#x73B0;&#xFF0C;<strong>template</strong> &#x9700;&#x8981;&#x901A;&#x8FC7; <strong>Template&#x7C7B;</strong> &#x5B9E;&#x73B0;&#xFF0C;&#x73B0;&#x5728;&#x8FD9;&#x4E24;&#x9879;&#x529F;&#x80FD;&#x5DF2;&#x7ECF;&#x5728; <strong>str&#x5BF9;&#x8C61;</strong> &#x4E2D;&#x7531; <strong>format()</strong> &#x540C;&#x4E00;&#x5B9E;&#x73B0;&#x3002;</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">FormatterTest</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;s in ascii_lowercase.&apos;</span>)</code></pre>
+<h2 id="formatter&#x548C;template"><a name="formatter&#x548C;template" class="plugin-anchor" href="#formatter&#x548C;template"><i class="fa fa-link" aria-hidden="true"></i></a>Formatter&#x548C;Template</h2><p>&#x5728; <strong>string</strong> &#x6A21;&#x5757;&#x4E2D;&#xFF0C;<strong>format</strong> &#x9700;&#x8981;&#x901A;&#x8FC7; <strong>Formatter&#x7C7B;</strong> &#x5B9E;&#x73B0;&#xFF0C;<strong>template</strong> &#x9700;&#x8981;&#x901A;&#x8FC7; <strong>Template&#x7C7B;</strong> &#x5B9E;&#x73B0;&#xFF0C;&#x73B0;&#x5728;&#x8FD9;&#x4E24;&#x9879;&#x529F;&#x80FD;&#x5DF2;&#x7ECF;&#x5728; <strong>str&#x5BF9;&#x8C61;</strong> &#x4E2D;&#x7531; <strong>format()</strong> &#x540C;&#x4E00;&#x5B9E;&#x73B0;&#x3002;</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">FormatterTest</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-string">&quot;&quot;&quot;string formatter class test&quot;&quot;&quot;</span>
 
     format_string = string.Formatter()
@@ -2949,20 +2940,23 @@ printable = digits + ascii_letters + punctuation + whitespace
        Escape          : {{}}
        Variable in text: {var}iable
        &quot;&quot;&quot;</span>
-    print(<span class="hljs-string">&apos;Format:&apos;</span>, t_3.format(**values))
-</code></pre>
-<h2 id="&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;"><a name="&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;" class="plugin-anchor" href="#&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;</h2>
-<p>&#x5728; <strong>str&#x5BF9;&#x8C61;</strong> &#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E9B;&#x6BD4;&#x8F83;&#x6709;&#x8DA3;&#xFF0C;&#x5E73;&#x65F6;&#x7528;&#x7684;&#x6BD4;&#x8F83;&#x5C11;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
-<ul>
-<li><strong>capitalize</strong> - &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5C0F;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x5C0F;&#x5199;&#x3002;</li>
-<li><strong>title</strong> - &#x5C06;&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x5C0F;&#x5199;&#x3002;</li>
-<li><strong>casefold</strong> - &#x5C06;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x90FD;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#xFF0C;&#x548C;lower&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;casefold&#x662F;&#x4E25;&#x683C;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x4F8B;&#x5982; &#x5C06; <strong>&#xDF;</strong> &#x8F6C;&#x6362;&#x4E3A; <strong>ss</strong>&#x3002;</li>
-<li><strong>center</strong> - &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5C45;&#x4E2D;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x7528;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x586B;&#x5145;</li>
-<li><strong>isprintable</strong> - &#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x53EF;&#x4EE5;&#x6253;&#x5370;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x4ED6;&#x7684;is&#x5F00;&#x5934;&#x7684;&#x51FD;&#x6570;&#x7C7B;&#x4F3C;&#x3002;</li>
-<li><strong>partition</strong> - &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x6309;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x5206;&#x5272;&#x6210;&#x4E09;&#x5757;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x524D;&#x4E3A;head&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E3A;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x540E;&#x4E3A;tail&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;split&#x3002;</li>
-<li><strong>maketrans</strong> - &#x5236;&#x4F5C;&#x5B57;&#x7B26;&#x8F6C;&#x6362;map&#x3002;</li>
-<li><strong>translate</strong> - &#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x8F6C;&#x6362;map&#x8F6C;&#x6362;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5BF9;&#x5E94;&#x5B57;&#x7B26;&#x3002;</li>
-</ul>
+    print(<span class="hljs-string">&apos;Format:&apos;</span>, t_3.format(**values))</code></pre>
+<h2 id="&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;"><a name="&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;" class="plugin-anchor" href="#&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;str&#x5BF9;&#x8C61;&#x51FD;&#x6570;&#x603B;&#x7ED3;</h2><p>&#x5728; <strong>str&#x5BF9;&#x8C61;</strong> &#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E9B;&#x6BD4;&#x8F83;&#x6709;&#x8DA3;&#xFF0C;&#x5E73;&#x65F6;&#x7528;&#x7684;&#x6BD4;&#x8F83;&#x5C11;&#x7684;&#x51FD;&#x6570;&#x3002;</p><ul><li><strong>capitalize</strong> - &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5C0F;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x5C0F;&#x5199;&#x3002;
+</li>
+<li><strong>title</strong> - &#x5C06;&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x5C0F;&#x5199;&#x3002;
+</li>
+<li><strong>casefold</strong> - &#x5C06;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x90FD;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#xFF0C;&#x548C;lower&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;casefold&#x662F;&#x4E25;&#x683C;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x4F8B;&#x5982; &#x5C06; <strong>&#xDF;</strong> &#x8F6C;&#x6362;&#x4E3A; <strong>ss</strong>&#x3002;
+</li>
+<li><strong>center</strong> - &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5C45;&#x4E2D;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x7F6E;&#x7528;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x586B;&#x5145;
+</li>
+<li><strong>isprintable</strong> - &#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x53EF;&#x4EE5;&#x6253;&#x5370;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x4ED6;&#x7684;is&#x5F00;&#x5934;&#x7684;&#x51FD;&#x6570;&#x7C7B;&#x4F3C;&#x3002;
+</li>
+<li><strong>partition</strong> - &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x6309;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x5206;&#x5272;&#x6210;&#x4E09;&#x5757;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x524D;&#x4E3A;head&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E3A;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x540E;&#x4E3A;tail&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;split&#x3002;
+</li>
+<li><strong>maketrans</strong> - &#x5236;&#x4F5C;&#x5B57;&#x7B26;&#x8F6C;&#x6362;map&#x3002;
+</li>
+<li><strong>translate</strong> - &#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x8F6C;&#x6362;map&#x8F6C;&#x6362;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5BF9;&#x5E94;&#x5B57;&#x7B26;&#x3002;
+</li></ul>
 <pre><code class="lang-python">def StrFunction():
     s_1 = &quot;hello wOrld&quot;
     print(&quot;s_1.capitalize() -&gt; &quot;, s_1.capitalize())
@@ -2984,11 +2978,12 @@ s_1.center() -&gt;  zzzzhello wOrldzzzzz
 s_1.isprintable() -&gt;  True
 s_1.partition() -&gt;  (&apos;he&apos;, &apos;l&apos;, &apos;lo wOrld&apos;)
 s_1.rpartition() -&gt;  (&apos;hello wOr&apos;, &apos;l&apos;, &apos;d&apos;)
-s_1.translate() -&gt;  h2ll4 wOrld
-</code></pre>
+s_1.translate() -&gt;  h2ll4 wOrld</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2019-01-17 10:12:45
+2020-08-22 03:05:14
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3031,7 +3026,7 @@ s_1.translate() -&gt;  h2ll4 wOrld
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"string 字符串常量和模板","level":"2.1.1.1.1","depth":4,"next":{"title":"re 正则表达式","level":"2.1.1.1.2","depth":4,"path":"Python/STL/01_Text_Processing/1.2 re.md","ref":"Python/STL/01_Text_Processing/1.2 re.md","articles":[]},"previous":{"title":"Text Processing Services","level":"2.1.1.1","depth":3,"path":"Python/STL/01_Text_Processing/README.md","ref":"Python/STL/01_Text_Processing/README.md","articles":[{"title":"string 字符串常量和模板","level":"2.1.1.1.1","depth":4,"path":"Python/STL/01_Text_Processing/1.1 string.md","ref":"Python/STL/01_Text_Processing/1.1 string.md","articles":[]},{"title":"re 正则表达式","level":"2.1.1.1.2","depth":4,"path":"Python/STL/01_Text_Processing/1.2 re.md","ref":"Python/STL/01_Text_Processing/1.2 re.md","articles":[]},{"title":"difflib 字符串差异比较","level":"2.1.1.1.3","depth":4,"path":"Python/STL/01_Text_Processing/1.3 difflib.md","ref":"Python/STL/01_Text_Processing/1.3 difflib.md","articles":[]},{"title":"textwrap 字符串段格式化","level":"2.1.1.1.4","depth":4,"path":"Python/STL/01_Text_Processing/1.4 textwrap.md","ref":"Python/STL/01_Text_Processing/1.4 textwrap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/STL/01_Text_Processing/1.1 string.md","mtime":"2019-01-17T02:12:45.197Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"string 字符串常量和模板","level":"2.1.1.1.1","depth":4,"next":{"title":"re 正则表达式","level":"2.1.1.1.2","depth":4,"path":"Python/STL/01_Text_Processing/1.2 re.md","ref":"Python/STL/01_Text_Processing/1.2 re.md","articles":[]},"previous":{"title":"Text Processing Services","level":"2.1.1.1","depth":3,"path":"Python/STL/01_Text_Processing/README.md","ref":"Python/STL/01_Text_Processing/README.md","articles":[{"title":"string 字符串常量和模板","level":"2.1.1.1.1","depth":4,"path":"Python/STL/01_Text_Processing/1.1 string.md","ref":"Python/STL/01_Text_Processing/1.1 string.md","articles":[]},{"title":"re 正则表达式","level":"2.1.1.1.2","depth":4,"path":"Python/STL/01_Text_Processing/1.2 re.md","ref":"Python/STL/01_Text_Processing/1.2 re.md","articles":[]},{"title":"difflib 字符串差异比较","level":"2.1.1.1.3","depth":4,"path":"Python/STL/01_Text_Processing/1.3 difflib.md","ref":"Python/STL/01_Text_Processing/1.3 difflib.md","articles":[]},{"title":"textwrap 字符串段格式化","level":"2.1.1.1.4","depth":4,"path":"Python/STL/01_Text_Processing/1.4 textwrap.md","ref":"Python/STL/01_Text_Processing/1.4 textwrap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/STL/01_Text_Processing/1.1 string.md","mtime":"2020-08-22T03:05:14.136Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3066,14 +3061,6 @@ s_1.translate() -&gt;  h2ll4 wOrld
     
         
         <script src="../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

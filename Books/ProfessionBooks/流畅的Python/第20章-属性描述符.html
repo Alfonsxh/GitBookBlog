@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>第20章-属性描述符 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,9 +2892,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;"><a name="&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;" class="plugin-anchor" href="#&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;</h1>
-<p>&#x63CF;&#x8FF0;&#x7B26;&#x662F;&#x5B9E;&#x73B0;&#x4E86;&#x7279;&#x5B9A;&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x5305;&#x62EC;<code>__get__</code>&#x3001;<code>__set__</code>&#x3001;<code>__delete__</code>&#x65B9;&#x6CD5;&#xFF0C;<code>property</code>&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x5B8C;&#x6574;&#x7684;&#x63CF;&#x8FF0;&#x7B26;&#x534F;&#x8BAE;&#x3002;</p>
-<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">property</span><span class="hljs-params">(object)</span>:</span>
+                                <h1 id="&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;"><a name="&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;" class="plugin-anchor" href="#&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;20&#x7AE0;-&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;</h1><p>&#x63CF;&#x8FF0;&#x7B26;&#x662F;&#x5B9E;&#x73B0;&#x4E86;&#x7279;&#x5B9A;&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x5305;&#x62EC;<code>__get__</code>&#x3001;<code>__set__</code>&#x3001;<code>__delete__</code>&#x65B9;&#x6CD5;&#xFF0C;<code>property</code>&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x5B8C;&#x6574;&#x7684;&#x63CF;&#x8FF0;&#x7B26;&#x534F;&#x8BAE;&#x3002;</p><pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">property</span><span class="hljs-params">(object)</span>:</span>
     <span class="hljs-string">&quot;&quot;&quot;
     property(fget=None, fset=None, fdel=None, doc=None) -&gt; property attribute
 
@@ -2965,17 +2963,19 @@
 
     fset = property(<span class="hljs-keyword">lambda</span> self: object(), <span class="hljs-keyword">lambda</span> self, v: <span class="hljs-keyword">None</span>, <span class="hljs-keyword">lambda</span> self: <span class="hljs-keyword">None</span>)  <span class="hljs-comment"># default</span>
 
-    __isabstractmethod__ = property(<span class="hljs-keyword">lambda</span> self: object(), <span class="hljs-keyword">lambda</span> self, v: <span class="hljs-keyword">None</span>, <span class="hljs-keyword">lambda</span> self: <span class="hljs-keyword">None</span>)  <span class="hljs-comment"># default</span>
-</code></pre>
-<h2 id="&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;"><a name="&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;</h2>
-<ul>
-<li>&#x63CF;&#x8FF0;&#x7B26;&#x7C7B;&#xFF1A;&#x5B9E;&#x73B0;&#x63CF;&#x8FF0;&#x7B26;&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x3002;</li>
-<li>&#x6258;&#x7BA1;&#x7C7B;&#xFF1A;&#x628A;&#x63CF;&#x8FF0;&#x7B26;&#x5B9E;&#x4F8B;&#x58F0;&#x660E;&#x6210;&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x3002;</li>
-<li>&#x63CF;&#x8FF0;&#x7B26;&#x5B9E;&#x4F8B;&#xFF1A;&#x63CF;&#x8FF0;&#x7B26;&#x7C7B;&#x7684;&#x5404;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x58F0;&#x660E;&#x4E3A;&#x6258;&#x7BA1;&#x7C7B;&#x7684;&#x7C7B;&#x5C5E;&#x6027;&#x3002;</li>
-<li>&#x6258;&#x7BA1;&#x5B9E;&#x4F8B;&#xFF1A;&#x6258;&#x7BA1;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</li>
-<li>&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#xFF1A;&#x6258;&#x7BA1;&#x5B9E;&#x4F8B;&#x4E2D;&#x5B58;&#x50A8;&#x81EA;&#x8EAB;&#x6258;&#x7BA1;&#x5C5E;&#x6027;&#x7684;&#x5C5E;&#x6027;&#x3002;</li>
-<li>&#x6258;&#x7BA1;&#x5C5E;&#x6027;&#xFF1A;&#x6258;&#x7BA1;&#x7C7B;&#x4E2D;&#x7531;&#x63CF;&#x8FF0;&#x7B26;&#x5B9E;&#x4F8B;&#x5904;&#x7406;&#x7684;&#x516C;&#x5F00;&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x5B58;&#x50A8;&#x5728;&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#x4E2D;&#x3002;</li>
-</ul>
+    __isabstractmethod__ = property(<span class="hljs-keyword">lambda</span> self: object(), <span class="hljs-keyword">lambda</span> self, v: <span class="hljs-keyword">None</span>, <span class="hljs-keyword">lambda</span> self: <span class="hljs-keyword">None</span>)  <span class="hljs-comment"># default</span></code></pre>
+<h2 id="&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;"><a name="&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63CF;&#x8FF0;&#x7B26;&#x793A;&#x4F8B;</h2><ul><li>&#x63CF;&#x8FF0;&#x7B26;&#x7C7B;&#xFF1A;&#x5B9E;&#x73B0;&#x63CF;&#x8FF0;&#x7B26;&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x3002;
+</li>
+<li>&#x6258;&#x7BA1;&#x7C7B;&#xFF1A;&#x628A;&#x63CF;&#x8FF0;&#x7B26;&#x5B9E;&#x4F8B;&#x58F0;&#x660E;&#x6210;&#x7C7B;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x3002;
+</li>
+<li>&#x63CF;&#x8FF0;&#x7B26;&#x5B9E;&#x4F8B;&#xFF1A;&#x63CF;&#x8FF0;&#x7B26;&#x7C7B;&#x7684;&#x5404;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x58F0;&#x660E;&#x4E3A;&#x6258;&#x7BA1;&#x7C7B;&#x7684;&#x7C7B;&#x5C5E;&#x6027;&#x3002;
+</li>
+<li>&#x6258;&#x7BA1;&#x5B9E;&#x4F8B;&#xFF1A;&#x6258;&#x7BA1;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;
+</li>
+<li>&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#xFF1A;&#x6258;&#x7BA1;&#x5B9E;&#x4F8B;&#x4E2D;&#x5B58;&#x50A8;&#x81EA;&#x8EAB;&#x6258;&#x7BA1;&#x5C5E;&#x6027;&#x7684;&#x5C5E;&#x6027;&#x3002;
+</li>
+<li>&#x6258;&#x7BA1;&#x5C5E;&#x6027;&#xFF1A;&#x6258;&#x7BA1;&#x7C7B;&#x4E2D;&#x7531;&#x63CF;&#x8FF0;&#x7B26;&#x5B9E;&#x4F8B;&#x5904;&#x7406;&#x7684;&#x516C;&#x5F00;&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x5B58;&#x50A8;&#x5728;&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#x4E2D;&#x3002;
+</li></ul>
 <pre><code class="lang-python">class Quantity:  # &#x63CF;&#x8FF0;&#x7B26;&#x7C7B;
     def __init__(self, storage_name):
         self.storage_name = storage_name
@@ -3009,12 +3009,8 @@ class LineItem:  # &#x6258;&#x7BA1;&#x7C7B;
 
 raisins = LineItem(&apos;Golden raisins&apos;, 10, 6.0)
 &gt;&gt;&gt; Attritube &apos;weight&apos; use Quantity class.__set__ set value.
-&gt;&gt;&gt; Attritube &apos;price&apos; use Quantity class.__set__ set value.
-</code></pre>
-<p>&#x5728;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;<code>__set__</code>&#x65B9;&#x6CD5;&#x7684;&#x63CF;&#x8FF0;&#x7B26;&#x79F0;&#x4E3A;<code>&#x8986;&#x76D6;&#x578B;&#x63CF;&#x8FF0;&#x7B26;</code>&#xFF0C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;<code>__set__</code>&#x65B9;&#x6CD5;&#x7684;&#x63CF;&#x8FF0;&#x7B26;&#x79F0;&#x4E3A;<code>&#x975E;&#x8986;&#x76D6;&#x578B;&#x63CF;&#x8FF0;&#x7B26;</code>&#x3002;</p>
-<p>&#x5F53;&#x5B9E;&#x4F8B;&#x53D6;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x89E6;&#x53D1;<code>__get__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;<code>__get__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x53D6;&#x5B9E;&#x4F8B;&#x81EA;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
-<p>&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x89E6;&#x53D1;<code>__set__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;<code>__set__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x5B9E;&#x4F8B;&#x81EA;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#xFF0C;del&#x6B64;&#x5C5E;&#x6027;&#x5BF9;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;</p>
-<pre><code class="lang-python">def cls_name(obj_or_cls):
+&gt;&gt;&gt; Attritube &apos;price&apos; use Quantity class.__set__ set value.</code></pre>
+<p>&#x5728;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;<code>__set__</code>&#x65B9;&#x6CD5;&#x7684;&#x63CF;&#x8FF0;&#x7B26;&#x79F0;&#x4E3A;<code>&#x8986;&#x76D6;&#x578B;&#x63CF;&#x8FF0;&#x7B26;</code>&#xFF0C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;<code>__set__</code>&#x65B9;&#x6CD5;&#x7684;&#x63CF;&#x8FF0;&#x7B26;&#x79F0;&#x4E3A;<code>&#x975E;&#x8986;&#x76D6;&#x578B;&#x63CF;&#x8FF0;&#x7B26;</code>&#x3002;</p><p>&#x5F53;&#x5B9E;&#x4F8B;&#x53D6;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x89E6;&#x53D1;<code>__get__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;<code>__get__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x53D6;&#x5B9E;&#x4F8B;&#x81EA;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#x3002;</p><p>&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x89E6;&#x53D1;<code>__set__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;<code>__set__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x5B9E;&#x4F8B;&#x81EA;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#xFF0C;del&#x6B64;&#x5C5E;&#x6027;&#x5BF9;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;</p><pre><code class="lang-python">def cls_name(obj_or_cls):
     cls = type(obj_or_cls)
     if cls is type:
         cls = obj_or_cls
@@ -3134,11 +3130,12 @@ obj.__dict__    # &#x5728;&#x5BF9;nonOverride&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x
 &gt;&gt;&gt; {&apos;override&apos;: 9, &apos;overrideNonGet&apos;: 8, &apos;nonOverride&apos;: 7}
 
 Manager.nonOverride  # &#x7C7B;&#x7684;nonOverride&#x5C5E;&#x6027;&#x4ECD;&#x8FD4;&#x56DE; __get__&#x65B9;&#x6CD5;&#x7684;&#x5185;&#x5BB9;
-&gt;&gt;&gt; -&gt; NonOverload.__get__(&lt;NonOverload object&gt;,None,&lt;class Manager&gt;)
-</code></pre>
+&gt;&gt;&gt; -&gt; NonOverload.__get__(&lt;NonOverload object&gt;,None,&lt;class Manager&gt;)</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2018-08-30 22:26:41
+2020-08-22 03:05:13
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3181,7 +3178,7 @@ Manager.nonOverride  # &#x7C7B;&#x7684;nonOverride&#x5C5E;&#x6027;&#x4ECD;&#x8FD
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第20章-属性描述符","level":"3.1.3.20","depth":3,"next":{"title":"第21章-类元编程","level":"3.1.3.21","depth":3,"path":"Books/ProfessionBooks/流畅的Python/第21章-类元编程.md","ref":"Books/ProfessionBooks/流畅的Python/第21章-类元编程.md","articles":[]},"previous":{"title":"第19章-动态属性和特性","level":"3.1.3.19","depth":3,"path":"Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.md","ref":"Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Books/ProfessionBooks/流畅的Python/第20章-属性描述符.md","mtime":"2018-08-30T14:26:41.060Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第20章-属性描述符","level":"3.1.3.20","depth":3,"next":{"title":"第21章-类元编程","level":"3.1.3.21","depth":3,"path":"Books/ProfessionBooks/流畅的Python/第21章-类元编程.md","ref":"Books/ProfessionBooks/流畅的Python/第21章-类元编程.md","articles":[]},"previous":{"title":"第19章-动态属性和特性","level":"3.1.3.19","depth":3,"path":"Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.md","ref":"Books/ProfessionBooks/流畅的Python/第19章-动态属性和特性.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Books/ProfessionBooks/流畅的Python/第20章-属性描述符.md","mtime":"2020-08-22T03:05:13.938Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3216,14 +3213,6 @@ Manager.nonOverride  # &#x7C7B;&#x7684;nonOverride&#x5C5E;&#x6027;&#x4ECD;&#x8FD
     
         
         <script src="../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

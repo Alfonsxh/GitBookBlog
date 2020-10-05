@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>3-MySQL高级操作_聚集和分组 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,11 +2892,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;"><a name="&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;" class="plugin-anchor" href="#&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;</h1>
-<h2 id="&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;"><a name="&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;" class="plugin-anchor" href="#&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;</h2>
-<p><code>Concat()</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x62FC;&#x63A5;&#x4E0D;&#x540C;&#x7684;&#x5217;&#x3002;</p>
-<p><code>as</code>&#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x7ED9;&#x5B57;&#x6BB5;&#x6216;&#x503C;&#x53D6;&#x4E00;&#x4E2A;&#x522B;&#x540D;&#x3002; </p>
-<pre><code class="lang-sql">MariaDB [test]&gt; select concat(vend_name, &apos;(&apos;, vend_country, &apos;)&apos;) as vend_title from vendors;
+                                <h1 id="&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;"><a name="&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;" class="plugin-anchor" href="#&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x805A;&#x96C6;&#x548C;&#x5206;&#x7EC4;</h1><h2 id="&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;"><a name="&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;" class="plugin-anchor" href="#&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;</h2><p><code>Concat()</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x62FC;&#x63A5;&#x4E0D;&#x540C;&#x7684;&#x5217;&#x3002;</p><p><code>as</code>&#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x7ED9;&#x5B57;&#x6BB5;&#x6216;&#x503C;&#x53D6;&#x4E00;&#x4E2A;&#x522B;&#x540D;&#x3002;</p><pre><code class="lang-sql">MariaDB [test]&gt; select concat(vend_name, &apos;(&apos;, vend_country, &apos;)&apos;) as vend_title from vendors;
 +------------------------+
 | vend_title             |
 +------------------------+
@@ -2907,35 +2903,22 @@
 | Jet Set(England)       |
 | Jouets Et Ours(France) |
 +------------------------+
-6 rows in set (0.00 sec)
-</code></pre>
-<p>MySQL&#x7B97;&#x672F;&#x64CD;&#x4F5C;&#x7B26;</p>
-<table>
+6 rows in set (0.00 sec)</code></pre>
+<p>MySQL&#x7B97;&#x672F;&#x64CD;&#x4F5C;&#x7B26;</p><table>
 <thead>
-<tr>
-<th style="text-align:center">&#x64CD;&#x4F5C;&#x7B26;</th>
-<th style="text-align:center">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">+</td>
-<td style="text-align:center">&#x52A0;</td>
-</tr>
-<tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">&#x51CF;</td>
-</tr>
-<tr>
-<td style="text-align:center">*</td>
-<td style="text-align:center">&#x4E58;</td>
-</tr>
-<tr>
-<td style="text-align:center">/</td>
-<td style="text-align:center">&#x9664;</td>
-</tr>
-</tbody>
-</table>
+<tr><th> &#x64CD;&#x4F5C;&#x7B26; </th>
+<th> &#x8BF4;&#x660E; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:center"> + </td>
+<td style="text-align:center"> &#x52A0; </td>
+</tr><tr><td style="text-align:center"> - </td>
+<td style="text-align:center"> &#x51CF; </td>
+</tr><tr><td style="text-align:center"> * </td>
+<td style="text-align:center"> &#x4E58; </td>
+</tr><tr><td style="text-align:center"> / </td>
+<td style="text-align:center"> &#x9664;</td>
+</tr></tbody></table>
+
 <pre><code class="lang-sql">MariaDB [test]&gt; select * from orderitems;
 +-----------+------------+---------+----------+------------+
 | order_num | order_item | prod_id | quantity | item_price |
@@ -2970,61 +2953,34 @@ MariaDB [test]&gt; select *,quantity*item_price as expanded_price from orderitem
 |     20009 |          3 | SLING   |        1 |       4.49 |           4.49 |
 |     20009 |          4 | ANV03   |        1 |      14.99 |          14.99 |
 +-----------+------------+---------+----------+------------+----------------+
-11 rows in set (0.00 sec)
-</code></pre>
-<h2 id="&#x4F7F;&#x7528;&#x51FD;&#x6570;"><a name="&#x4F7F;&#x7528;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x51FD;&#x6570;</h2>
-<p><code>SQL</code>&#x652F;&#x6301;&#x5229;&#x7528;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x51FD;&#x6570;&#x4E00;&#x822C;&#x5728;&#x6570;&#x636E;&#x4E0A;&#x6267;&#x884C;&#xFF0C;&#x5B83;&#x7ED9;&#x6570;&#x636E;&#x7684;&#x8F6C;&#x6362;&#x548C;&#x5904;&#x7406;&#x63D0;&#x4F9B;&#x4E86;&#x65B9;&#x4FBF;&#x3002;</p>
-<h3 id="&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;"><a name="&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;</h3>
-<table>
+11 rows in set (0.00 sec)</code></pre>
+<h2 id="&#x4F7F;&#x7528;&#x51FD;&#x6570;"><a name="&#x4F7F;&#x7528;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x51FD;&#x6570;</h2><p><code>SQL</code>&#x652F;&#x6301;&#x5229;&#x7528;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x51FD;&#x6570;&#x4E00;&#x822C;&#x5728;&#x6570;&#x636E;&#x4E0A;&#x6267;&#x884C;&#xFF0C;&#x5B83;&#x7ED9;&#x6570;&#x636E;&#x7684;&#x8F6C;&#x6362;&#x548C;&#x5904;&#x7406;&#x63D0;&#x4F9B;&#x4E86;&#x65B9;&#x4FBF;&#x3002;</p><h3 id="&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;"><a name="&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x672C;&#x5904;&#x7406;&#x51FD;&#x6570;</h3><table>
 <thead>
-<tr>
-<th style="text-align:left">&#x51FD;&#x6570;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Left(string, number_of_chars)</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E32;&#x5DE6;&#x8FB9;&#x7684;&#x5B57;&#x7B26;</td>
-</tr>
-<tr>
-<td style="text-align:left">Right(string, number_of_chars)</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E32;&#x53F3;&#x8FB9;&#x7684;&#x5B57;&#x7B26;</td>
-</tr>
-<tr>
-<td style="text-align:left">Length(string)</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E32;&#x7684;&#x957F;&#x5EA6;</td>
-</tr>
-<tr>
-<td style="text-align:left">Locate(string)</td>
-<td style="text-align:left">&#x627E;&#x51FA;&#x4E32;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x4E32;</td>
-</tr>
-<tr>
-<td style="text-align:left">Lower(string)</td>
-<td style="text-align:left">&#x5C06;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;</td>
-</tr>
-<tr>
-<td style="text-align:left">Upper(string)</td>
-<td style="text-align:left">&#x5C06;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;</td>
-</tr>
-<tr>
-<td style="text-align:left">LTrim(string)</td>
-<td style="text-align:left">&#x53BB;&#x6389;&#x4E32;&#x5DE6;&#x4FA7;&#x7684;&#x7A7A;&#x683C;</td>
-</tr>
-<tr>
-<td style="text-align:left">RTrim(string)</td>
-<td style="text-align:left">&#x53BB;&#x6389;&#x4E32;&#x53F3;&#x4FA7;&#x7684;&#x7A7A;&#x683C;</td>
-</tr>
-<tr>
-<td style="text-align:left">Soundex(string)</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E32;&#x7684;&#x8BED;&#x97F3;&#x503C;&#xFF01;&#xFF01;</td>
-</tr>
-<tr>
-<td style="text-align:left">SubString(string, start, length)</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x5B50;&#x4E32;&#x7684;&#x5B57;&#x7B26;</td>
-</tr>
-</tbody>
-</table>
+<tr><th style="text-align:left"> &#x51FD;&#x6570; </th>
+<th style="text-align:left"> &#x8BF4;&#x660E; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> Left(string, number_of_chars) </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E32;&#x5DE6;&#x8FB9;&#x7684;&#x5B57;&#x7B26; </td>
+</tr><tr><td style="text-align:left"> Right(string, number_of_chars) </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E32;&#x53F3;&#x8FB9;&#x7684;&#x5B57;&#x7B26; </td>
+</tr><tr><td style="text-align:left"> Length(string) </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E32;&#x7684;&#x957F;&#x5EA6; </td>
+</tr><tr><td style="text-align:left"> Locate(string) </td>
+<td style="text-align:left"> &#x627E;&#x51FA;&#x4E32;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x4E32; </td>
+</tr><tr><td style="text-align:left"> Lower(string) </td>
+<td style="text-align:left"> &#x5C06;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199; </td>
+</tr><tr><td style="text-align:left"> Upper(string) </td>
+<td style="text-align:left"> &#x5C06;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199; </td>
+</tr><tr><td style="text-align:left"> LTrim(string) </td>
+<td style="text-align:left"> &#x53BB;&#x6389;&#x4E32;&#x5DE6;&#x4FA7;&#x7684;&#x7A7A;&#x683C; </td>
+</tr><tr><td style="text-align:left"> RTrim(string) </td>
+<td style="text-align:left"> &#x53BB;&#x6389;&#x4E32;&#x53F3;&#x4FA7;&#x7684;&#x7A7A;&#x683C; </td>
+</tr><tr><td style="text-align:left"> Soundex(string) </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E32;&#x7684;&#x8BED;&#x97F3;&#x503C;&#xFF01;&#xFF01; </td>
+</tr><tr><td style="text-align:left"> SubString(string, start, length) </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x5B50;&#x4E32;&#x7684;&#x5B57;&#x7B26;</td>
+</tr></tbody></table>
+
 <pre><code class="lang-sql">MariaDB [test]&gt; select cust_name, cust_contact from customers where cust_contact = &quot;Y lie&quot;;
 Empty set (0.00 sec)
 
@@ -3046,88 +3002,48 @@ MariaDB [test]&gt; select SubString(cust_name, 1, 5) from customers; # &#x9009;&
 | Yosem                      |
 | E Fud                      |
 +----------------------------+
-5 rows in set (0.00 sec)
-</code></pre>
-<h3 id="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;"><a name="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;</h3>
-<p>&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x91C7;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x7279;&#x6570;&#x7684;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x4EE5;&#x4FBF;&#x80FD;&#x5FEB;&#x901F;&#x548C;&#x6709;&#x6548;&#x5730;&#x6392;&#x5E8F;&#x6216;&#x8FC7;&#x6EE4;&#xFF0C;&#x5E76;&#x4E14;&#x8282;&#x7701;&#x7269;&#x7406;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x3002;</p>
-<table>
+5 rows in set (0.00 sec)</code></pre>
+<h3 id="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;"><a name="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x51FD;&#x6570;</h3><p>&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x91C7;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x7279;&#x6570;&#x7684;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x4EE5;&#x4FBF;&#x80FD;&#x5FEB;&#x901F;&#x548C;&#x6709;&#x6548;&#x5730;&#x6392;&#x5E8F;&#x6216;&#x8FC7;&#x6EE4;&#xFF0C;&#x5E76;&#x4E14;&#x8282;&#x7701;&#x7269;&#x7406;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x3002;</p><table>
 <thead>
-<tr>
-<th style="text-align:left">&#x51FD;&#x6570;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">AddDate()</td>
-<td style="text-align:left">&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65E5;&#x671F;(&#x5929;&#x3001;&#x5468;&#x7B49;)</td>
-</tr>
-<tr>
-<td style="text-align:left">AddTime()</td>
-<td style="text-align:left">&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;(&#x65F6;&#x3001;&#x5206;&#x7B49;)</td>
-</tr>
-<tr>
-<td style="text-align:left">CurDate()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x65E5;&#x671F;</td>
-</tr>
-<tr>
-<td style="text-align:left">CurTime()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x65F6;&#x95F4;</td>
-</tr>
-<tr>
-<td style="text-align:left">DateDiff()</td>
-<td style="text-align:left">&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x65E5;&#x671F;&#x4E4B;&#x5DEE;</td>
-</tr>
-<tr>
-<td style="text-align:left">Date_Add()</td>
-<td style="text-align:left">&#x9AD8;&#x5EA6;&#x7075;&#x6D3B;&#x7684;&#x65E5;&#x671F;&#x8FD0;&#x7B97;&#x51FD;&#x6570;</td>
-</tr>
-<tr>
-<td style="text-align:left">Date_Format()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x65E5;&#x671F;&#x6216;&#x5B57;&#x7B26;&#x4E32;</td>
-</tr>
-<tr>
-<td style="text-align:left">DayOfWeek()</td>
-<td style="text-align:left">&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x661F;&#x671F;&#x51E0;</td>
-</tr>
-<tr>
-<td style="text-align:left">Now()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;</td>
-</tr>
-<tr>
-<td style="text-align:left">Date()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x5982;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x65E5;&#x671F;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Year()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x5E74;&#x4EFD;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Month()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x6708;&#x4EFD;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Day()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x5929;&#x6570;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Time()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Second()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x79D2;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Minute()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x5206;&#x949F;&#x90E8;&#x5206;</td>
-</tr>
-<tr>
-<td style="text-align:left">Hour()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x5C0F;&#x65F6;&#x90E8;&#x5206;</td>
-</tr>
-</tbody>
-</table>
+<tr><th style="text-align:left"> &#x51FD;&#x6570; </th>
+<th style="text-align:left"> &#x8BF4;&#x660E; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> AddDate() </td>
+<td style="text-align:left"> &#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65E5;&#x671F;(&#x5929;&#x3001;&#x5468;&#x7B49;) </td>
+</tr><tr><td style="text-align:left"> AddTime() </td>
+<td style="text-align:left"> &#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;(&#x65F6;&#x3001;&#x5206;&#x7B49;) </td>
+</tr><tr><td style="text-align:left"> CurDate() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x65E5;&#x671F; </td>
+</tr><tr><td style="text-align:left"> CurTime() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x65F6;&#x95F4; </td>
+</tr><tr><td style="text-align:left"> DateDiff() </td>
+<td style="text-align:left"> &#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x65E5;&#x671F;&#x4E4B;&#x5DEE; </td>
+</tr><tr><td style="text-align:left"> Date_Add() </td>
+<td style="text-align:left"> &#x9AD8;&#x5EA6;&#x7075;&#x6D3B;&#x7684;&#x65E5;&#x671F;&#x8FD0;&#x7B97;&#x51FD;&#x6570; </td>
+</tr><tr><td style="text-align:left"> Date_Format() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x65E5;&#x671F;&#x6216;&#x5B57;&#x7B26;&#x4E32; </td>
+</tr><tr><td style="text-align:left"> DayOfWeek() </td>
+<td style="text-align:left"> &#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x661F;&#x671F;&#x51E0; </td>
+</tr><tr><td style="text-align:left"> Now() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4; </td>
+</tr><tr><td style="text-align:left"> Date() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x5982;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x65E5;&#x671F;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Year() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x5E74;&#x4EFD;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Month() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x6708;&#x4EFD;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Day() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7684;&#x5929;&#x6570;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Time() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Second() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x79D2;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Minute() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x5206;&#x949F;&#x90E8;&#x5206; </td>
+</tr><tr><td style="text-align:left"> Hour() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x7684;&#x5C0F;&#x65F6;&#x90E8;&#x5206;</td>
+</tr></tbody></table>
+
 <pre><code class="lang-sql">MariaDB [test]&gt; select * from orders;
 +-----------+---------------------+---------+
 | order_num | order_date          | cust_id |
@@ -3160,87 +3076,49 @@ MariaDB [test]&gt; select * from orders where date(order_date) between &quot;200
 |     20007 | 2005-09-30 00:00:00 |   10004 |
 |     20008 | 2005-10-03 00:00:00 |   10005 |
 +-----------+---------------------+---------+
-3 rows in set (0.00 sec)
-</code></pre>
-<h3 id="&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;"><a name="&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;</h3>
-<table>
+3 rows in set (0.00 sec)</code></pre>
+<h3 id="&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;"><a name="&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x503C;&#x5904;&#x7406;&#x51FD;&#x6570;</h3><table>
 <thead>
-<tr>
-<th style="text-align:left">&#x51FD;&#x6570;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Abs()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x7EDD;&#x5BF9;&#x503C;</td>
-</tr>
-<tr>
-<td style="text-align:left">Cos()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89D2;&#x5EA6;&#x7684;&#x4F59;&#x5F26;</td>
-</tr>
-<tr>
-<td style="text-align:left">Exp()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E66;&#x5E97;&#x6307;&#x6570;&#x503C;</td>
-</tr>
-<tr>
-<td style="text-align:left">Mod()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4F59;&#x6570;</td>
-</tr>
-<tr>
-<td style="text-align:left">Pi()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x5706;&#x5468;&#x7387;</td>
-</tr>
-<tr>
-<td style="text-align:left">Rand()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;</td>
-</tr>
-<tr>
-<td style="text-align:left">Sin()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89D2;&#x5EA6;&#x7684;&#x6B63;&#x5F26;</td>
-</tr>
-<tr>
-<td style="text-align:left">Sqrt()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x5E73;&#x65B9;&#x6839;</td>
-</tr>
-<tr>
-<td style="text-align:left">Tan()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89D2;&#x5EA6;&#x7684;&#x6B63;&#x5207;</td>
-</tr>
-</tbody>
-</table>
-<h3 id="&#x805A;&#x96C6;&#x51FD;&#x6570;"><a name="&#x805A;&#x96C6;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x805A;&#x96C6;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x805A;&#x96C6;&#x51FD;&#x6570;</h3>
-<p>&#x7528;&#x4E8E;&#x7EDF;&#x8BA1;&#x884C;&#x7EC4;&#x4E0A;&#x3002;</p>
-<table>
+<tr><th style="text-align:left"> &#x51FD;&#x6570; </th>
+<th style="text-align:left"> &#x8BF4;&#x660E; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> Abs() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x7EDD;&#x5BF9;&#x503C; </td>
+</tr><tr><td style="text-align:left"> Cos() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89D2;&#x5EA6;&#x7684;&#x4F59;&#x5F26; </td>
+</tr><tr><td style="text-align:left"> Exp() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E66;&#x5E97;&#x6307;&#x6570;&#x503C; </td>
+</tr><tr><td style="text-align:left"> Mod() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4F59;&#x6570; </td>
+</tr><tr><td style="text-align:left"> Pi() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x5706;&#x5468;&#x7387; </td>
+</tr><tr><td style="text-align:left"> Rand() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570; </td>
+</tr><tr><td style="text-align:left"> Sin() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89D2;&#x5EA6;&#x7684;&#x6B63;&#x5F26; </td>
+</tr><tr><td style="text-align:left"> Sqrt() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7684;&#x5E73;&#x65B9;&#x6839; </td>
+</tr><tr><td style="text-align:left"> Tan() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x89D2;&#x5EA6;&#x7684;&#x6B63;&#x5207;</td>
+</tr></tbody></table>
+
+<h3 id="&#x805A;&#x96C6;&#x51FD;&#x6570;"><a name="&#x805A;&#x96C6;&#x51FD;&#x6570;" class="plugin-anchor" href="#&#x805A;&#x96C6;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x805A;&#x96C6;&#x51FD;&#x6570;</h3><p>&#x7528;&#x4E8E;&#x7EDF;&#x8BA1;&#x884C;&#x7EC4;&#x4E0A;&#x3002;</p><table>
 <thead>
-<tr>
-<th style="text-align:left">&#x51FD;&#x6570;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">AVG()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x5E73;&#x5747;&#x503C;</td>
-</tr>
-<tr>
-<td style="text-align:left">COUNT()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x884C;&#x6570;</td>
-</tr>
-<tr>
-<td style="text-align:left">MAX()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x6700;&#x5927;&#x503C;</td>
-</tr>
-<tr>
-<td style="text-align:left">MIN()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x6700;&#x5C0F;&#x503C;</td>
-</tr>
-<tr>
-<td style="text-align:left">SUM()</td>
-<td style="text-align:left">&#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x503C;&#x4E4B;&#x548C;</td>
-</tr>
-</tbody>
-</table>
+<tr><th style="text-align:left"> &#x51FD;&#x6570; </th>
+<th style="text-align:left"> &#x8BF4;&#x660E; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> AVG() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x5E73;&#x5747;&#x503C; </td>
+</tr><tr><td style="text-align:left"> COUNT() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x884C;&#x6570; </td>
+</tr><tr><td style="text-align:left"> MAX() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x6700;&#x5927;&#x503C; </td>
+</tr><tr><td style="text-align:left"> MIN() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x7684;&#x6700;&#x5C0F;&#x503C; </td>
+</tr><tr><td style="text-align:left"> SUM() </td>
+<td style="text-align:left"> &#x8FD4;&#x56DE;&#x67D0;&#x5217;&#x503C;&#x4E4B;&#x548C;</td>
+</tr></tbody></table>
+
 <pre><code class="lang-sql">MariaDB [test]&gt; select avg(prod_price) as avg_price from products where vend_id = 1001; # &#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5382;&#x5546;&#x4EA7;&#x54C1;&#x7684;&#x5E73;&#x5747;&#x4EF7;&#x683C;
 +-----------+
 | avg_price |
@@ -3255,10 +3133,8 @@ MariaDB [test]&gt; select count(*) as num_cust from customers;
 +----------+
 |        5 |
 +----------+
-1 row in set (0.00 sec)
-</code></pre>
-<p>&#x5728;&#x4F7F;&#x7528;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x65F6;&#x5417;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;<code>DISTINCT</code>&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5254;&#x9664;&#x90A3;&#x4E9B;&#x76F8;&#x540C;&#x7684;&#x503C;&#x3002;</p>
-<pre><code class="lang-sql">MariaDB [test]&gt; select avg(prod_price) as avg_price from products where vend_id = 1003;
+1 row in set (0.00 sec)</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x65F6;&#x5417;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;<code>DISTINCT</code>&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5254;&#x9664;&#x90A3;&#x4E9B;&#x76F8;&#x540C;&#x7684;&#x503C;&#x3002;</p><pre><code class="lang-sql">MariaDB [test]&gt; select avg(prod_price) as avg_price from products where vend_id = 1003;
 +-----------+
 | avg_price |
 +-----------+
@@ -3272,23 +3148,15 @@ MariaDB [test]&gt; select avg(distinct prod_price) as avg_price from products wh
 +-----------+
 | 15.998000 |
 +-----------+
-1 row in set (0.00 sec)
-</code></pre>
-<p>select&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x4E0D;&#x540C;&#x7684;&#x9700;&#x6C42;&#x7EC4;&#x5408;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x3002;</p>
-<pre><code class="lang-sql">MariaDB [test]&gt; select count(*) as num_items, min(prod_price) as price_min, max(prod_price) as price_max, avg(prod_price) as price_avg from products;
+1 row in set (0.00 sec)</code></pre>
+<p>select&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x4E0D;&#x540C;&#x7684;&#x9700;&#x6C42;&#x7EC4;&#x5408;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x3002;</p><pre><code class="lang-sql">MariaDB [test]&gt; select count(*) as num_items, min(prod_price) as price_min, max(prod_price) as price_max, avg(prod_price) as price_avg from products;
 +-----------+-----------+-----------+-----------+
 | num_items | price_min | price_max | price_avg |
 +-----------+-----------+-----------+-----------+
 |        14 |      2.50 |     55.00 | 16.133571 |
 +-----------+-----------+-----------+-----------+
-1 row in set (0.00 sec)
-</code></pre>
-<h3 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="plugin-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;</h3>
-<p>MySQL&#x652F;&#x6301;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x805A;&#x96C6;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x4ED6;&#x4EEC;&#x4EE5;&#x8FD4;&#x56DE;&#x6240;&#x9700;&#x7684;&#x7ED3;&#x679C;&#x3002;MySQL&#x5185;&#x90E8;&#x7684;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x6BD4;&#x4E00;&#x822C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x9AD8;&#x6548;&#x3002;</p>
-<h2 id="&#x6570;&#x636E;&#x5206;&#x7EC4;"><a name="&#x6570;&#x636E;&#x5206;&#x7EC4;" class="plugin-anchor" href="#&#x6570;&#x636E;&#x5206;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5206;&#x7EC4;</h2>
-<h3 id="group-by"><a name="group-by" class="plugin-anchor" href="#group-by"><i class="fa fa-link" aria-hidden="true"></i></a>GROUP BY</h3>
-<p>&#x5206;&#x7EC4;&#x662F;&#x5728;select&#x8BED;&#x53E5;&#x7684;<code>GROUP BY</code>&#x5B50;&#x53E5;&#x4E2D;&#x5EFA;&#x7ACB;&#x7684;&#x3002;<code>GROUP BY</code>&#x5B50;&#x53E5;&#x6307;&#x793A;MySQL&#x5206;&#x7EC4;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5BF9;<code>&#x6BCF;&#x4E2A;&#x7EC4;</code>&#x800C;&#x4E0D;&#x662F;&#x6574;&#x4E2A;&#x7ED3;&#x679C;&#x96C6;&#x8FDB;&#x884C;&#x805A;&#x96C6;&#x3002;</p>
-<pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, count(*) as prod_num from products; 
+1 row in set (0.00 sec)</code></pre>
+<h3 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="plugin-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;</h3><p>MySQL&#x652F;&#x6301;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x805A;&#x96C6;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x4ED6;&#x4EEC;&#x4EE5;&#x8FD4;&#x56DE;&#x6240;&#x9700;&#x7684;&#x7ED3;&#x679C;&#x3002;MySQL&#x5185;&#x90E8;&#x7684;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x6BD4;&#x4E00;&#x822C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x9AD8;&#x6548;&#x3002;</p><h2 id="&#x6570;&#x636E;&#x5206;&#x7EC4;"><a name="&#x6570;&#x636E;&#x5206;&#x7EC4;" class="plugin-anchor" href="#&#x6570;&#x636E;&#x5206;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5206;&#x7EC4;</h2><h3 id="group-by"><a name="group-by" class="plugin-anchor" href="#group-by"><i class="fa fa-link" aria-hidden="true"></i></a>GROUP BY</h3><p>&#x5206;&#x7EC4;&#x662F;&#x5728;select&#x8BED;&#x53E5;&#x7684;<code>GROUP BY</code>&#x5B50;&#x53E5;&#x4E2D;&#x5EFA;&#x7ACB;&#x7684;&#x3002;<code>GROUP BY</code>&#x5B50;&#x53E5;&#x6307;&#x793A;MySQL&#x5206;&#x7EC4;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5BF9;<code>&#x6BCF;&#x4E2A;&#x7EC4;</code>&#x800C;&#x4E0D;&#x662F;&#x6574;&#x4E2A;&#x7ED3;&#x679C;&#x96C6;&#x8FDB;&#x884C;&#x805A;&#x96C6;&#x3002;</p><pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, count(*) as prod_num from products; 
 +---------+----------+
 | vend_id | prod_num |
 +---------+----------+
@@ -3324,19 +3192,14 @@ MariaDB [test]&gt; select vend_id, count(*) as prod_num from products group by v
 |    1005 |        1 |
 |    1005 |        1 |
 +---------+----------+
-12 rows in set (0.00 sec)
-</code></pre>
-<p>&#x5728;&#x4F7F;&#x7528;<code>GROUP BY</code>&#x5B50;&#x53E5;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E00;&#x4E9B;&#x89C4;&#x5B9A;&#x3002;</p>
-<ul>
-<li><code>GROUP BY</code>&#x5B50;&#x53E5;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x610F;&#x6570;&#x76EE;&#x7684;&#x5217;&#x3002;</li>
-<li><code>GROUP BY</code>&#x5B50;&#x53E5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x5217;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x540C;<code>ORDER BY</code>&#x5B50;&#x53E5;&#x7684;&#x89C4;&#x5219;&#x7C7B;&#x4F3C;&#x3002;</li>
-<li><code>GROUP BY</code>&#x5B50;&#x53E5;&#x5FC5;&#x987B;&#x51FA;&#x73B0;&#x5728;<code>WHERE</code>&#x5B50;&#x53E5;&#x4E4B;&#x540E;&#xFF0C;<code>ORDER BY</code>&#x5B50;&#x53E5;&#x4E4B;&#x524D;&#x3002;</li>
-</ul>
-<h3 id="having"><a name="having" class="plugin-anchor" href="#having"><i class="fa fa-link" aria-hidden="true"></i></a>HAVING</h3>
-<p><code>HAVING</code>&#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x8FC7;&#x6EE4;&#x5206;&#x7EC4;&#x3002;</p>
-<p><code>HAVING</code>&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;<code>WHERE</code>&#x64CD;&#x4F5C;&#x7B26;&#x3002;</p>
-<p><code>HAVING</code>&#x548C;<code>WHERE</code>&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;<code>WHERE</code>&#x5728;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x524D;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;<code>HAVING</code>&#x5728;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x540E;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x3002;</p>
-<pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, count(*) as prod_num from products group by vend_id; # &#x4EC5;&#x5206;&#x7EC4;
+12 rows in set (0.00 sec)</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528;<code>GROUP BY</code>&#x5B50;&#x53E5;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E00;&#x4E9B;&#x89C4;&#x5B9A;&#x3002;</p><ul><li><code>GROUP BY</code>&#x5B50;&#x53E5;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x610F;&#x6570;&#x76EE;&#x7684;&#x5217;&#x3002;
+</li>
+<li><code>GROUP BY</code>&#x5B50;&#x53E5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x5217;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x540C;<code>ORDER BY</code>&#x5B50;&#x53E5;&#x7684;&#x89C4;&#x5219;&#x7C7B;&#x4F3C;&#x3002;
+</li>
+<li><code>GROUP BY</code>&#x5B50;&#x53E5;&#x5FC5;&#x987B;&#x51FA;&#x73B0;&#x5728;<code>WHERE</code>&#x5B50;&#x53E5;&#x4E4B;&#x540E;&#xFF0C;<code>ORDER BY</code>&#x5B50;&#x53E5;&#x4E4B;&#x524D;&#x3002;
+</li></ul>
+<h3 id="having"><a name="having" class="plugin-anchor" href="#having"><i class="fa fa-link" aria-hidden="true"></i></a>HAVING</h3><p><code>HAVING</code>&#x5173;&#x952E;&#x5B57;&#x7528;&#x6765;&#x8FC7;&#x6EE4;&#x5206;&#x7EC4;&#x3002;</p><p><code>HAVING</code>&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;<code>WHERE</code>&#x64CD;&#x4F5C;&#x7B26;&#x3002;</p><p><code>HAVING</code>&#x548C;<code>WHERE</code>&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;<code>WHERE</code>&#x5728;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x524D;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;<code>HAVING</code>&#x5728;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x540E;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x3002;</p><pre><code class="lang-sql">MariaDB [test]&gt; select vend_id, count(*) as prod_num from products group by vend_id; # &#x4EC5;&#x5206;&#x7EC4;
 +---------+----------+
 | vend_id | prod_num |
 +---------+----------+
@@ -3362,58 +3225,41 @@ MariaDB [test]&gt; select vend_id, count(*) as prod_num from products where prod
 +---------+----------+
 |    1003 |        4 |
 +---------+----------+
-1 row in set (0.00 sec)
-</code></pre>
-<h2 id="select&#x5B50;&#x53E5;&#x987A;&#x5E8F;"><a name="select&#x5B50;&#x53E5;&#x987A;&#x5E8F;" class="plugin-anchor" href="#select&#x5B50;&#x53E5;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>select&#x5B50;&#x53E5;&#x987A;&#x5E8F;</h2>
-<table>
+1 row in set (0.00 sec)</code></pre>
+<h2 id="select&#x5B50;&#x53E5;&#x987A;&#x5E8F;"><a name="select&#x5B50;&#x53E5;&#x987A;&#x5E8F;" class="plugin-anchor" href="#select&#x5B50;&#x53E5;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>select&#x5B50;&#x53E5;&#x987A;&#x5E8F;</h2><table>
 <thead>
-<tr>
-<th style="text-align:left">&#x5B50;&#x53E5;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-<th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;&#x4F7F;&#x7528;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">SELECT</td>
-<td style="text-align:left">&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x5217;&#x6216;&#x8868;&#x8FBE;&#x5F0F;</td>
-<td style="text-align:left">&#x662F;</td>
-</tr>
-<tr>
-<td style="text-align:left">FROM</td>
-<td style="text-align:left">&#x4ECE;&#x4E2D;&#x68C0;&#x7D22;&#x7684;&#x8868;&#x540D;</td>
-<td style="text-align:left">&#x4EC5;&#x5728;&#x4ECE;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x6570;&#x636E;&#x65F6;&#x4F7F;&#x7528;</td>
-</tr>
-<tr>
-<td style="text-align:left">WHERE</td>
-<td style="text-align:left">&#x884C;&#x7EA7;&#x8FC7;&#x6EE4;</td>
-<td style="text-align:left">&#x5426;</td>
-</tr>
-<tr>
-<td style="text-align:left">GROUP BY</td>
-<td style="text-align:left">&#x5206;&#x7EC4;&#x8BF4;&#x660E;</td>
-<td style="text-align:left">&#x5C3D;&#x5728;&#x6309;&#x7EC4;&#x8BA1;&#x7B97;&#x805A;&#x96C6;&#x65F6;&#x4F7F;&#x7528;</td>
-</tr>
-<tr>
-<td style="text-align:left">HAVING</td>
-<td style="text-align:left">&#x7EC4;&#x7EA7;&#x8FC7;&#x6EE4;</td>
-<td style="text-align:left">&#x5426;</td>
-</tr>
-<tr>
-<td style="text-align:left">ORDER BY</td>
-<td style="text-align:left">&#x8F93;&#x51FA;&#x6392;&#x5E8F;</td>
-<td style="text-align:left">&#x5426;</td>
-</tr>
-<tr>
-<td style="text-align:left">LIMIT</td>
-<td style="text-align:left">&#x8981;&#x68C0;&#x7D22;&#x7684;&#x884C;&#x6570;</td>
-<td style="text-align:left">&#x5426;</td>
-</tr>
-</tbody>
-</table>
+<tr><th style="text-align:left"> &#x5B50;&#x53E5; </th>
+<th style="text-align:left"> &#x8BF4;&#x660E; </th>
+<th style="text-align:left"> &#x662F;&#x5426;&#x5FC5;&#x987B;&#x4F7F;&#x7528; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> SELECT </td>
+<td style="text-align:left"> &#x8981;&#x8FD4;&#x56DE;&#x7684;&#x5217;&#x6216;&#x8868;&#x8FBE;&#x5F0F; </td>
+<td style="text-align:left"> &#x662F; </td>
+</tr><tr><td style="text-align:left"> FROM </td>
+<td style="text-align:left"> &#x4ECE;&#x4E2D;&#x68C0;&#x7D22;&#x7684;&#x8868;&#x540D; </td>
+<td style="text-align:left"> &#x4EC5;&#x5728;&#x4ECE;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x6570;&#x636E;&#x65F6;&#x4F7F;&#x7528; </td>
+</tr><tr><td style="text-align:left"> WHERE </td>
+<td style="text-align:left"> &#x884C;&#x7EA7;&#x8FC7;&#x6EE4; </td>
+<td style="text-align:left"> &#x5426; </td>
+</tr><tr><td style="text-align:left"> GROUP BY </td>
+<td style="text-align:left"> &#x5206;&#x7EC4;&#x8BF4;&#x660E; </td>
+<td style="text-align:left"> &#x5C3D;&#x5728;&#x6309;&#x7EC4;&#x8BA1;&#x7B97;&#x805A;&#x96C6;&#x65F6;&#x4F7F;&#x7528; </td>
+</tr><tr><td style="text-align:left"> HAVING </td>
+<td style="text-align:left"> &#x7EC4;&#x7EA7;&#x8FC7;&#x6EE4; </td>
+<td style="text-align:left"> &#x5426; </td>
+</tr><tr><td style="text-align:left"> ORDER BY </td>
+<td style="text-align:left"> &#x8F93;&#x51FA;&#x6392;&#x5E8F; </td>
+<td style="text-align:left"> &#x5426; </td>
+</tr><tr><td style="text-align:left"> LIMIT </td>
+<td style="text-align:left"> &#x8981;&#x68C0;&#x7D22;&#x7684;&#x884C;&#x6570; </td>
+<td style="text-align:left"> &#x5426;</td>
+</tr></tbody></table>
+
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2018-10-18 17:39:14
+2020-08-22 03:05:13
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3456,7 +3302,7 @@ MariaDB [test]&gt; select vend_id, count(*) as prod_num from products where prod
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3-MySQL高级操作_聚集和分组","level":"3.1.6.3","depth":3,"next":{"title":"4-MySQL高级操作_联结查询","level":"3.1.6.4","depth":3,"path":"Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.md","ref":"Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.md","articles":[]},"previous":{"title":"2-MySQL基本操作","level":"3.1.6.2","depth":3,"path":"Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.md","ref":"Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.md","mtime":"2018-10-18T09:39:14.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3-MySQL高级操作_聚集和分组","level":"3.1.6.3","depth":3,"next":{"title":"4-MySQL高级操作_联结查询","level":"3.1.6.4","depth":3,"path":"Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.md","ref":"Books/ProfessionBooks/MySQL必知必会/4_MySQL高级操作_联结查询.md","articles":[]},"previous":{"title":"2-MySQL基本操作","level":"3.1.6.2","depth":3,"path":"Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.md","ref":"Books/ProfessionBooks/MySQL必知必会/2_MySQL基本操作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Books/ProfessionBooks/MySQL必知必会/3_MySQL高级操作_聚集和分组.md","mtime":"2020-08-22T03:05:13.931Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3491,14 +3337,6 @@ MariaDB [test]&gt; select vend_id, count(*) as prod_num from products where prod
     
         
         <script src="../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

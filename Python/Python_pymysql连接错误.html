@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Python pymysql连接错误 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,10 +2892,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="python-pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;"><a name="python-pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;" class="plugin-anchor" href="#python-pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>Python pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;</h1>
-<p>&#x5728;&#x4F7F;&#x7528;pymysql&#x6A21;&#x5757;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x957F;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x8FDE;&#x63A5;&#x4E2D;&#x65AD;&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
-<p>&#x4E00;&#x822C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;:</p>
-<pre><code class="lang-python">conn = pymysql.connect(
+                                <h1 id="python-pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;"><a name="python-pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;" class="plugin-anchor" href="#python-pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>Python pymysql&#x8FDE;&#x63A5;&#x9519;&#x8BEF;</h1><p>&#x5728;&#x4F7F;&#x7528;pymysql&#x6A21;&#x5757;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x957F;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x8FDE;&#x63A5;&#x4E2D;&#x65AD;&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x95EE;&#x9898;&#x3002;</p><p>&#x4E00;&#x822C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;:</p><pre><code class="lang-python">conn = pymysql.connect(
     host=<span class="hljs-string">&apos;10.10.0.109&apos;</span>,
     port=<span class="hljs-number">3306</span>,
     user=<span class="hljs-string">&apos;mha&apos;</span>,
@@ -2907,10 +2904,8 @@
 cursor = conn.cursor()
 cursor.excute(sql)
 result = cursor.fetchall()
-cursor.close()
-</code></pre>
-<p>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5F02;&#x5E38;&#x5173;&#x95ED;&#x4E86;&#xFF0C;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;:</p>
-<pre><code class="lang-python">Traceback (most recent call last):
+cursor.close()</code></pre>
+<p>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5F02;&#x5E38;&#x5173;&#x95ED;&#x4E86;&#xFF0C;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;:</p><pre><code class="lang-python">Traceback (most recent call last):
   File <span class="hljs-string">&quot;/src/DataManager/MysqlMiddleware/MysqlParser.py&quot;</span>, line <span class="hljs-number">77</span>, <span class="hljs-keyword">in</span> FetchVpnField
     mysql_cur.execute(sql_fetch_one)
   File <span class="hljs-string">&quot;/Python3Venv/lib/python3.6/site-packages/pymysql/cursors.py&quot;</span>, line <span class="hljs-number">170</span>, <span class="hljs-keyword">in</span> execute
@@ -2921,10 +2916,8 @@ cursor.close()
     self._execute_command(COMMAND.COM_QUERY, sql)
   File <span class="hljs-string">&quot;/Python3Venv/lib/python3.6/site-packages/pymysql/connections.py&quot;</span>, line <span class="hljs-number">745</span>, <span class="hljs-keyword">in</span> _execute_command
     <span class="hljs-keyword">raise</span> err.InterfaceError(<span class="hljs-string">&quot;(0, &apos;&apos;)&quot;</span>)
-pymysql.err.InterfaceError: (<span class="hljs-number">0</span>, <span class="hljs-string">&apos;&apos;</span>)
-</code></pre>
-<p>&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4E3A;&#xFF0C;&#x6BCF;&#x6B21;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5148; <strong>ping</strong> &#x4E00;&#x4E0B;:</p>
-<pre><code class="lang-python">conn = pymysql.connect(
+pymysql.err.InterfaceError: (<span class="hljs-number">0</span>, <span class="hljs-string">&apos;&apos;</span>)</code></pre>
+<p>&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4E3A;&#xFF0C;&#x6BCF;&#x6B21;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5148; <strong>ping</strong> &#x4E00;&#x4E0B;:</p><pre><code class="lang-python">conn = pymysql.connect(
     host=<span class="hljs-string">&apos;10.10.0.109&apos;</span>,
     port=<span class="hljs-number">3306</span>,
     user=<span class="hljs-string">&apos;mha&apos;</span>,
@@ -2937,10 +2930,8 @@ conn.ping()
 cursor = conn.cursor()
 cursor.excute(sql)
 result = cursor.fetchall()
-cursor.close()
-</code></pre>
-<p>&#x5728; <strong>ping</strong> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x8FDE;&#x63A5;&#x5F02;&#x5E38;&#xFF0C;&#x4F1A;&#x5C1D;&#x8BD5;&#x91CD;&#x65B0;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;:</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ping</span><span class="hljs-params">(self, reconnect=True)</span>:</span>
+cursor.close()</code></pre>
+<p>&#x5728; <strong>ping</strong> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x8FDE;&#x63A5;&#x5F02;&#x5E38;&#xFF0C;&#x4F1A;&#x5C1D;&#x8BD5;&#x91CD;&#x65B0;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;:</p><pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ping</span><span class="hljs-params">(self, reconnect=True)</span>:</span>
     <span class="hljs-string">&quot;&quot;&quot;
     Check if the server is alive.
 
@@ -2961,11 +2952,12 @@ cursor.close()
             self.connect()
             self.ping(<span class="hljs-keyword">False</span>)
         <span class="hljs-keyword">else</span>:
-            <span class="hljs-keyword">raise</span>
-</code></pre>
+            <span class="hljs-keyword">raise</span></code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2019-01-05 15:06:34
+2020-08-22 03:05:14
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3008,7 +3000,7 @@ cursor.close()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python pymysql连接错误","level":"2.1.14","depth":2,"next":{"title":"Python杀不死的子进程","level":"2.1.15","depth":2,"path":"Python/Python杀不死的子进程.md","ref":"Python/Python杀不死的子进程.md","articles":[]},"previous":{"title":"Python json解析错误处理","level":"2.1.13","depth":2,"path":"Python/Python_json解析错误处理.md","ref":"Python/Python_json解析错误处理.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/Python_pymysql连接错误.md","mtime":"2019-01-05T07:06:34.089Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python pymysql连接错误","level":"2.1.14","depth":2,"next":{"title":"Python杀不死的子进程","level":"2.1.15","depth":2,"path":"Python/Python杀不死的子进程.md","ref":"Python/Python杀不死的子进程.md","articles":[]},"previous":{"title":"Python json解析错误处理","level":"2.1.13","depth":2,"path":"Python/Python_json解析错误处理.md","ref":"Python/Python_json解析错误处理.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/Python_pymysql连接错误.md","mtime":"2020-08-22T03:05:14.135Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3043,14 +3035,6 @@ cursor.close()
     
         
         <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

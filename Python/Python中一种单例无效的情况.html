@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Python中一种单例无效的情况 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,10 +2892,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;"><a name="python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;" class="plugin-anchor" href="#python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>Python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;</h1>
-<p>&#x5728;Python&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#xFF0C;&#x901A;&#x5E38;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
-<p>&#x7B2C;&#x4E00;&#x79CD;&#xFF0C;&#x5229;&#x7528;python&#x7684;&#x6A21;&#x5757;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x6A21;&#x5757;&#x901A;&#x8FC7;&#x5BFC;&#x5165;&#x6B64;&#x6A21;&#x5757;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x5355;&#x4F8B;&#x3002;</p>
-<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingleCls</span>:</span>
+                                <h1 id="python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;"><a name="python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;" class="plugin-anchor" href="#python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>Python&#x4E2D;&#x4E00;&#x79CD;&#x5355;&#x4F8B;&#x65E0;&#x6548;&#x7684;&#x60C5;&#x51B5;</h1><p>&#x5728;Python&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#xFF0C;&#x901A;&#x5E38;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p><p>&#x7B2C;&#x4E00;&#x79CD;&#xFF0C;&#x5229;&#x7528;python&#x7684;&#x6A21;&#x5757;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x6A21;&#x5757;&#x901A;&#x8FC7;&#x5BFC;&#x5165;&#x6B64;&#x6A21;&#x5757;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x5355;&#x4F8B;&#x3002;</p><pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingleCls</span>:</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
         self.__info_list = list()
         <span class="hljs-comment"># self.__info_list = multiprocessing.Manager().list()</span>
@@ -2906,10 +2903,8 @@
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__repr__</span><span class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">return</span> str(self.__info_list)
 
-single_obj = SingleCls()
-</code></pre>
-<p>&#x53E6;&#x4E00;&#x79CD;&#xFF0C;&#x4F7F;&#x7528;python&#x4E00;&#x5207;&#x7686;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;<strong>&#x7C7B;&#x4E5F;&#x5C5E;&#x4E8E;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x7528;&#x7C7B;&#x4E2D;&#x7684;&#x7C7B;&#x5C5E;&#x6027;&#x6765;&#x4FDD;&#x5B58;&#x521B;&#x5EFA;&#x597D;&#x7684;&#x5355;&#x4F8B;</strong>&#x3002;</p>
-<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingleCls</span>:</span>
+single_obj = SingleCls()</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#xFF0C;&#x4F7F;&#x7528;python&#x4E00;&#x5207;&#x7686;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;<strong>&#x7C7B;&#x4E5F;&#x5C5E;&#x4E8E;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x7528;&#x7C7B;&#x4E2D;&#x7684;&#x7C7B;&#x5C5E;&#x6027;&#x6765;&#x4FDD;&#x5B58;&#x521B;&#x5EFA;&#x597D;&#x7684;&#x5355;&#x4F8B;</strong>&#x3002;</p><pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SingleCls</span>:</span>
     _instance = <span class="hljs-keyword">None</span>
 
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__new__</span><span class="hljs-params">(cls, *args, **kw)</span>:</span>
@@ -2926,15 +2921,13 @@ single_obj = SingleCls()
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__repr__</span><span class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">return</span> str(self.__info_list)
 
-single_obj = SingleCls()
-</code></pre>
-<p>&#x5355;&#x4F8B;&#x7684;&#x672C;&#x8D28;&#x662F;&#xFF0C;&#x4E0D;&#x540C;&#x6A21;&#x5757;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x9700;&#x8981;&#x5728; <strong>&#x2018;&#x7B2C;&#x4E09;&#x65B9;&#x2019;</strong> &#x7684;&#x9886;&#x571F;&#x4E0A;&#x521B;&#x5EFA;&#x3002;</p>
-<p>&#x53EF;&#x662F;&#x5728;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x7ED3;&#x679C;&#x5374;&#x4E0D;&#x4E00;&#x5B9A;&#x4E86;&#x3002;</p>
-<ul>
-<li>&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x5B50;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;fork&#x4EA7;&#x751F;&#xFF0C;&#x4F1A;&#x62F7;&#x8D1D;&#x7236;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5355;&#x4F8B;&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#x3002;</li>
-<li>&#x6240;&#x4EE5;&#xFF0C;&#x5B50;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x5DF2;&#x7ECF;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#x4E86;&#xFF01;</li>
-<li>&#x5BFC;&#x81F4;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#xFF0C;&#x867D;&#x7136;&#x5B50;&#x8FDB;&#x7A0B;&#x4E2D;&#x5BF9;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x4E86;&#x5F88;&#x591A;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x7236;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#x5374;&#x672A;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;</li>
-</ul>
+single_obj = SingleCls()</code></pre>
+<p>&#x5355;&#x4F8B;&#x7684;&#x672C;&#x8D28;&#x662F;&#xFF0C;&#x4E0D;&#x540C;&#x6A21;&#x5757;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x9700;&#x8981;&#x5728; <strong>&#x2018;&#x7B2C;&#x4E09;&#x65B9;&#x2019;</strong> &#x7684;&#x9886;&#x571F;&#x4E0A;&#x521B;&#x5EFA;&#x3002;</p><p>&#x53EF;&#x662F;&#x5728;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x7ED3;&#x679C;&#x5374;&#x4E0D;&#x4E00;&#x5B9A;&#x4E86;&#x3002;</p><ul><li>&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x5B50;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;fork&#x4EA7;&#x751F;&#xFF0C;&#x4F1A;&#x62F7;&#x8D1D;&#x7236;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5355;&#x4F8B;&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#x3002;
+</li>
+<li>&#x6240;&#x4EE5;&#xFF0C;&#x5B50;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x5DF2;&#x7ECF;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#x4E86;&#xFF01;
+</li>
+<li>&#x5BFC;&#x81F4;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#xFF0C;&#x867D;&#x7136;&#x5B50;&#x8FDB;&#x7A0B;&#x4E2D;&#x5BF9;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x4E86;&#x5F88;&#x591A;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x7236;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#x5374;&#x672A;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;
+</li></ul>
 <pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(m)</span>:</span>
     single_obj.AddMessage(m)
     print(<span class="hljs-string">&quot;single_obj {m} -&gt; &quot;</span>.format(m=m), single_obj)
@@ -2953,20 +2946,19 @@ pool.apply(func, args=(<span class="hljs-string">&quot;Third&quot;</span>,))
 pool.close()
 pool.join()
 
-print(single_obj)
-</code></pre>
-<p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-shell">single_obj 1 -&gt;  [&apos;Hello 1&apos;]
+print(single_obj)</code></pre>
+<p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p><pre><code class="lang-shell">single_obj 1 -&gt;  [&apos;Hello 1&apos;]
 single_obj 2 -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;]
 single_obj 3 -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3&apos;]
 single_obj First -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3&apos;, &apos;Hello First&apos;]
 single_obj Second -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3&apos;, &apos;Hello Second&apos;]
 single_obj Third -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3&apos;, &apos;Hello Third&apos;]
-[&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3&apos;]
-</code></pre>
+[&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3&apos;]</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2019-06-26 21:58:37
+2020-08-22 03:05:14
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3009,7 +3001,7 @@ single_obj Third -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python中一种单例无效的情况","level":"2.1.6","depth":2,"next":{"title":"Python中的进程池和线程池","level":"2.1.7","depth":2,"path":"Python/Python中的进程池和线程池.md","ref":"Python/Python中的进程池和线程池.md","articles":[]},"previous":{"title":"Python中的下划线","level":"2.1.5","depth":2,"path":"Python/Python中的下划线.md","ref":"Python/Python中的下划线.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/Python中一种单例无效的情况.md","mtime":"2019-06-26T13:58:37.375Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python中一种单例无效的情况","level":"2.1.6","depth":2,"next":{"title":"Python中的进程池和线程池","level":"2.1.7","depth":2,"path":"Python/Python中的进程池和线程池.md","ref":"Python/Python中的进程池和线程池.md","articles":[]},"previous":{"title":"Python中的下划线","level":"2.1.5","depth":2,"path":"Python/Python中的下划线.md","ref":"Python/Python中的下划线.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/Python中一种单例无效的情况.md","mtime":"2020-08-22T03:05:14.135Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3044,14 +3036,6 @@ single_obj Third -&gt;  [&apos;Hello 1&apos;, &apos;Hello 2&apos;, &apos;Hello 3
     
         
         <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

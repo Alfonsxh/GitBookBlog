@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>hashcat使用说明 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,133 +2892,77 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><a name="hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;" class="plugin-anchor" href="#hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>Hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1>
-<p><code>hashcat</code>&#x662F;&#x76EE;&#x524D;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5FEB;&#x7684;&#x5BC6;&#x7801;&#x7834;&#x89E3;&#x5DE5;&#x5177;&#xFF0C;&#x80FD;&#x591F;&#x7834;&#x8BD1;&#x4F17;&#x591A;&#x7C7B;&#x578B;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CPU&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;GPU&#x4F5C;&#x4E3A;&#x8BA1;&#x7B97;&#x5355;&#x5143;&#x3002;</p>
-<h2 id="&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;"><a name="&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;</h2>
-<table>
+                                <h1 id="hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><a name="hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;" class="plugin-anchor" href="#hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>Hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1><p><code>hashcat</code>&#x662F;&#x76EE;&#x524D;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5FEB;&#x7684;&#x5BC6;&#x7801;&#x7834;&#x89E3;&#x5DE5;&#x5177;&#xFF0C;&#x80FD;&#x591F;&#x7834;&#x8BD1;&#x4F17;&#x591A;&#x7C7B;&#x578B;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CPU&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;GPU&#x4F5C;&#x4E3A;&#x8BA1;&#x7B97;&#x5355;&#x5143;&#x3002;</p><h2 id="&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;"><a name="&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7834;&#x89E3;&#x57FA;&#x7840;&#x547D;&#x4EE4;</h2><table>
 <thead>
-<tr>
-<th style="text-align:left">&#x9009;&#x9879;</th>
-<th style="text-align:left">&#x63CF;&#x8FF0;</th>
-<th style="text-align:left">&#x4F7F;&#x7528;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">-m</td>
-<td style="text-align:left">&#x8BBE;&#x7F6E;&#x5F85;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;WPA/WPA2&#x7C7B;&#x578B;&#x4E3A;2500</td>
-<td style="text-align:left">-m 2500</td>
-</tr>
-<tr>
-<td style="text-align:left">-a</td>
-<td style="text-align:left">&#x7834;&#x89E3;&#x6A21;&#x5F0F;</td>
-</tr>
-<tr>
-<td style="text-align:left">--runtime</td>
-<td style="text-align:left">&#x6307;&#x5B9A;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x95F4;X&#xFF0C;&#x5355;&#x4F4D;&#x79D2;</td>
-<td style="text-align:left">--runtime=X</td>
-</tr>
-<tr>
-<td style="text-align:left">--session</td>
-<td style="text-align:left">&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;hashcat&#x4F1A;&#x8BDD;&#x540D;&#x79F0;</td>
-<td style="text-align:left">--session=mysession</td>
-</tr>
-<tr>
-<td style="text-align:left">--restore</td>
-<td style="text-align:left">&#x4ECE;restore&#x6587;&#x4EF6;&#x4E2D;&#x6062;&#x590D;&#x4F1A;&#x8BDD;&#x72B6;&#x6001;</td>
-</tr>
-<tr>
-<td style="text-align:left">--restore-disable</td>
-<td style="text-align:left">&#x4F1A;&#x8BDD;&#x65F6;&#x4E0D;&#x4F7F;&#x7528;restore&#x6587;&#x4EF6;</td>
-</tr>
-<tr>
-<td style="text-align:left">--restore-file-path</td>
-<td style="text-align:left">&#x6307;&#x5B9A;&#x7279;&#x6B8A;&#x7684;restore&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x5728;<code>.hashcat/session/</code>&#x4E0B;</td>
-<td style="text-align:left">--restore-file-path=path</td>
-</tr>
-<tr>
-<td style="text-align:left">--outfile</td>
-<td style="text-align:left">&#x7834;&#x89E3;&#x51FA;&#x7684;hash&#x5B58;&#x653E;&#x8DEF;&#x5F84;</td>
-<td style="text-align:left">-o outfile.txt</td>
-</tr>
-<tr>
-<td style="text-align:left">--show</td>
-<td style="text-align:left">&#x5C55;&#x793A;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x4E2D;&#x5DF2;&#x7834;&#x89E3;&#x7684;hash</td>
-</tr>
-<tr>
-<td style="text-align:left">--left</td>
-<td style="text-align:left">&#x5C55;&#x793A;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x4E2D;&#x672A;&#x7834;&#x89E3;&#x51FA;&#x7684;hash</td>
-</tr>
-<tr>
-<td style="text-align:left">--increment</td>
-<td style="text-align:left">&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x53D8;&#x957F;&#x6A21;&#x5F0F;&#x5F00;&#x5173;&#xFF0C;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x7531;&#x7528;&#x6237;&#x6307;&#x5B9A;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#x4E0B;</td>
-</tr>
-<tr>
-<td style="text-align:left">--increment-min</td>
-<td style="text-align:left">&#x6700;&#x77ED;&#x5BC6;&#x7801;&#x957F;&#x5EA6;</td>
-<td style="text-align:left">--increment-min=8</td>
-</tr>
-<tr>
-<td style="text-align:left">--increment-max</td>
-<td style="text-align:left">&#x6700;&#x957F;&#x5BC6;&#x7801;&#x957F;&#x5EA6;</td>
-<td style="text-align:left">--increment-max=13</td>
-</tr>
-<tr>
-<td style="text-align:left">--cpu-affinity</td>
-<td style="text-align:left">&#x4F7F;&#x7528;CPU&#x7834;&#x89E3;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;CPU&#x8FDB;&#x884C;&#x7834;&#x89E3;</td>
-<td style="text-align:left">--cpu-affinity=1,2</td>
-</tr>
-<tr>
-<td style="text-align:left">--segment-size</td>
-<td style="text-align:left">&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x65F6;&#xFF0C;&#x5B57;&#x5178;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x7F13;&#x5B58;&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D;MB</td>
-<td style="text-align:left">--segment-size=1024</td>
-</tr>
-<tr>
-<td style="text-align:left">--gpu-temp-abort</td>
-<td style="text-align:left">&#x4E2D;&#x65AD;&#x7834;&#x89E3;&#xFF0C;&#x5F53;GPU&#x8FBE;&#x5230;&#x6B64;&#x6E29;&#x5EA6;</td>
-<td style="text-align:left">--gpu-temp-abort=100</td>
-</tr>
-<tr>
-<td style="text-align:left">--skip</td>
-<td style="text-align:left">&#x8DF3;&#x8FC7;&#x5B57;&#x5178;&#x524D;&#x9762; X &#x4E2A;&#x5BC6;&#x7801;</td>
-<td style="text-align:left">--skip X</td>
-</tr>
-<tr>
-<td style="text-align:left">--limit</td>
-<td style="text-align:left">&#x53EA;&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x524D; X &#x4E2A;&#x5BC6;&#x7801;</td>
-<td style="text-align:left">--limit X</td>
-</tr>
-<tr>
-<td style="text-align:left">--status</td>
-<td style="text-align:left">&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5237;&#x65B0;hashcat&#x72B6;&#x6001;&#x5F00;&#x5173;</td>
-</tr>
-<tr>
-<td style="text-align:left">--status-timer</td>
-<td style="text-align:left">&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x65F6;&#x95F4; X</td>
-<td style="text-align:left">--status-timer=X</td>
-</tr>
-</tbody>
-</table>
-<p>hashcat&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x4E3A;</p>
-<pre><code class="lang-shell">hashcat -a 0 -m 2500 xxxx.hccapx dict1 dict2    # &#x5B57;&#x5178;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#xFF0C;&#x666E;&#x901A;&#x542F;&#x52A8;
+<tr><th> &#x9009;&#x9879; </th>
+<th> &#x63CF;&#x8FF0; </th>
+<th> &#x4F7F;&#x7528; </th>
+</tr></thead><tbody>
+<tr><td style="text-align:left"> -m </td>
+<td style="text-align:left"> &#x8BBE;&#x7F6E;&#x5F85;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;WPA/WPA2&#x7C7B;&#x578B;&#x4E3A;2500 </td>
+<td style="text-align:left"> -m 2500 </td>
+</tr><tr><td style="text-align:left"> -a </td>
+<td style="text-align:left"> &#x7834;&#x89E3;&#x6A21;&#x5F0F; </td>
+</tr><tr><td style="text-align:left"> --runtime </td>
+<td style="text-align:left"> &#x6307;&#x5B9A;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x95F4;X&#xFF0C;&#x5355;&#x4F4D;&#x79D2; </td>
+<td style="text-align:left"> --runtime=X </td>
+</tr><tr><td style="text-align:left"> --session </td>
+<td style="text-align:left"> &#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;hashcat&#x4F1A;&#x8BDD;&#x540D;&#x79F0; </td>
+<td style="text-align:left"> --session=mysession </td>
+</tr><tr><td style="text-align:left"> --restore </td>
+<td style="text-align:left"> &#x4ECE;restore&#x6587;&#x4EF6;&#x4E2D;&#x6062;&#x590D;&#x4F1A;&#x8BDD;&#x72B6;&#x6001; </td>
+</tr><tr><td style="text-align:left"> --restore-disable </td>
+<td style="text-align:left"> &#x4F1A;&#x8BDD;&#x65F6;&#x4E0D;&#x4F7F;&#x7528;restore&#x6587;&#x4EF6; </td>
+</tr><tr><td style="text-align:left"> --restore-file-path </td>
+<td style="text-align:left"> &#x6307;&#x5B9A;&#x7279;&#x6B8A;&#x7684;restore&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x5728;<code>.hashcat/session/</code>&#x4E0B; </td>
+<td style="text-align:left"> --restore-file-path=path </td>
+</tr><tr><td style="text-align:left"> --outfile </td>
+<td style="text-align:left"> &#x7834;&#x89E3;&#x51FA;&#x7684;hash&#x5B58;&#x653E;&#x8DEF;&#x5F84; </td>
+<td style="text-align:left"> -o outfile.txt </td>
+</tr><tr><td style="text-align:left"> --show </td>
+<td style="text-align:left"> &#x5C55;&#x793A;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x4E2D;&#x5DF2;&#x7834;&#x89E3;&#x7684;hash </td>
+</tr><tr><td style="text-align:left"> --left </td>
+<td style="text-align:left"> &#x5C55;&#x793A;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x4E2D;&#x672A;&#x7834;&#x89E3;&#x51FA;&#x7684;hash </td>
+</tr><tr><td style="text-align:left"> --increment </td>
+<td style="text-align:left"> &#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x53D8;&#x957F;&#x6A21;&#x5F0F;&#x5F00;&#x5173;&#xFF0C;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x7531;&#x7528;&#x6237;&#x6307;&#x5B9A;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#x4E0B; </td>
+</tr><tr><td style="text-align:left"> --increment-min </td>
+<td style="text-align:left"> &#x6700;&#x77ED;&#x5BC6;&#x7801;&#x957F;&#x5EA6; </td>
+<td style="text-align:left"> --increment-min=8 </td>
+</tr><tr><td style="text-align:left"> --increment-max </td>
+<td style="text-align:left"> &#x6700;&#x957F;&#x5BC6;&#x7801;&#x957F;&#x5EA6; </td>
+<td style="text-align:left"> --increment-max=13 </td>
+</tr><tr><td style="text-align:left"> --cpu-affinity </td>
+<td style="text-align:left"> &#x4F7F;&#x7528;CPU&#x7834;&#x89E3;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;CPU&#x8FDB;&#x884C;&#x7834;&#x89E3; </td>
+<td style="text-align:left"> --cpu-affinity=1,2 </td>
+</tr><tr><td style="text-align:left"> --segment-size </td>
+<td style="text-align:left"> &#x4F7F;&#x7528;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x65F6;&#xFF0C;&#x5B57;&#x5178;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x7F13;&#x5B58;&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D;MB </td>
+<td style="text-align:left"> --segment-size=1024 </td>
+</tr><tr><td style="text-align:left"> --gpu-temp-abort </td>
+<td style="text-align:left"> &#x4E2D;&#x65AD;&#x7834;&#x89E3;&#xFF0C;&#x5F53;GPU&#x8FBE;&#x5230;&#x6B64;&#x6E29;&#x5EA6; </td>
+<td style="text-align:left"> --gpu-temp-abort=100 </td>
+</tr><tr><td style="text-align:left"> --skip </td>
+<td style="text-align:left"> &#x8DF3;&#x8FC7;&#x5B57;&#x5178;&#x524D;&#x9762; X &#x4E2A;&#x5BC6;&#x7801; </td>
+<td style="text-align:left"> --skip X </td>
+</tr><tr><td style="text-align:left"> --limit </td>
+<td style="text-align:left"> &#x53EA;&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x524D; X &#x4E2A;&#x5BC6;&#x7801; </td>
+<td style="text-align:left"> --limit X </td>
+</tr><tr><td style="text-align:left"> --status </td>
+<td style="text-align:left"> &#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5237;&#x65B0;hashcat&#x72B6;&#x6001;&#x5F00;&#x5173; </td>
+</tr><tr><td style="text-align:left"> --status-timer </td>
+<td style="text-align:left"> &#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x65F6;&#x95F4; X </td>
+<td style="text-align:left"> --status-timer=X</td>
+</tr></tbody></table>
+
+<p>hashcat&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x4E3A;</p><pre><code class="lang-shell">hashcat -a 0 -m 2500 xxxx.hccapx dict1 dict2    # &#x5B57;&#x5178;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#xFF0C;&#x666E;&#x901A;&#x542F;&#x52A8;
 hashcat -a 3 -m 2500 --session=xxxx xxxx.hccapx ?l?l?d?d?d?d?d?d   # &#x66B4;&#x529B;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#x4EE5;&#x4F1A;&#x8BDD;&#x65B9;&#x5F0F;&#x542F;&#x52A8;
-hashcat --session xxxx --restore    # &#x4EE5;&#x4F1A;&#x8BDD;&#x5F62;&#x5F0F;&#x4ECE;restore&#x6587;&#x4EF6;&#x4E2D;&#x6062;&#x590D;
-</code></pre>
-<h2 id="&#x7834;&#x89E3;&#x6A21;&#x5F0F;"><a name="&#x7834;&#x89E3;&#x6A21;&#x5F0F;" class="plugin-anchor" href="#&#x7834;&#x89E3;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7834;&#x89E3;&#x6A21;&#x5F0F;</h2>
-<p>hashcat&#x7684;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#x6709;5&#x79CD;&#x3002;</p>
-<pre><code class="lang-shell">0 | Straight      # &#x5B57;&#x5178;&#x7834;&#x89E3;
+hashcat --session xxxx --restore    # &#x4EE5;&#x4F1A;&#x8BDD;&#x5F62;&#x5F0F;&#x4ECE;restore&#x6587;&#x4EF6;&#x4E2D;&#x6062;&#x590D;</code></pre>
+<h2 id="&#x7834;&#x89E3;&#x6A21;&#x5F0F;"><a name="&#x7834;&#x89E3;&#x6A21;&#x5F0F;" class="plugin-anchor" href="#&#x7834;&#x89E3;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7834;&#x89E3;&#x6A21;&#x5F0F;</h2><p>hashcat&#x7684;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#x6709;5&#x79CD;&#x3002;</p><pre><code class="lang-shell">0 | Straight      # &#x5B57;&#x5178;&#x7834;&#x89E3;
 1 | Combination   # &#x7EC4;&#x5408;&#x7834;&#x89E3;
 3 | Brute-force   # &#x66B4;&#x529B;&#x7834;&#x89E3;
 6 | Hybrid Wordlist + Mask  # &#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;
-7 | Hybrid Mask + Wordlist  # &#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;
-</code></pre>
-<h3 id="straight&#x5B57;&#x5178;&#x7834;&#x89E3;--a-0"><a name="straight&#x5B57;&#x5178;&#x7834;&#x89E3;--a-0" class="plugin-anchor" href="#straight&#x5B57;&#x5178;&#x7834;&#x89E3;--a-0"><i class="fa fa-link" aria-hidden="true"></i></a>Straight(&#x5B57;&#x5178;&#x7834;&#x89E3; -a 0)</h3>
-<p>&#x7EAF;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#xFF0C;&#x904D;&#x5386;&#x5B57;&#x5178;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5BC6;&#x7801;&#xFF0C;&#x5BF9;&#x76EE;&#x6807;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;</p>
-<pre><code class="lang-shell">hashcat -a 0 -m 2500 xxxx.hccapx dict
-</code></pre>
-<h3 id="combination&#x7EC4;&#x5408;&#x7834;&#x89E3;--a-1"><a name="combination&#x7EC4;&#x5408;&#x7834;&#x89E3;--a-1" class="plugin-anchor" href="#combination&#x7EC4;&#x5408;&#x7834;&#x89E3;--a-1"><i class="fa fa-link" aria-hidden="true"></i></a>Combination(&#x7EC4;&#x5408;&#x7834;&#x89E3; -a 1)</h3>
-<p>&#x7EC4;&#x5408;&#x4E24;&#x4E2A;&#x5B57;&#x5178;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x7834;&#x89E3;&#xFF0C;<code>&#x53EA;&#x652F;&#x6301;&#x4E24;&#x4E2A;&#x5B57;&#x5178;&#x6587;&#x4EF6;&#x5BC6;&#x7801;&#x7EC4;&#x5408;</code>&#xFF01;&#x8BE5;&#x6A21;&#x5F0F;&#x4F1A;&#x5C06;dict1&#x4E2D;&#x7684;&#x5BC6;&#x7801;&#x4E0E;dict2&#x4E2D;&#x7684;&#x5BC6;&#x7801;&#x4F9D;&#x6B21;&#x7EC4;&#x5408;&#x3002;</p>
-<pre><code class="lang-shell">cat dict1
+7 | Hybrid Mask + Wordlist  # &#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;</code></pre>
+<h3 id="straight&#x5B57;&#x5178;&#x7834;&#x89E3;--a-0"><a name="straight&#x5B57;&#x5178;&#x7834;&#x89E3;--a-0" class="plugin-anchor" href="#straight&#x5B57;&#x5178;&#x7834;&#x89E3;--a-0"><i class="fa fa-link" aria-hidden="true"></i></a>Straight(&#x5B57;&#x5178;&#x7834;&#x89E3; -a 0)</h3><p>&#x7EAF;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x6A21;&#x5F0F;&#xFF0C;&#x904D;&#x5386;&#x5B57;&#x5178;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5BC6;&#x7801;&#xFF0C;&#x5BF9;&#x76EE;&#x6807;&#x7834;&#x89E3;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;</p><pre><code class="lang-shell">hashcat -a 0 -m 2500 xxxx.hccapx dict</code></pre>
+<h3 id="combination&#x7EC4;&#x5408;&#x7834;&#x89E3;--a-1"><a name="combination&#x7EC4;&#x5408;&#x7834;&#x89E3;--a-1" class="plugin-anchor" href="#combination&#x7EC4;&#x5408;&#x7834;&#x89E3;--a-1"><i class="fa fa-link" aria-hidden="true"></i></a>Combination(&#x7EC4;&#x5408;&#x7834;&#x89E3; -a 1)</h3><p>&#x7EC4;&#x5408;&#x4E24;&#x4E2A;&#x5B57;&#x5178;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x7834;&#x89E3;&#xFF0C;<code>&#x53EA;&#x652F;&#x6301;&#x4E24;&#x4E2A;&#x5B57;&#x5178;&#x6587;&#x4EF6;&#x5BC6;&#x7801;&#x7EC4;&#x5408;</code>&#xFF01;&#x8BE5;&#x6A21;&#x5F0F;&#x4F1A;&#x5C06;dict1&#x4E2D;&#x7684;&#x5BC6;&#x7801;&#x4E0E;dict2&#x4E2D;&#x7684;&#x5BC6;&#x7801;&#x4F9D;&#x6B21;&#x7EC4;&#x5408;&#x3002;</p><pre><code class="lang-shell">cat dict1
 abc
 def
 gh
@@ -3035,62 +2979,38 @@ def23456
 gh1234
 gh23456
 
-hashcat -a 1 -m 2500 xxxx.hccapx dict1 dict2
-</code></pre>
-<p>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;&#x8FDB;&#x884C;&#x7834;&#x89E3;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5B50;&#x5B57;&#x5178;&#x5185;&#x5BC6;&#x7801;&#x4E2A;&#x6570;&#x8F83;&#x591A;&#x7684;&#x8BDD;&#xFF0C;&#x6574;&#x4F53;&#x7684;&#x5B57;&#x5178;&#x6570;&#x91CF;&#x5C31;&#x5341;&#x5206;&#x5DE8;&#x5927;&#xFF0C;&#x9020;&#x6210;&#x7834;&#x89E3;&#x65F6;&#x95F4;&#x6210;&#x500D;&#x589E;&#x52A0;&#x3002;</p>
-<h3 id="brute-force&#x66B4;&#x529B;&#x7834;&#x89E3;--a-3"><a name="brute-force&#x66B4;&#x529B;&#x7834;&#x89E3;--a-3" class="plugin-anchor" href="#brute-force&#x66B4;&#x529B;&#x7834;&#x89E3;--a-3"><i class="fa fa-link" aria-hidden="true"></i></a>Brute-force(&#x66B4;&#x529B;&#x7834;&#x89E3; -a 3)</h3>
-<p>hashcat&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x4E86;8&#x79CD;&#x9ED8;&#x8BA4;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x3002;</p>
-<pre><code class="lang-shell">l | abcdefghijklmnopqrstuvwxyz      # &#x5168;&#x4F53;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;
+hashcat -a 1 -m 2500 xxxx.hccapx dict1 dict2</code></pre>
+<p>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;&#x8FDB;&#x884C;&#x7834;&#x89E3;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5B50;&#x5B57;&#x5178;&#x5185;&#x5BC6;&#x7801;&#x4E2A;&#x6570;&#x8F83;&#x591A;&#x7684;&#x8BDD;&#xFF0C;&#x6574;&#x4F53;&#x7684;&#x5B57;&#x5178;&#x6570;&#x91CF;&#x5C31;&#x5341;&#x5206;&#x5DE8;&#x5927;&#xFF0C;&#x9020;&#x6210;&#x7834;&#x89E3;&#x65F6;&#x95F4;&#x6210;&#x500D;&#x589E;&#x52A0;&#x3002;</p><h3 id="brute-force&#x66B4;&#x529B;&#x7834;&#x89E3;--a-3"><a name="brute-force&#x66B4;&#x529B;&#x7834;&#x89E3;--a-3" class="plugin-anchor" href="#brute-force&#x66B4;&#x529B;&#x7834;&#x89E3;--a-3"><i class="fa fa-link" aria-hidden="true"></i></a>Brute-force(&#x66B4;&#x529B;&#x7834;&#x89E3; -a 3)</h3><p>hashcat&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x4E86;8&#x79CD;&#x9ED8;&#x8BA4;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x3002;</p><pre><code class="lang-shell">l | abcdefghijklmnopqrstuvwxyz      # &#x5168;&#x4F53;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;
 u | ABCDEFGHIJKLMNOPQRSTUVWXYZ      # &#x5168;&#x4F53;&#x5927;&#x5199;&#x5B57;&#x6BCD;
 d | 0123456789          # &#x6570;&#x5B57;
 h | 0123456789abcdef    # &#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5B57;
 H | 0123456789ABCDEF    # &#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5B57;&#x5927;&#x5199;
 s |  !&quot;#$%&amp;&apos;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~   # &#x7B26;&#x53F7;
 a | ?l?u?d?s        # &#x6240;&#x6709;&#x5B57;&#x7B26;&#x96C6;
-b | 0x00 - 0xff     # 0-255
-</code></pre>
-<p>&#x540C;&#x65F6;&#x4E5F;&#x63D0;&#x4F9B;&#x56DB;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7B26;&#x53F7;&#x4F7F;&#x7528;&#x3002;</p>
-<pre><code class="lang-shell"> -1, --custom-charset1          | CS   | User-defined charset ?1                              | -1 ?l?d?u
+b | 0x00 - 0xff     # 0-255</code></pre>
+<p>&#x540C;&#x65F6;&#x4E5F;&#x63D0;&#x4F9B;&#x56DB;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7B26;&#x53F7;&#x4F7F;&#x7528;&#x3002;</p><pre><code class="lang-shell"> -1, --custom-charset1          | CS   | User-defined charset ?1                              | -1 ?l?d?u
  -2, --custom-charset2          | CS   | User-defined charset ?2                              | -2 ?l?d?s
  -3, --custom-charset3          | CS   | User-defined charset ?3                              |
- -4, --custom-charset4          | CS   | User-defined charset ?4                              |
-</code></pre>
-<p>&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x7EC4;&#x5408;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x7834;&#x8BD1;&#x5BC6;&#x7801;&#x3002;</p>
-<pre><code class="lang-shell"># &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x96C6;
+ -4, --custom-charset4          | CS   | User-defined charset ?4                              |</code></pre>
+<p>&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x7EC4;&#x5408;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x7834;&#x8BD1;&#x5BC6;&#x7801;&#x3002;</p><pre><code class="lang-shell"># &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x96C6;
 hashcat -a 3 -m 2500 xxxx.hccapx ?l?l?l?l?l?l?l?l  # &#x5BC6;&#x7801;&#x89C4;&#x5219;&#x4E3A;8&#x4F4D;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x7684;&#x7EC4;&#x5408;
 hashcat -a 3 -m 2500 xxxx.hccapx ?l?l?l?l?d?d?d?d  # &#x5BC6;&#x7801;&#x89C4;&#x5219;&#x4E3A;8&#x4F4D;&#xFF0C;4&#x4F4D;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;+4&#x4F4D;&#x6570;&#x5B57;&#x7684;&#x7EC4;&#x5408;
 
 # &#x4F7F;&#x7528;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x96C6;
-hashcat -a 3 -m 2500 xxxx.hccapx -1 qwert -2 123456 ?1?1?1?1?2?2?2?2 # &#x524D;&#x56DB;&#x4F4D;&#x5BC6;&#x7801;&#x4E3A;qwert&#x4E2D;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x540E;&#x56DB;&#x4F4D;&#x5BC6;&#x7801;&#x4E3A;12345&#x6570;&#x5B57;&#x7684;&#x7EC4;&#x5408;
-</code></pre>
-<h3 id="hybrid-wordlist--mask&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;--a-6"><a name="hybrid-wordlist--mask&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;--a-6" class="plugin-anchor" href="#hybrid-wordlist--mask&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;--a-6"><i class="fa fa-link" aria-hidden="true"></i></a>Hybrid Wordlist + Mask(&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3; -a 6)</h3>
-<p>&#x540E;&#x4E24;&#x79CD;&#x7834;&#x89E3;&#x65B9;&#x5F0F;&#x7ED3;&#x5408;&#x4E86;&#x5B57;&#x5178;&#x548C;&#x89C4;&#x5219;&#xFF0C;&#x4E0E;<code>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;(-a 1)</code>&#x5341;&#x5206;&#x7C7B;&#x4F3C;&#x3002;</p>
-<pre><code class="lang-shell"># &#x5047;&#x5982;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x5178;&#x4E3A;dict
+hashcat -a 3 -m 2500 xxxx.hccapx -1 qwert -2 123456 ?1?1?1?1?2?2?2?2 # &#x524D;&#x56DB;&#x4F4D;&#x5BC6;&#x7801;&#x4E3A;qwert&#x4E2D;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x540E;&#x56DB;&#x4F4D;&#x5BC6;&#x7801;&#x4E3A;12345&#x6570;&#x5B57;&#x7684;&#x7EC4;&#x5408;</code></pre>
+<h3 id="hybrid-wordlist--mask&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;--a-6"><a name="hybrid-wordlist--mask&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;--a-6" class="plugin-anchor" href="#hybrid-wordlist--mask&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3;--a-6"><i class="fa fa-link" aria-hidden="true"></i></a>Hybrid Wordlist + Mask(&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x7834;&#x89E3; -a 6)</h3><p>&#x540E;&#x4E24;&#x79CD;&#x7834;&#x89E3;&#x65B9;&#x5F0F;&#x7ED3;&#x5408;&#x4E86;&#x5B57;&#x5178;&#x548C;&#x89C4;&#x5219;&#xFF0C;&#x4E0E;<code>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;(-a 1)</code>&#x5341;&#x5206;&#x7C7B;&#x4F3C;&#x3002;</p><pre><code class="lang-shell"># &#x5047;&#x5982;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x5178;&#x4E3A;dict
 cat dict
 admin
-root
-</code></pre>
-<p>&#x5047;&#x8BBE;&#x5B9E;&#x9645;&#x7684;&#x660E;&#x6587;&#x5BC6;&#x7801;&#x4E3A;<code>adminer123456</code>&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x7684;&#x89C4;&#x5219;&#x4E3A;<code>?l?l?d?d?d?d?d</code>&#xFF0C;&#x5373;&#x53EF;&#x5339;&#x914D;&#x5230;&#x660E;&#x6587;&#x5BC6;&#x7801;&#x3002;</p>
-<pre><code class="lang-shell">hashcat -a 6 -m 2500 xxxx.hccapx dict1 dict2 dict3 ?l?l?d?d?d?d?d
-</code></pre>
-<p>&#x5728;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x5B57;&#x5178;&#x548C;&#x89C4;&#x5219;&#x8FDB;&#x884C;&#x7EC4;&#x5408;&#x3002;</p>
-<h3 id="hybrid-mask--wordlist&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;--a-7"><a name="hybrid-mask--wordlist&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;--a-7" class="plugin-anchor" href="#hybrid-mask--wordlist&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;--a-7"><i class="fa fa-link" aria-hidden="true"></i></a>Hybrid Mask + Wordlist(&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3; -a 7)</h3>
-<p>&#x4E0E;&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x6A21;&#x5F0F;&#x76F8;&#x53CD;&#xFF0C;&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x662F;&#x89C4;&#x5219;&#x5728;&#x524D;&#xFF0C;&#x5B57;&#x5178;&#x5728;&#x540E;&#x3002;</p>
-<pre><code class="lang-shell">hashcat -a 7 -m 2500 xxxx.hccapx ?l?l?d?d?d?d?d dict1 dict2 dict3
-</code></pre>
-<h2 id="hashcat&#x8FDB;&#x9636;"><a name="hashcat&#x8FDB;&#x9636;" class="plugin-anchor" href="#hashcat&#x8FDB;&#x9636;"><i class="fa fa-link" aria-hidden="true"></i></a>Hashcat&#x8FDB;&#x9636;</h2>
-<h3 id="pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;"><a name="pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;" class="plugin-anchor" href="#pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;</h3>
-<p>&#x4E09;&#x79CD;&#x65B9;&#x5F0F;</p>
-<ul>
-<li>&#x4F7F;&#x7528;cap2hccapx.bin</li>
-<li>&#x4F7F;&#x7528;Aircrack-ng(1.3&#x7248;&#x672C;)&#x7684;<code>-j</code>&#x53C2;&#x6570;</li>
-<li><a href="https://hashcat.net/cap2hccapx/" target="_blank">&#x5728;&#x7EBF;</a>&#x8F6C;&#x6362;</li>
-</ul>
-<h3 id="&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;"><a name="&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;" class="plugin-anchor" href="#&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;</h3>
-<p>&#x5DF2;&#x7ECF;&#x7834;&#x89E3;&#x51FA;&#x7684;&#x5BC6;&#x7801;&#xFF0C;hashcat&#x4F1A;&#x9ED8;&#x8BA4;&#x4FDD;&#x5B58;&#x5728;<code>.hashcat/hashcat.potfile</code>&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B64;&#x6587;&#x4EF6;&#x67E5;&#x770B;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/cat_potfile.jpg" alt="cat_potfile"></p>
-<p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--show</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7279;&#x5B9A;&#x63E1;&#x624B;&#x5305;&#x5185;&#x7834;&#x89E3;&#x51FA;&#x7684;AP&#x7684;&#x5BC6;&#x7801;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--left</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x672A;&#x7834;&#x89E3;&#x51FA;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
-<pre><code class="lang-shell">$ hashcat -m 2500 helloworld.hccapx --show
+root</code></pre>
+<p>&#x5047;&#x8BBE;&#x5B9E;&#x9645;&#x7684;&#x660E;&#x6587;&#x5BC6;&#x7801;&#x4E3A;<code>adminer123456</code>&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x7684;&#x89C4;&#x5219;&#x4E3A;<code>?l?l?d?d?d?d?d</code>&#xFF0C;&#x5373;&#x53EF;&#x5339;&#x914D;&#x5230;&#x660E;&#x6587;&#x5BC6;&#x7801;&#x3002;</p><pre><code class="lang-shell">hashcat -a 6 -m 2500 xxxx.hccapx dict1 dict2 dict3 ?l?l?d?d?d?d?d</code></pre>
+<p>&#x5728;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x5B57;&#x5178;&#x548C;&#x89C4;&#x5219;&#x8FDB;&#x884C;&#x7EC4;&#x5408;&#x3002;</p><h3 id="hybrid-mask--wordlist&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;--a-7"><a name="hybrid-mask--wordlist&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;--a-7" class="plugin-anchor" href="#hybrid-mask--wordlist&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;--a-7"><i class="fa fa-link" aria-hidden="true"></i></a>Hybrid Mask + Wordlist(&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3; -a 7)</h3><p>&#x4E0E;&#x5B57;&#x5178;&#x52A0;&#x63A9;&#x7801;&#x6A21;&#x5F0F;&#x76F8;&#x53CD;&#xFF0C;&#x63A9;&#x7801;&#x52A0;&#x5B57;&#x5178;&#x7834;&#x89E3;&#x662F;&#x89C4;&#x5219;&#x5728;&#x524D;&#xFF0C;&#x5B57;&#x5178;&#x5728;&#x540E;&#x3002;</p><pre><code class="lang-shell">hashcat -a 7 -m 2500 xxxx.hccapx ?l?l?d?d?d?d?d dict1 dict2 dict3</code></pre>
+<h2 id="hashcat&#x8FDB;&#x9636;"><a name="hashcat&#x8FDB;&#x9636;" class="plugin-anchor" href="#hashcat&#x8FDB;&#x9636;"><i class="fa fa-link" aria-hidden="true"></i></a>Hashcat&#x8FDB;&#x9636;</h2><h3 id="pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;"><a name="pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;" class="plugin-anchor" href="#pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>pcap&#x5305;&#x8F6C;&#x6362;&#x4E3A;hccapx&#x683C;&#x5F0F;&#x3002;</h3><p>&#x4E09;&#x79CD;&#x65B9;&#x5F0F;</p><ul><li>&#x4F7F;&#x7528;cap2hccapx.bin
+</li>
+<li>&#x4F7F;&#x7528;Aircrack-ng(1.3&#x7248;&#x672C;)&#x7684;<code>-j</code>&#x53C2;&#x6570;
+</li>
+<li><a href="https://hashcat.net/cap2hccapx/" target="_blank">&#x5728;&#x7EBF;</a>&#x8F6C;&#x6362;
+</li></ul>
+<h3 id="&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;"><a name="&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;" class="plugin-anchor" href="#&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x663E;&#x793A;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;</h3><p>&#x5DF2;&#x7ECF;&#x7834;&#x89E3;&#x51FA;&#x7684;&#x5BC6;&#x7801;&#xFF0C;hashcat&#x4F1A;&#x9ED8;&#x8BA4;&#x4FDD;&#x5B58;&#x5728;<code>.hashcat/hashcat.potfile</code>&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B64;&#x6587;&#x4EF6;&#x67E5;&#x770B;&#x5DF2;&#x7834;&#x89E3;&#x7684;&#x5BC6;&#x7801;&#x3002;</p><p><img alt="cat_potfile" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/cat_potfile.jpg"></p><p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--show</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7279;&#x5B9A;&#x63E1;&#x624B;&#x5305;&#x5185;&#x7834;&#x89E3;&#x51FA;&#x7684;AP&#x7684;&#x5BC6;&#x7801;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--left</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x672A;&#x7834;&#x89E3;&#x51FA;&#x7684;&#x5BC6;&#x7801;&#x3002;</p><pre><code class="lang-shell">$ hashcat -m 2500 helloworld.hccapx --show
 c5b769d43cd2c3449c001cb3fd1a666a:0018e7b25200:9cd91730dc8e:helloworld:hello12345
 
 $ hashcat -m 2500 helloworld.hccapx --left
@@ -3099,45 +3019,19 @@ c52577dde5a3539890c2393a3f7f8551:0018e7b25200:9cd91730dc8e:helloworld
 2394e4c7311821872adc9a8c54503446:0018e7b25200:9cd91730dc8e:helloworld
 cba153ab6ee3597e5512dae45ad0ef64:0018e7b25200:9cd91730dc8e:helloworld
 812da0113e74622d154d7301679e0481:0018e7b25200:9cd91730dc8e:helloworld
-517b035a3a1b1cc29d5abb27aea37b45:0018e7b25200:9cd91730dc8e:helloworld
-</code></pre>
-<h3 id="&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;"><a name="&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;" class="plugin-anchor" href="#&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;</h3>
-<p>&#x5728;&#x4F7F;&#x7528;&#x89C4;&#x5219;&#x8FDB;&#x884C;&#x7834;&#x89E3;(&#x66B4;&#x529B;&#x7834;&#x89E3;&#x3001;&#x63A9;&#x7801;&#x7EC4;&#x5408;&#x7834;&#x89E3;)&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--increment</code>&#x53C2;&#x6570;&#x6FC0;&#x6D3B;&#x7834;&#x89E3;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x9009;&#x9879;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--increment-min</code>&#x6307;&#x5B9A;&#x6700;&#x5C0F;&#x957F;&#x5EA6;&#xFF0C;&#x901A;&#x8FC7;<code>--increment-max</code>&#x6307;&#x5B9A;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/increment_not_set.jpg" alt="increment_not_set"></p>
-<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x672A;&#x8BBE;&#x7F6E;&#x957F;&#x5EA6;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x603B;&#x5171;&#x9700;&#x8981;&#x8FDB;&#x884C; $26^{10} = 141167095653376$ &#x6B21;&#x5BC6;&#x7801;&#x5C1D;&#x8BD5;&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/increment_set_8_9.jpg" alt="increment_set_8_9"></p>
-<p>&#x5728;&#x8BBE;&#x7F6E;&#x4E86;&#x957F;&#x5EA6;&#x4E3A;8&#x65F6;&#xFF0C;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x660E;&#x663E;&#x51CF;&#x5C11;&#x5230;&#x4E86; $26^8 = 208827064576$ &#x6B21;</p>
-<h3 id="&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;"><a name="&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;" class="plugin-anchor" href="#&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;</h3>
-<p>&#x65B9;&#x6CD5;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</p>
-<p>&#x7B2C;&#x4E00;&#x79CD;&#x5728;&#x5728;&#x4EA4;&#x4E92;&#x754C;&#x9762;&#x4E2D;&#x4F7F;&#x7528;<code>[p]ause</code>&#x8FDB;&#x884C;&#x6682;&#x505C;&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/stdin_pause.jpg" alt="stdin_pause"></p>
-<p>&#x5982;&#x9700;&#x6062;&#x590D;&#xFF0C;&#x5219;&#x5728;&#x4EA4;&#x4E92;&#x754C;&#x9762;&#x4E2D;&#x4F7F;&#x7528;<code>[r]esume</code>&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/stdin_resume.jpg" alt="restore_resume"></p>
-<p>&#x7B2C;&#x4E8C;&#x79CD;&#x9700;&#x8981;&#x4E8B;&#x5148;&#x6307;&#x5B9A;&#x4F1A;&#x8BDD;&#x3002;</p>
-<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x5728;&#x7834;&#x89E3;&#x65F6;&#x6307;&#x5B9A;&#x4F1A;&#x8BDD;<code>--session=xxx</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;<code>.restore</code>&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x5728;<code>.hashcat/session/</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x7279;&#x6B8A;&#x4F4D;&#x7F6E;&#x5B58;&#x653E;&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x589E;&#x52A0;<code>--restore-file-path</code>&#x53C2;&#x6570;&#x3002;</p>
-<p><code>.restore</code>&#x6587;&#x4EF6;&#x4E3A;&#x4F1A;&#x8BDD;&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#xFF0C;&#x5B58;&#x653E;&#x7684;&#x662F;&#x4F1A;&#x8BDD;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#xFF0C;&#x5305;&#x62EC;&#x4F1A;&#x8BDD;&#x7684;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3001;&#x4F1A;&#x8BDD;&#x4F7F;&#x7528;&#x7684;&#x76EE;&#x5F55;&#x3001;&#x5DF2;&#x4F7F;&#x7528;&#x7684;&#x5BC6;&#x7801;&#x504F;&#x79FB;&#x7B49;&#x7B49;&#x3002;</p>
-<p><code>hashcat</code>&#x4F1A;&#x6839;&#x636E;&#x7834;&#x89E3;&#x7684;&#x8FDB;&#x5EA6;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;<code>restore</code>&#x6587;&#x4EF6;&#xFF01;</p>
-<p>&#x6B63;&#x5E38;&#x9000;&#x51FA;&#xFF0C;&#x5728;&#x4EA4;&#x4E92;&#x754C;&#x9762;&#x4F7F;&#x7528;<code>[q]uit</code>&#x547D;&#x4EE4;&#xFF0C;&#x5219;&#x4F1A;&#x4FDD;&#x5B58;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;&#x5982;&#x679C;&#x5F02;&#x5E38;&#x9000;&#x51FA;&#x6216;&#x8005;&#x5F3A;&#x5236;&#x9000;&#x51FA;<code>Ctrl + c</code>&#xFF0C;&#x5219;<code>.restore</code>&#x6587;&#x4EF6;&#x5C06;&#x4E0D;&#x8BB0;&#x5F55;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/restore_format.jpg" alt="restore_format"></p>
-<pre><code class="lang-shell"># &#x542F;&#x52A8;&#x4F1A;&#x8BDD;&#x4EFB;&#x52A1;helloworld&#xFF0C;restore&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#x4E3A;./restore/helloword.restore
-hashcat -a 0 -m 2500 --session helloworld --restore-file-path=./restore/helloword.restore  helloworld.hccapx Top306Million-WPA-probable-v2.txt
-</code></pre>
-<p>&#x5728;&#x754C;&#x9762;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x53C2;&#x6570;<code>q</code>&#x9000;&#x51FA;&#x4F1A;&#x8BDD;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;&#x7834;&#x89E3;&#x8FDB;&#x5EA6;&#x4FE1;&#x606F;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;&#x5230;restore&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/restore_pause.jpg" alt="restore_pause"></p>
-<p>&#x5B58;&#x50A8;&#x5B8C;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x6062;&#x590D;&#x7ED8;&#x753B;&#x4EFB;&#x52A1;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
-<pre><code class="lang-shell"># &#x524D;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x8981;&#x586B;&#xFF0C;&#x5982;&#x679C;&#x4E4B;&#x524D;&#x662F;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x5B58;&#x653E;restore&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x7B2C;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x4E5F;&#x5FC5;&#x987B;&#x8981;&#x8BBE;&#x7F6E;
-hashcat  --session helloworld --restore --restore-file-path=./restore/helloword.restore
-</code></pre>
-<p><img src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/restore_resume.jpg" alt="restore_resume"></p>
-<p>&#x53EF;&#x4EE5;&#x770B;&#x89C1;&#xFF0C;&#x4EFB;&#x52A1;&#x4ECE;&#x4E0A;&#x4E00;&#x6B21;&#x7ED3;&#x675F;&#x7684;&#x5730;&#x65B9;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x4E86;&#xFF01;&#xFF01;</p>
-<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
-<p><a href="https://hashcat.net/hashcat/" target="_blank">hashcat wiki</a>
+517b035a3a1b1cc29d5abb27aea37b45:0018e7b25200:9cd91730dc8e:helloworld</code></pre>
+<h3 id="&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;"><a name="&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;" class="plugin-anchor" href="#&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x3002;</h3><p>&#x5728;&#x4F7F;&#x7528;&#x89C4;&#x5219;&#x8FDB;&#x884C;&#x7834;&#x89E3;(&#x66B4;&#x529B;&#x7834;&#x89E3;&#x3001;&#x63A9;&#x7801;&#x7EC4;&#x5408;&#x7834;&#x89E3;)&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--increment</code>&#x53C2;&#x6570;&#x6FC0;&#x6D3B;&#x7834;&#x89E3;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x9009;&#x9879;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>--increment-min</code>&#x6307;&#x5B9A;&#x6700;&#x5C0F;&#x957F;&#x5EA6;&#xFF0C;&#x901A;&#x8FC7;<code>--increment-max</code>&#x6307;&#x5B9A;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3002;</p><p><img alt="increment_not_set" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/increment_not_set.jpg"></p><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x672A;&#x8BBE;&#x7F6E;&#x957F;&#x5EA6;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x603B;&#x5171;&#x9700;&#x8981;&#x8FDB;&#x884C; $26^{10} = 141167095653376$ &#x6B21;&#x5BC6;&#x7801;&#x5C1D;&#x8BD5;&#x3002;</p><p><img alt="increment_set_8_9" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/increment_set_8_9.jpg"></p><p>&#x5728;&#x8BBE;&#x7F6E;&#x4E86;&#x957F;&#x5EA6;&#x4E3A;8&#x65F6;&#xFF0C;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x660E;&#x663E;&#x51CF;&#x5C11;&#x5230;&#x4E86; $26^8 = 208827064576$ &#x6B21;</p><h3 id="&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;"><a name="&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;" class="plugin-anchor" href="#&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6062;&#x590D;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;</h3><p>&#x65B9;&#x6CD5;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</p><p>&#x7B2C;&#x4E00;&#x79CD;&#x5728;&#x5728;&#x4EA4;&#x4E92;&#x754C;&#x9762;&#x4E2D;&#x4F7F;&#x7528;<code>[p]ause</code>&#x8FDB;&#x884C;&#x6682;&#x505C;&#x3002;</p><p><img alt="stdin_pause" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/stdin_pause.jpg"></p><p>&#x5982;&#x9700;&#x6062;&#x590D;&#xFF0C;&#x5219;&#x5728;&#x4EA4;&#x4E92;&#x754C;&#x9762;&#x4E2D;&#x4F7F;&#x7528;<code>[r]esume</code>&#x3002;</p><p><img alt="restore_resume" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/stdin_resume.jpg"></p><p>&#x7B2C;&#x4E8C;&#x79CD;&#x9700;&#x8981;&#x4E8B;&#x5148;&#x6307;&#x5B9A;&#x4F1A;&#x8BDD;&#x3002;</p><p>&#x9996;&#x5148;&#x9700;&#x8981;&#x5728;&#x7834;&#x89E3;&#x65F6;&#x6307;&#x5B9A;&#x4F1A;&#x8BDD;<code>--session=xxx</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;<code>.restore</code>&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x5728;<code>.hashcat/session/</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x7279;&#x6B8A;&#x4F4D;&#x7F6E;&#x5B58;&#x653E;&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x589E;&#x52A0;<code>--restore-file-path</code>&#x53C2;&#x6570;&#x3002;</p><p><code>.restore</code>&#x6587;&#x4EF6;&#x4E3A;&#x4F1A;&#x8BDD;&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#xFF0C;&#x5B58;&#x653E;&#x7684;&#x662F;&#x4F1A;&#x8BDD;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#xFF0C;&#x5305;&#x62EC;&#x4F1A;&#x8BDD;&#x7684;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3001;&#x4F1A;&#x8BDD;&#x4F7F;&#x7528;&#x7684;&#x76EE;&#x5F55;&#x3001;&#x5DF2;&#x4F7F;&#x7528;&#x7684;&#x5BC6;&#x7801;&#x504F;&#x79FB;&#x7B49;&#x7B49;&#x3002;</p><p><code>hashcat</code>&#x4F1A;&#x6839;&#x636E;&#x7834;&#x89E3;&#x7684;&#x8FDB;&#x5EA6;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;<code>restore</code>&#x6587;&#x4EF6;&#xFF01;</p><p>&#x6B63;&#x5E38;&#x9000;&#x51FA;&#xFF0C;&#x5728;&#x4EA4;&#x4E92;&#x754C;&#x9762;&#x4F7F;&#x7528;<code>[q]uit</code>&#x547D;&#x4EE4;&#xFF0C;&#x5219;&#x4F1A;&#x4FDD;&#x5B58;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;&#x7834;&#x89E3;&#x72B6;&#x6001;&#x3002;&#x5982;&#x679C;&#x5F02;&#x5E38;&#x9000;&#x51FA;&#x6216;&#x8005;&#x5F3A;&#x5236;&#x9000;&#x51FA;<code>Ctrl + c</code>&#xFF0C;&#x5219;<code>.restore</code>&#x6587;&#x4EF6;&#x5C06;&#x4E0D;&#x8BB0;&#x5F55;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x7684;&#x72B6;&#x6001;&#x3002;</p><p><img alt="restore_format" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/restore_format.jpg"></p><pre><code class="lang-shell"># &#x542F;&#x52A8;&#x4F1A;&#x8BDD;&#x4EFB;&#x52A1;helloworld&#xFF0C;restore&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#x4E3A;./restore/helloword.restore
+hashcat -a 0 -m 2500 --session helloworld --restore-file-path=./restore/helloword.restore  helloworld.hccapx Top306Million-WPA-probable-v2.txt</code></pre>
+<p>&#x5728;&#x754C;&#x9762;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x53C2;&#x6570;<code>q</code>&#x9000;&#x51FA;&#x4F1A;&#x8BDD;&#x4EFB;&#x52A1;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;&#x7834;&#x89E3;&#x8FDB;&#x5EA6;&#x4FE1;&#x606F;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;&#x5230;restore&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p><p><img alt="restore_pause" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/restore_pause.jpg"></p><p>&#x5B58;&#x50A8;&#x5B8C;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x6062;&#x590D;&#x7ED8;&#x753B;&#x4EFB;&#x52A1;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#x3002;</p><pre><code class="lang-shell"># &#x524D;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x8981;&#x586B;&#xFF0C;&#x5982;&#x679C;&#x4E4B;&#x524D;&#x662F;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x5B58;&#x653E;restore&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x7B2C;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x4E5F;&#x5FC5;&#x987B;&#x8981;&#x8BBE;&#x7F6E;
+hashcat  --session helloworld --restore --restore-file-path=./restore/helloword.restore</code></pre>
+<p><img alt="restore_resume" src="../Image/Python/hashcat&#x4F7F;&#x7528;&#x8BF4;&#x660E;/restore_resume.jpg"></p><p>&#x53EF;&#x4EE5;&#x770B;&#x89C1;&#xFF0C;&#x4EFB;&#x52A1;&#x4ECE;&#x4E0A;&#x4E00;&#x6B21;&#x7ED3;&#x675F;&#x7684;&#x5730;&#x65B9;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x4E86;&#xFF01;&#xFF01;</p><h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2><p><a href="https://hashcat.net/hashcat/" target="_blank">hashcat wiki</a>
 <a href="https://hashcat.net/wiki/doku.php?id=restore" target="_blank">hashcat restore</a>
 <a href="https://klionsec.github.io/2017/04/26/use-hashcat-crack-hash/" target="_blank">hashcat use</a>
-<a href="http://www.freebuf.com/column/176660.html" target="_blank">Hybrid Wordlist + Mask</a> </p>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2018-09-28 21:59:24
+<a href="http://www.freebuf.com/column/176660.html" target="_blank">Hybrid Wordlist + Mask</a></p><footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
+2020-08-22 03:05:14
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3180,7 +3074,7 @@ hashcat  --session helloworld --restore --restore-file-path=./restore/helloword.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"hashcat使用说明","level":"2.1.16","depth":2,"next":{"title":"推荐import模块的方式","level":"2.1.17","depth":2,"path":"Python/推荐import模块的方式.md","ref":"Python/推荐import模块的方式.md","articles":[]},"previous":{"title":"Python杀不死的子进程","level":"2.1.15","depth":2,"path":"Python/Python杀不死的子进程.md","ref":"Python/Python杀不死的子进程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/hashcat使用说明.md","mtime":"2018-09-28T13:59:24.503Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"hashcat使用说明","level":"2.1.16","depth":2,"next":{"title":"推荐import模块的方式","level":"2.1.17","depth":2,"path":"Python/推荐import模块的方式.md","ref":"Python/推荐import模块的方式.md","articles":[]},"previous":{"title":"Python杀不死的子进程","level":"2.1.15","depth":2,"path":"Python/Python杀不死的子进程.md","ref":"Python/Python杀不死的子进程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Python/hashcat使用说明.md","mtime":"2020-08-22T03:05:14.142Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3215,14 +3109,6 @@ hashcat  --session helloworld --restore --restore-file-path=./restore/helloword.
     
         
         <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

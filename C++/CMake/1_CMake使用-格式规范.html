@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>CMake使用(一)-格式规范 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,22 +2892,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cmake&#x4F7F;&#x7528;&#x4E00;-&#x683C;&#x5F0F;&#x89C4;&#x8303;"><a name="cmake&#x4F7F;&#x7528;&#x4E00;-&#x683C;&#x5F0F;&#x89C4;&#x8303;" class="plugin-anchor" href="#cmake&#x4F7F;&#x7528;&#x4E00;-&#x683C;&#x5F0F;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>CMake&#x4F7F;&#x7528;(&#x4E00;)-&#x683C;&#x5F0F;&#x89C4;&#x8303;</h1>
-<p>&#x4E00;&#x4E2A;cmake&#x6587;&#x4EF6;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;</p>
-<pre><code class="lang-javascript">cmake_minimum_required (VERSION 3.0)    # &#x6240;&#x9700;&#x7684;cmake&#x6700;&#x4F4E;&#x7248;&#x672C;
+                                <h1 id="cmake&#x4F7F;&#x7528;&#x4E00;-&#x683C;&#x5F0F;&#x89C4;&#x8303;"><a name="cmake&#x4F7F;&#x7528;&#x4E00;-&#x683C;&#x5F0F;&#x89C4;&#x8303;" class="plugin-anchor" href="#cmake&#x4F7F;&#x7528;&#x4E00;-&#x683C;&#x5F0F;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>CMake&#x4F7F;&#x7528;(&#x4E00;)-&#x683C;&#x5F0F;&#x89C4;&#x8303;</h1><p>&#x4E00;&#x4E2A;cmake&#x6587;&#x4EF6;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;</p><pre><code class="lang-javascript">cmake_minimum_required (VERSION 3.0)    # &#x6240;&#x9700;&#x7684;cmake&#x6700;&#x4F4E;&#x7248;&#x672C;
 
 project (Tutorial)  # &#x5DE5;&#x7A0B;&#x540D;
 
-add_executable(Tutorial tutorial.cxx)   # &#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4EE5;&#x53CA;&#x9879;&#x76EE;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;
-</code></pre>
-<p>&#x5728;&#x5F00;&#x5934;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x7F16;&#x8BD1;&#x7684;&#x9009;&#x9879;&#x3002;</p>
-<pre><code class="lang-javascript">set(CMAKE_CXX_FLAGS <span class="hljs-string">&quot;${CMAKE_CXX_FLAGS} -std=c++11&quot;</span>)
-add_compile_options(-std=c++<span class="hljs-number">11</span>)
-</code></pre>
-<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>set</code>&#x51FD;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>add_compile_options</code>&#x6765;&#x8BBE;&#x7F6E;&#x3002;&#x503C;&#x7684;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>add_compile_options</code>&#x662F;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7F16;&#x8BD1;&#x5668;&#x800C;&#x8A00;&#xFF0C;<code>CMAKE_CXX_FLAGS</code>&#x53EA;&#x9488;&#x5BF9;<code>CXX</code>&#x7F16;&#x8BD1;&#x5668;&#x3002;</p>
-<p>&#x5176;&#x4ED6;&#x7684;&#xFF0C;&#x5934;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x3001;&#x5B50;&#x7F16;&#x8BD1;&#x9879;&#x76EE;&#x4EE5;&#x53CA;&#x6E90;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x5316;&#x4E5F;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x3002;</p>
-<p>&#x603B;&#x4F53;&#x7684;cmake&#x6587;&#x4EF6;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript">cmake_minimum_required(VERSION 3.0)
+add_executable(Tutorial tutorial.cxx)   # &#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4EE5;&#x53CA;&#x9879;&#x76EE;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;</code></pre>
+<p>&#x5728;&#x5F00;&#x5934;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x7F16;&#x8BD1;&#x7684;&#x9009;&#x9879;&#x3002;</p><pre><code class="lang-javascript">set(CMAKE_CXX_FLAGS <span class="hljs-string">&quot;${CMAKE_CXX_FLAGS} -std=c++11&quot;</span>)
+add_compile_options(-std=c++<span class="hljs-number">11</span>)</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>set</code>&#x51FD;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>add_compile_options</code>&#x6765;&#x8BBE;&#x7F6E;&#x3002;&#x503C;&#x7684;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>add_compile_options</code>&#x662F;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7F16;&#x8BD1;&#x5668;&#x800C;&#x8A00;&#xFF0C;<code>CMAKE_CXX_FLAGS</code>&#x53EA;&#x9488;&#x5BF9;<code>CXX</code>&#x7F16;&#x8BD1;&#x5668;&#x3002;</p><p>&#x5176;&#x4ED6;&#x7684;&#xFF0C;&#x5934;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x3001;&#x5B50;&#x7F16;&#x8BD1;&#x9879;&#x76EE;&#x4EE5;&#x53CA;&#x6E90;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x5316;&#x4E5F;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x3002;</p><p>&#x603B;&#x4F53;&#x7684;cmake&#x6587;&#x4EF6;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-javascript">cmake_minimum_required(VERSION 3.0)
 
 project(AlgorithmsTest)
 
@@ -2931,16 +2923,15 @@ aux_source_directory(. MainSrcs)
 add_executable(Test ${MainSrcs})
 
 # &#x6DFB;&#x52A0;&#x52A8;&#x6001;&#x5E93;&#x4F9D;&#x8D56;
-target_link_libraries(Test NotRepeat)
-</code></pre>
-<p>&#x5B50;&#x76EE;&#x5F55;<code>ElementNotRepeat</code>&#x4E0B;&#x7684;CMakeLists.txt&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript">aux_source_directory(. DIR_SRCS)
+target_link_libraries(Test NotRepeat)</code></pre>
+<p>&#x5B50;&#x76EE;&#x5F55;<code>ElementNotRepeat</code>&#x4E0B;&#x7684;CMakeLists.txt&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p><pre><code class="lang-javascript">aux_source_directory(. DIR_SRCS)
 
-add_library(NotRepeat ${DIR_SRCS})
-</code></pre>
+add_library(NotRepeat ${DIR_SRCS})</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2018-11-10 22:21:17
+2020-08-22 03:05:13
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -2983,7 +2974,7 @@ add_library(NotRepeat ${DIR_SRCS})
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CMake使用(一)-格式规范","level":"2.4.1.1","depth":3,"next":{"title":"CMake使用(二)-预编译选项添加","level":"2.4.1.2","depth":3,"path":"C++/CMake/2_CMake使用-预编译选项添加.md","ref":"C++/CMake/2_CMake使用-预编译选项添加.md","articles":[]},"previous":{"title":"CMake","level":"2.4.1","depth":2,"path":"C++/CMake/README.md","ref":"C++/CMake/README.md","articles":[{"title":"CMake使用(一)-格式规范","level":"2.4.1.1","depth":3,"path":"C++/CMake/1_CMake使用-格式规范.md","ref":"C++/CMake/1_CMake使用-格式规范.md","articles":[]},{"title":"CMake使用(二)-预编译选项添加","level":"2.4.1.2","depth":3,"path":"C++/CMake/2_CMake使用-预编译选项添加.md","ref":"C++/CMake/2_CMake使用-预编译选项添加.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"C++/CMake/1_CMake使用-格式规范.md","mtime":"2018-11-10T14:21:17.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CMake使用(一)-格式规范","level":"2.4.1.1","depth":3,"next":{"title":"CMake使用(二)-预编译选项添加","level":"2.4.1.2","depth":3,"path":"C++/CMake/2_CMake使用-预编译选项添加.md","ref":"C++/CMake/2_CMake使用-预编译选项添加.md","articles":[]},"previous":{"title":"CMake","level":"2.4.1","depth":2,"path":"C++/CMake/README.md","ref":"C++/CMake/README.md","articles":[{"title":"CMake使用(一)-格式规范","level":"2.4.1.1","depth":3,"path":"C++/CMake/1_CMake使用-格式规范.md","ref":"C++/CMake/1_CMake使用-格式规范.md","articles":[]},{"title":"CMake使用(二)-预编译选项添加","level":"2.4.1.2","depth":3,"path":"C++/CMake/2_CMake使用-预编译选项添加.md","ref":"C++/CMake/2_CMake使用-预编译选项添加.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"C++/CMake/1_CMake使用-格式规范.md","mtime":"2020-08-22T03:05:13.941Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3018,14 +3009,6 @@ add_library(NotRepeat ${DIR_SRCS})
     
         
         <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         

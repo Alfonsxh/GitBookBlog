@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>k路归并排序 · GitBook</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="GitBook 3.2.0">
         <meta name="author" content="Alfons <alfons_xh@163.com>">
         
         
@@ -2892,9 +2892,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><a name="k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;" class="plugin-anchor" href="#k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;</h1>
-<p>&#x9898;&#x76EE;&#xFF1A;</p>
-<pre><code class="lang-c++"><span class="hljs-number">23.</span>Merge k Sorted Lists
+                                <h1 id="k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><a name="k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;" class="plugin-anchor" href="#k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>k&#x8DEF;&#x5F52;&#x5E76;&#x6392;&#x5E8F;</h1><p>&#x9898;&#x76EE;&#xFF1A;</p><pre><code class="lang-c++"><span class="hljs-number">23.</span>Merge k Sorted Lists
 
 Merge k sorted linked lists and <span class="hljs-keyword">return</span> it as one sorted <span class="hljs-built_in">list</span>. Analyze and describe its complexity.
 
@@ -2906,19 +2904,16 @@ Input:
   <span class="hljs-number">1</span>-&gt;<span class="hljs-number">3</span>-&gt;<span class="hljs-number">4</span>,
   <span class="hljs-number">2</span>-&gt;<span class="hljs-number">6</span>
 ]
-Output: <span class="hljs-number">1</span>-&gt;<span class="hljs-number">1</span>-&gt;<span class="hljs-number">2</span>-&gt;<span class="hljs-number">3</span>-&gt;<span class="hljs-number">4</span>-&gt;<span class="hljs-number">4</span>-&gt;<span class="hljs-number">5</span>-&gt;<span class="hljs-number">6</span>
-</code></pre>
-<p>&#x5206;&#x6790;&#xFF1A;</p>
-<p>&#x9996;&#x5148;&#x5462;&#xFF0C;&#x8F93;&#x5165;&#x662F;&#x4E00;&#x4E2A;&#x7531; <strong>&#x591A;&#x4E2A;&#x6709;&#x5E8F;&#x7684;&#x6574;&#x6570;&#x6570;&#x5217;&#x7EC4;&#x6210;</strong>&#xFF0C;&#x8F93;&#x51FA;&#x662F; <strong>&#x8FD9;&#x4E9B;&#x6570;&#x5217;&#x6392;&#x5B8C;&#x5E8F;&#x540E;&#x7EC4;&#x6210;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;</strong>&#x3002;&#x9898;&#x76EE;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x8981;&#x8003;&#x8651;&#x591A;&#x8DEF;&#x8F93;&#x5165;&#x6392;&#x5E8F;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
-<ul>
-<li>&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x6700;&#x5C0F;&#x5806;&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;&#x6570;&#x5217;&#x7684;&#x9996;&#x5143;&#x7D20;&#x90FD;&#x8F93;&#x5165;&#x5806;&#x4E2D;&#x3002;</li>
-<li>&#x7136;&#x540E;&#x5C06;&#x5806;&#x4E2D;&#x7684;&#x6700;&#x5C0F;&#x5143;&#x7D20;&#x8F93;&#x5165;&#x7ED3;&#x679C;&#x961F;&#x5217;&#x4E2D;&#x3002;</li>
-<li>&#x8FD9;&#x65F6;&#x5806;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4F1A;&#x51CF;&#x5C11;&#x4E00;&#x4E2A;&#xFF0C;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x6700;&#x5C0F;&#x5143;&#x7D20;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8865;&#x5145;&#xFF0C;&#x5982;&#x679C;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x5219;&#x4E0D;&#x7528;&#x8865;&#x5145;&#x3002;</li>
-<li>&#x4F9D;&#x6B21;&#x5FAA;&#x73AF;&#x4E0A;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x77E5;&#x9053;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x8FDB;&#x5165;&#x65B0;&#x7684;&#x961F;&#x5217;&#x4E2D;&#x3002;</li>
-</ul>
-<p><img src="../../Image/Algorithms/AlgorithmsArea/merge_K_sorted_lists/merge_K.png" alt="merge_K"></p>
-<p>&#x5B9E;&#x73B0;&#xFF1A;</p>
-<pre><code class="lang-c++"><span class="hljs-keyword">struct</span> ListNode {
+Output: <span class="hljs-number">1</span>-&gt;<span class="hljs-number">1</span>-&gt;<span class="hljs-number">2</span>-&gt;<span class="hljs-number">3</span>-&gt;<span class="hljs-number">4</span>-&gt;<span class="hljs-number">4</span>-&gt;<span class="hljs-number">5</span>-&gt;<span class="hljs-number">6</span></code></pre>
+<p>&#x5206;&#x6790;&#xFF1A;</p><p>&#x9996;&#x5148;&#x5462;&#xFF0C;&#x8F93;&#x5165;&#x662F;&#x4E00;&#x4E2A;&#x7531; <strong>&#x591A;&#x4E2A;&#x6709;&#x5E8F;&#x7684;&#x6574;&#x6570;&#x6570;&#x5217;&#x7EC4;&#x6210;</strong>&#xFF0C;&#x8F93;&#x51FA;&#x662F; <strong>&#x8FD9;&#x4E9B;&#x6570;&#x5217;&#x6392;&#x5B8C;&#x5E8F;&#x540E;&#x7EC4;&#x6210;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;</strong>&#x3002;&#x9898;&#x76EE;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x8981;&#x8003;&#x8651;&#x591A;&#x8DEF;&#x8F93;&#x5165;&#x6392;&#x5E8F;&#x7684;&#x95EE;&#x9898;&#x3002;</p><ul><li>&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x6700;&#x5C0F;&#x5806;&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;&#x6570;&#x5217;&#x7684;&#x9996;&#x5143;&#x7D20;&#x90FD;&#x8F93;&#x5165;&#x5806;&#x4E2D;&#x3002;
+</li>
+<li>&#x7136;&#x540E;&#x5C06;&#x5806;&#x4E2D;&#x7684;&#x6700;&#x5C0F;&#x5143;&#x7D20;&#x8F93;&#x5165;&#x7ED3;&#x679C;&#x961F;&#x5217;&#x4E2D;&#x3002;
+</li>
+<li>&#x8FD9;&#x65F6;&#x5806;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4F1A;&#x51CF;&#x5C11;&#x4E00;&#x4E2A;&#xFF0C;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x6700;&#x5C0F;&#x5143;&#x7D20;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8865;&#x5145;&#xFF0C;&#x5982;&#x679C;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x5219;&#x4E0D;&#x7528;&#x8865;&#x5145;&#x3002;
+</li>
+<li>&#x4F9D;&#x6B21;&#x5FAA;&#x73AF;&#x4E0A;&#x9762;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x77E5;&#x9053;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x8FDB;&#x5165;&#x65B0;&#x7684;&#x961F;&#x5217;&#x4E2D;&#x3002;
+</li></ul>
+<p><img alt="merge_K" src="../../Image/Algorithms/AlgorithmsArea/merge_K_sorted_lists/merge_K.png"></p><p>&#x5B9E;&#x73B0;&#xFF1A;</p><pre><code class="lang-c++"><span class="hljs-keyword">struct</span> ListNode {
     <span class="hljs-keyword">int</span> val;
     ListNode *next;
 
@@ -2961,11 +2956,12 @@ Output: <span class="hljs-number">1</span>-&gt;<span class="hljs-number">1</span
     }
 
     <span class="hljs-keyword">return</span> head-&gt;next;
-}
-</code></pre>
+}</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Alfons 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last modify time:
-2018-12-09 21:13:24
+2020-08-22 03:05:13
 </span></footer>
+
+
                                 
                                 </section>
                             
@@ -3008,7 +3004,7 @@ Output: <span class="hljs-number">1</span>-&gt;<span class="hljs-number">1</span
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"k路归并排序","level":"2.5.1.4","depth":3,"next":{"title":"查找算法","level":"2.5.2","depth":2,"path":"Algorithms/查找算法.md","ref":"Algorithms/查找算法.md","articles":[]},"previous":{"title":"红黑树","level":"2.5.1.3","depth":3,"path":"Algorithms/AlgorithmsArea/红黑树.md","ref":"Algorithms/AlgorithmsArea/红黑树.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","mathjax-update-cdn","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"mathjax-update-cdn":{"forceSVG":false,"version":"2.7.1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Algorithms/AlgorithmsArea/k路归并排序.md","mtime":"2018-12-09T13:13:24.879Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-18T16:47:34.883Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"k路归并排序","level":"2.5.1.4","depth":3,"next":{"title":"查找算法","level":"2.5.2","depth":2,"path":"Algorithms/查找算法.md","ref":"Algorithms/查找算法.md","articles":[]},"previous":{"title":"红黑树","level":"2.5.1.3","depth":3,"path":"Algorithms/AlgorithmsArea/红黑树.md","ref":"Algorithms/AlgorithmsArea/红黑树.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","splitter","advanced-emoji","github","expandable-chapters-small","copy-code-button","book-summary-scroll-position-saver","anchors","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Alfons 2018","modify_label":"Last modify time:","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"Alfonsxh"},"github":{"url":"https://github.com/Alfonsxh"},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"expandable-chapters-small":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Alfons <alfons_xh@163.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"记录所学内容"},"file":{"path":"Algorithms/AlgorithmsArea/k路归并排序.md","mtime":"2020-08-22T03:05:13.928Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-10-05T09:20:53.790Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3043,14 +3039,6 @@ Output: <span class="hljs-number">1</span>-&gt;<span class="hljs-number">1</span
     
         
         <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-mathjax-update-cdn/plugin.js"></script>
         
     
         
