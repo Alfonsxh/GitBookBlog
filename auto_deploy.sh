@@ -1,14 +1,15 @@
 #/bin/sh
+set -x
 
 cd ./master 
 git add .
 git commit -m "update blog: $1"
 git push
 
-# cd ../
+cd ../
 docker container run -it --rm --name gitbook_deploy -v `pwd`/master:/app -v `pwd`/gh-pages:/pages my_gitbook
 
-# cd ./gh-pages
-# git add .
-# git commit -m "update blog: $1"
-# git push
+cd ./gh-pages
+git add .
+git commit -m "update blog: $1"
+git push
