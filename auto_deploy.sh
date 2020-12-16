@@ -1,13 +1,13 @@
-#/bin/sh
+#!/bin/sh
 set -x
 
-cd ./master 
+cd ./MyBlog 
 git add .
 git commit -m "update blog: $1"
 git push
 
 cd ../
-docker container run -it --rm --name gitbook_deploy -v `pwd`/master:/app -v `pwd`/gh-pages:/pages my_gitbook
+docker container run -it --rm --name gitbook_deploy -v `pwd`/MyBlog:/app -v `pwd`/gh-pages:/pages alfonsxh/my_gitbook 
 
 cd ./gh-pages
 git add .

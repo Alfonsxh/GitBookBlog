@@ -171,14 +171,15 @@ repl_backlog_histlen:56
 
 在开始时，主机和备机上都不含有数据。
 
-![get_master_nil](./images/get_master_nil.jpg)
+![get_master_nil](/Image/Docker/get_master_nil.jpg)
 
 在主机上设置后，可以在备机上看到已经同步数据。
 
-![get_master_success](./images/get_master_success.jpg)
+![get_master_success](/Image/Docker/get_master_success.jpg)
 
 ----
-**2019年 02月 19日 星期二 17:29:49 CST (补充)**
+
+### 2019年 02月 19日 星期二 17:29:49 CST (补充)
 
 上面的实验也可以通过从新打包redis镜像文件的方式来实现，对应的 **Dockerfile** 内容如下：
 
